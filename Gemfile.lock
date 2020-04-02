@@ -1,3 +1,12 @@
+GIT
+  remote: https://github.com/todd-a-jacobs/guard-cucumber.git
+  revision: 3fb4971ccf72a540c5401d39563be2c9e9e24336
+  ref: 3fb4971
+  specs:
+    guard-cucumber (2.1.1)
+      cucumber (>= 3.1)
+      nenv (>= 0.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -269,6 +278,7 @@ DEPENDENCIES
   bootsnap (>= 1.4.2)
   byebug
   cucumber-rails
+  guard-cucumber!
   guard-rspec
   jbuilder (~> 2.7)
   listen (>= 3.0.5, < 3.2)
