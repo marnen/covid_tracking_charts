@@ -44,6 +44,7 @@ end
 
 group :test do
   gem 'vcr', '~> 5.1.0'
+  gem 'webmock', '~> 3.8.3'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
