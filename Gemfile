@@ -42,5 +42,10 @@ group :development do
   gem 'guard-cucumber', require: false, github: 'todd-a-jacobs/guard-cucumber', ref: '3fb4971' # TODO: waiting for https://github.com/guard/guard-cucumber/pull/38
 end
 
+group :test do
+  gem 'vcr', '~> 5.1.0'
+  gem 'webmock', '~> 3.8.3'
+end
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
