@@ -1,0 +1,15 @@
+version: '3'
+networks:
+  internal:
+    driver: bridge
+services:
+  web:
+    environment:
+      PORT: 3000
+    build: .
+    command: bundle exec rails s
+    volumes:
+      - ".:/covid_tracking_charts"
+    ports: ["3000:3000"]
+    networks: [internal]
+    command: ["bundle", "exec", "rails", "server", "-b", "0.0.0.0"]
