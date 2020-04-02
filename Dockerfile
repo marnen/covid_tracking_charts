@@ -1,7 +1,7 @@
 FROM ruby:2.7.1-alpine
 MAINTAINER Marnen Laibow-Koser <marnen@marnen.org>
 
-RUN apk --no-cache add build-base git nodejs yarn
+RUN apk --no-cache add build-base git nodejs yarn tzdata
 
 ARG workdir=/covid_tracking_charts
 ARG rails_port=3000
