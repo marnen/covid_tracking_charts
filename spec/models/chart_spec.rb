@@ -47,6 +47,10 @@ RSpec.describe Chart, type: :model do
         end_date = chart.pairs.last.first
         expect(params['chxl']).to be == "0:|#{start_date.to_s :short}|#{end_date.to_s :short}"
       end
+
+      it 'sets the line thickness to 3' do
+        expect(params['chls'].to_i).to be == 3
+      end
     end
   end
 end

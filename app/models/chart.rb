@@ -12,7 +12,8 @@ class Chart
         chd: "a:#{values.join ','}",
         chs: '800x600',
         chxt: 'x,y', # axes
-        chxl: "0:|#{start_date.to_s :short}|#{end_date.to_s :short}" # axis labels
+        chxl: "0:|#{start_date.to_s :short}|#{end_date.to_s :short}", # axis labels
+        chls: 3 # line thickness
       }
       url.query = Faraday::Utils.build_query params
     end
