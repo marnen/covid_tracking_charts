@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200401&state=NY
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 57dfa5bb7d84f03d-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Fri, 03 Apr 2020 03:19:19 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=daac7b071fe1fba33f3adb13d119d16161585883959; expires=Sun, 03-May-20
+        03:19:19 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '581'
+      Age:
+      - '0'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - e5c2106e-78b8-449f-b40d-769068c423dc-7333966
+    body:
+      encoding: UTF-8
+      string: '{"date":20200401,"state":"NY","positive":83712,"negative":137168,"pending":null,"hospitalizedCurrently":12226,"hospitalizedCumulative":18368,"inIcuCurrently":3022,"inIcuCumulative":3022,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":6142,"hash":"bc022c8f01dbc1a4d1f046ebce21c18a7b42cfa6","dateChecked":"2020-04-01T20:00:00Z","death":1941,"hospitalized":18368,"total":220880,"totalTestResults":220880,"posNeg":220880,"fips":"36","deathIncrease":391,"hospitalizedIncrease":2464,"negativeIncrease":7777,"positiveIncrease":7917,"totalTestResultsIncrease":15694}'
+    http_version: null
+  recorded_at: Wed, 01 Apr 2020 00:00:00 GMT
+recorded_with: VCR 5.1.0
