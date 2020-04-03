@@ -21,6 +21,10 @@ RSpec.describe Chart, type: :model do
       expect(params['cht']).to be == 'lc'
     end
 
+    it "sets the chart's size to 800x600" do
+      expect(params['chs']).to be == '800x600'
+    end
+
     it 'puts the values into the data array' do
       expect(params['chd']).to be == "a:#{values.join ','}"
     end

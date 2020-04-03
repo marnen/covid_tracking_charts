@@ -7,7 +7,8 @@ class Chart
     URI('https://image-charts.com/chart?').tap do |url|
       params = {
         cht: :lc, # line chart
-        chd: "a:#{@values.join ','}"
+        chd: "a:#{@values.join ','}",
+        chs: '800x600'
       }
       url.query = Faraday::Utils.build_query params
     end
