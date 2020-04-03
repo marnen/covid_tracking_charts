@@ -1,0 +1,19 @@
+language: ruby
+cache:
+  bundler: true
+  directories:
+    - $HOME/.rvm
+    - $HOME/.npm
+    - node_modules
+
+before_install:
+  - gem install bundler
+  - nvm install
+
+before_script:
+  - yarn install
+  - RAILS_ENV=test bundle exec rails webpacker:compile
+
+script:
+  - bundle exec rspec
+  - bundle exec cucumber
