@@ -4,13 +4,18 @@ end
 
 Then /^I should see a graph for (.+?) for the (\d+) day(?:s)? ending on (.+?)$/ do |state, days, end_date|
   end_date = Date.parse(end_date)
-  date_range = (end_date - (days.to_i.pred).days)..end_date
+  start_date = end_date - (days.to_i.pred).days
+  date_range = start_date..end_date
 
-  expect(page).to have_selector('img[src^="https://image-charts.com/chart?"]') do |img|
-    params = Faraday::Utils.parse_query URI(img.src).query
-    params['cht'] == 'lc'
-    params['chd'] =~ /^a:(.+)$/
-    $1.split(',').count == days
+  page.find 'img[src^="https://image-charts.com/chart?"]' do |img|
+    params = Faraday::Utils.parse_query URI(img['src']).query
+    expect(params).to include(
+      'cht' => 'lc', # line chart
+      'chd' => /^a:/, # data
+      'chxt' => 'x,y', # axes
+      'chxl' => "0:|#{start_date.to_s :short}|#{end_date.to_s :short}" # axis labels
+    )
+    expect(params['chd'].match(/^a:(.+)$/)[1].split(',').count).to be == days
   end
   #
   # date_range.each do |date|
