@@ -2,8 +2,10 @@ class StatesController < ApplicationController
   def show
     @state = params[:state].upcase
     @date = Date.current
-    api = StateDaily.new state: @state, date: @date
-    @url = api.url
-    @data = api.fetch!
+    requests = ((@date - 29.days)..@date).map do |date|
+      StateDaily.new state: @state, date: date
+    end
+    @urls = requests.map &:url
+    @data = requests.map &:fetch!
   end
 end

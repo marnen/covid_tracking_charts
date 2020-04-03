@@ -1,3 +1,6 @@
 %h1== Data for state #{@state}
-%p== Pulled from #{@url}
-%pre= @data
+%p== Pulled from the following #{@urls.count} URLs:
+%ul
+  - @urls.each do |url|
+    %li= url
+%pre= @data.join("\n")
