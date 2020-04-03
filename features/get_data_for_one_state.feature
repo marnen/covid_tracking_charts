@@ -3,6 +3,7 @@ Feature: Get data for one state
   I can see data for one state
   So that I can track recent activity in that state
 
+@vcr
 Scenario Outline:
   Given today is <date>
   When I visit the page for <state>
