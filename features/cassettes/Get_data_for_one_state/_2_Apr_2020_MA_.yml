@@ -1,0 +1,1503 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200304&state=MA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 57e529b9b919e6c4-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Fri, 03 Apr 2020 19:23:14 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d1a6e0cea514437be266b510920096e831585941794; expires=Sun, 03-May-20
+        19:23:14 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '313'
+      Age:
+      - '0'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - f1fb77d7-a6b7-46d2-b3a3-f047f6efb47c-15558599
+    body:
+      encoding: UTF-8
+      string: '{"date":20200304,"state":"MA","positive":2,"hash":"36d8d4b1b34007477b562a078613309f63e7bd0e","dateChecked":"2020-03-04T21:00:00Z","total":2,"totalTestResults":2,"posNeg":2,"fips":"25","deathIncrease":null,"hospitalizedIncrease":null,"negativeIncrease":null,"positiveIncrease":null,"totalTestResultsIncrease":null}'
+    http_version: null
+  recorded_at: Thu, 02 Apr 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200305&state=MA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 57e529bb9feeefcc-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Fri, 03 Apr 2020 19:23:15 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d25e777560fbb365d335973743e8f8c341585941795; expires=Sun, 03-May-20
+        19:23:15 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '298'
+      Age:
+      - '0'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b48d05e9-62a4-4879-b7a9-620ace27db2d-205167
+    body:
+      encoding: UTF-8
+      string: '{"date":20200305,"state":"MA","positive":2,"hash":"ad6e88d352dfa8b8f0dd1bf41a2c506911f25bc0","dateChecked":"2020-03-05T21:00:00Z","total":2,"totalTestResults":2,"posNeg":2,"fips":"25","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":0,"positiveIncrease":0,"totalTestResultsIncrease":0}'
+    http_version: null
+  recorded_at: Thu, 02 Apr 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200306&state=MA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 57e529bd4ab8e6c4-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Fri, 03 Apr 2020 19:23:15 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d7a58938eb652bad93fc8454b71d167881585941795; expires=Sun, 03-May-20
+        19:23:15 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '298'
+      Age:
+      - '0'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - f1fb77d7-a6b7-46d2-b3a3-f047f6efb47c-15558967
+    body:
+      encoding: UTF-8
+      string: '{"date":20200306,"state":"MA","positive":8,"hash":"ba07a81180b3f869f4fc9a15473d56c77bda4a58","dateChecked":"2020-03-06T21:00:00Z","total":8,"totalTestResults":8,"posNeg":8,"fips":"25","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":0,"positiveIncrease":6,"totalTestResultsIncrease":6}'
+    http_version: null
+  recorded_at: Thu, 02 Apr 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200307&state=MA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 57e529bf5835e6c4-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Fri, 03 Apr 2020 19:23:15 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d7a58938eb652bad93fc8454b71d167881585941795; expires=Sun, 03-May-20
+        19:23:15 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '302'
+      Age:
+      - '0'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - f1fb77d7-a6b7-46d2-b3a3-f047f6efb47c-15559357
+    body:
+      encoding: UTF-8
+      string: '{"date":20200307,"state":"MA","positive":13,"hash":"b919208fee55fb337773b232ea6298e5465a717d","dateChecked":"2020-03-07T21:00:00Z","total":13,"totalTestResults":13,"posNeg":13,"fips":"25","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":0,"positiveIncrease":5,"totalTestResultsIncrease":5}'
+    http_version: null
+  recorded_at: Thu, 02 Apr 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200308&state=MA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 57e529c14e0991f8-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Fri, 03 Apr 2020 19:23:16 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d79346910d57a512b798261127f4346881585941796; expires=Sun, 03-May-20
+        19:23:16 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '302'
+      Age:
+      - '0'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - 9fa524d8-681d-4d50-9faf-f8d8a27395cc-7109089
+    body:
+      encoding: UTF-8
+      string: '{"date":20200308,"state":"MA","positive":13,"hash":"db7ba78165b69c05b53151fbdc1d322c2e5a1688","dateChecked":"2020-03-08T20:00:00Z","total":13,"totalTestResults":13,"posNeg":13,"fips":"25","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":0,"positiveIncrease":0,"totalTestResultsIncrease":0}'
+    http_version: null
+  recorded_at: Thu, 02 Apr 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200309&state=MA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 57e529c3294be6c4-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Fri, 03 Apr 2020 19:23:16 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d0dc62be94f2fb7659a6bf13ca83a50381585941796; expires=Sun, 03-May-20
+        19:23:16 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '304'
+      Age:
+      - '0'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - f1fb77d7-a6b7-46d2-b3a3-f047f6efb47c-15559790
+    body:
+      encoding: UTF-8
+      string: '{"date":20200309,"state":"MA","positive":41,"hash":"bcf1ffcd7a8be3ab88adca44ae7ca0012a0b6cb7","dateChecked":"2020-03-09T20:00:00Z","total":41,"totalTestResults":41,"posNeg":41,"fips":"25","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":0,"positiveIncrease":28,"totalTestResultsIncrease":28}'
+    http_version: null
+  recorded_at: Thu, 02 Apr 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200310&state=MA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 57e529c5197591f8-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Fri, 03 Apr 2020 19:23:16 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d79346910d57a512b798261127f4346881585941796; expires=Sun, 03-May-20
+        19:23:16 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '304'
+      Age:
+      - '0'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - 9fa524d8-681d-4d50-9faf-f8d8a27395cc-7109375
+    body:
+      encoding: UTF-8
+      string: '{"date":20200310,"state":"MA","positive":92,"hash":"5b2241741b78dcad0513de205c9dba09feae3b20","dateChecked":"2020-03-10T20:00:00Z","total":92,"totalTestResults":92,"posNeg":92,"fips":"25","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":0,"positiveIncrease":51,"totalTestResultsIncrease":51}'
+    http_version: null
+  recorded_at: Thu, 02 Apr 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200311&state=MA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 57e529c76974e758-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Fri, 03 Apr 2020 19:23:17 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d75844d5443a496bd01d00efa1d5716091585941797; expires=Sun, 03-May-20
+        19:23:17 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '302'
+      Age:
+      - '0'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - c21be6d2-c3ca-4097-a6f9-b2af52368d79-10661168
+    body:
+      encoding: UTF-8
+      string: '{"date":20200311,"state":"MA","positive":92,"hash":"cd9166102dba61e473c3f2e49f4ad84e9876c8ad","dateChecked":"2020-03-11T20:00:00Z","total":92,"totalTestResults":92,"posNeg":92,"fips":"25","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":0,"positiveIncrease":0,"totalTestResultsIncrease":0}'
+    http_version: null
+  recorded_at: Thu, 02 Apr 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200312&state=MA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 57e529c93f75e6c4-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Fri, 03 Apr 2020 19:23:17 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d4d81b58bd557460d1b7f08f4e539500d1585941797; expires=Sun, 03-May-20
+        19:23:17 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '302'
+      Age:
+      - '0'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - f1fb77d7-a6b7-46d2-b3a3-f047f6efb47c-15560451
+    body:
+      encoding: UTF-8
+      string: '{"date":20200312,"state":"MA","positive":95,"hash":"2b11362fc52b477bca21e635eb9f2b88e8a5d61f","dateChecked":"2020-03-12T20:00:00Z","total":95,"totalTestResults":95,"posNeg":95,"fips":"25","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":0,"positiveIncrease":3,"totalTestResultsIncrease":3}'
+    http_version: null
+  recorded_at: Thu, 02 Apr 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200313&state=MA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 57e529cb4f2491f8-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Fri, 03 Apr 2020 19:23:17 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=da3fcb1a3aee4a7be36332cccc9f08d0b1585941797; expires=Sun, 03-May-20
+        19:23:17 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '324'
+      Age:
+      - '0'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - 9fa524d8-681d-4d50-9faf-f8d8a27395cc-7110008
+    body:
+      encoding: UTF-8
+      string: '{"date":20200313,"state":"MA","positive":123,"negative":92,"hash":"020263557685d33ade8e1849eeb35c2a8a12843a","dateChecked":"2020-03-13T20:00:00Z","total":215,"totalTestResults":215,"posNeg":215,"fips":"25","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":92,"positiveIncrease":28,"totalTestResultsIncrease":120}'
+    http_version: null
+  recorded_at: Thu, 02 Apr 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200314&state=MA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 57e529cfaad791f8-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Fri, 03 Apr 2020 19:23:18 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d3392f2d12f115a87e747bad18efdc2cf1585941798; expires=Sun, 03-May-20
+        19:23:18 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '326'
+      Age:
+      - '0'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - 9fa524d8-681d-4d50-9faf-f8d8a27395cc-7110735
+    body:
+      encoding: UTF-8
+      string: '{"date":20200314,"state":"MA","positive":138,"negative":352,"hash":"bdba6fc0046699f5419368f4eb93e84eb0f025c5","dateChecked":"2020-03-14T20:00:00Z","total":490,"totalTestResults":490,"posNeg":490,"fips":"25","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":260,"positiveIncrease":15,"totalTestResultsIncrease":275}'
+    http_version: null
+  recorded_at: Thu, 02 Apr 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200315&state=MA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 57e529d17c93e6ac-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Fri, 03 Apr 2020 19:23:18 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d439d5dcf41ff704ccc15287fa01ea7e71585941798; expires=Sun, 03-May-20
+        19:23:18 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '321'
+      Age:
+      - '0'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - 449592fd-7b77-4ec3-a098-9ae7a25d6bd5-13146758
+    body:
+      encoding: UTF-8
+      string: '{"date":20200315,"state":"MA","positive":138,"negative":352,"hash":"c8c2486f9a55549e537cfa05abc2e5e2fe749397","dateChecked":"2020-03-15T20:00:00Z","total":490,"totalTestResults":490,"posNeg":490,"fips":"25","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":0,"positiveIncrease":0,"totalTestResultsIncrease":0}'
+    http_version: null
+  recorded_at: Thu, 02 Apr 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200316&state=MA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 57e529d36fd1e758-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Fri, 03 Apr 2020 19:23:19 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d742ab68ca52d29fa9973bef551e5e1be1585941798; expires=Sun, 03-May-20
+        19:23:18 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '323'
+      Age:
+      - '1'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - c21be6d2-c3ca-4097-a6f9-b2af52368d79-10662401
+    body:
+      encoding: UTF-8
+      string: '{"date":20200316,"state":"MA","positive":164,"negative":352,"hash":"8b6244ab6b03eb42a217d3342377e82b0051ad3c","dateChecked":"2020-03-16T20:00:00Z","total":516,"totalTestResults":516,"posNeg":516,"fips":"25","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":0,"positiveIncrease":26,"totalTestResultsIncrease":26}'
+    http_version: null
+  recorded_at: Thu, 02 Apr 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200317&state=MA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 57e529d518b091f8-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Fri, 03 Apr 2020 19:23:19 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=da6b65382702a7f7e8ef8bec4140253c81585941799; expires=Sun, 03-May-20
+        19:23:19 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '332'
+      Age:
+      - '0'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - 9fa524d8-681d-4d50-9faf-f8d8a27395cc-7111227
+    body:
+      encoding: UTF-8
+      string: '{"date":20200317,"state":"MA","positive":218,"negative":1541,"hash":"f2b9d7f0d874da810bfb4b57fa42cb6ad8d320f9","dateChecked":"2020-03-17T20:00:00Z","total":1759,"totalTestResults":1759,"posNeg":1759,"fips":"25","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":1189,"positiveIncrease":54,"totalTestResultsIncrease":1243}'
+    http_version: null
+  recorded_at: Thu, 02 Apr 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200318&state=MA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 57e529d6e926e758-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Fri, 03 Apr 2020 19:23:19 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d412ced5af56096c4a53fbf5666f2cce71585941799; expires=Sun, 03-May-20
+        19:23:19 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '330'
+      Age:
+      - '0'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - c21be6d2-c3ca-4097-a6f9-b2af52368d79-10662931
+    body:
+      encoding: UTF-8
+      string: '{"date":20200318,"state":"MA","positive":256,"negative":2015,"hash":"f33af005453944a9da0ca3a04bb26228e086da9e","dateChecked":"2020-03-18T20:00:00Z","total":2271,"totalTestResults":2271,"posNeg":2271,"fips":"25","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":474,"positiveIncrease":38,"totalTestResultsIncrease":512}'
+    http_version: null
+  recorded_at: Thu, 02 Apr 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200319&state=MA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 57e529d9ee0991f8-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Fri, 03 Apr 2020 19:23:20 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=da6b65382702a7f7e8ef8bec4140253c81585941799; expires=Sun, 03-May-20
+        19:23:19 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '330'
+      Age:
+      - '1'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - 9fa524d8-681d-4d50-9faf-f8d8a27395cc-7111591
+    body:
+      encoding: UTF-8
+      string: '{"date":20200319,"state":"MA","positive":328,"negative":2804,"hash":"78f476ff93f6ab6ceea2e20dccb8478637895c94","dateChecked":"2020-03-19T20:00:00Z","total":3132,"totalTestResults":3132,"posNeg":3132,"fips":"25","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":789,"positiveIncrease":72,"totalTestResultsIncrease":861}'
+    http_version: null
+  recorded_at: Thu, 02 Apr 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200320&state=MA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 57e529dbbe5ae6ac-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Fri, 03 Apr 2020 19:23:20 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=de953d189b98f55802d3d3f3e25ef35221585941800; expires=Sun, 03-May-20
+        19:23:20 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '555'
+      Age:
+      - '0'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - 449592fd-7b77-4ec3-a098-9ae7a25d6bd5-13147994
+    body:
+      encoding: UTF-8
+      string: '{"date":20200320,"state":"MA","positive":413,"negative":3678,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":null,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"hash":"e4fa70dd5807dff8381750edb438c3d8fb03335d","dateChecked":"2020-03-20T20:00:00Z","death":1,"hospitalized":null,"total":4091,"totalTestResults":4091,"posNeg":4091,"fips":"25","deathIncrease":1,"hospitalizedIncrease":0,"negativeIncrease":874,"positiveIncrease":85,"totalTestResultsIncrease":959}'
+    http_version: null
+  recorded_at: Thu, 02 Apr 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200321&state=MA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 57e529dd692f91f8-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Fri, 03 Apr 2020 19:23:20 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d91a21cb0ea1da9f7529804c948f6e68b1585941800; expires=Sun, 03-May-20
+        19:23:20 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '555'
+      Age:
+      - '0'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - 9fa524d8-681d-4d50-9faf-f8d8a27395cc-7111927
+    body:
+      encoding: UTF-8
+      string: '{"date":20200321,"state":"MA","positive":525,"negative":4752,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":61,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"hash":"9434ecc82e2e7e8a85d8a027a082389be42e290a","dateChecked":"2020-03-21T20:00:00Z","death":1,"hospitalized":61,"total":5277,"totalTestResults":5277,"posNeg":5277,"fips":"25","deathIncrease":0,"hospitalizedIncrease":61,"negativeIncrease":1074,"positiveIncrease":112,"totalTestResultsIncrease":1186}'
+    http_version: null
+  recorded_at: Thu, 02 Apr 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200322&state=MA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 57e529df4ae791f8-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Fri, 03 Apr 2020 19:23:20 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d91a21cb0ea1da9f7529804c948f6e68b1585941800; expires=Sun, 03-May-20
+        19:23:20 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '553'
+      Age:
+      - '0'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - 9fa524d8-681d-4d50-9faf-f8d8a27395cc-7112232
+    body:
+      encoding: UTF-8
+      string: '{"date":20200322,"state":"MA","positive":646,"negative":5459,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":71,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"hash":"80dbca40ed272bb21a8cb8dc36290f39876b1ad2","dateChecked":"2020-03-22T20:00:00Z","death":5,"hospitalized":71,"total":6105,"totalTestResults":6105,"posNeg":6105,"fips":"25","deathIncrease":4,"hospitalizedIncrease":10,"negativeIncrease":707,"positiveIncrease":121,"totalTestResultsIncrease":828}'
+    http_version: null
+  recorded_at: Thu, 02 Apr 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200323&state=MA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 57e529e0dc6591f8-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Fri, 03 Apr 2020 19:23:21 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=dfcd90e80cf3198c4541144072be314b91585941801; expires=Sun, 03-May-20
+        19:23:21 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '554'
+      Age:
+      - '0'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - 9fa524d8-681d-4d50-9faf-f8d8a27395cc-7112417
+    body:
+      encoding: UTF-8
+      string: '{"date":20200323,"state":"MA","positive":777,"negative":8145,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":79,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"hash":"40b8c6ab57a8cd588c84704eea95f5d596cb66f6","dateChecked":"2020-03-23T20:00:00Z","death":9,"hospitalized":79,"total":8922,"totalTestResults":8922,"posNeg":8922,"fips":"25","deathIncrease":4,"hospitalizedIncrease":8,"negativeIncrease":2686,"positiveIncrease":131,"totalTestResultsIncrease":2817}'
+    http_version: null
+  recorded_at: Thu, 02 Apr 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200324&state=MA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 57e529e2a9e5e6c4-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Fri, 03 Apr 2020 19:23:21 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d011b7c1fbfa23a35f8db6b892de514991585941801; expires=Sun, 03-May-20
+        19:23:21 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '561'
+      Age:
+      - '0'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - f1fb77d7-a6b7-46d2-b3a3-f047f6efb47c-15563753
+    body:
+      encoding: UTF-8
+      string: '{"date":20200324,"state":"MA","positive":1159,"negative":12590,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":94,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"hash":"7dba190b6c130ef5b8427912adbcf550a3e63368","dateChecked":"2020-03-24T20:00:00Z","death":11,"hospitalized":94,"total":13749,"totalTestResults":13749,"posNeg":13749,"fips":"25","deathIncrease":2,"hospitalizedIncrease":15,"negativeIncrease":4445,"positiveIncrease":382,"totalTestResultsIncrease":4827}'
+    http_version: null
+  recorded_at: Thu, 02 Apr 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200325&state=MA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 57e529e47da9e6c4-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Fri, 03 Apr 2020 19:23:21 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d011b7c1fbfa23a35f8db6b892de514991585941801; expires=Sun, 03-May-20
+        19:23:21 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '562'
+      Age:
+      - '0'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - f1fb77d7-a6b7-46d2-b3a3-f047f6efb47c-15564065
+    body:
+      encoding: UTF-8
+      string: '{"date":20200325,"state":"MA","positive":1838,"negative":17956,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":103,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"hash":"95bb4fdcf8938f1681915e4ab6cd29914ed60b24","dateChecked":"2020-03-25T20:00:00Z","death":15,"hospitalized":103,"total":19794,"totalTestResults":19794,"posNeg":19794,"fips":"25","deathIncrease":4,"hospitalizedIncrease":9,"negativeIncrease":5366,"positiveIncrease":679,"totalTestResultsIncrease":6045}'
+    http_version: null
+  recorded_at: Thu, 02 Apr 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200326&state=MA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 57e529e659e491f8-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Fri, 03 Apr 2020 19:23:22 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=dfcd90e80cf3198c4541144072be314b91585941801; expires=Sun, 03-May-20
+        19:23:21 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '565'
+      Age:
+      - '1'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - 9fa524d8-681d-4d50-9faf-f8d8a27395cc-7113379
+    body:
+      encoding: UTF-8
+      string: '{"date":20200326,"state":"MA","positive":2417,"negative":21204,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":219,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"hash":"83a4a37ff66f38e205b0b18839828d141802f5c1","dateChecked":"2020-03-26T20:00:00Z","death":25,"hospitalized":219,"total":23621,"totalTestResults":23621,"posNeg":23621,"fips":"25","deathIncrease":10,"hospitalizedIncrease":116,"negativeIncrease":3248,"positiveIncrease":579,"totalTestResultsIncrease":3827}'
+    http_version: null
+  recorded_at: Thu, 02 Apr 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200327&state=MA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 57e529e88dcfccfa-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Fri, 03 Apr 2020 19:23:22 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d56c36bf787ef328a2b2d35e6caa234511585941802; expires=Sun, 03-May-20
+        19:23:22 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '563'
+      Age:
+      - '0'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - e033d595-2114-4b34-a698-479de1baba5d-14689281
+    body:
+      encoding: UTF-8
+      string: '{"date":20200327,"state":"MA","positive":3240,"negative":26131,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":219,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"hash":"016484cf6143f06b89bdb98758e558945940304e","dateChecked":"2020-03-27T20:00:00Z","death":35,"hospitalized":219,"total":29371,"totalTestResults":29371,"posNeg":29371,"fips":"25","deathIncrease":10,"hospitalizedIncrease":0,"negativeIncrease":4927,"positiveIncrease":823,"totalTestResultsIncrease":5750}'
+    http_version: null
+  recorded_at: Thu, 02 Apr 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200328&state=MA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 57e529ea39eae6ac-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Fri, 03 Apr 2020 19:23:22 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d187d45db446075d57f6f47aa9f765a4d1585941802; expires=Sun, 03-May-20
+        19:23:22 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '565'
+      Age:
+      - '0'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - 449592fd-7b77-4ec3-a098-9ae7a25d6bd5-13149687
+    body:
+      encoding: UTF-8
+      string: '{"date":20200328,"state":"MA","positive":4257,"negative":30792,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":350,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"hash":"c038ffa81528722c23a2ffffda17f2495a188ded","dateChecked":"2020-03-28T20:00:00Z","death":44,"hospitalized":350,"total":35049,"totalTestResults":35049,"posNeg":35049,"fips":"25","deathIncrease":9,"hospitalizedIncrease":131,"negativeIncrease":4661,"positiveIncrease":1017,"totalTestResultsIncrease":5678}'
+    http_version: null
+  recorded_at: Thu, 02 Apr 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200329&state=MA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 57e529ebee26e6c4-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Fri, 03 Apr 2020 19:23:22 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d8c6cc98af1eefbee0b33c6ea29db64dd1585941802; expires=Sun, 03-May-20
+        19:23:22 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '563'
+      Age:
+      - '0'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - f1fb77d7-a6b7-46d2-b3a3-f047f6efb47c-15564980
+    body:
+      encoding: UTF-8
+      string: '{"date":20200329,"state":"MA","positive":4955,"negative":34111,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":399,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"hash":"1de5b22e00296e1b0a1fea40b858c4f6d2eeb1b0","dateChecked":"2020-03-29T20:00:00Z","death":48,"hospitalized":399,"total":39066,"totalTestResults":39066,"posNeg":39066,"fips":"25","deathIncrease":4,"hospitalizedIncrease":49,"negativeIncrease":3319,"positiveIncrease":698,"totalTestResultsIncrease":4017}'
+    http_version: null
+  recorded_at: Thu, 02 Apr 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200330&state=MA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 57e529edba6de6c4-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Fri, 03 Apr 2020 19:23:23 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d2b0c1af1dde0f5744a29a6bd1354b33d1585941803; expires=Sun, 03-May-20
+        19:23:23 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '563'
+      Age:
+      - '0'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - f1fb77d7-a6b7-46d2-b3a3-f047f6efb47c-15565207
+    body:
+      encoding: UTF-8
+      string: '{"date":20200330,"state":"MA","positive":5752,"negative":37041,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":453,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"hash":"559b7707f9c7203da0ea8c07a2bfc9577d331c97","dateChecked":"2020-03-30T20:00:00Z","death":56,"hospitalized":453,"total":42793,"totalTestResults":42793,"posNeg":42793,"fips":"25","deathIncrease":8,"hospitalizedIncrease":54,"negativeIncrease":2930,"positiveIncrease":797,"totalTestResultsIncrease":3727}'
+    http_version: null
+  recorded_at: Thu, 02 Apr 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200331&state=MA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 57e529ef99e491f8-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Fri, 03 Apr 2020 19:23:23 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d45da08c3bbedaa1ea4e04195e03cd6251585941803; expires=Sun, 03-May-20
+        19:23:23 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '565'
+      Age:
+      - '0'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - 9fa524d8-681d-4d50-9faf-f8d8a27395cc-7115122
+    body:
+      encoding: UTF-8
+      string: '{"date":20200331,"state":"MA","positive":6620,"negative":40315,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":562,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"hash":"b113daa2aa839e30f1f3605f00483292aa39a60e","dateChecked":"2020-03-31T20:00:00Z","death":89,"hospitalized":562,"total":46935,"totalTestResults":46935,"posNeg":46935,"fips":"25","deathIncrease":33,"hospitalizedIncrease":109,"negativeIncrease":3274,"positiveIncrease":868,"totalTestResultsIncrease":4142}'
+    http_version: null
+  recorded_at: Thu, 02 Apr 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200401&state=MA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 57e529f17aa0e6c4-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Fri, 03 Apr 2020 19:23:23 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d2b0c1af1dde0f5744a29a6bd1354b33d1585941803; expires=Sun, 03-May-20
+        19:23:23 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '567'
+      Age:
+      - '0'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - f1fb77d7-a6b7-46d2-b3a3-f047f6efb47c-15565563
+    body:
+      encoding: UTF-8
+      string: '{"date":20200401,"state":"MA","positive":7738,"negative":44000,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":682,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"hash":"70ea3d599c7c506eafd12cbed1d23daa16709040","dateChecked":"2020-04-01T20:00:00Z","death":122,"hospitalized":682,"total":51738,"totalTestResults":51738,"posNeg":51738,"fips":"25","deathIncrease":33,"hospitalizedIncrease":120,"negativeIncrease":3685,"positiveIncrease":1118,"totalTestResultsIncrease":4803}'
+    http_version: null
+  recorded_at: Thu, 02 Apr 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200402&state=MA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 57e529f35d1c91f8-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Fri, 03 Apr 2020 19:23:24 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=de6b6537f124b71c790ab2098d1ca0ce61585941804; expires=Sun, 03-May-20
+        19:23:24 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '567'
+      Age:
+      - '0'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - 9fa524d8-681d-4d50-9faf-f8d8a27395cc-7115872
+    body:
+      encoding: UTF-8
+      string: '{"date":20200402,"state":"MA","positive":8966,"negative":47642,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":813,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"hash":"79d0614d1b714ae75a41b332ec20fb5cbecebab8","dateChecked":"2020-04-02T20:00:00Z","death":154,"hospitalized":813,"total":56608,"totalTestResults":56608,"posNeg":56608,"fips":"25","deathIncrease":32,"hospitalizedIncrease":131,"negativeIncrease":3642,"positiveIncrease":1228,"totalTestResultsIncrease":4870}'
+    http_version: null
+  recorded_at: Thu, 02 Apr 2020 00:00:00 GMT
+recorded_with: VCR 5.1.0
