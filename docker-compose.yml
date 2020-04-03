@@ -6,6 +6,7 @@ services:
   web:
     environment:
       PORT: 3000
+      REDIS_URL: "redis://cache:6379"
     build: .
     command: bundle exec rails s
     volumes:
@@ -16,5 +17,7 @@ services:
     command: ["bundle", "exec", "rails", "server", "-b", "0.0.0.0"]
   cache:
     image: redis:5.0.8-alpine
+    expose: ["6379"]
+    networks: [internal]
 volumes:
   bundle: # see https://dev.to/k_penguin_sato/cache-rails-gems-using-docker-compose-3o3f
