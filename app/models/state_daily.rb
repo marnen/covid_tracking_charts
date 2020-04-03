@@ -10,7 +10,7 @@ class StateDaily
     end
   end
 
-  def get!
+  def fetch!
     JSON.parse Faraday.get(url).body
   end
 end

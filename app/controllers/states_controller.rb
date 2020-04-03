@@ -4,6 +4,6 @@ class StatesController < ApplicationController
     @date = Date.current
     api = StateDaily.new state: @state, date: @date
     @url = api.url
-    @data = api.get!
+    @data = api.fetch!
   end
 end

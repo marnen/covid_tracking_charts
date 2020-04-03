@@ -35,7 +35,7 @@ RSpec.describe StateDaily, type: :model do
       end
     end
 
-    describe '#get!' do
+    describe '#fetch!' do
       let(:data) { {'random data' => Faker::Lorem.sentence} }
 
       before(:each) do
@@ -43,12 +43,12 @@ RSpec.describe StateDaily, type: :model do
       end
 
       it "makes a GET request to the object's URL" do
-        subject.get!
+        subject.fetch!
         expect(a_request(:get, subject.url)).to have_been_made
       end
 
       it 'returns the parsed JSON from the request body' do
-        expect(subject.get!).to be == data
+        expect(subject.fetch!).to be == data
       end
     end
   end
