@@ -5,12 +5,30 @@ class StateDaily
   end
 
   def url
-    URI('https://covidtracking.com/api/states/daily').tap do |url|
-      url.query = Faraday::Utils.build_query state: @state, date: @date.to_s(:number)
+    @url ||= if date_range?
+      individuals.map &:url
+    else
+      URI('https://covidtracking.com/api/states/daily').tap do |url|
+        url.query = Faraday::Utils.build_query state: @state, date: @date.to_s(:number)
+      end
     end
   end
 
   def fetch!
-    JSON.parse Faraday.get(url).body
+    if date_range?
+      individuals.map &:fetch!
+    else
+      JSON.parse Faraday.get(url).body
+    end
+  end
+
+  private
+
+  def date_range?
+    @date.kind_of? Range
+  end
+
+  def individuals
+    @individuals ||= @date.map {|date| self.class.new state: @state, date: date }
   end
 end

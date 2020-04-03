@@ -11,10 +11,10 @@ Then /^I should see a graph for (.+?) for the (\d+) day(?:s)? ending on (.+?)$/ 
     params = Faraday::Utils.parse_query URI(img['src']).query
     expect(params).to include(
       'cht' => 'lc', # line chart
-      'chd' => /^a:/, # data
+      'chd' => a_string_starting_with('a:'), # data
       'chxt' => 'x,y', # axes
       'chxl' => "0:|#{start_date.to_s :short}|#{end_date.to_s :short}" ,# axis labels
-      'chls' => 3 # line thickness
+      'chls' => '3' # line thickness
     )
     expect(params['chd'].match(/^a:(.+)$/)[1].split(',').count).to be == days
   end
