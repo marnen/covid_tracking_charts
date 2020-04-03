@@ -14,5 +14,7 @@ services:
     ports: ["3000:3000"]
     networks: [internal]
     command: ["bundle", "exec", "rails", "server", "-b", "0.0.0.0"]
+  cache:
+    image: redis:5.0.8-alpine
 volumes:
   bundle: # see https://dev.to/k_penguin_sato/cache-rails-gems-using-docker-compose-3o3f
