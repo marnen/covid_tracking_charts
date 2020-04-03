@@ -1,24 +1,26 @@
 require 'rails_helper'
 
 RSpec.describe Chart, type: :model do
+  let(:legend) { Faker::Lorem.sentence }
+
   describe 'constructor' do
-    it 'takes an array of date-value pairs' do
-      expect(described_class.new [[rand(100).days.ago, rand(100)]]).to be_a_kind_of described_class
+    it 'takes an array of date-value pairs and a legend string' do
+      expect(described_class.new pairs: [[rand(100).days.ago, rand(100)]], legend: legend).to be_a_kind_of described_class
     end
   end
 
   describe 'instance methods' do
     let(:pairs) { Array.new(rand 10..20) {|i| [i.days.from_now.to_date, rand(100)] }.shuffle }
+    let(:chart) { described_class.new(pairs: pairs, legend: legend) }
 
     describe '#pairs' do
       it 'returns the date-value pairs, sorted by date' do
-        expect(described_class.new(pairs).pairs).to be == pairs.sort
+        expect(chart.pairs).to be == pairs.sort
       end
     end
 
     describe '#url' do
       let(:params) { Faraday::Utils.parse_query subject.query }
-      let(:chart) { described_class.new(pairs) }
 
       subject { chart.url }
 
@@ -46,6 +48,10 @@ RSpec.describe Chart, type: :model do
         start_date = chart.pairs.first.first
         end_date = chart.pairs.last.first
         expect(params['chxl']).to be == "0:|#{start_date.to_s :short}|#{end_date.to_s :short}"
+      end
+
+      it 'labels the data series with the legend string at top center' do
+        expect(params).to include 'chdl' => legend, 'chdlp' => 't'
       end
 
       it 'sets the line thickness to 3' do
