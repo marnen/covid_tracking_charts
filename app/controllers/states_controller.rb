@@ -6,6 +6,8 @@ class StatesController < ApplicationController
       StateDaily.new state: @state, date: date
     end
     @urls = requests.map &:url
-    @data = requests.map &:fetch!
+    @data = requests.map(&:fetch!).reject {|request| request['date'].nil? }.sort_by {|request| request['date'] }
+    values = @data.pluck 'positive'
+    @chart = Chart.new values
   end
 end

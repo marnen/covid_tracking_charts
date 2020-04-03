@@ -7,7 +7,7 @@ Feature: Get data for one state
 Scenario Outline:
   Given today is <date>
   When I visit the page for <state>
-  Then I should see data for <state> for the 30 days ending on <date>
+  Then I should see a graph for <state> for the 30 days ending on <date>
 
   Examples:
     | date       | state |

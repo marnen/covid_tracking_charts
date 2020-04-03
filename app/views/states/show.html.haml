@@ -3,4 +3,5 @@
 %ul
   - @urls.each do |url|
     %li= url
+= image_tag @chart.url.to_s
 %pre= @data.join("\n")
