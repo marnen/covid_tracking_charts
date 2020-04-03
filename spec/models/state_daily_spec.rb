@@ -102,6 +102,11 @@ RSpec.describe StateDaily, type: :model do
         it 'returns an array of the parsed JSON from all the requests' do
           expect(subject.fetch!).to match_array data.values
         end
+
+        it "rejects any responses that don't have a date" do
+          stub_request(:get, urls.values.sample).to_return status:  200, body: {'content' => 'no date here'}.to_json
+          expect(subject.fetch!.length).to be == urls.length - 1
+        end
       end
     end
   end

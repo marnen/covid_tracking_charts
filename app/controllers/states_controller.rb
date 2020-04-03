@@ -6,7 +6,7 @@ class StatesController < ApplicationController
     state_daily = StateDaily.new state: @state, date: date_range
 
     @urls = state_daily.url
-    @data = state_daily.fetch!.to_a.reject {|request| request['date'].nil? }
+    @data = state_daily.fetch!
     values = @data.map {|request| [Date.parse(request['date'].to_s), request['positive']] }
     @chart = Chart.new pairs: values, legend: @state
   end

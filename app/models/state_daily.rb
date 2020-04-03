@@ -16,7 +16,7 @@ class StateDaily
 
   def fetch!
     if date_range?
-      individuals.map &:fetch!
+      individuals.map(&:fetch!).reject {|response| response['date'].nil? }
     else
       JSON.parse Faraday.get(url).body
     end
