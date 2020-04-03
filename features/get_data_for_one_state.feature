@@ -12,3 +12,4 @@ Scenario Outline:
   Examples:
  | date        | state |
  | 15 Mar 2020 | MA    |
+ | 1 Apr 2020  | NY    |
