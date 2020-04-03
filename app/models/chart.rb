@@ -1,4 +1,6 @@
 class Chart
+  CHART_TYPES = {line: :lc}
+
   attr_reader :pairs
 
   def initialize(pairs)
@@ -6,14 +8,16 @@ class Chart
   end
 
   def url
+    chart_type = CHART_TYPES[:line]
+    data = values
+    size = '800x600'
+    axes = 'x,y'
+    axis_labels = [start_date, end_date].map {|date| date.to_s :short }
+    line_thickness = 3
+
     URI('https://image-charts.com/chart?').tap do |url|
       params = {
-        cht: :lc, # line chart
-        chd: "a:#{values.join ','}",
-        chs: '800x600',
-        chxt: 'x,y', # axes
-        chxl: "0:|#{start_date.to_s :short}|#{end_date.to_s :short}", # axis labels
-        chls: 3 # line thickness
+        cht: chart_type, chd: "a:#{data.join ','}", chs: size, chxt: axes, chxl: "0:#{axis_labels.map {|label| label.prepend '|' }.join }", chls: line_thickness
       }
       url.query = Faraday::Utils.build_query params
     end
