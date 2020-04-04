@@ -27,14 +27,14 @@ RSpec.describe StateDaily, type: :model do
       subject { super().url }
 
       context 'single date' do
-        it { is_expected.to be_a_kind_of URI }
+        it { is_expected.to be_a_kind_of String }
 
         it 'points to the state daily data endpoint' do
-          expect(subject.to_s).to match %r{^https://covidtracking.com/api/states/daily\b([^/]|$)}
+          expect(subject).to match %r{^https://covidtracking.com/api/states/daily\b([^/]|$)}
         end
 
         context 'query string' do
-          let(:parsed_query) { Faraday::Utils.parse_query subject.query }
+          let(:parsed_query) { Hash[URI.decode_www_form URI(subject).query] }
 
           it 'contains the state' do
             expect(parsed_query['state']).to be == state
