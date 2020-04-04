@@ -20,7 +20,7 @@ RSpec.describe Chart, type: :model do
     end
 
     describe '#url' do
-      let(:params) { Faraday::Utils.parse_query subject.query }
+      let(:params) { Hash[URI.decode_www_form URI(subject).query] }
 
       subject { chart.url }
 

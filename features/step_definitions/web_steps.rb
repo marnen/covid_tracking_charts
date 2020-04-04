@@ -8,7 +8,7 @@ Then /^I should see a graph for (.+?) for the (\d+) day(?:s)? ending on (.+?)$/ 
   date_range = start_date..end_date
 
   page.find 'img[src^="https://image-charts.com/chart?"]' do |img|
-    params = Faraday::Utils.parse_query URI(img['src']).query
+    params = Hash[URI.decode_www_form URI(img['src']).query]
     expect(params).to include(
       'cht' => 'lc', # line chart
       'chd' => a_string_starting_with('a:'), # data

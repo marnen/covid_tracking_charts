@@ -22,7 +22,7 @@ class Chart
       params = {
         cht: chart_type, chd: "a:#{data.join ','}", chs: size, chxt: axes, chxl: "0:#{axis_labels.map {|label| label.prepend '|' }.join }", chdl: @legend, chdlp: position, chls: line_thickness
       }
-      url.query = Faraday::Utils.build_query params
+      url.query = URI.encode_www_form params
     end
   end
 
