@@ -27,6 +27,6 @@ class StateDaily
   end
 
   def request
-    @request ||= Typhoeus::Request.new('https://covidtracking.com/api/states/daily', params: {state: @state, date: @date.to_s(:number)})
+    @request ||= Typhoeus::Request.new('https://covidtracking.com/api/states/daily', params: {state: @state, date: @date.to_s(:number)}, cache_ttl: 6.hours.to_i)
   end
 end

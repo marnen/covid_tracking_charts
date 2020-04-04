@@ -70,11 +70,26 @@ RSpec.describe StateDaily, type: :model do
 
         it "makes a GET request to the object's URL" do
           subject.fetch!
-          expect(a_request(:get, subject.url)).to have_been_made
+          expect(a_request :get, subject.url).to have_been_made
         end
 
         it 'returns the parsed JSON from the request body' do
           expect(subject.fetch!).to be == data
+        end
+
+        context 'caching' do
+          include ActiveSupport::Testing::TimeHelpers
+
+          before(:each) { travel 1.week }
+          after(:each) { travel_back }
+
+          it 'makes the request only once within 6 hours' do
+            pending "Webmock interferes with caching, so this test actually doesn't work"
+            subject.fetch!
+            travel(5.hours + 59.minutes)
+            subject.fetch!
+            expect(a_request :get, subject.url).to have_been_made.once
+          end
         end
       end
 
