@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Roboto+Slab:wght@700&family=Roboto:wght@400;700&display=swap');
 
 $navy-blue: #220044;
 $pale-gray: #f0f0f0;
@@ -8,12 +8,17 @@ $text-color: $pale-gray;
 $accent-color: $orange;
 
 $roboto: Roboto, Geneva, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$roboto-slab: 'Roboto Slab', Constantia, Perpetua, 'Times New Roman', Times, serif;
 $monospace: 'Roboto Mono', Menlo, Monaco, Consolas, monospace;
 
 html {
   background-color: $background-color;
   color: $text-color;
   font-family: $roboto;
+}
+
+h1 {
+  font-family: $roboto-slab;
 }
 
 main h1 {
