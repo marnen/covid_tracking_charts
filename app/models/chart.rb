@@ -15,12 +15,23 @@ class Chart
     size = '800x600'
     axes = 'x,y'
     axis_labels = [start_date, end_date].map {|date| date.to_s :short }
+    axis_styles = "0,#{COLORS[:text]}|1,#{COLORS[:text]}"
     position = LEGEND_POSITIONS[:top]
     line_thickness = 3
+    background = "bg,s,#{COLORS[:background]}"
 
     URI('https://image-charts.com/chart?').tap do |url|
       params = {
-        cht: chart_type, chd: "a:#{data.join ','}", chs: size, chxt: axes, chxl: "0:#{axis_labels.map {|label| label.prepend '|' }.join }", chdl: @legend, chdlp: position, chls: line_thickness
+        cht: chart_type,
+        chd: "a:#{data.join ','}",
+        chs: size,
+        chxt: axes,
+        chxl: "0:#{axis_labels.map {|label| label.prepend '|' }.join }",
+        chxs: axis_styles,
+        chdl: @legend,
+        chdlp: position,
+        chls: line_thickness,
+        chf: background
       }
       url.query = URI.encode_www_form params
     end

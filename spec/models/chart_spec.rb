@@ -57,6 +57,14 @@ RSpec.describe Chart, type: :model do
       it 'sets the line thickness to 3' do
         expect(params['chls'].to_i).to be == 3
       end
+
+      it 'sets the background fill to the value in COLORS' do
+        expect(params['chf']).to be == "bg,s,#{COLORS[:background]}"
+      end
+
+      it 'sets the axis labels to the text color in COLORS' do
+        expect(params['chxs']).to be == "0,#{COLORS[:text]}|1,#{COLORS[:text]}"
+      end
     end
   end
 end
