@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-  resources :states, param: :state
+  resources :states, param: :state do
+    post :go, on: :collection
+  end
 end

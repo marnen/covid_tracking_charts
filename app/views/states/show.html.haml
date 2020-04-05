@@ -1,7 +1,12 @@
-%h1== Data for state #{@state}
-%p== Pulled from the following #{@urls.count} URLs:
-%ul
-  - @urls.each do |url|
-    %li= url
+%h1== Data for #{@state.name} (#{@state.abbr})
+= form_with url: go_states_path do
+  = label_tag :state, 'State'
+  = select_tag :state, options_from_collection_for_select(@states, 'abbr', 'name', @state.abbr)
+  = submit_tag 'Go'
+%details
+  %summary== Pulled from the following #{@urls.count} URLs:
+  %ul
+    - @urls.each do |url|
+      %li= url
 = image_tag @chart.url.to_s
 %pre= @data.join("\n")
