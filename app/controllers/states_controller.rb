@@ -14,7 +14,7 @@ class StatesController < ApplicationController
   end
 
   def go
-    redirect_to action: :show, state: params[:state]
+    redirect_to action: :show, state: params[:state].downcase
   end
 
   private
