@@ -38,6 +38,17 @@ header {
   }
 }
 
+footer {
+  font-size: 80%;
+  color: $footer-color;
+  margin-top: 2.5em;
+  border-top: 1px solid $footer-color;
+
+  p {
+    margin: 0.75em auto;
+  }
+}
+
 span.accent {
   color: $accent-color;
 }
