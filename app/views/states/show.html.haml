@@ -3,9 +3,10 @@
   = label_tag :state, 'State'
   = select_tag :state, options_from_collection_for_select(@states, 'abbr', 'name', @state.abbr)
   = submit_tag 'Go'
-%p== Pulled from the following #{@urls.count} URLs:
-%ul
-  - @urls.each do |url|
-    %li= url
+%details
+  %summary== Pulled from the following #{@urls.count} URLs:
+  %ul
+    - @urls.each do |url|
+      %li= url
 = image_tag @chart.url.to_s
 %pre= @data.join("\n")
