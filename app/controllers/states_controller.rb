@@ -12,7 +12,7 @@ class StatesController < ApplicationController
     @chart = Chart.new pairs: values, legend: @state.name
   end
 
-  def go
+  def choose
     redirect_to action: :show, state: params[:state].downcase
   end
 end

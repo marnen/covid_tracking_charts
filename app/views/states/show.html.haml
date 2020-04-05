@@ -1,5 +1,5 @@
 %h1== Data for #{@state.name} (#{@state.abbr})
-= form_with url: go_states_path do
+= form_with url: choose_states_path do
   = label_tag :state, 'State'
   = select_tag :state, options_from_collection_for_select(@states, 'abbr', 'name', @state.abbr)
   = submit_tag 'Go'
