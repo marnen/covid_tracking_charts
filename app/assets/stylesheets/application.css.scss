@@ -2,8 +2,10 @@
 
 $navy-blue: #220044;
 $pale-gray: #f0f0f0;
+$orange: #e88c35;
 $background-color: $navy-blue;
 $text-color: $pale-gray;
+$accent-color: $orange;
 
 $roboto: Roboto, Geneva, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
@@ -19,4 +21,8 @@ main h1 {
 
 header h1 {
   font-size: 200%;
+}
+
+span.accent {
+  color: $accent-color;
 }
