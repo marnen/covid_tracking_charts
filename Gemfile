@@ -25,6 +25,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 
 gem 'city-state'
 gem "haml-rails", "~> 2.0"
+gem 'rdiscount'
 gem 'redis'
 gem 'typhoeus'
 
