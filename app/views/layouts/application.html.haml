@@ -14,7 +14,14 @@
           %span.accent COVID-19
           Tracking Charts by U.S. State
     %nav= render 'shared/state_selector', states: states # TODO: consider Cells or something here
+
     %main
       - if content_for :page_title
         %h1= content_for :page_title
       = yield
+
+    %footer
+      :markdown
+        Developed by [Marnen E. Laibow-Koser](http://www.marnen.org). Lend a hand at [https://github.com/marnen/covid_tracking_charts](https://github.com/marnen/covid_tracking_charts)!
+
+        Data from [The COVID Tracking Project](https://covidtracking.com/).
