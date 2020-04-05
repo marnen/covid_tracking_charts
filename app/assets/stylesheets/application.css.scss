@@ -21,8 +21,12 @@ h1 {
   font-family: $roboto-slab;
 }
 
-main h1 {
-  font-size: 150%;
+main {
+  padding-top: 2em;
+
+  h1 {
+    font-size: 150%;
+  }
 }
 
 header h1 {
