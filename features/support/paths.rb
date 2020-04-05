@@ -3,6 +3,8 @@ module PathHelpers
     case page_name
     when /^the page for (.+)$/
       state_path $1.downcase
+    when 'the welcome page'
+      '/'
     else
       begin
         path_helper = page_name.gsub(/\bpage$/, 'path').gsub(/^the /, '').gsub(' ', '_')
