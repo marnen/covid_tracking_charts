@@ -4,7 +4,7 @@ class StatesController < ApplicationController
     @state = State.find params[:state]
     @date = Date.current
     date_range = (@date - 29.days)..@date
-    state_daily = StateDaily.new state: @state.abbr, date: date_range # TODO: take the State object instead
+    state_daily = StateDaily.new state: @state, date: date_range
 
     @urls = state_daily.url
     @data = state_daily.fetch!

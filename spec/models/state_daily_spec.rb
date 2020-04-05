@@ -1,12 +1,13 @@
 require 'rails_helper'
 
 RSpec.describe StateDaily, type: :model do
-  let(:state) { Faker::Address.state_abbr }
+  let(:state_abbr) { Faker::Address.state_abbr }
+  let(:state) { State.find state_abbr }
   let(:date) { rand(2..50).days.ago.to_date }
   let(:date_range) { date..(date + rand(2..10).days) }
 
   describe 'constructor' do
-    it 'takes a state code and a date' do
+    it 'takes a state and a date' do
       expect(described_class.new state: state, date: date).to be_a_kind_of described_class
     end
 
@@ -37,7 +38,7 @@ RSpec.describe StateDaily, type: :model do
           let(:parsed_query) { Hash[URI.decode_www_form URI(subject).query] }
 
           it 'contains the state' do
-            expect(parsed_query['state']).to be == state
+            expect(parsed_query['state']).to be == state.abbr
           end
 
           it 'contains the date, as a number' do
