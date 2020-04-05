@@ -1,4 +1,4 @@
-%h1== Data for state #{@state}
+%h1== Data for #{@state_name} (#{@state})
 = form_with url: go_states_path do
   = label_tag :state, 'State'
   = select_tag :state, options_for_select(@states, @state)
