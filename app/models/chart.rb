@@ -17,6 +17,7 @@ class Chart
     axis_labels = [start_date, end_date].map {|date| date.to_s :short }
     axis_styles = "0,#{COLORS[:text]}|1,#{COLORS[:text]}"
     position = LEGEND_POSITIONS[:top]
+    legend_color = COLORS[:text]
     line_thickness = 3
     background = "bg,s,#{COLORS[:background]}"
 
@@ -30,6 +31,8 @@ class Chart
         chxs: axis_styles,
         chdl: @legend,
         chdlp: position,
+        chdls: legend_color,
+        chco: COLORS[:series],
         chls: line_thickness,
         chf: background
       }
