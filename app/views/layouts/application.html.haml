@@ -2,7 +2,7 @@
 %html
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-    %title CovidTrackingCharts
+    %title= [content_for(:page_title), 'COVID Tracking Charts'].compact.join ' | '
     = csrf_meta_tags
     = csp_meta_tag
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
@@ -10,4 +10,7 @@
   %body
     %header
       %h1 COVID Tracking Charts by State
-    %main= yield
+    %main
+      - if content_for :page_title
+        %h1= content_for :page_title
+      = yield
