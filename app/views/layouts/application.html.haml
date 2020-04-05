@@ -10,8 +10,9 @@
   %body
     %header
       %h1
-        %span.accent COVID-19
-        Tracking Charts by State
+        = link_to '/' do
+          %span.accent COVID-19
+          Tracking Charts by State
     %nav= render 'shared/state_selector', states: states # TODO: consider Cells or something here
     %main
       - if content_for :page_title

@@ -6,6 +6,10 @@ When 'I click {string}' do |string|
   click_on string
 end
 
+When 'I click on the header' do
+  find('header a').click
+end
+
 When 'I select {string} from the state menu' do |state|
   select state, from: 'State'
 end
