@@ -7,6 +7,15 @@ RSpec.describe State, type: :model do
     end
   end
 
+  describe '.all' do
+    subject { described_class.all }
+
+    it 'returns all the states' do
+      expect(subject).to all be_a_kind_of State
+      expect(subject.map {|state| [state.abbr, state.name] }).to match_array CS.states(:us).map {|abbr, name| [abbr.to_s, name] }
+    end
+  end
+
   describe '.find' do
     context 'valid state abbreviation' do
       let(:state_abbr) { Faker::Address.state_abbr }

@@ -7,6 +7,10 @@ class State
   end
 
   class << self
+    def all
+      states.values
+    end
+
     def find(abbr)
       states[normalize abbr]
     end

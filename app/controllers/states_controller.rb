@@ -1,6 +1,6 @@
 class StatesController < ApplicationController
   def show
-    @states = all_states.invert.sort
+    @states = State.all
     @state = State.find params[:state]
     @date = Date.current
     date_range = (@date - 29.days)..@date
@@ -14,11 +14,5 @@ class StatesController < ApplicationController
 
   def go
     redirect_to action: :show, state: params[:state].downcase
-  end
-
-  private
-
-  def all_states
-    CS.states :us
   end
 end
