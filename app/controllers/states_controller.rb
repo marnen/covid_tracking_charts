@@ -1,5 +1,6 @@
 class StatesController < ApplicationController
   def show
+    @states = CS.states(:us).invert.sort
     @state = params[:state].upcase
     @date = Date.current
     date_range = (@date - 29.days)..@date
@@ -9,5 +10,9 @@ class StatesController < ApplicationController
     @data = state_daily.fetch!
     values = @data.map {|request| [Date.parse(request['date'].to_s), request['positive']] }
     @chart = Chart.new pairs: values, legend: @state
+  end
+
+  def go
+    redirect_to action: :show, state: params[:state]
   end
 end

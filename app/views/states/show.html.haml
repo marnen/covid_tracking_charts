@@ -1,4 +1,8 @@
 %h1== Data for state #{@state}
+= form_with url: go_states_path do
+  = label_tag :state, 'State'
+  = select_tag :state, options_for_select(@states, @state)
+  = submit_tag 'Go'
 %p== Pulled from the following #{@urls.count} URLs:
 %ul
   - @urls.each do |url|
