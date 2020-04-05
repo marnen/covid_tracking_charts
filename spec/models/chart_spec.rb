@@ -50,12 +50,24 @@ RSpec.describe Chart, type: :model do
         expect(params['chxl']).to be == "0:|#{start_date.to_s :short}|#{end_date.to_s :short}"
       end
 
-      it 'labels the data series with the legend string at top center' do
-        expect(params).to include 'chdl' => legend, 'chdlp' => 't'
+      it 'labels the data series with the legend string at top center, in the text color given in COLORS' do
+        expect(params).to include 'chdl' => legend, 'chdlp' => 't', 'chdls' => COLORS[:text]
+      end
+
+      it 'sets the data series color to the value in COLORS' do
+        expect(params['chco']).to be == COLORS[:series]
       end
 
       it 'sets the line thickness to 3' do
         expect(params['chls'].to_i).to be == 3
+      end
+
+      it 'sets the background fill to the value in COLORS' do
+        expect(params['chf']).to be == "bg,s,#{COLORS[:background]}"
+      end
+
+      it 'sets the axis labels to the text color in COLORS' do
+        expect(params['chxs']).to be == "0,#{COLORS[:text]}|1,#{COLORS[:text]}"
       end
     end
   end

@@ -1,0 +1,49 @@
+@import 'fonts';
+@import 'colors';
+
+html {
+  background-color: $background-color;
+  color: $text-color;
+  font-family: $roboto;
+}
+
+h1 {
+  font-family: $roboto-slab;
+}
+
+main {
+  padding-top: 2em;
+
+  h1 {
+    font-size: 150%;
+  }
+}
+
+header h1 {
+  font-size: 200%;
+}
+
+span.accent {
+  color: $accent-color;
+}
+
+code {
+  font: {
+    family: $monospace;
+    size: 80%;
+  };
+}
+
+details > *:not(summary) {
+  margin: auto 1em;
+}
+
+.raw-data {
+  dt {
+    margin-top: 0.5em;
+  }
+
+  dd {
+    margin-left: 1em;
+  }
+}

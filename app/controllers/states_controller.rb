@@ -6,9 +6,11 @@ class StatesController < ApplicationController
     date_range = (@date - 29.days)..@date
     state_daily = StateDaily.new state: @state, date: date_range
 
-    @urls = state_daily.url
-    @data = state_daily.fetch!
-    values = @data.map {|request| [Date.parse(request['date'].to_s), request['positive']] }
+    urls = state_daily.url
+    responses = state_daily.fetch!
+    @requests = urls.zip responses # TODO: maybe we can use StateDaily for this instead
+
+    values = responses.map {|response| [Date.parse(response['date'].to_s), response['positive']] }
     @chart = Chart.new pairs: values, legend: @state.name
   end
 

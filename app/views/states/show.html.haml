@@ -1,12 +1,17 @@
-%h1== Data for #{@state.name} (#{@state.abbr})
-= form_with url: choose_states_path do
-  = label_tag :state, 'State'
-  = select_tag :state, options_from_collection_for_select(@states, 'abbr', 'name', @state.abbr)
-  = submit_tag 'Go'
-%details
-  %summary== Pulled from the following #{@urls.count} URLs:
-  %ul
-    - @urls.each do |url|
-      %li= url
+- content_for :page_title do
+  == Data for
+  %span.accent= @state.name
+  == (#{@state.abbr})
+
+:markdown
+  This chart shows the *daily cumulative total* number of individuals who have tested positive for coronavirus.
 = image_tag @chart.url.to_s
-%pre= @data.join("\n")
+
+%details
+  %summary== Raw data (#{pluralize @requests.count, 'request'}):
+  %dl.raw-data
+    - @requests.each do |request|
+      - url, response = request
+      %dt= url
+      %dd
+        %code= response
