@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Roboto:wght@400;700&display=swap');
 
 $navy-blue: #220044;
 $pale-gray: #f0f0f0;
@@ -8,6 +8,7 @@ $text-color: $pale-gray;
 $accent-color: $orange;
 
 $roboto: Roboto, Geneva, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$monospace: 'Roboto Mono', Menlo, Monaco, Consolas, monospace;
 
 html {
   background-color: $background-color;
@@ -25,4 +26,25 @@ header h1 {
 
 span.accent {
   color: $accent-color;
+}
+
+code {
+  font: {
+    family: $monospace;
+    size: 80%;
+  };
+}
+
+details > *:not(summary) {
+  margin: auto 1em;
+}
+
+.raw-data {
+  dt {
+    margin-top: 0.5em;
+  }
+
+  dd {
+    margin-left: 1em;
+  }
 }
