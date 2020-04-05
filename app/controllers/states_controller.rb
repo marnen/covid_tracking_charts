@@ -1,16 +1,15 @@
 class StatesController < ApplicationController
   def show
     @states = all_states.invert.sort
-    @state = params[:state].upcase
-    @state_name = all_states[@state.to_sym]
+    @state = State.find params[:state]
     @date = Date.current
     date_range = (@date - 29.days)..@date
-    state_daily = StateDaily.new state: @state, date: date_range
+    state_daily = StateDaily.new state: @state.abbr, date: date_range # TODO: take the State object instead
 
     @urls = state_daily.url
     @data = state_daily.fetch!
     values = @data.map {|request| [Date.parse(request['date'].to_s), request['positive']] }
-    @chart = Chart.new pairs: values, legend: @state
+    @chart = Chart.new pairs: values, legend: @state.name
   end
 
   def go
