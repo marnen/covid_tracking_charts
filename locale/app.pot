@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: app 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-06 03:11+0000\n"
-"PO-Revision-Date: 2020-04-06 03:11+0000\n"
+"POT-Creation-Date: 2020-04-06 03:59+0000\n"
+"PO-Revision-Date: 2020-04-06 03:59+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -26,7 +26,28 @@ msgstr[1] ""
 msgid "%{span}COVID-19%{_span} Tracking Charts by U.S. State"
 msgstr ""
 
+msgid "Alabama"
+msgstr ""
+
+msgid "Alaska"
+msgstr ""
+
+msgid "Arizona"
+msgstr ""
+
+msgid "Arkansas"
+msgstr ""
+
 msgid "COVID-19 Tracking Charts"
+msgstr ""
+
+msgid "California"
+msgstr ""
+
+msgid "Colorado"
+msgstr ""
+
+msgid "Connecticut"
 msgstr ""
 
 msgid "Data for %{span}%{state_name}%{_span} (%{state_abbr})"
@@ -35,19 +56,130 @@ msgstr ""
 msgid "Data from [The COVID Tracking Project](https://covidtracking.com/)."
 msgstr ""
 
+msgid "Delaware"
+msgstr ""
+
 msgid "Developed by [Marnen E. Laibow-Koser](http://www.marnen.org). Lend a hand at [https://github.com/marnen/covid_tracking_charts](https://github.com/marnen/covid_tracking_charts)!"
+msgstr ""
+
+msgid "District of Columbia"
+msgstr ""
+
+msgid "Florida"
+msgstr ""
+
+msgid "Georgia"
 msgstr ""
 
 msgid "Go"
 msgstr ""
 
+msgid "Hawaii"
+msgstr ""
+
 msgid "I hope you find this project useful!"
+msgstr ""
+
+msgid "Idaho"
+msgstr ""
+
+msgid "Illinois"
+msgstr ""
+
+msgid "Indiana"
+msgstr ""
+
+msgid "Iowa"
+msgstr ""
+
+msgid "Kansas"
+msgstr ""
+
+msgid "Kentucky"
+msgstr ""
+
+msgid "Louisiana"
+msgstr ""
+
+msgid "Maine"
+msgstr ""
+
+msgid "Maryland"
+msgstr ""
+
+msgid "Massachusetts"
+msgstr ""
+
+msgid "Michigan"
+msgstr ""
+
+msgid "Minnesota"
+msgstr ""
+
+msgid "Mississippi"
+msgstr ""
+
+msgid "Missouri"
+msgstr ""
+
+msgid "Montana"
 msgstr ""
 
 msgid "My aim is for this site to be easy to use and accessible to all users, including visually impaired users and those without JavaScript support. If you have a feature request, or if you’d like to contribute code or otherwise collaborate, please feel free to file an issue at our [GitHub repository](https://github.com/marnen/covid_tracking_charts)."
 msgstr ""
 
+msgid "Nebraska"
+msgstr ""
+
+msgid "Nevada"
+msgstr ""
+
+msgid "New Hampshire"
+msgstr ""
+
+msgid "New Jersey"
+msgstr ""
+
+msgid "New Mexico"
+msgstr ""
+
+msgid "New York"
+msgstr ""
+
+msgid "North Carolina"
+msgstr ""
+
+msgid "North Dakota"
+msgstr ""
+
+msgid "Ohio"
+msgstr ""
+
+msgid "Oklahoma"
+msgstr ""
+
+msgid "Oregon"
+msgstr ""
+
+msgid "Pennsylvania"
+msgstr ""
+
+msgid "Rhode Island"
+msgstr ""
+
+msgid "South Carolina"
+msgstr ""
+
+msgid "South Dakota"
+msgstr ""
+
 msgid "State"
+msgstr ""
+
+msgid "Tennessee"
+msgstr ""
+
+msgid "Texas"
 msgstr ""
 
 msgid "This chart shows the *daily cumulative total* number of individuals who have tested positive for coronavirus."
@@ -56,7 +188,28 @@ msgstr ""
 msgid "This project is a work in progress! I created it because there didn’t seem to be a source of time series charts showing the number of novel coronavirus cases per day *for each U.S. state*. This site provides easy access to such charts, showing the last 30 days of data (or whatever’s available if it’s less than 30 days); the data is courtesy of the wonderful [COVID Tracking Project](https://covidtracking.com/)."
 msgstr ""
 
+msgid "Utah"
+msgstr ""
+
+msgid "Vermont"
+msgstr ""
+
 msgid "Version %{app_version}, released %{release_date}."
+msgstr ""
+
+msgid "Virginia"
+msgstr ""
+
+msgid "Washington"
+msgstr ""
+
+msgid "West Virginia"
+msgstr ""
+
+msgid "Wisconsin"
+msgstr ""
+
+msgid "Wyoming"
 msgstr ""
 
 msgid "—Marnen E. Laibow-Koser"
