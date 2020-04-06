@@ -1,5 +1,5 @@
 # English translations for app package.
-# Copyright (C) 2020 THE PACKAGE'S COPYRIGHT HOLDER
+# Copyright (C) 2019 Marnen E. Laibow-Koser
 # This file is distributed under the same license as the app package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
 #
@@ -7,7 +7,6 @@ msgid ""
 msgstr ""
 "Project-Id-Version: app 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-06 03:59+0000\n"
 "PO-Revision-Date: 2020-04-06 02:31+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: English\n"
