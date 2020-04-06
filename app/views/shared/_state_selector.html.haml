@@ -1,4 +1,4 @@
-= form_with url: choose_states_path do
+= form_with url: choose_states_path, local: true do
   = label_tag :state, 'State'
   = select_tag :state, options_from_collection_for_select(states.sort_by(&:name), 'abbr', 'name', @state&.abbr), include_blank: true
   = submit_tag 'Go'
