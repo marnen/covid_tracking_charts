@@ -8,7 +8,7 @@ cache:
   bundler: true
   directories:
     - $HOME/.rvm
-    - $HOME/.npm
+    - $HOME/.nvm
     - node_modules
 
 before_install:
