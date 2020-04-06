@@ -28,6 +28,7 @@ gem 'gettext_i18n_rails'
 gem "haml-rails", "~> 2.0"
 gem 'rdiscount'
 gem 'redis'
+gem 'svg-graph'
 gem 'typhoeus'
 
 group :development, :test do
