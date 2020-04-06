@@ -1,14 +1,12 @@
 - content_for :page_title do
-  == Data for
-  %span.accent= @state.name
-  == (#{@state.abbr})
+  = h(_ 'Data for %{span}%{state_name}%{_span} (%{state_abbr})') % {span: '<span class="accent">'.html_safe, _span: '</span>'.html_safe, state_name: _(@state.name), state_abbr: _(@state.abbr)}
 
 :markdown
-  This chart shows the *daily cumulative total* number of individuals who have tested positive for coronavirus.
+  #{_ 'This chart shows the *daily cumulative total* number of individuals who have tested positive for coronavirus.'}
 = image_tag @chart.url.to_s
 
 %details
-  %summary== Raw data (#{pluralize @requests.count, 'request'}):
+  %summary= _ 'Raw data (%{n_requests}):' % {n_requests: n_('%{n} request', '%{n} requests', @requests.count) % {n: @requests.count}}
   %dl.raw-data
     - @requests.each do |request|
       - url, response = request
