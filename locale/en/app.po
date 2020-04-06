@@ -16,3 +16,47 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "\n"
+
+msgid "%{n} request"
+msgid_plural "%{n} requests"
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "%{span}COVID-19%{_span} Tracking Charts by U.S. State"
+msgstr ""
+
+msgid "COVID-19 Tracking Charts"
+msgstr ""
+
+msgid "Data for %{span}%{state_name}%{_span} (%{state_abbr})"
+msgstr ""
+
+msgid "Data from [The COVID Tracking Project](https://covidtracking.com/)."
+msgstr ""
+
+msgid "Developed by [Marnen E. Laibow-Koser](http://www.marnen.org). Lend a hand at [https://github.com/marnen/covid_tracking_charts](https://github.com/marnen/covid_tracking_charts)!"
+msgstr ""
+
+msgid "Go"
+msgstr ""
+
+msgid "I hope you find this project useful!"
+msgstr ""
+
+msgid "My aim is for this site to be easy to use and accessible to all users, including visually impaired users and those without JavaScript support. If you have a feature request, or if you’d like to contribute code or otherwise collaborate, please feel free to file an issue at our [GitHub repository](https://github.com/marnen/covid_tracking_charts)."
+msgstr ""
+
+msgid "State"
+msgstr ""
+
+msgid "This chart shows the *daily cumulative total* number of individuals who have tested positive for coronavirus."
+msgstr ""
+
+msgid "This project is a work in progress! I created it because there didn’t seem to be a source of time series charts showing the number of novel coronavirus cases per day *for each U.S. state*. This site provides easy access to such charts, showing the last 30 days of data (or whatever’s available if it’s less than 30 days); the data is courtesy of the wonderful [COVID Tracking Project](https://covidtracking.com/)."
+msgstr ""
+
+msgid "Version %{app_version}, released %{release_date}."
+msgstr ""
+
+msgid "—Marnen E. Laibow-Koser"
+msgstr ""
