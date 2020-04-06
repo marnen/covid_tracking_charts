@@ -2,7 +2,7 @@
 %html
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-    %title= [strip_tags(content_for :page_title), 'COVID-19 Tracking Charts'].compact.join ' | '
+    %title= [strip_tags(content_for :page_title), _('COVID-19 Tracking Charts')].compact.join ' | '
     = csrf_meta_tags
     = csp_meta_tag
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
@@ -11,8 +11,7 @@
     %header
       %h1
         = link_to '/' do
-          %span.accent COVID-19
-          Tracking Charts by U.S. State
+          = h(_ '%{span}COVID-19%{_span} Tracking Charts by U.S. State') % {span: '<span class="accent">'.html_safe, _span: '</span>'.html_safe}
     %nav= render 'shared/state_selector', states: states # TODO: consider Cells or something here
 
     %main
@@ -21,9 +20,9 @@
       = yield
 
     %footer
+      %p= _('Version %{app_version}, released %{release_date}.') % {app_version: APP_VERSION, release_date: RELEASE_DATE.strftime('%-d %B %Y')}
+
       :markdown
-        Version #{APP_VERSION}, released #{RELEASE_DATE.strftime '%-d %B %Y'}.
+        #{_ 'Developed by [Marnen E. Laibow-Koser](http://www.marnen.org). Lend a hand at [https://github.com/marnen/covid_tracking_charts](https://github.com/marnen/covid_tracking_charts)!'}
 
-        Developed by [Marnen E. Laibow-Koser](http://www.marnen.org). Lend a hand at [https://github.com/marnen/covid_tracking_charts](https://github.com/marnen/covid_tracking_charts)!
-
-        Data from [The COVID Tracking Project](https://covidtracking.com/).
+        #{_ 'Data from [The COVID Tracking Project](https://covidtracking.com/).'}

@@ -24,6 +24,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.2', require: false
 
 gem 'city-state'
+gem 'gettext_i18n_rails'
 gem "haml-rails", "~> 2.0"
 gem 'rdiscount'
 gem 'redis'
@@ -44,8 +45,10 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 
+  gem 'gettext', '>=3.0.2', require: false
   gem 'guard-rspec', require: false
   gem 'guard-cucumber', require: false, github: 'todd-a-jacobs/guard-cucumber', ref: '3fb4971' # TODO: waiting for https://github.com/guard/guard-cucumber/pull/38
+  gem 'ruby_parser', require: false
 end
 
 group :test do
