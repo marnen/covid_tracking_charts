@@ -1,5 +1,7 @@
 # Unreleased changes
 
+- Use SVG instead of externally generated images for charts. [#5]
+
 # v1.1.0 / 2020-04-06
 
 - Put all display text in translatable strings and install fast_gettext so we can translate the UI easily. [#9]
