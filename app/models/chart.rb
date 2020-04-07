@@ -24,7 +24,8 @@ class Chart
       add_popups: true,
       popup_format: '%d %b %Y',
       min_y_value: 0,
-      scale_y_divisions: divisions
+      scale_y_divisions: divisions,
+      inline_style_sheet: '/* */'
     }).tap do |graph|
       graph.add_data data: pairs.map {|(date, value)| [date.to_time, value] }.flatten, title: @legend
     end

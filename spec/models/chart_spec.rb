@@ -86,6 +86,10 @@ RSpec.describe Chart, type: :model do
         expect(subject.popup_format).to be == '%d %b %Y'
       end
 
+      it 'disables the inline stylesheet' do
+        expect(subject.inline_style_sheet).to be '/* */'
+      end
+
       it 'can make a SVG graph' do
         expect { subject.burn_svg_only }.not_to raise_error
       end
