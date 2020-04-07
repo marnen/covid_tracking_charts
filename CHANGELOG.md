@@ -1,5 +1,6 @@
 # Unreleased changes
 
+- Set default time zone to Pacific so that current date will be correct for more of the3 US. [#33]
 - Use released version of guard-cucumber now that it supports Cucumber 3. [#35]
 
 # v1.2.0 / 2020-04-07
