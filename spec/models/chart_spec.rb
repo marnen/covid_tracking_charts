@@ -11,8 +11,8 @@ RSpec.describe Chart, type: :model do
 
   describe 'instance methods' do
     let(:length) { rand 10..20 }
-    let(:max_value) { 100 }
-    let(:values) { Array.new(length) { rand max_value } }
+    let(:value_limit) { 100 }
+    let(:values) { Array.new(length) { rand value_limit } }
     let(:dates) { Array.new(length) {|i| i.days.from_now.to_date}.shuffle }
     let(:pairs) { dates.zip values }
     let(:sorted_pairs) { pairs.sort }
@@ -40,6 +40,42 @@ RSpec.describe Chart, type: :model do
 
       it 'formats all numbers as integers' do
         expect(subject.number_format).to be == '%d'
+      end
+
+      context 'Y scale' do
+        context 'minimum' do
+          subject { super().min_y_value }
+
+          it { is_expected.to be_zero }
+        end
+
+        context 'divisions' do
+          let(:divisions) { subject.scale_y_divisions }
+
+          before(:each) { values[rand values.length] = max_value if defined? max_value }
+
+          context 'max 100 or less' do
+            it 'uses steps of 10' do
+              expect(divisions).to be == 10
+            end
+          end
+
+          context 'higher numbers, where n is a single digit' do
+            let(:n) { rand 1..9 }
+            let(:expected) { order_of_magnitude * n.succ / 10 }
+            let(:max_value) { rand (order_of_magnitude * n).succ..(order_of_magnitude * n.succ) }
+
+            [100, 1000, 10_000].each do |order_of_magnitude|
+              context "max between #{order_of_magnitude}n + 1 and #{order_of_magnitude}(n + 1)" do
+                let(:order_of_magnitude) { order_of_magnitude }
+
+                it "uses steps of #{order_of_magnitude / 10}(n + 1)" do
+                  expect(divisions).to be(expected), "expected #{expected} for max of #{max_value} but got #{divisions}"
+                end
+              end
+            end
+          end
+        end
       end
 
       it 'displays popups on data points' do
