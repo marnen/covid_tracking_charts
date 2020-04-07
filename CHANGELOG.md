@@ -1,5 +1,7 @@
 # Unreleased changes
 
+- Use released version of guard-cucumber now that it supports Cucumber 3. [#35]
+
 # v1.2.0 / 2020-04-07
 
 - Use SVG instead of externally generated images for charts. [#5]
