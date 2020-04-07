@@ -19,6 +19,51 @@ RSpec.describe Chart, type: :model do
       end
     end
 
+    describe '#to_graph' do
+      let(:sorted_pairs) { pairs.sort }
+
+      subject { chart.to_graph }
+
+      it { is_expected.to be_a_kind_of SVG::Graph::TimeSeries }
+
+      it "sets the chart's size to 800x600" do
+        expect(subject.width).to be == 800
+        expect(subject.height).to be == 600
+      end
+
+      it 'uses short date for the label format' do
+        expect(subject.x_label_format).to be == '%d %b'
+      end
+
+      it 'formats all numbers as integers' do
+        expect(subject.number_format).to be == '%d'
+      end
+
+      it 'displays popups on data points' do
+        expect(subject.add_popups).to be true
+      end
+
+      it 'uses dd Mon yyyy for the date in the popups' do
+        expect(subject.popup_format).to be == '%d %b %Y'
+      end
+
+      it 'can make a SVG graph' do
+        expect { subject.burn_svg_only }.not_to raise_error
+      end
+
+      context 'data' do
+        let(:data) { subject.instance_variable_get(:@data).first } # TODO: yes, this is terrible; let's see if we can do better
+
+        it 'puts the values into the data array, sorted by date and flattened' do
+          expect(data[:data]).to be == [sorted_pairs.map {|pair| DateTime.parse(pair.first.to_s).to_i }, sorted_pairs.map(&:last)]
+        end
+
+        it 'uses the legend string as the name of the data series' do
+          expect(data[:title]).to be == legend
+        end
+      end
+    end
+
     describe '#url' do
       let(:params) { Hash[URI.decode_www_form URI(subject).query] }
 

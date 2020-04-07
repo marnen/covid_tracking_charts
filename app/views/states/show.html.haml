@@ -3,7 +3,10 @@
 
 :markdown
   #{_ 'This chart shows the *daily cumulative total* number of individuals who have tested positive for coronavirus.'}
+
 = image_tag @chart.url.to_s
+%br
+= @chart.to_graph.burn_svg_only.html_safe
 
 %details
   %summary= _ 'Raw data (%{n_requests}):' % {n_requests: n_('%{n} request', '%{n} requests', @requests.count) % {n: @requests.count}}

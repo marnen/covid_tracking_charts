@@ -1,3 +1,5 @@
+require 'SVG/Graph/TimeSeries'
+
 class Chart
   CHART_TYPES = {line: :lc}
   LEGEND_POSITIONS = {top: :t}
@@ -7,6 +9,19 @@ class Chart
   def initialize(pairs:, legend:)
     @pairs = pairs.sort
     @legend = legend
+  end
+
+  def to_graph
+    SVG::Graph::TimeSeries.new({
+      height: 600,
+      width: 800,
+      x_label_format: '%d %b',
+      number_format: '%d',
+      add_popups: true,
+      popup_format: '%d %b %Y'
+    }).tap do |graph|
+      graph.add_data data: pairs.map {|(date, value)| [date.to_time, value] }.flatten, title: @legend
+    end
   end
 
   def url
