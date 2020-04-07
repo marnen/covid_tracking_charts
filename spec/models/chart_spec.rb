@@ -87,7 +87,7 @@ RSpec.describe Chart, type: :model do
       end
 
       it 'disables the inline stylesheet' do
-        expect(subject.inline_style_sheet).to be '/* */'
+        expect(subject.inline_style_sheet).to be == '/* */'
       end
 
       it 'can make a SVG graph' do
