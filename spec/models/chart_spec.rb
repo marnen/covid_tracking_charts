@@ -10,18 +10,21 @@ RSpec.describe Chart, type: :model do
   end
 
   describe 'instance methods' do
-    let(:pairs) { Array.new(rand 10..20) {|i| [i.days.from_now.to_date, rand(100)] }.shuffle }
+    let(:length) { rand 10..20 }
+    let(:max_value) { 100 }
+    let(:values) { Array.new(length) { rand max_value } }
+    let(:dates) { Array.new(length) {|i| i.days.from_now.to_date}.shuffle }
+    let(:pairs) { dates.zip values }
+    let(:sorted_pairs) { pairs.sort }
     let(:chart) { described_class.new(pairs: pairs, legend: legend) }
 
     describe '#pairs' do
       it 'returns the date-value pairs, sorted by date' do
-        expect(chart.pairs).to be == pairs.sort
+        expect(chart.pairs).to be == sorted_pairs
       end
     end
 
     describe '#to_graph' do
-      let(:sorted_pairs) { pairs.sort }
-
       subject { chart.to_graph }
 
       it { is_expected.to be_a_kind_of SVG::Graph::TimeSeries }
@@ -82,7 +85,7 @@ RSpec.describe Chart, type: :model do
       end
 
       it 'puts the values into the data array, sorted by date' do
-        expect(params['chd']).to be == "a:#{pairs.sort.map(&:last).join ','}"
+        expect(params['chd']).to be == "a:#{sorted_pairs.map(&:last).join ','}"
       end
 
       it 'makes the x and y axes visible' do
