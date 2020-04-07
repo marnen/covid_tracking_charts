@@ -11,8 +11,8 @@ class StatesController < ApplicationController
     @requests = urls.zip responses # TODO: maybe we can use StateDaily for this instead
 
     values = responses.map {|response| [Date.parse(response['date'].to_s), response['positive']] }
-    @chart = Chart.new pairs: values, legend: @state.name
-    @svg = @chart.to_graph.burn_svg_only.html_safe
+    chart = Chart.new pairs: values, legend: @state.name
+    @chart = chart.to_graph.burn_svg_only.html_safe
   end
 
   def choose
