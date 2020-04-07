@@ -28,19 +28,10 @@ Then /^I should see a graph for (.+?) for the (\d+) day(?:s)? ending on (.+?)$/ 
   start_date = end_date - (days.to_i.pred).days
   date_range = start_date..end_date
 
-  page.find 'img[src^="https://image-charts.com/chart?"]' do |img|
-    params = Hash[URI.decode_www_form URI(img['src']).query]
-    expect(params).to include(
-      'cht' => 'lc', # line chart
-      'chd' => a_string_starting_with('a:'), # data
-      'chxt' => 'x,y', # axes
-      'chxl' => "0:|#{start_date.to_s :short}|#{end_date.to_s :short}", # axis labels
-      'chxs' => "0,#{COLORS[:text]}|1,#{COLORS[:text]}", # axis styles
-      'chdl' => state.name, # legend
-      'chls' => '3', # line thickness
-      'chf' => "bg,s,#{COLORS[:background]}" #fill
-    )
-    expect(params['chd'].match(/^a:(.+)$/)[1].split(',').count).to be == days
+  page.find 'svg' do |svg|
+    expect(svg).to have_selector '.keyText', text: state.name
+    expect(svg).to have_xpath '//text[@class="dataPointPopup"][1]', text: /^#{start_date.strftime '%d %b %Y'},/
+    expect(svg).to have_xpath '//text[@class="dataPointPopup"][last()]', text:/^#{end_date.strftime '%d %b %Y'},/
   end
 end
 

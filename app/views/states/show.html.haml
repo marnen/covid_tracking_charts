@@ -1,9 +1,13 @@
+- content_for :extra_headers do
+  = stylesheet_link_tag 'chart'
+
 - content_for :page_title do
   = h(_ 'Data for %{span}%{state_name}%{_span} (%{state_abbr})') % {span: '<span class="accent">'.html_safe, _span: '</span>'.html_safe, state_name: _(@state.name), state_abbr: _(@state.abbr)}
 
 :markdown
   #{_ 'This chart shows the *daily cumulative total* number of individuals who have tested positive for coronavirus.'}
-= image_tag @chart.url.to_s
+
+= @chart
 
 %details
   %summary= _ 'Raw data (%{n_requests}):' % {n_requests: n_('%{n} request', '%{n} requests', @requests.count) % {n: @requests.count}}

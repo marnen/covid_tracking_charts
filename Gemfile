@@ -28,6 +28,7 @@ gem 'gettext_i18n_rails'
 gem "haml-rails", "~> 2.0"
 gem 'rdiscount'
 gem 'redis'
+gem 'svg-graph', require: false, github: 'marnen/svg-graph2', ref: '6c8ae04' # TODO: waiting for https://github.com/lumean/svg-graph2/pull/23
 gem 'typhoeus'
 
 group :development, :test do

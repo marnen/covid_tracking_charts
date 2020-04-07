@@ -1,4 +1,11 @@
 GIT
+  remote: https://github.com/marnen/svg-graph2.git
+  revision: 6c8ae048075b3362fe23c419448b148534218b0d
+  ref: 6c8ae04
+  specs:
+    svg-graph (2.2.0)
+
+GIT
   remote: https://github.com/todd-a-jacobs/guard-cucumber.git
   revision: 3fb4971ccf72a540c5401d39563be2c9e9e24336
   ref: 3fb4971
@@ -343,6 +350,7 @@ DEPENDENCIES
   sass-rails (>= 6)
   spring
   spring-watcher-listen (~> 2.0.0)
+  svg-graph!
   turbolinks (~> 5)
   typhoeus
   tzinfo-data
