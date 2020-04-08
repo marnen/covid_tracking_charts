@@ -1,5 +1,7 @@
 # Unreleased changes
 
+- Run multiple requests through hydra. [#15]
+
 # v1.3.0 / 2020-04-07
 
 - Set default time zone to Pacific so that current date will be correct for more of the US. [#33]
