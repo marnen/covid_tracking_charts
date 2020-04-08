@@ -2,7 +2,7 @@ module PathHelpers
   def path_to(page_name)
     case page_name
     when /^the page for (.+)$/
-      state_path $1.downcase
+      state_path($1.downcase.delete ' ')
     when 'the welcome page'
       '/'
     else
