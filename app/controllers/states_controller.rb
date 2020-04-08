@@ -1,6 +1,7 @@
 class StatesController < ApplicationController
   def show
-    state_abbrs = params[:states].strip.downcase.split %r{\W+}
+    params[:states] = params[:states].strip.downcase.split(%r{\W+})
+    state_abbrs = params[:states]
     sorted_abbrs = state_abbrs.sort
     unless sorted_abbrs == state_abbrs
       redirect_to action: :show, states: sorted_abbrs.join(','), status: :moved_permanently and return
@@ -29,6 +30,6 @@ class StatesController < ApplicationController
   end
 
   def choose
-    redirect_to action: :show, states: params[:states].downcase
+    redirect_to action: :show, states: Array(params[:states]).join(',').downcase
   end
 end

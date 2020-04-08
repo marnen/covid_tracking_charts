@@ -10,8 +10,9 @@ When 'I click on the header' do
   find('header a').click
 end
 
-When 'I select {string} from the state menu' do |state|
-  select state, from: 'State'
+When /^I (de)?select "(.+)" from the state menu$/ do |deselect, state|
+  method = deselect ? :unselect : :select
+  public_send method, state, from: 'State'
 end
 
 When /^I visit (.+)$/ do |page_name|
