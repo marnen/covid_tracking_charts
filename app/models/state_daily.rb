@@ -38,8 +38,4 @@ class StateDaily
   def individuals
     @individuals ||= @date.map {|date| self.class.new state: @state, date: date }
   end
-
-  def _request
-    @request ||= Typhoeus::Request.new('https://covidtracking.com/api/states/daily', params: {state: @state.abbr, date: @date.to_s(:number)}, cache_ttl: 6.hours.to_i)
-  end
 end
