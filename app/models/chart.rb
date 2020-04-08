@@ -4,11 +4,10 @@ class Chart
   CHART_TYPES = {line: :lc}
   LEGEND_POSITIONS = {top: :t}
 
-  attr_reader :pairs
-
   def initialize(pairs:, legend:)
     @pairs = pairs.sort
     @legend = legend
+    @dataset = Dataset.new pairs: pairs, legend: legend
   end
 
   def to_graph
@@ -29,6 +28,14 @@ class Chart
     }).tap do |graph|
       graph.add_data data: pairs.map {|(date, value)| [date.to_time, value] }.flatten, title: @legend
     end
+  end
+
+  def pairs
+    @dataset.pairs
+  end
+
+  def legend
+    @dataset.legend
   end
 
   private
