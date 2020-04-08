@@ -22,7 +22,9 @@ RSpec.describe StateDaily, type: :model do
     end
 
     let(:params) { {state: state, date: date} }
-    subject { described_class.new(params) }
+    let(:state_daily) { described_class.new(params) }
+
+    subject { state_daily }
 
     describe '#url' do
       subject { super().url }
@@ -34,6 +36,7 @@ RSpec.describe StateDaily, type: :model do
           expect(subject).to match %r{^https://covidtracking.com/api/states/daily\b([^/]|$)}
         end
 
+        # TODO: unify these specs with those for #request.
         context 'query string' do
           let(:parsed_query) { Hash[URI.decode_www_form URI(subject).query] }
 
@@ -57,6 +60,44 @@ RSpec.describe StateDaily, type: :model do
             described_class.new(state: state, date: date).url
           end
           expect(subject).to match_array expected
+        end
+      end
+    end
+
+    describe '#request' do
+      subject { super().request }
+
+      context 'single date' do
+        it { is_expected.to be_a_kind_of Typhoeus::Request }
+
+        it 'points to the COVID Tracking state daily endpoint' do
+          expect(subject.url).to start_with 'https://covidtracking.com/api/states/daily?'
+        end
+
+        context 'query string' do
+          let(:parsed_query) { Hash[URI.decode_www_form URI(subject.url).query] }
+
+          it 'contains the state' do
+            expect(parsed_query['state']).to be == state.abbr
+          end
+
+          it 'contains the date, as a number' do
+            expect(parsed_query['date']).to be == date.to_s(:number)
+          end
+        end
+
+        it 'is cached for 6 hours' do
+          expect(subject.cache_ttl).to be == 6.hours.to_i
+        end
+      end
+
+      context 'date range' do
+        include_context 'date range'
+
+        it { is_expected.to be_a_kind_of Typhoeus::Hydra }
+
+        it 'contains one request for each date in the range' do
+          expect(subject.queued_requests.map &:url).to match_array date_range.map {|date| described_class.new(state: state, date: date).request.url }
         end
       end
     end
