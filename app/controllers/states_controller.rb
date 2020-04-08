@@ -1,6 +1,5 @@
 class StatesController < ApplicationController
   def show
-    @states = State.all.sort_by &:name
     @state = State.find params[:state]
     @date = Date.current
     date_range = (@date - 29.days)..@date
