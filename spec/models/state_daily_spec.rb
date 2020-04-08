@@ -32,21 +32,8 @@ RSpec.describe StateDaily, type: :model do
       context 'single date' do
         it { is_expected.to be_a_kind_of String }
 
-        it 'points to the state daily data endpoint' do
-          expect(subject).to match %r{^https://covidtracking.com/api/states/daily\b([^/]|$)}
-        end
-
-        # TODO: unify these specs with those for #request.
-        context 'query string' do
-          let(:parsed_query) { Hash[URI.decode_www_form URI(subject).query] }
-
-          it 'contains the state' do
-            expect(parsed_query['state']).to be == state.abbr
-          end
-
-          it 'contains the date, as a number' do
-            expect(parsed_query['date']).to be == date.to_s(:number)
-          end
+        it 'returns the URL of the data request' do
+          expect(subject).to be == state_daily.request.url
         end
       end
 
