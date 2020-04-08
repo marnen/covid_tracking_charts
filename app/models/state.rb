@@ -12,7 +12,7 @@ class State
     end
 
     def find(abbr)
-      states[normalize abbr]
+      abbr.kind_of?(Array) ? abbr.map {|element| State.find element }.compact : states[normalize abbr]
     end
 
     private

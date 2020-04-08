@@ -17,35 +17,57 @@ RSpec.describe State, type: :model do
   end
 
   describe '.find' do
-    context 'valid state abbreviation' do
-      let(:state_abbr) { Faker::Address.state_abbr }
-      let(:state_name) { CS.states(:us)[state_abbr.upcase.to_sym] }
+    context 'scalar' do
+      context 'valid state abbreviation' do
+        let(:state_abbr) { Faker::Address.state_abbr }
+        let(:state_name) { CS.states(:us)[state_abbr.upcase.to_sym] }
 
-      it 'returns the appropriate state regardless of case' do
-        [:upcase, :downcase].each do |transformation|
-          transformed_abbr = state_abbr.public_send transformation
-          state = described_class.find transformed_abbr
-          expect(state).to be_a_kind_of described_class
-          expect(state.name).to be == state_name
-          expect(state.abbr).to be == state_abbr
+        it 'returns the appropriate state regardless of case' do
+          [:upcase, :downcase].each do |transformation|
+            transformed_abbr = state_abbr.public_send transformation
+            state = described_class.find transformed_abbr
+            expect(state).to be_a_kind_of described_class
+            expect(state.name).to be == state_name
+            expect(state.abbr).to be == state_abbr
+          end
+        end
+
+        it 'handles symbols like strings' do
+          [:upcase, :downcase].each do |transformation|
+            transformed_abbr = state_abbr.public_send(transformation).to_sym
+            state = described_class.find transformed_abbr
+            expect(state).to be_a_kind_of described_class
+            expect(state.name).to be == state_name
+            expect(state.abbr).to be == state_abbr
+          end
         end
       end
 
-      it 'handles symbols like strings' do
-        [:upcase, :downcase].each do |transformation|
-          transformed_abbr = state_abbr.public_send(transformation).to_sym
-          state = described_class.find transformed_abbr
-          expect(state).to be_a_kind_of described_class
-          expect(state.name).to be == state_name
-          expect(state.abbr).to be == state_abbr
-        end
+      context 'invalid state abbreviation' do
+        subject { described_class.find 'XT' }
+
+        it { is_expected.to be_nil }
       end
     end
 
-    context 'invalid state abbreviation' do
-      subject { described_class.find 'XT' }
+    context 'array' do
+      subject { described_class.find state_abbrs }
 
-      it { is_expected.to be_nil }
+      context 'valid state abbreviations' do
+        let(:state_abbrs) { Array.new(rand 2..5) { Faker::Address.state_abbr } }
+
+        it 'returns the state for each abbreviation' do
+          expect(subject).to be == state_abbrs.map {|abbr| described_class.find abbr }
+        end
+      end
+
+      context 'some invalid state abbreviations' do
+        let(:state_abbrs) { [Faker::Address.state_abbr, 'ZY', Faker::Address.state_abbr] }
+
+        it 'returns only the states for the valid abbreviations' do
+          expect(subject).to be == [described_class.find(state_abbrs.first), described_class.find(state_abbrs.last)]
+        end
+      end
     end
   end
 
