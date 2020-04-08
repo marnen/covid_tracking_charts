@@ -1,6 +1,12 @@
 class StatesController < ApplicationController
   def show
-    @states = State.find params[:states].strip.split %r{\W+}
+    state_abbrs = params[:states].strip.downcase.split %r{\W+}
+    sorted_abbrs = state_abbrs.sort
+    unless sorted_abbrs == state_abbrs
+      redirect_to action: :show, states: sorted_abbrs.join(','), status: :moved_permanently and return
+    end
+
+    @states = State.find state_abbrs
     @date = Date.current
     date_range = (@date - 29.days)..@date
 
