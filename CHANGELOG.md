@@ -1,5 +1,7 @@
 # Unreleased changes
 
+# v2.0.0 / 2020-04-09
+
 - Show multiple states on graph at once. [#37]
 
 # v1.3.1 / 2020-04-07
