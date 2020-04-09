@@ -19,13 +19,15 @@ class Chart
       scale_y_divisions: divisions,
       inline_style_sheet: '/* */'
     }).tap do |graph|
-      @data.each do |legend, pairs|
+      data.each do |legend, pairs|
         graph.add_data data: pairs.map {|(date, value)| [date.to_time, value] }.flatten, title: legend
       end
     end
   end
 
   private
+
+  attr_reader :data
 
   def series
     @series ||= @data.values
