@@ -6,3 +6,7 @@ $background-color: $navy-blue;
 $text-color: $pale-gray;
 $accent-color: $orange;
 $footer-color: $gray;
+
+// series 3 is originally #00cc00; would that be better?
+// TODO: customize colors for series 4 and after
+$series-colors: $orange #ccccff #ccffcc #ffcc00 #00ccff #ff00ff #00ffff #ffff00 #cc6666 #663399 #339900 #9966FF;
