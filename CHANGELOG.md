@@ -1,5 +1,7 @@
 # Unreleased changes
 
+- Use choices.js to provide a more attractive UI for state selector. [#42]
+
 # v2.0.0 / 2020-04-09
 
 - Show multiple states on graph at once. [#37]
