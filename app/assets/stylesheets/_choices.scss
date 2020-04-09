@@ -23,9 +23,15 @@
 
   &__list--multiple &__item  {
     $item-background-color: lighten($background-color, 8%);
+    $highlight-color: darken($accent-color, 10%);
+
     background-color: $item-background-color;
     color: $text-color;
     margin-bottom: 3px;
+
+    &.is-highlighted {
+      background-color: $highlight-color;
+    }
   }
 
   &__list--dropdown {
