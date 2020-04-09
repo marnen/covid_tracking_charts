@@ -6,13 +6,17 @@ class State
     @name = name
   end
 
+  def to_s
+    name
+  end
+
   class << self
     def all
       states.values
     end
 
     def find(abbr)
-      states[normalize abbr]
+      abbr.kind_of?(Array) ? abbr.map {|element| State.find element }.compact : states[normalize abbr]
     end
 
     private

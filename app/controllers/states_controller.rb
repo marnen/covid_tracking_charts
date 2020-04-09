@@ -1,21 +1,32 @@
 class StatesController < ApplicationController
   def show
-    @states = State.all.sort_by &:name
-    @state = State.find params[:state]
+    normalize_states
+
+    @states = State.find params[:states]
     @date = Date.current
     date_range = (@date - 29.days)..@date
-    state_daily = StateDaily.new state: @state, date: date_range
 
-    urls = state_daily.url
-    responses = state_daily.fetch!
-    @requests = urls.zip responses # TODO: maybe we can use StateDaily for this instead
+    query = Query.new states: @states, date_range: date_range
+    @raw_data = query.raw_data
+    chart_data = @raw_data.transform_values do |requests| # TODO: this should probably move into Query
+      requests.map {|(_, response)| [Date.parse(response['date'].to_s), response['positive']] }
+    end
 
-    values = responses.map {|response| [Date.parse(response['date'].to_s), response['positive']] }
-    chart = Chart.new pairs: values, legend: @state.name
-    @chart = chart.to_graph.burn_svg_only.html_safe
+    @chart = Chart.new(chart_data).to_graph.burn_svg_only.html_safe
   end
 
   def choose
-    redirect_to action: :show, state: params[:state].downcase
+    redirect_to action: :show, states: Array(params[:states]).join(',').downcase
+  end
+
+  private
+
+  def normalize_states
+    params[:states] = params[:states].strip.downcase.split(%r{\W+})
+    state_abbrs = params[:states]
+    sorted_abbrs = state_abbrs.sort
+    unless sorted_abbrs == state_abbrs
+      redirect_to action: :show, states: sorted_abbrs.join(','), status: :moved_permanently and return
+    end
   end
 end

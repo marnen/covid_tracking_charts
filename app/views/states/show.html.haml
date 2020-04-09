@@ -2,7 +2,7 @@
   = stylesheet_link_tag 'chart'
 
 - content_for :page_title do
-  = h(_ 'Data for %{span}%{state_name}%{_span} (%{state_abbr})') % {span: '<span class="accent">'.html_safe, _span: '</span>'.html_safe, state_name: _(@state.name), state_abbr: _(@state.abbr)}
+  = render 'state_list', states: @states
 
 :markdown
   #{_ 'This chart shows the *daily cumulative total* number of individuals who have tested positive for coronavirus.'}
@@ -10,10 +10,6 @@
 = @chart
 
 %details
-  %summary= _ 'Raw data (%{n_requests}):' % {n_requests: n_('%{n} request', '%{n} requests', @requests.count) % {n: @requests.count}}
-  %dl.raw-data
-    - @requests.each do |request|
-      - url, response = request
-      %dt= url
-      %dd
-        %code= response
+  %summary= _ 'Raw data'
+  - @raw_data.each do |state, requests|
+    = render 'state_requests', state: state, requests: requests

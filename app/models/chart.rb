@@ -1,22 +1,14 @@
 require 'SVG/Graph/TimeSeries'
 
 class Chart
-  CHART_TYPES = {line: :lc}
-  LEGEND_POSITIONS = {top: :t}
-
-  attr_reader :pairs
-
-  def initialize(pairs:, legend:)
-    @pairs = pairs.sort
-    @legend = legend
+  # Expected input:
+  # {legend_a => [[date_a1, value_a1], [date_a2, value_a2]...], legend_b => [[...]], ...}
+  def initialize(hash)
+    @data = hash.transform_values &:sort
   end
 
   def to_graph
-    values = pairs.map &:last
-    max_value = values.max
-    divisions = [max_value.ceil(-Math.log10(max_value)) / 10, 10].max
-
-    SVG::Graph::TimeSeries.new({
+    @graph ||= SVG::Graph::TimeSeries.new({
       height: 600,
       width: 800,
       x_label_format: '%d %b',
@@ -27,25 +19,29 @@ class Chart
       scale_y_divisions: divisions,
       inline_style_sheet: '/* */'
     }).tap do |graph|
-      graph.add_data data: pairs.map {|(date, value)| [date.to_time, value] }.flatten, title: @legend
+      data.each do |legend, pairs|
+        graph.add_data data: pairs.map {|(date, value)| [date.to_time, value] }.flatten, title: legend.to_s
+      end
     end
   end
 
   private
 
-  def dates
-    @dates ||= @pairs.map &:first
+  attr_reader :data
+
+  def series
+    @series ||= @data.values
   end
 
   def values
-    @values ||= @pairs.map &:last
+    @values ||= series.map {|single_series| single_series.map &:last }
   end
 
-  def start_date
-    @start_date ||= dates.first
+  def max_value
+    @max_value ||= values.flatten.max
   end
 
-  def end_date
-    @end_date ||= dates.last
+  def divisions
+    @divisions ||= [max_value.ceil(-Math.log10(max_value)) / 10, 10].max
   end
 end

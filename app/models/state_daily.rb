@@ -4,6 +4,7 @@ class StateDaily
     @date = date
   end
 
+  # TODO: now that we don't need this method except for testing, should we get rid of it and test through request instead?
   def url
     @url ||= date_range? ? individuals.map(&:url) : request.url
   end
@@ -23,9 +24,12 @@ class StateDaily
       hydra = request
       requests = hydra.queued_requests.dup
       hydra.run
-      requests.map {|request| JSON.parse request.response.body }.reject {|response|  response['date'].nil? }
+      requests.map do |request|
+        response = JSON.parse request.response.body
+        response['date'].nil? ? nil : [request.url, response]
+      end.compact
     else
-      JSON.parse request.run.body
+      [request.url, JSON.parse(request.run.body)]
     end
   end
 

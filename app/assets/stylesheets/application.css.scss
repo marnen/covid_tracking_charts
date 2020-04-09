@@ -52,6 +52,12 @@ span.accent {
   color: $accent-color;
 }
 
+@for $i from 1 through 12 {
+  .state-#{$i} {
+    color: nth($series-colors, $i);
+  }
+}
+
 code {
   font: {
     family: $monospace;
