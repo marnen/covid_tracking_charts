@@ -4,17 +4,20 @@ class Chart
   CHART_TYPES = {line: :lc}
   LEGEND_POSITIONS = {top: :t}
 
-  attr_reader :pairs
+  def initialize(hash)
+    @data = hash.transform_values &:sort
+  end
 
-  def initialize(pairs:, legend:)
-    @pairs = pairs.sort
-    @legend = legend
+  def pairs
+    @data.values.first
   end
 
   def to_graph
     values = pairs.map &:last
     max_value = values.max
     divisions = [max_value.ceil(-Math.log10(max_value)) / 10, 10].max
+
+    legend = @data.keys.first
 
     SVG::Graph::TimeSeries.new({
       height: 600,
@@ -27,7 +30,7 @@ class Chart
       scale_y_divisions: divisions,
       inline_style_sheet: '/* */'
     }).tap do |graph|
-      graph.add_data data: pairs.map {|(date, value)| [date.to_time, value] }.flatten, title: @legend
+      graph.add_data data: pairs.map {|(date, value)| [date.to_time, value] }.flatten, title: legend
     end
   end
 

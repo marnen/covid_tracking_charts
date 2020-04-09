@@ -4,8 +4,8 @@ RSpec.describe Chart, type: :model do
   let(:legend) { Faker::Lorem.sentence }
 
   describe 'constructor' do
-    it 'takes an array of date-value pairs and a legend string' do
-      expect(described_class.new pairs: [[rand(100).days.ago, rand(100)]], legend: legend).to be_a_kind_of described_class
+    it 'takes a hash where the keys are legend strings and the values are arrays of date-value pairs' do
+      expect(described_class.new legend => [[rand(100).days.ago, rand(100)]]).to be_a_kind_of described_class
     end
   end
 
@@ -16,7 +16,7 @@ RSpec.describe Chart, type: :model do
     let(:dates) { Array.new(length) {|i| i.days.from_now.to_date}.shuffle }
     let(:pairs) { dates.zip values }
     let(:sorted_pairs) { pairs.sort }
-    let(:chart) { described_class.new(pairs: pairs, legend: legend) }
+    let(:chart) { described_class.new legend => pairs }
 
     describe '#pairs' do
       it 'returns the date-value pairs, sorted by date' do

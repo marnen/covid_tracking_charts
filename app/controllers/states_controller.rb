@@ -23,7 +23,7 @@ class StatesController < ApplicationController
       @requests[state] = urls.zip responses # TODO: maybe we can use StateDaily for this instead
 
       values = responses.map {|response| [Date.parse(response['date'].to_s), response['positive']] }
-      charts[state] = Chart.new pairs: values, legend: state.name
+      charts[state] = Chart.new state.name => values
     end
 
     @charts = charts.transform_values {|chart| chart.to_graph.burn_svg_only.html_safe }
