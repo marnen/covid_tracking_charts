@@ -10,9 +10,26 @@ class StatesController < ApplicationController
     responses = state_daily.fetch!
     @requests = urls.zip responses # TODO: maybe we can use StateDaily for this instead
 
-    values = responses.map {|response| [Date.parse(response['date'].to_s), response['positive']] }
-    chart = Chart.new pairs: values, legend: @state.name
-    @chart = chart.to_graph.burn_svg_only.html_safe
+    chart = Chart.new
+
+    values = values(responses: responses, field: 'total')
+    chart.add_dataset(dataset: Dataset.new(pairs: values, legend: "Total"))
+
+    values = values(responses: responses, field: "positive")
+    chart.add_data pairs: values, legend: "Positive"
+
+    values = values(responses: responses, field: "negative")
+    chart.add_data pairs: values, legend: "Negative"
+
+
+
+    burn_svg_only = chart.to_graph.burn_svg_only
+
+    @chart = burn_svg_only.html_safe
+  end
+
+  def values(responses:, field:)
+    responses.map {|response| [Date.parse(response['date'].to_s), response[field].to_i] }
   end
 
   def choose
