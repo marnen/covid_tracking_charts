@@ -8,14 +8,7 @@ class Chart
   end
 
   def to_graph
-    pairs = @data.values.first
-    values = pairs.map &:last
-    max_value = values.max
-    divisions = [max_value.ceil(-Math.log10(max_value)) / 10, 10].max
-
-    legend = @data.keys.first
-
-    SVG::Graph::TimeSeries.new({
+    @graph ||= SVG::Graph::TimeSeries.new({
       height: 600,
       width: 800,
       x_label_format: '%d %b',
@@ -30,5 +23,23 @@ class Chart
         graph.add_data data: pairs.map {|(date, value)| [date.to_time, value] }.flatten, title: legend
       end
     end
+  end
+
+  private
+
+  def series
+    @series ||= @data.values
+  end
+
+  def values
+    @values ||= series.map {|single_series| single_series.map &:last }
+  end
+
+  def max_value
+    @max_value ||= values.flatten.max
+  end
+
+  def divisions
+    @divisions ||= [max_value.ceil(-Math.log10(max_value)) / 10, 10].max
   end
 end

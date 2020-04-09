@@ -12,9 +12,9 @@ RSpec.describe Chart, type: :model do
   describe 'instance methods' do
     let(:length) { rand 10..20 }
     let(:value_limit) { 100 }
-
+    let(:series_count) { rand 2..5 }
     let(:data) do
-      Array.new(rand 2..5) do
+      Array.new(series_count) do
         dates = Array.new(length) {|i| i.days.from_now.to_date}.shuffle
         values = Array.new(length) { rand value_limit }
         [Faker::Lorem.sentence, dates.zip(values)]
@@ -41,7 +41,7 @@ RSpec.describe Chart, type: :model do
         expect(subject.number_format).to be == '%d'
       end
 
-      xcontext 'Y scale' do
+      context 'Y scale' do
         context 'minimum' do
           subject { super().min_y_value }
 
@@ -51,7 +51,7 @@ RSpec.describe Chart, type: :model do
         context 'divisions' do
           let(:divisions) { subject.scale_y_divisions }
 
-          before(:each) { values[rand values.length] = max_value if defined? max_value }
+          before(:each) { data[data.keys.sample][rand length][1] = max_value if defined? max_value }
 
           context 'max 100 or less' do
             it 'uses steps of 10' do
