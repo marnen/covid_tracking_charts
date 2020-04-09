@@ -12,7 +12,7 @@ end
 
 When /^I (de)?select "(.+)" from the state menu$/ do |deselect, state|
   method = deselect ? :unselect : :select
-  public_send method, state, from: 'State'
+  public_send method, state, from: 'states'
 end
 
 When /^I visit (.+)$/ do |page_name|
@@ -41,5 +41,5 @@ Then /^I should see a graph for (.+?) for the (\d+) day(?:s)? ending on (.+?)$/ 
 end
 
 Then '{string} should be selected in the state menu' do |state|
-  expect(find_field('State', type: :select)).to have_css 'option[selected]', text: state
+  expect(find_field('states', type: :select)).to have_css 'option[selected]', text: state
 end
