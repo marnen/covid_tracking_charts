@@ -2,10 +2,7 @@
   = stylesheet_link_tag 'chart'
 
 - content_for :page_title do
-  -# TODO: get this out of the view!
-  - state_names_and_abbrs = @states.map.with_index(1) do |state, index|
-    - h(_'%{span}%{state_name}%{_span} (%{state_abbr})') % {span: "<span class='state-#{index}'>".html_safe, _span: '</span>'.html_safe, state_name: _(state.name), state_abbr: _(state.abbr)}
-  = h(_ 'Data for %{states}') % {states: state_names_and_abbrs.join(_ ', ').html_safe}
+  = render 'state_list', states: @states
 
 :markdown
   #{_ 'This chart shows the *daily cumulative total* number of individuals who have tested positive for coronavirus.'}
@@ -15,11 +12,4 @@
 %details
   %summary= _ 'Raw data'
   - @raw_data.each do |state, requests|
-    %details
-      %summary= _ '%{state} (%{n_requests}):' % {state: state.name, n_requests: n_('%{n} request', '%{n} requests', requests.count) % {n: requests.count}}
-      %dl.raw-data
-        - requests.each do |request|
-          - url, response = request
-          %dt= url
-          %dd
-            %code= response
+    = render 'state_requests', state: state, requests: requests
