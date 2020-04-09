@@ -1,5 +1,5 @@
 # Translatable strings for covid_tracking_charts
-# Copyright (C) 2019 Marnen E. Laibow-Koser
+# Copyright (C) 2020 Marnen E. Laibow-Koser
 # This file is distributed under the same license as the app package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: app 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-06 03:59+0000\n"
-"PO-Revision-Date: 2020-04-06 03:59+0000\n"
+"POT-Creation-Date: 2020-04-09 22:42+0000\n"
+"PO-Revision-Date: 2020-04-09 22:42+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -23,7 +23,13 @@ msgid_plural "%{n} requests"
 msgstr[0] ""
 msgstr[1] ""
 
+msgid "%{span}%{state_name}%{_span} (%{state_abbr})"
+msgstr ""
+
 msgid "%{span}COVID-19%{_span} Tracking Charts by U.S. State"
+msgstr ""
+
+msgid ", "
 msgstr ""
 
 msgid "Alabama"
@@ -44,13 +50,16 @@ msgstr ""
 msgid "California"
 msgstr ""
 
+msgid "Choose one or more states:"
+msgstr ""
+
 msgid "Colorado"
 msgstr ""
 
 msgid "Connecticut"
 msgstr ""
 
-msgid "Data for %{span}%{state_name}%{_span} (%{state_abbr})"
+msgid "Data for %{states}"
 msgstr ""
 
 msgid "Data from [The COVID Tracking Project](https://covidtracking.com/)."
@@ -164,6 +173,9 @@ msgstr ""
 msgid "Pennsylvania"
 msgstr ""
 
+msgid "Raw data"
+msgstr ""
+
 msgid "Rhode Island"
 msgstr ""
 
@@ -171,9 +183,6 @@ msgid "South Carolina"
 msgstr ""
 
 msgid "South Dakota"
-msgstr ""
-
-msgid "State"
 msgstr ""
 
 msgid "Tennessee"
