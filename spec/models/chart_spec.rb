@@ -12,11 +12,16 @@ RSpec.describe Chart, type: :model do
   describe 'instance methods' do
     let(:length) { rand 10..20 }
     let(:value_limit) { 100 }
-    let(:values) { Array.new(length) { rand value_limit } }
-    let(:dates) { Array.new(length) {|i| i.days.from_now.to_date}.shuffle }
-    let(:pairs) { dates.zip values }
-    let(:sorted_pairs) { pairs.sort }
-    let(:chart) { described_class.new legend => pairs }
+
+    let(:data) do
+      Array.new(rand 2..5) do
+        dates = Array.new(length) {|i| i.days.from_now.to_date}.shuffle
+        values = Array.new(length) { rand value_limit }
+        [Faker::Lorem.sentence, dates.zip(values)]
+      end.to_h
+    end
+
+    let(:chart) { described_class.new data }
 
     describe '#to_graph' do
       subject { chart.to_graph }
@@ -36,7 +41,7 @@ RSpec.describe Chart, type: :model do
         expect(subject.number_format).to be == '%d'
       end
 
-      context 'Y scale' do
+      xcontext 'Y scale' do
         context 'minimum' do
           subject { super().min_y_value }
 
@@ -89,14 +94,19 @@ RSpec.describe Chart, type: :model do
       end
 
       context 'data' do
-        let(:data) { subject.instance_variable_get(:@data).first } # TODO: yes, this is terrible; let's see if we can do better
+        let(:svg_data) { subject.instance_variable_get(:@data) } # TODO: yes, this is terrible; let's see if we can do better
 
-        it 'puts the values into the data array, sorted by date and flattened' do
-          expect(data[:data]).to be == [sorted_pairs.map {|pair| DateTime.parse(pair.first.to_s).to_i }, sorted_pairs.map(&:last)]
+        it "puts each data series' values into the data array, sorted by date" do
+          expected = data.values.map do |pairs|
+            sorted_pairs = pairs.sort
+            [sorted_pairs.map {|(date, _)| DateTime.parse(date.to_s).to_i }, sorted_pairs.map {|(_, value)| value }]
+          end
+
+          expect(svg_data.pluck :data).to be == expected
         end
 
-        it 'uses the legend string as the name of the data series' do
-          expect(data[:title]).to be == legend
+        it 'uses each legend string as the name of the corresponding data series' do
+          expect(svg_data.pluck :title).to be == data.keys
         end
       end
     end

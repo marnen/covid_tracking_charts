@@ -1,6 +1,8 @@
 require 'SVG/Graph/TimeSeries'
 
 class Chart
+  # Expected input:
+  # {legend_a => [[date_a1, value_a1], [date_a2, value_a2]...], legend_b => [[...]], ...}
   def initialize(hash)
     @data = hash.transform_values &:sort
   end
@@ -24,7 +26,9 @@ class Chart
       scale_y_divisions: divisions,
       inline_style_sheet: '/* */'
     }).tap do |graph|
-      graph.add_data data: pairs.map {|(date, value)| [date.to_time, value] }.flatten, title: legend
+      @data.each do |legend, pairs|
+        graph.add_data data: pairs.map {|(date, value)| [date.to_time, value] }.flatten, title: legend
+      end
     end
   end
 end
