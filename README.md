@@ -1,5 +1,7 @@
 # COVID Tracking Charts
 
+[![Build Status](https://travis-ci.org/marnen/covid_tracking_charts.svg?branch=master)](https://travis-ci.org/marnen/covid_tracking_charts)
+
 ## Overview
 
 This application presents data on the incidence of COVID-19. Currently, the data comes from [The COVID Tracking Project](http://covidtracking.com), and the primary focus is on presenting time series charts of U.S. data by state, but we are trying to expand the scope as the project grows.
