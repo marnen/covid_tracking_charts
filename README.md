@@ -12,7 +12,7 @@ BTW, this is a labor of love developed for the purpose of public service. Curren
 
 ## Technical details
 
-This is a Rails 6 application, but since all the data comes from the COVID Tracking Project API, we're not using ActiveRecord at the moment (though we could always add it if it became necessary to implement some particular feature). Instead, we're pulling all the data with [Typhoeus](https://github.com/typhoeus/typhoeus), and caching it (currently for 6 hours), then feeding it to the [svg-graph](https://github.com/lumean/svg-graph2) gem to draw nice charts.
+This is a Rails 6 application, but since all the data comes from the COVID Tracking Project API, we're not using ActiveRecord at the moment (though we could always add it if it became necessary to implement some particular feature). Instead, we're pulling all the data with [Typhoeus](https://github.com/typhoeus/typhoeus), and caching it with Redis (currently for 6 hours), then feeding it to the [svg-graph](https://github.com/lumean/svg-graph2) gem to draw nice charts.
 
 ### Development
 
