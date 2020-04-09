@@ -1,9 +1,6 @@
 require 'SVG/Graph/TimeSeries'
 
 class Chart
-  CHART_TYPES = {line: :lc}
-  LEGEND_POSITIONS = {top: :t}
-
   def initialize(hash)
     @data = hash.transform_values &:sort
   end
@@ -32,23 +29,5 @@ class Chart
     }).tap do |graph|
       graph.add_data data: pairs.map {|(date, value)| [date.to_time, value] }.flatten, title: legend
     end
-  end
-
-  private
-
-  def dates
-    @dates ||= @pairs.map &:first
-  end
-
-  def values
-    @values ||= @pairs.map &:last
-  end
-
-  def start_date
-    @start_date ||= dates.first
-  end
-
-  def end_date
-    @end_date ||= dates.last
   end
 end
