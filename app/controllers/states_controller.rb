@@ -18,11 +18,9 @@ class StatesController < ApplicationController
     @states.each do |state|
       state_daily = StateDaily.new state: state, date: date_range
 
-      urls = state_daily.url
-      responses = state_daily.fetch!
-      @requests[state] = urls.zip responses # TODO: maybe we can use StateDaily for this instead
-
-      values = responses.map {|response| [Date.parse(response['date'].to_s), response['positive']] }
+      requests = state_daily.fetch!
+      @requests[state] = requests
+      values = requests.map {|(_, response)| [Date.parse(response['date'].to_s), response['positive']] }
       chart_data[state.name] = values
     end
 

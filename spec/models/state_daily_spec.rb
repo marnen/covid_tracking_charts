@@ -102,8 +102,8 @@ RSpec.describe StateDaily, type: :model do
           expect(a_request :get, subject.url).to have_been_made
         end
 
-        it 'returns the parsed JSON from the request body' do
-          expect(subject.fetch!).to be == data
+        it 'returns the URL along with the parsed JSON from the request body' do
+          expect(subject.fetch!).to be == [subject.url, data]
         end
 
         context 'caching' do
@@ -143,8 +143,8 @@ RSpec.describe StateDaily, type: :model do
           urls.values.each {|url| expect(a_request :get, url).to have_been_made }
         end
 
-        it 'returns an array of the parsed JSON from all the requests' do
-          expect(subject.fetch!).to match_array data.values
+        it 'returns an array of the requests paired with their parsed JSON' do
+          expect(subject.fetch!).to match_array urls.map {|date, url| [url, data[date]]}
         end
 
         it "rejects any responses that don't have a date" do
