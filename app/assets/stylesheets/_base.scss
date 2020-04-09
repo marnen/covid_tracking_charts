@@ -1,2 +1,12 @@
 @import 'fonts';
 @import 'colors';
+
+@mixin normal-colors {
+  background-color: $background-color;
+  color: $text-color;
+}
+
+@mixin reverse-colors {
+  background-color: $text-color;
+  color: $background-color;
+}

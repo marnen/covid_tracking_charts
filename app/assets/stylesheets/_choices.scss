@@ -1,0 +1,40 @@
+@import 'choices.js/public/assets/styles/choices';
+@import 'base';
+
+.choices {
+  display: inline-block;
+
+  &__inner {
+    @include reverse-colors;
+
+    width: 25em;
+    padding: 0.3em;
+    padding-top: 0.5em;
+    min-height: 2em;
+  }
+
+  &__input {
+    &--cloned {
+      height: 0px;
+      width: 0px;
+      padding: 0px;
+    }
+  }
+
+  &__list--multiple &__item  {
+    $item-background-color: lighten($background-color, 8%);
+    $highlight-color: darken($accent-color, 10%);
+
+    background-color: $item-background-color;
+    color: $text-color;
+    margin-bottom: 3px;
+
+    &.is-highlighted {
+      background-color: $highlight-color;
+    }
+  }
+
+  &__list--dropdown {
+    @include reverse-colors;
+  }
+}
