@@ -12,8 +12,8 @@ class StatesController < ApplicationController
     date_range = (@date - 29.days)..@date
 
     query = Query.new states: @states, date_range: date_range
-    @requests = query.raw_data
-    chart_data = @requests.transform_values do |requests|
+    @raw_data = query.raw_data
+    chart_data = @raw_data.transform_values do |requests|
       requests.map {|(_, response)| [Date.parse(response['date'].to_s), response['positive']] }
     end
 

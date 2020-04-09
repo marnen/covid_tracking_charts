@@ -14,7 +14,7 @@
 
 %details
   %summary= _ 'Raw data'
-  - @requests.each do |state, requests|
+  - @raw_data.each do |state, requests|
     %details
       %summary= _ '%{state} (%{n_requests}):' % {state: state.name, n_requests: n_('%{n} request', '%{n} requests', requests.count) % {n: requests.count}}
       %dl.raw-data
