@@ -1,9 +1,8 @@
 @import 'base';
-@import 'choices.js/public/assets/styles/choices';
+@import 'choices';
 
 html {
-  background-color: $background-color;
-  color: $text-color;
+  @include normal-colors;
   font-family: $roboto;
 }
 
@@ -83,6 +82,17 @@ details > *:not(summary) {
 .signature {
   margin-left: 1.5em;
   font-style: italic;
+}
+
+.state-selector {
+  label {
+    display: block;
+    margin-bottom: 2px;
+  }
+
+  p {
+    margin: 0.35em auto;
+  }
 }
 
 .welcome {

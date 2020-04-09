@@ -1,5 +1,7 @@
-= form_with url: choose_states_path, local: true do
-  = label_tag :states, _('State')
-  - locale_state_options = states.sort_by {|state| _(state.name)}.map {|state| [_(state.name), state.abbr]}
-  = select_tag :states, options_for_select(locale_state_options, @states&.map(&:abbr)), multiple: true
-  = submit_tag _('Go')
+= form_with url: choose_states_path, local: true, class: 'state-selector' do
+  %p
+    = label_tag :states, _('State')
+    - locale_state_options = states.sort_by {|state| _(state.name)}.map {|state| [_(state.name), state.abbr]}
+    = select_tag :states, options_for_select(locale_state_options, @states&.map(&:abbr)), multiple: true
+  %p
+    = submit_tag _('Go')
