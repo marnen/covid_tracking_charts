@@ -5,7 +5,7 @@
   = h(_ 'Data for %{span}%{state_name}%{_span} (%{state_abbr})') % {span: '<span class="accent">'.html_safe, _span: '</span>'.html_safe, state_name: _(@state.name), state_abbr: _(@state.abbr)}
 
 :markdown
-  #{_ 'This chart shows the *daily cumulative total* number of individuals who have tested positive for coronavirus.'}
+  #{_ 'This chart shows the *daily cumulative total* numbers of individuals who have been tested, tested positive, and tested negative for coronavirus.'}
 
 = @chart
 
