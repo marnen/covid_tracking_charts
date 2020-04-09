@@ -1,5 +1,7 @@
 # Unreleased changes
 
+# v2.1.0 / 2020-04-09
+
 - Use choices.js to provide a more attractive UI for state selector. [#42]
 
 # v2.0.0 / 2020-04-09
