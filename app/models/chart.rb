@@ -20,7 +20,7 @@ class Chart
       inline_style_sheet: '/* */'
     }).tap do |graph|
       data.each do |legend, pairs|
-        graph.add_data data: pairs.map {|(date, value)| [date.to_time, value] }.flatten, title: legend
+        graph.add_data data: pairs.map {|(date, value)| [date.to_time, value] }.flatten, title: legend.to_s
       end
     end
   end

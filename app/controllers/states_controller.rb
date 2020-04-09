@@ -11,17 +11,10 @@ class StatesController < ApplicationController
     @date = Date.current
     date_range = (@date - 29.days)..@date
 
-    @requests = {}
-    chart_data = {}
-
-    # TODO: this is awful and needs refactoring once we figure out how this should work for multiple states. Why can't there be a List monad in Ruby?
-    @states.each do |state|
-      state_daily = StateDaily.new state: state, date: date_range
-
-      requests = state_daily.fetch!
-      @requests[state] = requests
-      values = requests.map {|(_, response)| [Date.parse(response['date'].to_s), response['positive']] }
-      chart_data[state.name] = values
+    query = Query.new states: @states, date_range: date_range
+    @requests = query.raw_data
+    chart_data = @requests.transform_values do |requests|
+      requests.map {|(_, response)| [Date.parse(response['date'].to_s), response['positive']] }
     end
 
     @chart = Chart.new(chart_data).to_graph.burn_svg_only.html_safe

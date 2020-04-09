@@ -82,4 +82,11 @@ RSpec.describe State, type: :model do
       expect(described_class.find('pa').name).to be == 'Pennsylvania'
     end
   end
+
+  describe '#to_s' do
+    it 'returns the name' do
+      state = described_class.all.sample
+      expect(state.to_s).to be == state.name
+    end
+  end
 end

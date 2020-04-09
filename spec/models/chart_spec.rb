@@ -108,6 +108,14 @@ RSpec.describe Chart, type: :model do
         it 'uses each legend string as the name of the corresponding data series' do
           expect(svg_data.pluck :title).to be == data.keys
         end
+
+        context 'non-string keys' do
+          let(:data) { super().symbolize_keys }
+
+          it 'converts them to strings before using them as legends' do
+            expect(svg_data.pluck :title).to be == data.keys.map(&:to_s)
+          end
+        end
       end
     end
   end

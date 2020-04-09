@@ -6,6 +6,10 @@ class State
     @name = name
   end
 
+  def to_s
+    name
+  end
+
   class << self
     def all
       states.values
