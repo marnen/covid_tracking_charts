@@ -5,11 +5,8 @@ class Chart
     @data = hash.transform_values &:sort
   end
 
-  def pairs
-    @data.values.first
-  end
-
   def to_graph
+    pairs = @data.values.first
     values = pairs.map &:last
     max_value = values.max
     divisions = [max_value.ceil(-Math.log10(max_value)) / 10, 10].max

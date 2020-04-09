@@ -18,12 +18,6 @@ RSpec.describe Chart, type: :model do
     let(:sorted_pairs) { pairs.sort }
     let(:chart) { described_class.new legend => pairs }
 
-    describe '#pairs' do
-      it 'returns the date-value pairs, sorted by date' do
-        expect(chart.pairs).to be == sorted_pairs
-      end
-    end
-
     describe '#to_graph' do
       subject { chart.to_graph }
 
