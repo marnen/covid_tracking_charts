@@ -1,0 +1,4143 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200310&state=CT
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a3268b1f059-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:07 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d2a9275c58ae9477bb934d8477d7ac7d71586403187; expires=Sat, 09-May-20
+        03:33:07 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '315'
+      Age:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b8f5eb99-967e-48ec-acd8-d4b518065618-2015117
+    body:
+      encoding: UTF-8
+      string: '{"date":20200310,"state":"CT","positive":2,"negative":54,"hash":"75db1306a0c3b31835dc1c30f84f59c0a1029937","dateChecked":"2020-03-10T20:00:00Z","total":56,"totalTestResults":56,"posNeg":56,"fips":"09","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":8,"positiveIncrease":1,"totalTestResultsIncrease":9}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200331&state=CT
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a334ad0f059-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:07 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d2a9275c58ae9477bb934d8477d7ac7d71586403187; expires=Sat, 09-May-20
+        03:33:07 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '564'
+      Age:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b8f5eb99-967e-48ec-acd8-d4b518065618-2015147
+    body:
+      encoding: UTF-8
+      string: '{"date":20200331,"state":"CT","positive":3128,"negative":13029,"pending":null,"hospitalizedCurrently":608,"hospitalizedCumulative":null,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"hash":"1dbf8c0e8e39af7461e15fb8855c64efc447b563","dateChecked":"2020-03-31T20:00:00Z","death":69,"hospitalized":null,"total":16157,"totalTestResults":16157,"posNeg":16157,"fips":"09","deathIncrease":33,"hospitalizedIncrease":0,"negativeIncrease":1000,"positiveIncrease":557,"totalTestResultsIncrease":1557}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200327&state=CT
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a341d70f039-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:07 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=dbc53c896b02e05e576ae8516db4c876e1586403187; expires=Sat, 09-May-20
+        03:33:07 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '559'
+      Age:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b8f5eb99-967e-48ec-acd8-d4b518065618-2015143
+    body:
+      encoding: UTF-8
+      string: '{"date":20200327,"state":"CT","positive":1291,"negative":7109,"pending":null,"hospitalizedCurrently":173,"hospitalizedCumulative":null,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"hash":"a8a5f5f6ff700aca7582d8fc72d71f5fde38fc69","dateChecked":"2020-03-27T20:00:00Z","death":27,"hospitalized":null,"total":8400,"totalTestResults":8400,"posNeg":8400,"fips":"09","deathIncrease":6,"hospitalizedIncrease":0,"negativeIncrease":1484,"positiveIncrease":279,"totalTestResultsIncrease":1763}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200319&state=CT
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a33ed15f039-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:07 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=dbc53c896b02e05e576ae8516db4c876e1586403187; expires=Sat, 09-May-20
+        03:33:07 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '550'
+      Age:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b8f5eb99-967e-48ec-acd8-d4b518065618-2015130
+    body:
+      encoding: UTF-8
+      string: '{"date":20200319,"state":"CT","positive":96,"negative":604,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":null,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"hash":"f38c4a8409f0daf8ca7de49fdae935367da520a6","dateChecked":"2020-03-19T20:00:00Z","death":1,"hospitalized":null,"total":700,"totalTestResults":700,"posNeg":700,"fips":"09","deathIncrease":1,"hospitalizedIncrease":0,"negativeIncrease":479,"positiveIncrease":28,"totalTestResultsIncrease":507}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200404&state=CT
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a341c4df059-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:07 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d2a9275c58ae9477bb934d8477d7ac7d71586403187; expires=Sat, 09-May-20
+        03:33:07 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '566'
+      Age:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b8f5eb99-967e-48ec-acd8-d4b518065618-2015157
+    body:
+      encoding: UTF-8
+      string: '{"date":20200404,"state":"CT","positive":5276,"negative":16753,"pending":null,"hospitalizedCurrently":1033,"hospitalizedCumulative":null,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"hash":"6d7626dbd793cd794dc73f07b50278a1e51d9890","dateChecked":"2020-04-04T20:00:00Z","death":165,"hospitalized":null,"total":22029,"totalTestResults":22029,"posNeg":22029,"fips":"09","deathIncrease":34,"hospitalizedIncrease":0,"negativeIncrease":1652,"positiveIncrease":362,"totalTestResultsIncrease":2014}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200401&state=CT
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a341e6ce6d4-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:07 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d238351ca9fab609543cc4556e6a2d7471586403187; expires=Sat, 09-May-20
+        03:33:07 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '561'
+      Age:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b8f5eb99-967e-48ec-acd8-d4b518065618-2015149
+    body:
+      encoding: UTF-8
+      string: '{"date":20200401,"state":"CT","positive":3557,"negative":13043,"pending":null,"hospitalizedCurrently":766,"hospitalizedCumulative":null,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"hash":"4a71572b502d2295cf11a95ae6bb803e6c0ac2eb","dateChecked":"2020-04-01T20:00:00Z","death":85,"hospitalized":null,"total":16600,"totalTestResults":16600,"posNeg":16600,"fips":"09","deathIncrease":16,"hospitalizedIncrease":0,"negativeIncrease":14,"positiveIncrease":429,"totalTestResultsIncrease":443}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200316&state=CT
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a3458a2f04d-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:08 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=dfaaeb09827d4e49d9e688dfbe03819ac1586403187; expires=Sat, 09-May-20
+        03:33:07 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '320'
+      Age:
+      - '1'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b8f5eb99-967e-48ec-acd8-d4b518065618-2015127
+    body:
+      encoding: UTF-8
+      string: '{"date":20200316,"state":"CT","positive":26,"negative":125,"hash":"4d722259eb940d98fdcc976b9bc97308a3e902c0","dateChecked":"2020-03-16T20:00:00Z","total":151,"totalTestResults":151,"posNeg":151,"fips":"09","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":0,"positiveIncrease":6,"totalTestResultsIncrease":6}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200402&state=CT
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a341c5fefed-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:08 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d66f92496ea9c099ee0c2f21a2099253e1586403187; expires=Sat, 09-May-20
+        03:33:07 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '565'
+      Age:
+      - '1'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b8f5eb99-967e-48ec-acd8-d4b518065618-2015153
+    body:
+      encoding: UTF-8
+      string: '{"date":20200402,"state":"CT","positive":3824,"negative":14476,"pending":null,"hospitalizedCurrently":827,"hospitalizedCumulative":null,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"hash":"bbaf84bc79e98252465e76199b3d66cb58316223","dateChecked":"2020-04-02T20:00:00Z","death":112,"hospitalized":null,"total":18300,"totalTestResults":18300,"posNeg":18300,"fips":"09","deathIncrease":27,"hospitalizedIncrease":0,"negativeIncrease":1433,"positiveIncrease":267,"totalTestResultsIncrease":1700}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200318&state=CT
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a34597af015-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:08 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=de295e7c8a3b2f9f9f76db13d62db92e21586403187; expires=Sat, 09-May-20
+        03:33:07 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '322'
+      Age:
+      - '1'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b8f5eb99-967e-48ec-acd8-d4b518065618-2015132
+    body:
+      encoding: UTF-8
+      string: '{"date":20200318,"state":"CT","positive":68,"negative":125,"hash":"bad4eb54adc44121dd8d251113c0f8ba0473fec5","dateChecked":"2020-03-18T20:00:00Z","total":193,"totalTestResults":193,"posNeg":193,"fips":"09","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":0,"positiveIncrease":27,"totalTestResultsIncrease":27}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200330&state=CT
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a34998aefdc-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:08 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d004f53c0f4f895ba0e6a2d100fa044ba1586403187; expires=Sat, 09-May-20
+        03:33:07 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '563'
+      Age:
+      - '1'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b8f5eb99-967e-48ec-acd8-d4b518065618-2015148
+    body:
+      encoding: UTF-8
+      string: '{"date":20200330,"state":"CT","positive":2571,"negative":12029,"pending":null,"hospitalizedCurrently":517,"hospitalizedCumulative":null,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"hash":"70eb03d4fcfe461e62251eef8272509a3f9f5a7d","dateChecked":"2020-03-30T20:00:00Z","death":36,"hospitalized":null,"total":14600,"totalTestResults":14600,"posNeg":14600,"fips":"09","deathIncrease":2,"hospitalizedIncrease":0,"negativeIncrease":2122,"positiveIncrease":578,"totalTestResultsIncrease":2700}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200403&state=CT
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a341de2e70c-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:08 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d609b51846fb06346a0f6c21713e31ad61586403187; expires=Sat, 09-May-20
+        03:33:07 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '565'
+      Age:
+      - '1'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b8f5eb99-967e-48ec-acd8-d4b518065618-2015156
+    body:
+      encoding: UTF-8
+      string: '{"date":20200403,"state":"CT","positive":4914,"negative":15101,"pending":null,"hospitalizedCurrently":909,"hospitalizedCumulative":null,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"hash":"1951d0ca03e6ab2d9bffc4856b060402c69ea7e6","dateChecked":"2020-04-03T20:00:00Z","death":131,"hospitalized":null,"total":20015,"totalTestResults":20015,"posNeg":20015,"fips":"09","deathIncrease":19,"hospitalizedIncrease":0,"negativeIncrease":625,"positiveIncrease":1090,"totalTestResultsIncrease":1715}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200405&state=CT
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a3408b7f015-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:08 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=de295e7c8a3b2f9f9f76db13d62db92e21586403187; expires=Sat, 09-May-20
+        03:33:07 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '565'
+      Age:
+      - '1'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b8f5eb99-967e-48ec-acd8-d4b518065618-2015159
+    body:
+      encoding: UTF-8
+      string: '{"date":20200405,"state":"CT","positive":5675,"negative":17595,"pending":null,"hospitalizedCurrently":1142,"hospitalizedCumulative":null,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"hash":"1e92cd4c9468e9740d884cae46aa7fa1d8ad63e8","dateChecked":"2020-04-05T20:00:00Z","death":189,"hospitalized":null,"total":23270,"totalTestResults":23270,"posNeg":23270,"fips":"09","deathIncrease":24,"hospitalizedIncrease":0,"negativeIncrease":842,"positiveIncrease":399,"totalTestResultsIncrease":1241}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200308&state=CT
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a33f81dc5c4-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:08 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d058f1d8a8a228b247554857241f34db61586403187; expires=Sat, 09-May-20
+        03:33:07 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '329'
+      Age:
+      - '1'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b8f5eb99-967e-48ec-acd8-d4b518065618-2015165
+    body:
+      encoding: UTF-8
+      string: '{"date":20200308,"state":"CT","positive":1,"negative":29,"pending":8,"hash":"9af238ecf88478ebbe90c92437c721d9fd8e6d17","dateChecked":"2020-03-08T20:00:00Z","total":38,"totalTestResults":30,"posNeg":30,"fips":"09","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":29,"positiveIncrease":1,"totalTestResultsIncrease":30}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200311&state=CT
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a34692ff01d-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:08 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=dab974b24ba4269fd73c6ab38cf86f4191586403187; expires=Sat, 09-May-20
+        03:33:07 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '317'
+      Age:
+      - '1'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b8f5eb99-967e-48ec-acd8-d4b518065618-2015121
+    body:
+      encoding: UTF-8
+      string: '{"date":20200311,"state":"CT","positive":3,"negative":71,"hash":"c99636f2a99205c741fd1f78c991a31f4b2c23d5","dateChecked":"2020-03-11T20:00:00Z","total":74,"totalTestResults":74,"posNeg":74,"fips":"09","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":17,"positiveIncrease":1,"totalTestResultsIncrease":18}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200326&state=CT
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a348d7af021-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:08 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d7dc3f07d34f2cd18a260f49c267cc23a1586403187; expires=Sat, 09-May-20
+        03:33:07 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '557'
+      Age:
+      - '1'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b8f5eb99-967e-48ec-acd8-d4b518065618-2015142
+    body:
+      encoding: UTF-8
+      string: '{"date":20200326,"state":"CT","positive":1012,"negative":5625,"pending":null,"hospitalizedCurrently":125,"hospitalizedCumulative":null,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"hash":"1742b9a50eb648ea5cd758b44de2e4ded9b8bfcf","dateChecked":"2020-03-26T20:00:00Z","death":21,"hospitalized":null,"total":6637,"totalTestResults":6637,"posNeg":6637,"fips":"09","deathIncrease":2,"hospitalizedIncrease":0,"negativeIncrease":602,"positiveIncrease":137,"totalTestResultsIncrease":739}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200406&state=CT
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a33fbdac5ec-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:08 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=de017bc85c673351f5ce0c6ab1b2f502d1586403187; expires=Sat, 09-May-20
+        03:33:07 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '567'
+      Age:
+      - '1'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b8f5eb99-967e-48ec-acd8-d4b518065618-2015164
+    body:
+      encoding: UTF-8
+      string: '{"date":20200406,"state":"CT","positive":6906,"negative":19780,"pending":null,"hospitalizedCurrently":1221,"hospitalizedCumulative":null,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"hash":"331c624125331bd02f6656dbf3b17f66953734f1","dateChecked":"2020-04-06T20:00:00Z","death":206,"hospitalized":null,"total":26686,"totalTestResults":26686,"posNeg":26686,"fips":"09","deathIncrease":17,"hospitalizedIncrease":0,"negativeIncrease":2185,"positiveIncrease":1231,"totalTestResultsIncrease":3416}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200314&state=CT
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a346d41ccf2-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:08 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d1654322af6183471d6cd3779971095b11586403187; expires=Sat, 09-May-20
+        03:33:07 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '322'
+      Age:
+      - '1'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b8f5eb99-967e-48ec-acd8-d4b518065618-2015123
+    body:
+      encoding: UTF-8
+      string: '{"date":20200314,"state":"CT","positive":11,"negative":125,"hash":"149bffa1dda5d74304599eb67e85167eb9cc7940","dateChecked":"2020-03-14T20:00:00Z","total":136,"totalTestResults":136,"posNeg":136,"fips":"09","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":26,"positiveIncrease":5,"totalTestResultsIncrease":31}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200329&state=CT
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a340a75e730-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:08 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d1a822575db88ce8defbf845c7a242a311586403187; expires=Sat, 09-May-20
+        03:33:07 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '562'
+      Age:
+      - '1'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b8f5eb99-967e-48ec-acd8-d4b518065618-2015146
+    body:
+      encoding: UTF-8
+      string: '{"date":20200329,"state":"CT","positive":1993,"negative":9907,"pending":null,"hospitalizedCurrently":404,"hospitalizedCumulative":null,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"hash":"029989758f7a0426df84362ece8d2fe9fc5e34a8","dateChecked":"2020-03-29T20:00:00Z","death":34,"hospitalized":null,"total":11900,"totalTestResults":11900,"posNeg":11900,"fips":"09","deathIncrease":7,"hospitalizedIncrease":0,"negativeIncrease":2798,"positiveIncrease":702,"totalTestResultsIncrease":3500}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200320&state=CT
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a347d03efe0-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:08 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=ddb119dbecc92539ed9e2a17a205f72c71586403187; expires=Sat, 09-May-20
+        03:33:07 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '548'
+      Age:
+      - '1'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b8f5eb99-967e-48ec-acd8-d4b518065618-2015133
+    body:
+      encoding: UTF-8
+      string: '{"date":20200320,"state":"CT","positive":194,"negative":604,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":null,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"hash":"8844ec1c291f1730400384b6236407c5eec4e772","dateChecked":"2020-03-20T20:00:00Z","death":3,"hospitalized":null,"total":798,"totalTestResults":798,"posNeg":798,"fips":"09","deathIncrease":2,"hospitalizedIncrease":0,"negativeIncrease":0,"positiveIncrease":98,"totalTestResultsIncrease":98}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200317&state=CT
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a3458e4ccc2-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:08 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=dce686a9c04c9a374bc5334d9f0451e8f1586403187; expires=Sat, 09-May-20
+        03:33:07 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '322'
+      Age:
+      - '1'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b8f5eb99-967e-48ec-acd8-d4b518065618-2015129
+    body:
+      encoding: UTF-8
+      string: '{"date":20200317,"state":"CT","positive":41,"negative":125,"hash":"6da5216bce6b0623b87352f8e83a1825342475e8","dateChecked":"2020-03-17T20:00:00Z","total":166,"totalTestResults":166,"posNeg":166,"fips":"09","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":0,"positiveIncrease":15,"totalTestResultsIncrease":15}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200309&state=CT
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a340cc99264-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:08 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d9827cdd329315bc8fdd930fd279315fd1586403187; expires=Sat, 09-May-20
+        03:33:07 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '317'
+      Age:
+      - '1'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b8f5eb99-967e-48ec-acd8-d4b518065618-2015166
+    body:
+      encoding: UTF-8
+      string: '{"date":20200309,"state":"CT","positive":1,"negative":46,"hash":"77af98908db8db59c3733c28b2b979a5dfbd11d7","dateChecked":"2020-03-09T20:00:00Z","total":47,"totalTestResults":47,"posNeg":47,"fips":"09","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":17,"positiveIncrease":0,"totalTestResultsIncrease":17}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200321&state=CT
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a346986f009-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:08 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=dcd417fe05510f0fdefe028092c4332ee1586403187; expires=Sat, 09-May-20
+        03:33:07 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '556'
+      Age:
+      - '1'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b8f5eb99-967e-48ec-acd8-d4b518065618-2015134
+    body:
+      encoding: UTF-8
+      string: '{"date":20200321,"state":"CT","positive":194,"negative":2106,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":null,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"hash":"7366c98d6eeab0fb8ef1f185d59d99cbd4c2a6b8","dateChecked":"2020-03-21T20:00:00Z","death":4,"hospitalized":null,"total":2300,"totalTestResults":2300,"posNeg":2300,"fips":"09","deathIncrease":1,"hospitalizedIncrease":0,"negativeIncrease":1502,"positiveIncrease":0,"totalTestResultsIncrease":1502}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200328&state=CT
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a348b88e718-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:08 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=dfb8adc258fe549b30ac7d9accb918d231586403187; expires=Sat, 09-May-20
+        03:33:07 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '551'
+      Age:
+      - '1'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b8f5eb99-967e-48ec-acd8-d4b518065618-2015144
+    body:
+      encoding: UTF-8
+      string: '{"date":20200328,"state":"CT","positive":1291,"negative":7109,"pending":null,"hospitalizedCurrently":173,"hospitalizedCumulative":null,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"hash":"4b54cec168b8c41b7f2e60c54af8db39164dd3ad","dateChecked":"2020-03-28T20:00:00Z","death":27,"hospitalized":null,"total":8400,"totalTestResults":8400,"posNeg":8400,"fips":"09","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":0,"positiveIncrease":0,"totalTestResultsIncrease":0}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200315&state=CT
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a3478f291aa-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:08 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d7048db6b48038f0e671ac5f2eb22e0681586403187; expires=Sat, 09-May-20
+        03:33:07 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '320'
+      Age:
+      - '1'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b8f5eb99-967e-48ec-acd8-d4b518065618-2015126
+    body:
+      encoding: UTF-8
+      string: '{"date":20200315,"state":"CT","positive":20,"negative":125,"hash":"47afb6e02464043555eaf5e2053829e84eb805be","dateChecked":"2020-03-15T20:00:00Z","total":145,"totalTestResults":145,"posNeg":145,"fips":"09","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":0,"positiveIncrease":9,"totalTestResultsIncrease":9}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200324&state=CT
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a348a91f00d-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:08 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=dba84ca39b1a494faaeb8c5082d86be0b1586403187; expires=Sat, 09-May-20
+        03:33:07 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '555'
+      Age:
+      - '1'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b8f5eb99-967e-48ec-acd8-d4b518065618-2015141
+    body:
+      encoding: UTF-8
+      string: '{"date":20200324,"state":"CT","positive":618,"negative":4682,"pending":null,"hospitalizedCurrently":71,"hospitalizedCumulative":null,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"hash":"0029ca1528305bb39b465eaadfee22f7cc558888","dateChecked":"2020-03-24T20:00:00Z","death":12,"hospitalized":null,"total":5300,"totalTestResults":5300,"posNeg":5300,"fips":"09","deathIncrease":2,"hospitalizedIncrease":0,"negativeIncrease":597,"positiveIncrease":203,"totalTestResultsIncrease":800}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200325&state=CT
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a349815cce2-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:08 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d5ba99690ceb275fa66e79b49538fdbc91586403187; expires=Sat, 09-May-20
+        03:33:07 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '556'
+      Age:
+      - '1'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b8f5eb99-967e-48ec-acd8-d4b518065618-2015145
+    body:
+      encoding: UTF-8
+      string: '{"date":20200325,"state":"CT","positive":875,"negative":5023,"pending":null,"hospitalizedCurrently":113,"hospitalizedCumulative":null,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"hash":"26bda0962bcd2c46918956f27804c62275c6be2d","dateChecked":"2020-03-25T20:00:00Z","death":19,"hospitalized":null,"total":5898,"totalTestResults":5898,"posNeg":5898,"fips":"09","deathIncrease":7,"hospitalizedIncrease":0,"negativeIncrease":341,"positiveIncrease":257,"totalTestResultsIncrease":598}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200322&state=CT
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a349b27e714-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:08 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=de1af17da27578f12002f5217f994fa281586403187; expires=Sat, 09-May-20
+        03:33:07 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '553'
+      Age:
+      - '1'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b8f5eb99-967e-48ec-acd8-d4b518065618-2015138
+    body:
+      encoding: UTF-8
+      string: '{"date":20200322,"state":"CT","positive":223,"negative":2877,"pending":null,"hospitalizedCurrently":43,"hospitalizedCumulative":null,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"hash":"9bc80cd28db75381e9b8018f53c24796f3b6a842","dateChecked":"2020-03-22T20:00:00Z","death":5,"hospitalized":null,"total":3100,"totalTestResults":3100,"posNeg":3100,"fips":"09","deathIncrease":1,"hospitalizedIncrease":0,"negativeIncrease":771,"positiveIncrease":29,"totalTestResultsIncrease":800}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200323&state=CT
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a349b4b218a-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:08 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=daa009d3ebb12a04e8a652b2ab8a62be11586403187; expires=Sat, 09-May-20
+        03:33:07 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '557'
+      Age:
+      - '1'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b8f5eb99-967e-48ec-acd8-d4b518065618-2015139
+    body:
+      encoding: UTF-8
+      string: '{"date":20200323,"state":"CT","positive":415,"negative":4085,"pending":null,"hospitalizedCurrently":54,"hospitalizedCumulative":null,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"hash":"d805e0c66ee0456c42148c9494eba857b18aec51","dateChecked":"2020-03-23T20:00:00Z","death":10,"hospitalized":null,"total":4500,"totalTestResults":4500,"posNeg":4500,"fips":"09","deathIncrease":5,"hospitalizedIncrease":0,"negativeIncrease":1208,"positiveIncrease":192,"totalTestResultsIncrease":1400}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200313&state=CT
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a34acfb4720-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:08 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d0708370e285117cab47a74c4b2bf15361586403187; expires=Sat, 09-May-20
+        03:33:07 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '320'
+      Age:
+      - '1'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b8f5eb99-967e-48ec-acd8-d4b518065618-2015122
+    body:
+      encoding: UTF-8
+      string: '{"date":20200313,"state":"CT","positive":6,"negative":99,"hash":"682c544537c9fb686f945084a154361a3c8a386f","dateChecked":"2020-03-13T20:00:00Z","total":105,"totalTestResults":105,"posNeg":105,"fips":"09","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":10,"positiveIncrease":0,"totalTestResultsIncrease":10}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200312&state=CT
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a3468152154-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:08 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=dc9e10e57d98318d38b53eb73fe28e4d91586403187; expires=Sat, 09-May-20
+        03:33:07 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '317'
+      Age:
+      - '1'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b8f5eb99-967e-48ec-acd8-d4b518065618-2015120
+    body:
+      encoding: UTF-8
+      string: '{"date":20200312,"state":"CT","positive":6,"negative":89,"hash":"438f9707c60dbf6c5042c0686dfa479170d3471a","dateChecked":"2020-03-12T20:00:00Z","total":95,"totalTestResults":95,"posNeg":95,"fips":"09","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":18,"positiveIncrease":3,"totalTestResultsIncrease":21}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200313&state=MA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a449dadf019-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:10 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d727a4a8cc87623659a55914708a1e2711586403190; expires=Sat, 09-May-20
+        03:33:10 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '324'
+      Age:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b547604d-7b3e-4934-ac09-7da237dfd2f3-1642843
+    body:
+      encoding: UTF-8
+      string: '{"date":20200313,"state":"MA","positive":123,"negative":92,"hash":"020263557685d33ade8e1849eeb35c2a8a12843a","dateChecked":"2020-03-13T20:00:00Z","total":215,"totalTestResults":215,"posNeg":215,"fips":"25","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":92,"positiveIncrease":28,"totalTestResultsIncrease":120}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200311&state=MA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a45d85af019-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:10 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d727a4a8cc87623659a55914708a1e2711586403190; expires=Sat, 09-May-20
+        03:33:10 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '302'
+      Age:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b547604d-7b3e-4934-ac09-7da237dfd2f3-1642844
+    body:
+      encoding: UTF-8
+      string: '{"date":20200311,"state":"MA","positive":92,"hash":"cd9166102dba61e473c3f2e49f4ad84e9876c8ad","dateChecked":"2020-03-11T20:00:00Z","total":92,"totalTestResults":92,"posNeg":92,"fips":"25","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":0,"positiveIncrease":0,"totalTestResultsIncrease":0}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200326&state=MA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a469fe0e754-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:10 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d83c5e29c76a1475d6714d678fc8635961586403190; expires=Sat, 09-May-20
+        03:33:10 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '565'
+      Age:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b547604d-7b3e-4934-ac09-7da237dfd2f3-1642867
+    body:
+      encoding: UTF-8
+      string: '{"date":20200326,"state":"MA","positive":2417,"negative":21204,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":219,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"hash":"83a4a37ff66f38e205b0b18839828d141802f5c1","dateChecked":"2020-03-26T20:00:00Z","death":25,"hospitalized":219,"total":23621,"totalTestResults":23621,"posNeg":23621,"fips":"25","deathIncrease":10,"hospitalizedIncrease":116,"negativeIncrease":3248,"positiveIncrease":579,"totalTestResultsIncrease":3827}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200403&state=MA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a46aa77f019-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:10 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d727a4a8cc87623659a55914708a1e2711586403190; expires=Sat, 09-May-20
+        03:33:10 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '568'
+      Age:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b547604d-7b3e-4934-ac09-7da237dfd2f3-1642880
+    body:
+      encoding: UTF-8
+      string: '{"date":20200403,"state":"MA","positive":10402,"negative":52560,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":966,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"hash":"b7bee14b9475ba25ad0b28497d483cec03221230","dateChecked":"2020-04-03T20:00:00Z","death":192,"hospitalized":966,"total":62962,"totalTestResults":62962,"posNeg":62962,"fips":"25","deathIncrease":38,"hospitalizedIncrease":153,"negativeIncrease":4918,"positiveIncrease":1436,"totalTestResultsIncrease":6354}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200321&state=MA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a469f99e6d4-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:10 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d570028599cc032948b01bf08c031cb121586403190; expires=Sat, 09-May-20
+        03:33:10 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '555'
+      Age:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b547604d-7b3e-4934-ac09-7da237dfd2f3-1642855
+    body:
+      encoding: UTF-8
+      string: '{"date":20200321,"state":"MA","positive":525,"negative":4752,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":61,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"hash":"9434ecc82e2e7e8a85d8a027a082389be42e290a","dateChecked":"2020-03-21T20:00:00Z","death":1,"hospitalized":61,"total":5277,"totalTestResults":5277,"posNeg":5277,"fips":"25","deathIncrease":0,"hospitalizedIncrease":61,"negativeIncrease":1074,"positiveIncrease":112,"totalTestResultsIncrease":1186}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200318&state=MA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a46a845e855-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:10 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d5ffb2efc26e738276c2ea3dac090709a1586403190; expires=Sat, 09-May-20
+        03:33:10 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '330'
+      Age:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b547604d-7b3e-4934-ac09-7da237dfd2f3-1642852
+    body:
+      encoding: UTF-8
+      string: '{"date":20200318,"state":"MA","positive":256,"negative":2015,"hash":"f33af005453944a9da0ca3a04bb26228e086da9e","dateChecked":"2020-03-18T20:00:00Z","total":2271,"totalTestResults":2271,"posNeg":2271,"fips":"25","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":474,"positiveIncrease":38,"totalTestResultsIncrease":512}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200331&state=MA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a46b941efdc-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:10 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d23b25ba9bc537f4d72e718c92ba537de1586403190; expires=Sat, 09-May-20
+        03:33:10 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '565'
+      Age:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b547604d-7b3e-4934-ac09-7da237dfd2f3-1642873
+    body:
+      encoding: UTF-8
+      string: '{"date":20200331,"state":"MA","positive":6620,"negative":40315,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":562,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"hash":"b113daa2aa839e30f1f3605f00483292aa39a60e","dateChecked":"2020-03-31T20:00:00Z","death":89,"hospitalized":562,"total":46935,"totalTestResults":46935,"posNeg":46935,"fips":"25","deathIncrease":33,"hospitalizedIncrease":109,"negativeIncrease":3274,"positiveIncrease":868,"totalTestResultsIncrease":4142}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200325&state=MA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a46bd20f01d-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:10 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d3857585b528fe1299a841ccc25ab30821586403190; expires=Sat, 09-May-20
+        03:33:10 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '562'
+      Age:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b547604d-7b3e-4934-ac09-7da237dfd2f3-1642863
+    body:
+      encoding: UTF-8
+      string: '{"date":20200325,"state":"MA","positive":1838,"negative":17956,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":103,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"hash":"95bb4fdcf8938f1681915e4ab6cd29914ed60b24","dateChecked":"2020-03-25T20:00:00Z","death":15,"hospitalized":103,"total":19794,"totalTestResults":19794,"posNeg":19794,"fips":"25","deathIncrease":4,"hospitalizedIncrease":9,"negativeIncrease":5366,"positiveIncrease":679,"totalTestResultsIncrease":6045}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200329&state=MA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a46b923efed-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:10 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d557ff28219431b417bca982567dc65ce1586403190; expires=Sat, 09-May-20
+        03:33:10 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '563'
+      Age:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b547604d-7b3e-4934-ac09-7da237dfd2f3-1642869
+    body:
+      encoding: UTF-8
+      string: '{"date":20200329,"state":"MA","positive":4955,"negative":34111,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":399,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"hash":"1de5b22e00296e1b0a1fea40b858c4f6d2eeb1b0","dateChecked":"2020-03-29T20:00:00Z","death":48,"hospitalized":399,"total":39066,"totalTestResults":39066,"posNeg":39066,"fips":"25","deathIncrease":4,"hospitalizedIncrease":49,"negativeIncrease":3319,"positiveIncrease":698,"totalTestResultsIncrease":4017}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200401&state=MA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a46ab94efc4-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:10 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d1bde9939bb43441cb9dbbbbfa179f3191586403190; expires=Sat, 09-May-20
+        03:33:10 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '567'
+      Age:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b547604d-7b3e-4934-ac09-7da237dfd2f3-1642876
+    body:
+      encoding: UTF-8
+      string: '{"date":20200401,"state":"MA","positive":7738,"negative":44000,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":682,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"hash":"70ea3d599c7c506eafd12cbed1d23daa16709040","dateChecked":"2020-04-01T20:00:00Z","death":122,"hospitalized":682,"total":51738,"totalTestResults":51738,"posNeg":51738,"fips":"25","deathIncrease":33,"hospitalizedIncrease":120,"negativeIncrease":3685,"positiveIncrease":1118,"totalTestResultsIncrease":4803}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200312&state=MA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a457d7ceff5-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:11 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d5ab3fd134e76cc3a1fa1fc6d72f202c11586403190; expires=Sat, 09-May-20
+        03:33:10 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '302'
+      Age:
+      - '1'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b547604d-7b3e-4934-ac09-7da237dfd2f3-1642841
+    body:
+      encoding: UTF-8
+      string: '{"date":20200312,"state":"MA","positive":95,"hash":"2b11362fc52b477bca21e635eb9f2b88e8a5d61f","dateChecked":"2020-03-12T20:00:00Z","total":95,"totalTestResults":95,"posNeg":95,"fips":"25","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":0,"positiveIncrease":3,"totalTestResultsIncrease":3}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200320&state=MA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a469b81efcc-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:11 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d4e5fcc04546fedd6da6005aa12d07e5c1586403190; expires=Sat, 09-May-20
+        03:33:10 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '555'
+      Age:
+      - '1'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b547604d-7b3e-4934-ac09-7da237dfd2f3-1642854
+    body:
+      encoding: UTF-8
+      string: '{"date":20200320,"state":"MA","positive":413,"negative":3678,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":null,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"hash":"e4fa70dd5807dff8381750edb438c3d8fb03335d","dateChecked":"2020-03-20T20:00:00Z","death":1,"hospitalized":null,"total":4091,"totalTestResults":4091,"posNeg":4091,"fips":"25","deathIncrease":1,"hospitalizedIncrease":0,"negativeIncrease":874,"positiveIncrease":85,"totalTestResultsIncrease":959}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200327&state=MA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a469fd3e764-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:11 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=ddc053b5286e0f7a288b40ff2c9f2c5a21586403190; expires=Sat, 09-May-20
+        03:33:10 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '563'
+      Age:
+      - '1'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b547604d-7b3e-4934-ac09-7da237dfd2f3-1642866
+    body:
+      encoding: UTF-8
+      string: '{"date":20200327,"state":"MA","positive":3240,"negative":26131,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":219,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"hash":"016484cf6143f06b89bdb98758e558945940304e","dateChecked":"2020-03-27T20:00:00Z","death":35,"hospitalized":219,"total":29371,"totalTestResults":29371,"posNeg":29371,"fips":"25","deathIncrease":10,"hospitalizedIncrease":0,"negativeIncrease":4927,"positiveIncrease":823,"totalTestResultsIncrease":5750}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200323&state=MA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a469a0de83d-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:11 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d6d33c918ca22a37c6832a7cb86b21c941586403190; expires=Sat, 09-May-20
+        03:33:10 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '554'
+      Age:
+      - '1'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b547604d-7b3e-4934-ac09-7da237dfd2f3-1642864
+    body:
+      encoding: UTF-8
+      string: '{"date":20200323,"state":"MA","positive":777,"negative":8145,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":79,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"hash":"40b8c6ab57a8cd588c84704eea95f5d596cb66f6","dateChecked":"2020-03-23T20:00:00Z","death":9,"hospitalized":79,"total":8922,"totalTestResults":8922,"posNeg":8922,"fips":"25","deathIncrease":4,"hospitalizedIncrease":8,"negativeIncrease":2686,"positiveIncrease":131,"totalTestResultsIncrease":2817}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200316&state=MA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a468da1eff1-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:11 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d9b1e403c100a77c3b83992c6f9df28a31586403190; expires=Sat, 09-May-20
+        03:33:10 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '323'
+      Age:
+      - '1'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b547604d-7b3e-4934-ac09-7da237dfd2f3-1642850
+    body:
+      encoding: UTF-8
+      string: '{"date":20200316,"state":"MA","positive":164,"negative":352,"hash":"8b6244ab6b03eb42a217d3342377e82b0051ad3c","dateChecked":"2020-03-16T20:00:00Z","total":516,"totalTestResults":516,"posNeg":516,"fips":"25","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":0,"positiveIncrease":26,"totalTestResultsIncrease":26}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200314&state=MA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a469bd9f001-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:11 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d784354bf7b0f1e0973ad1e6a9a258e101586403190; expires=Sat, 09-May-20
+        03:33:10 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '326'
+      Age:
+      - '1'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b547604d-7b3e-4934-ac09-7da237dfd2f3-1642847
+    body:
+      encoding: UTF-8
+      string: '{"date":20200314,"state":"MA","positive":138,"negative":352,"hash":"bdba6fc0046699f5419368f4eb93e84eb0f025c5","dateChecked":"2020-03-14T20:00:00Z","total":490,"totalTestResults":490,"posNeg":490,"fips":"25","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":260,"positiveIncrease":15,"totalTestResultsIncrease":275}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200315&state=MA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a468ddfccfe-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:11 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d20f301fcb8712d4b8ce57b2a19b466a81586403190; expires=Sat, 09-May-20
+        03:33:10 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '321'
+      Age:
+      - '1'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b547604d-7b3e-4934-ac09-7da237dfd2f3-1642849
+    body:
+      encoding: UTF-8
+      string: '{"date":20200315,"state":"MA","positive":138,"negative":352,"hash":"c8c2486f9a55549e537cfa05abc2e5e2fe749397","dateChecked":"2020-03-15T20:00:00Z","total":490,"totalTestResults":490,"posNeg":490,"fips":"25","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":0,"positiveIncrease":0,"totalTestResultsIncrease":0}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200319&state=MA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a468e1ce738-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:11 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=da5eb41d5bae49a5d04a93f3340c64bc01586403190; expires=Sat, 09-May-20
+        03:33:10 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '330'
+      Age:
+      - '1'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b547604d-7b3e-4934-ac09-7da237dfd2f3-1642853
+    body:
+      encoding: UTF-8
+      string: '{"date":20200319,"state":"MA","positive":328,"negative":2804,"hash":"78f476ff93f6ab6ceea2e20dccb8478637895c94","dateChecked":"2020-03-19T20:00:00Z","total":3132,"totalTestResults":3132,"posNeg":3132,"fips":"25","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":789,"positiveIncrease":72,"totalTestResultsIncrease":861}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200402&state=MA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a46af82e85d-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:11 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=da48314fb8454f1d61a0c434dacead8ce1586403190; expires=Sat, 09-May-20
+        03:33:10 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '567'
+      Age:
+      - '1'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b547604d-7b3e-4934-ac09-7da237dfd2f3-1642875
+    body:
+      encoding: UTF-8
+      string: '{"date":20200402,"state":"MA","positive":8966,"negative":47642,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":813,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"hash":"79d0614d1b714ae75a41b332ec20fb5cbecebab8","dateChecked":"2020-04-02T20:00:00Z","death":154,"hospitalized":813,"total":56608,"totalTestResults":56608,"posNeg":56608,"fips":"25","deathIncrease":32,"hospitalizedIncrease":131,"negativeIncrease":3642,"positiveIncrease":1228,"totalTestResultsIncrease":4870}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200317&state=MA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a46a9c5e6b0-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:11 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d42ef8c93994b835f2f487b0de58d294c1586403190; expires=Sat, 09-May-20
+        03:33:10 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '332'
+      Age:
+      - '1'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b547604d-7b3e-4934-ac09-7da237dfd2f3-1642856
+    body:
+      encoding: UTF-8
+      string: '{"date":20200317,"state":"MA","positive":218,"negative":1541,"hash":"f2b9d7f0d874da810bfb4b57fa42cb6ad8d320f9","dateChecked":"2020-03-17T20:00:00Z","total":1759,"totalTestResults":1759,"posNeg":1759,"fips":"25","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":1189,"positiveIncrease":54,"totalTestResultsIncrease":1243}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200406&state=MA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a46dbcf9a0e-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:11 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d0e00afdccbb3bd4c21d2246e6ade7f2a1586403190; expires=Sat, 09-May-20
+        03:33:10 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '569'
+      Age:
+      - '1'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b547604d-7b3e-4934-ac09-7da237dfd2f3-1642882
+    body:
+      encoding: UTF-8
+      string: '{"date":20200406,"state":"MA","positive":13837,"negative":62592,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":1241,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"hash":"b0360aa8749c9625eb85af7f7e6be0b8f080a836","dateChecked":"2020-04-06T20:00:00Z","death":260,"hospitalized":1241,"total":76429,"totalTestResults":76429,"posNeg":76429,"fips":"25","deathIncrease":29,"hospitalizedIncrease":96,"negativeIncrease":3155,"positiveIncrease":1337,"totalTestResultsIncrease":4492}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200308&state=MA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a46b818eff9-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:11 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=dd8d465e743a41e6b35abf6716dd024e31586403190; expires=Sat, 09-May-20
+        03:33:10 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '302'
+      Age:
+      - '1'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b547604d-7b3e-4934-ac09-7da237dfd2f3-1642885
+    body:
+      encoding: UTF-8
+      string: '{"date":20200308,"state":"MA","positive":13,"hash":"db7ba78165b69c05b53151fbdc1d322c2e5a1688","dateChecked":"2020-03-08T20:00:00Z","total":13,"totalTestResults":13,"posNeg":13,"fips":"25","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":0,"positiveIncrease":0,"totalTestResultsIncrease":0}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200309&state=MA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a46a850e859-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:11 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d21f6906872f21f1620c1ded5cf2bacb11586403190; expires=Sat, 09-May-20
+        03:33:10 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '304'
+      Age:
+      - '1'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b547604d-7b3e-4934-ac09-7da237dfd2f3-1642886
+    body:
+      encoding: UTF-8
+      string: '{"date":20200309,"state":"MA","positive":41,"hash":"bcf1ffcd7a8be3ab88adca44ae7ca0012a0b6cb7","dateChecked":"2020-03-09T20:00:00Z","total":41,"totalTestResults":41,"posNeg":41,"fips":"25","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":0,"positiveIncrease":28,"totalTestResultsIncrease":28}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200310&state=MA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a46e8ade851-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:11 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d5bad33e01c21314cdff93147ecff4d011586403190; expires=Sat, 09-May-20
+        03:33:10 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '304'
+      Age:
+      - '1'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b547604d-7b3e-4934-ac09-7da237dfd2f3-1642889
+    body:
+      encoding: UTF-8
+      string: '{"date":20200310,"state":"MA","positive":92,"hash":"5b2241741b78dcad0513de205c9dba09feae3b20","dateChecked":"2020-03-10T20:00:00Z","total":92,"totalTestResults":92,"posNeg":92,"fips":"25","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":0,"positiveIncrease":51,"totalTestResultsIncrease":51}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200322&state=MA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a46ca34e73c-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:11 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d66a4cb85824483499e659e705dc24d941586403190; expires=Sat, 09-May-20
+        03:33:10 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '553'
+      Age:
+      - '1'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b547604d-7b3e-4934-ac09-7da237dfd2f3-1642861
+    body:
+      encoding: UTF-8
+      string: '{"date":20200322,"state":"MA","positive":646,"negative":5459,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":71,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"hash":"80dbca40ed272bb21a8cb8dc36290f39876b1ad2","dateChecked":"2020-03-22T20:00:00Z","death":5,"hospitalized":71,"total":6105,"totalTestResults":6105,"posNeg":6105,"fips":"25","deathIncrease":4,"hospitalizedIncrease":10,"negativeIncrease":707,"positiveIncrease":121,"totalTestResultsIncrease":828}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200324&state=MA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a46ca6be6e4-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:11 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=dcc3708636ef806f042cd642637bebea81586403190; expires=Sat, 09-May-20
+        03:33:10 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '561'
+      Age:
+      - '1'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b547604d-7b3e-4934-ac09-7da237dfd2f3-1642862
+    body:
+      encoding: UTF-8
+      string: '{"date":20200324,"state":"MA","positive":1159,"negative":12590,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":94,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"hash":"7dba190b6c130ef5b8427912adbcf550a3e63368","dateChecked":"2020-03-24T20:00:00Z","death":11,"hospitalized":94,"total":13749,"totalTestResults":13749,"posNeg":13749,"fips":"25","deathIncrease":2,"hospitalizedIncrease":15,"negativeIncrease":4445,"positiveIncrease":382,"totalTestResultsIncrease":4827}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200328&state=MA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a46cb39c5c0-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:11 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=db7c780ee115b4d95a0e691abd41668901586403190; expires=Sat, 09-May-20
+        03:33:10 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '565'
+      Age:
+      - '1'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b547604d-7b3e-4934-ac09-7da237dfd2f3-1642868
+    body:
+      encoding: UTF-8
+      string: '{"date":20200328,"state":"MA","positive":4257,"negative":30792,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":350,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"hash":"c038ffa81528722c23a2ffffda17f2495a188ded","dateChecked":"2020-03-28T20:00:00Z","death":44,"hospitalized":350,"total":35049,"totalTestResults":35049,"posNeg":35049,"fips":"25","deathIncrease":9,"hospitalizedIncrease":131,"negativeIncrease":4661,"positiveIncrease":1017,"totalTestResultsIncrease":5678}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200330&state=MA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a46ce2299fc-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:11 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d289292a60dadbee45c8b983e24f33c561586403190; expires=Sat, 09-May-20
+        03:33:10 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '563'
+      Age:
+      - '1'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b547604d-7b3e-4934-ac09-7da237dfd2f3-1642870
+    body:
+      encoding: UTF-8
+      string: '{"date":20200330,"state":"MA","positive":5752,"negative":37041,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":453,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"hash":"559b7707f9c7203da0ea8c07a2bfc9577d331c97","dateChecked":"2020-03-30T20:00:00Z","death":56,"hospitalized":453,"total":42793,"totalTestResults":42793,"posNeg":42793,"fips":"25","deathIncrease":8,"hospitalizedIncrease":54,"negativeIncrease":2930,"positiveIncrease":797,"totalTestResultsIncrease":3727}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200404&state=MA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a46ba96c5f8-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:11 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d0db9e43bbd78a4bd64286d52098e7f931586403190; expires=Sat, 09-May-20
+        03:33:10 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '570'
+      Age:
+      - '1'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b547604d-7b3e-4934-ac09-7da237dfd2f3-1642881
+    body:
+      encoding: UTF-8
+      string: '{"date":20200404,"state":"MA","positive":11736,"negative":57064,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":1068,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"hash":"9a85464df1b687aed82070c167ec82e4e12d66cc","dateChecked":"2020-04-04T20:00:00Z","death":216,"hospitalized":1068,"total":68800,"totalTestResults":68800,"posNeg":68800,"fips":"25","deathIncrease":24,"hospitalizedIncrease":102,"negativeIncrease":4504,"positiveIncrease":1334,"totalTestResultsIncrease":5838}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200405&state=MA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a46ba9fc5f8-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:11 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d0db9e43bbd78a4bd64286d52098e7f931586403190; expires=Sat, 09-May-20
+        03:33:10 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '568'
+      Age:
+      - '1'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b547604d-7b3e-4934-ac09-7da237dfd2f3-1642883
+    body:
+      encoding: UTF-8
+      string: '{"date":20200405,"state":"MA","positive":12500,"negative":59437,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":1145,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"hash":"d25b1917417ab57d0ef9e85c85c1a5cca2cc7e36","dateChecked":"2020-04-05T20:00:00Z","death":231,"hospitalized":1145,"total":71937,"totalTestResults":71937,"posNeg":71937,"fips":"25","deathIncrease":15,"hospitalizedIncrease":77,"negativeIncrease":2373,"positiveIncrease":764,"totalTestResultsIncrease":3137}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200310&state=NY
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a598d14f009-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:14 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d1f941490280fa3464ef3eb2562913d1c1586403193; expires=Sat, 09-May-20
+        03:33:13 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '322'
+      Age:
+      - '1'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b8f5eb99-967e-48ec-acd8-d4b518065618-2019680
+    body:
+      encoding: UTF-8
+      string: '{"date":20200310,"state":"NY","positive":173,"negative":92,"hash":"193f85893cecb99d063a03060bc4802d2d6458f1","dateChecked":"2020-03-10T20:00:00Z","total":265,"totalTestResults":265,"posNeg":265,"fips":"36","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":0,"positiveIncrease":31,"totalTestResultsIncrease":31}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200312&state=NY
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a5acaade718-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:14 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d0588ff63ed747b38aca192d2824ea0361586403194; expires=Sat, 09-May-20
+        03:33:14 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '320'
+      Age:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b8f5eb99-967e-48ec-acd8-d4b518065618-2019681
+    body:
+      encoding: UTF-8
+      string: '{"date":20200312,"state":"NY","positive":216,"negative":92,"hash":"78ea2217b81c0eba25ec04b1196199ad81793ead","dateChecked":"2020-03-12T20:00:00Z","total":308,"totalTestResults":308,"posNeg":308,"fips":"36","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":0,"positiveIncrease":0,"totalTestResultsIncrease":0}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200403&state=NY
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a5b99d9f059-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:14 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d1364949614d3a40786a87ebf125a32d71586403194; expires=Sat, 09-May-20
+        03:33:14 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '584'
+      Age:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b8f5eb99-967e-48ec-acd8-d4b518065618-2019712
+    body:
+      encoding: UTF-8
+      string: '{"date":20200403,"state":"NY","positive":102863,"negative":157657,"pending":null,"hospitalizedCurrently":14810,"hospitalizedCumulative":23696,"inIcuCurrently":3731,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":8886,"hash":"3581ea3846e784ce3996c873effe694f50617310","dateChecked":"2020-04-03T20:00:00Z","death":2935,"hospitalized":23696,"total":260520,"totalTestResults":260520,"posNeg":260520,"fips":"36","deathIncrease":562,"hospitalizedIncrease":2879,"negativeIncrease":11073,"positiveIncrease":10482,"totalTestResultsIncrease":21555}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200311&state=NY
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a5b5912f009-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:14 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=dc2f08badfa322aabd835b01df66ecf731586403194; expires=Sat, 09-May-20
+        03:33:14 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '322'
+      Age:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b8f5eb99-967e-48ec-acd8-d4b518065618-2019679
+    body:
+      encoding: UTF-8
+      string: '{"date":20200311,"state":"NY","positive":216,"negative":92,"hash":"6fbded3854324c39522ab7fdb01d2087f60e2d2b","dateChecked":"2020-03-11T20:00:00Z","total":308,"totalTestResults":308,"posNeg":308,"fips":"36","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":0,"positiveIncrease":43,"totalTestResultsIncrease":43}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200318&state=NY
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a5b789dccc2-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:14 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=dac78b1c9ec7d512b64d9f6270e32d8e01586403194; expires=Sat, 09-May-20
+        03:33:14 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '564'
+      Age:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b8f5eb99-967e-48ec-acd8-d4b518065618-2019690
+    body:
+      encoding: UTF-8
+      string: '{"date":20200318,"state":"NY","positive":2382,"negative":12215,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":null,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"hash":"65a08e6a0f81bd2c4bbc9988a17f0892d2ec4d35","dateChecked":"2020-03-18T20:00:00Z","death":12,"hospitalized":null,"total":14597,"totalTestResults":14597,"posNeg":14597,"fips":"36","deathIncrease":5,"hospitalizedIncrease":0,"negativeIncrease":6709,"positiveIncrease":682,"totalTestResultsIncrease":7391}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200319&state=NY
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a5b7e34c5ec-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:14 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d5c70668826c5e99e032ff0ee926338d01586403194; expires=Sat, 09-May-20
+        03:33:14 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '565'
+      Age:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b8f5eb99-967e-48ec-acd8-d4b518065618-2019691
+    body:
+      encoding: UTF-8
+      string: '{"date":20200319,"state":"NY","positive":4152,"negative":18132,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":null,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"hash":"2eabc9b73139066e3613021b1e9c9deaf8af733c","dateChecked":"2020-03-19T20:00:00Z","death":12,"hospitalized":null,"total":22284,"totalTestResults":22284,"posNeg":22284,"fips":"36","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":5917,"positiveIncrease":1770,"totalTestResultsIncrease":7687}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200316&state=NY
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a5b8c27f015-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:14 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d9057ffd53c898421e503333c5b69dadc1586403194; expires=Sat, 09-May-20
+        03:33:14 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '554'
+      Age:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b8f5eb99-967e-48ec-acd8-d4b518065618-2019685
+    body:
+      encoding: UTF-8
+      string: '{"date":20200316,"state":"NY","positive":950,"negative":4543,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":null,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"hash":"994a65ba75be3681f76ff4612eb8fde85cff81cd","dateChecked":"2020-03-16T20:00:00Z","death":7,"hospitalized":null,"total":5493,"totalTestResults":5493,"posNeg":5493,"fips":"36","deathIncrease":4,"hospitalizedIncrease":0,"negativeIncrease":0,"positiveIncrease":221,"totalTestResultsIncrease":221}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200321&state=NY
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a5b7cc5f01d-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:14 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d293b3c97db4b98bda65bfb6f05a80c091586403194; expires=Sat, 09-May-20
+        03:33:14 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '570'
+      Age:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b8f5eb99-967e-48ec-acd8-d4b518065618-2019694
+    body:
+      encoding: UTF-8
+      string: '{"date":20200321,"state":"NY","positive":10356,"negative":35081,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":1603,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"hash":"eb983c3fb4fc2d7f3c2c1250578379f502787c29","dateChecked":"2020-03-21T20:00:00Z","death":44,"hospitalized":1603,"total":45437,"totalTestResults":45437,"posNeg":45437,"fips":"36","deathIncrease":9,"hospitalizedIncrease":1603,"negativeIncrease":9756,"positiveIncrease":3254,"totalTestResultsIncrease":13010}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200322&state=NY
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a5b8962efed-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:14 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=dec3468a78663091103f9ac62cae35e111586403194; expires=Sat, 09-May-20
+        03:33:14 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '572'
+      Age:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b8f5eb99-967e-48ec-acd8-d4b518065618-2019692
+    body:
+      encoding: UTF-8
+      string: '{"date":20200322,"state":"NY","positive":15168,"negative":46233,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":1974,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"hash":"0df3f76e6407f511b0c5bf4f5647cce8f407250e","dateChecked":"2020-03-22T20:00:00Z","death":114,"hospitalized":1974,"total":61401,"totalTestResults":61401,"posNeg":61401,"fips":"36","deathIncrease":70,"hospitalizedIncrease":371,"negativeIncrease":11152,"positiveIncrease":4812,"totalTestResultsIncrease":15964}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200323&state=NY
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a5b7defe730-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:14 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d559437b5f1b8191dce76ce853fecf2431586403194; expires=Sat, 09-May-20
+        03:33:14 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '571'
+      Age:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b8f5eb99-967e-48ec-acd8-d4b518065618-2019699
+    body:
+      encoding: UTF-8
+      string: '{"date":20200323,"state":"NY","positive":20875,"negative":57414,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":2635,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"hash":"40440cdc2bc6ecd1d88040f01ebbdcb130a33257","dateChecked":"2020-03-23T20:00:00Z","death":114,"hospitalized":2635,"total":78289,"totalTestResults":78289,"posNeg":78289,"fips":"36","deathIncrease":0,"hospitalizedIncrease":661,"negativeIncrease":11181,"positiveIncrease":5707,"totalTestResultsIncrease":16888}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200325&state=NY
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a5b8a45efdc-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:14 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=da2dfcae520a9b83f24bb685a6185ed4b1586403194; expires=Sat, 09-May-20
+        03:33:14 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '574'
+      Age:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b8f5eb99-967e-48ec-acd8-d4b518065618-2019698
+    body:
+      encoding: UTF-8
+      string: '{"date":20200325,"state":"NY","positive":30811,"negative":72668,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":3805,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"hash":"332b18596170cd3e35617cfba48a5723aa2ec8f3","dateChecked":"2020-03-25T20:00:00Z","death":285,"hospitalized":3805,"total":103479,"totalTestResults":103479,"posNeg":103479,"fips":"36","deathIncrease":75,"hospitalizedIncrease":571,"negativeIncrease":7063,"positiveIncrease":5146,"totalTestResultsIncrease":12209}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200313&state=NY
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a5b7836efe0-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:14 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d64b00a9ae4e5260705952f2345c8bce11586403194; expires=Sat, 09-May-20
+        03:33:14 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '333'
+      Age:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b8f5eb99-967e-48ec-acd8-d4b518065618-2019682
+    body:
+      encoding: UTF-8
+      string: '{"date":20200313,"state":"NY","positive":421,"negative":2779,"hash":"a0a0e2997c411014ef2cd98b9502387730f585c7","dateChecked":"2020-03-13T20:00:00Z","total":3200,"totalTestResults":3200,"posNeg":3200,"fips":"36","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":2687,"positiveIncrease":205,"totalTestResultsIncrease":2892}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200320&state=NY
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a5b9b3fe6d4-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:14 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=de926718b19d83dd8e0c4682d07f7ead51586403194; expires=Sat, 09-May-20
+        03:33:14 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '567'
+      Age:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b8f5eb99-967e-48ec-acd8-d4b518065618-2019693
+    body:
+      encoding: UTF-8
+      string: '{"date":20200320,"state":"NY","positive":7102,"negative":25325,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":null,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"hash":"5293b5c5920709d4f3cf66b901621a61a47d0d23","dateChecked":"2020-03-20T20:00:00Z","death":35,"hospitalized":null,"total":32427,"totalTestResults":32427,"posNeg":32427,"fips":"36","deathIncrease":23,"hospitalizedIncrease":0,"negativeIncrease":7193,"positiveIncrease":2950,"totalTestResultsIncrease":10143}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200324&state=NY
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a5b7a3cf021-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:14 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d6fbadcc3815419a4797dff8c9ed217561586403194; expires=Sat, 09-May-20
+        03:33:14 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '571'
+      Age:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b8f5eb99-967e-48ec-acd8-d4b518065618-2019697
+    body:
+      encoding: UTF-8
+      string: '{"date":20200324,"state":"NY","positive":25665,"negative":65605,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":3234,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"hash":"ea3323c8187b8ff5574d3576f83791e01dd1521f","dateChecked":"2020-03-24T20:00:00Z","death":210,"hospitalized":3234,"total":91270,"totalTestResults":91270,"posNeg":91270,"fips":"36","deathIncrease":96,"hospitalizedIncrease":599,"negativeIncrease":8191,"positiveIncrease":4790,"totalTestResultsIncrease":12981}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200329&state=NY
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a5b9b0af039-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:14 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d3ca8f9c9811f56b2759b90fb37468ad41586403194; expires=Sat, 09-May-20
+        03:33:14 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '579'
+      Age:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b8f5eb99-967e-48ec-acd8-d4b518065618-2019706
+    body:
+      encoding: UTF-8
+      string: '{"date":20200329,"state":"NY","positive":59513,"negative":112847,"pending":null,"hospitalizedCurrently":8503,"hospitalizedCumulative":12075,"inIcuCurrently":2037,"inIcuCumulative":2037,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":3572,"hash":"b5656122e28105ae4788a0d68eabb1ef68a06287","dateChecked":"2020-03-29T20:00:00Z","death":965,"hospitalized":12075,"total":172360,"totalTestResults":172360,"posNeg":172360,"fips":"36","deathIncrease":237,"hospitalizedIncrease":2021,"negativeIncrease":9231,"positiveIncrease":7195,"totalTestResultsIncrease":16426}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200330&state=NY
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a5b9c5fe718-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:14 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d0588ff63ed747b38aca192d2824ea0361586403194; expires=Sat, 09-May-20
+        03:33:14 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '580'
+      Age:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b8f5eb99-967e-48ec-acd8-d4b518065618-2019708
+    body:
+      encoding: UTF-8
+      string: '{"date":20200330,"state":"NY","positive":66497,"negative":119971,"pending":null,"hospitalizedCurrently":9517,"hospitalizedCumulative":13721,"inIcuCurrently":2352,"inIcuCumulative":2352,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":4204,"hash":"a749060bc47c2573b505c13198673b348ed3cc2b","dateChecked":"2020-03-30T20:00:00Z","death":1218,"hospitalized":13721,"total":186468,"totalTestResults":186468,"posNeg":186468,"fips":"36","deathIncrease":253,"hospitalizedIncrease":1646,"negativeIncrease":7124,"positiveIncrease":6984,"totalTestResultsIncrease":14108}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200402&state=NY
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a5b9b02f039-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:14 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d3ca8f9c9811f56b2759b90fb37468ad41586403194; expires=Sat, 09-May-20
+        03:33:14 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '581'
+      Age:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b8f5eb99-967e-48ec-acd8-d4b518065618-2019711
+    body:
+      encoding: UTF-8
+      string: '{"date":20200402,"state":"NY","positive":92381,"negative":146584,"pending":null,"hospitalizedCurrently":13383,"hospitalizedCumulative":20817,"inIcuCurrently":3396,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":7434,"hash":"764d0566c27be04c416c502640d5fffbcb8cad26","dateChecked":"2020-04-02T20:00:00Z","death":2373,"hospitalized":20817,"total":238965,"totalTestResults":238965,"posNeg":238965,"fips":"36","deathIncrease":432,"hospitalizedIncrease":2449,"negativeIncrease":9416,"positiveIncrease":8669,"totalTestResultsIncrease":18085}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200314&state=NY
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a5b8ca0ccf2-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:14 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d7be34107e23739586ca11f36a42cd2ad1586403194; expires=Sat, 09-May-20
+        03:33:14 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '329'
+      Age:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b8f5eb99-967e-48ec-acd8-d4b518065618-2019684
+    body:
+      encoding: UTF-8
+      string: '{"date":20200314,"state":"NY","positive":524,"negative":2779,"hash":"f28c39ca671c26d022ff2556494ad8767765eb93","dateChecked":"2020-03-14T20:00:00Z","total":3303,"totalTestResults":3303,"posNeg":3303,"fips":"36","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":0,"positiveIncrease":103,"totalTestResultsIncrease":103}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200315&state=NY
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a5b8c64e70c-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:14 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d465655c9d6ce9188359edbdfa4e4be081586403194; expires=Sat, 09-May-20
+        03:33:14 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '558'
+      Age:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b8f5eb99-967e-48ec-acd8-d4b518065618-2019683
+    body:
+      encoding: UTF-8
+      string: '{"date":20200315,"state":"NY","positive":729,"negative":4543,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":null,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"hash":"963f632b5d1577cd5cf9b6c332a912c2fdebea16","dateChecked":"2020-03-15T20:00:00Z","death":3,"hospitalized":null,"total":5272,"totalTestResults":5272,"posNeg":5272,"fips":"36","deathIncrease":3,"hospitalizedIncrease":0,"negativeIncrease":1764,"positiveIncrease":205,"totalTestResultsIncrease":1969}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200317&state=NY
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a5b7b68c5c4-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:14 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d7a40defd2411d09e027118de90d74a4b1586403194; expires=Sat, 09-May-20
+        03:33:14 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '558'
+      Age:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b8f5eb99-967e-48ec-acd8-d4b518065618-2019686
+    body:
+      encoding: UTF-8
+      string: '{"date":20200317,"state":"NY","positive":1700,"negative":5506,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":null,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"hash":"a2d96e7a962926fa3165aef038360c097b6be4ce","dateChecked":"2020-03-17T20:00:00Z","death":7,"hospitalized":null,"total":7206,"totalTestResults":7206,"posNeg":7206,"fips":"36","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":963,"positiveIncrease":750,"totalTestResultsIncrease":1713}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200326&state=NY
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a5b98a1f04d-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:14 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d960706a3740f42a5d9bbdf761a88ce9b1586403194; expires=Sat, 09-May-20
+        03:33:14 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '577'
+      Age:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b8f5eb99-967e-48ec-acd8-d4b518065618-2019701
+    body:
+      encoding: UTF-8
+      string: '{"date":20200326,"state":"NY","positive":37258,"negative":84846,"pending":null,"hospitalizedCurrently":5327,"hospitalizedCumulative":6844,"inIcuCurrently":1290,"inIcuCumulative":1290,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"hash":"c9e5180c39aab68a5662116651d17a05f4e4b966","dateChecked":"2020-03-26T20:00:00Z","death":385,"hospitalized":6844,"total":122104,"totalTestResults":122104,"posNeg":122104,"fips":"36","deathIncrease":100,"hospitalizedIncrease":3039,"negativeIncrease":12178,"positiveIncrease":6447,"totalTestResultsIncrease":18625}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200327&state=NY
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a5b8c22f015-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:14 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d9057ffd53c898421e503333c5b69dadc1586403194; expires=Sat, 09-May-20
+        03:33:14 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '578'
+      Age:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b8f5eb99-967e-48ec-acd8-d4b518065618-2019700
+    body:
+      encoding: UTF-8
+      string: '{"date":20200327,"state":"NY","positive":44635,"negative":101118,"pending":null,"hospitalizedCurrently":6481,"hospitalizedCumulative":8526,"inIcuCurrently":1583,"inIcuCumulative":1583,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":2045,"hash":"d7f2dd3fcfbabebfdaeaa0a19e5db38d94fb112a","dateChecked":"2020-03-27T20:00:00Z","death":519,"hospitalized":8526,"total":145753,"totalTestResults":145753,"posNeg":145753,"fips":"36","deathIncrease":134,"hospitalizedIncrease":1682,"negativeIncrease":16272,"positiveIncrease":7377,"totalTestResultsIncrease":23649}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200328&state=NY
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a5bba2cf059-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:14 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d1364949614d3a40786a87ebf125a32d71586403194; expires=Sat, 09-May-20
+        03:33:14 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '579'
+      Age:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b8f5eb99-967e-48ec-acd8-d4b518065618-2019707
+    body:
+      encoding: UTF-8
+      string: '{"date":20200328,"state":"NY","positive":52318,"negative":103616,"pending":null,"hospitalizedCurrently":7328,"hospitalizedCumulative":10054,"inIcuCurrently":1755,"inIcuCumulative":1755,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":2726,"hash":"7592db95575a5d4ef226ff6014283d8d85a0db52","dateChecked":"2020-03-28T20:00:00Z","death":728,"hospitalized":10054,"total":155934,"totalTestResults":155934,"posNeg":155934,"fips":"36","deathIncrease":209,"hospitalizedIncrease":1528,"negativeIncrease":2498,"positiveIncrease":7683,"totalTestResultsIncrease":10181}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200401&state=NY
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a5bced2e6d8-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:14 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=de487fdc044e4309746a1a1d94738a8bb1586403194; expires=Sat, 09-May-20
+        03:33:14 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '581'
+      Age:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b8f5eb99-967e-48ec-acd8-d4b518065618-2019710
+    body:
+      encoding: UTF-8
+      string: '{"date":20200401,"state":"NY","positive":83712,"negative":137168,"pending":null,"hospitalizedCurrently":12226,"hospitalizedCumulative":18368,"inIcuCurrently":3022,"inIcuCumulative":3022,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":6142,"hash":"bc022c8f01dbc1a4d1f046ebce21c18a7b42cfa6","dateChecked":"2020-04-01T20:00:00Z","death":1941,"hospitalized":18368,"total":220880,"totalTestResults":220880,"posNeg":220880,"fips":"36","deathIncrease":391,"hospitalizedIncrease":2464,"negativeIncrease":7777,"positiveIncrease":7917,"totalTestResultsIncrease":15694}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200406&state=NY
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a5bcec9e6d8-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:14 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=de487fdc044e4309746a1a1d94738a8bb1586403194; expires=Sat, 09-May-20
+        03:33:14 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '583'
+      Age:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b8f5eb99-967e-48ec-acd8-d4b518065618-2019715
+    body:
+      encoding: UTF-8
+      string: '{"date":20200406,"state":"NY","positive":130689,"negative":190122,"pending":null,"hospitalizedCurrently":16837,"hospitalizedCumulative":30203,"inIcuCurrently":4504,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":13366,"hash":"2f8e8d32b6402d0d288a4d4db9946c5667b67f39","dateChecked":"2020-04-06T20:00:00Z","death":4758,"hospitalized":30203,"total":320811,"totalTestResults":320811,"posNeg":320811,"fips":"36","deathIncrease":599,"hospitalizedIncrease":2111,"negativeIncrease":9873,"positiveIncrease":8658,"totalTestResultsIncrease":18531}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200404&state=NY
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a5bdbfbf055-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:14 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=db09b61f0d79132568ae832a2b55366191586403194; expires=Sat, 09-May-20
+        03:33:14 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '585'
+      Age:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b8f5eb99-967e-48ec-acd8-d4b518065618-2019713
+    body:
+      encoding: UTF-8
+      string: '{"date":20200404,"state":"NY","positive":113704,"negative":169917,"pending":null,"hospitalizedCurrently":15905,"hospitalizedCumulative":26383,"inIcuCurrently":4126,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":10478,"hash":"792799b4ed7e06f7995dec04e454a37ec5edb0c0","dateChecked":"2020-04-04T20:00:00Z","death":3565,"hospitalized":26383,"total":283621,"totalTestResults":283621,"posNeg":283621,"fips":"36","deathIncrease":630,"hospitalizedIncrease":2687,"negativeIncrease":12260,"positiveIncrease":10841,"totalTestResultsIncrease":23101}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200309&state=NY
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a5c0f96f02d-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:14 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=dc29f7fbed6fc52b2b6ebbbf3abf4522a1586403194; expires=Sat, 09-May-20
+        03:33:14 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '322'
+      Age:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b8f5eb99-967e-48ec-acd8-d4b518065618-2019717
+    body:
+      encoding: UTF-8
+      string: '{"date":20200309,"state":"NY","positive":142,"negative":92,"hash":"260a070d28ed40a35e8b31aca5f4ab3352dc9ba8","dateChecked":"2020-03-09T20:00:00Z","total":234,"totalTestResults":234,"posNeg":234,"fips":"36","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":0,"positiveIncrease":37,"totalTestResultsIncrease":37}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200308&state=NY
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a5bdaac920a-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:14 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d8cb8e6e09ca277bf8f0dfe96749fb9331586403194; expires=Sat, 09-May-20
+        03:33:14 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '322'
+      Age:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b8f5eb99-967e-48ec-acd8-d4b518065618-2019716
+    body:
+      encoding: UTF-8
+      string: '{"date":20200308,"state":"NY","positive":105,"negative":92,"hash":"f6d3b78f41cadeaf08e72f35692a9619d70aad07","dateChecked":"2020-03-08T20:00:00Z","total":197,"totalTestResults":197,"posNeg":197,"fips":"36","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":0,"positiveIncrease":29,"totalTestResultsIncrease":29}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200405&state=NY
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a5bcc2b91e0-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:14 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d1b299cef7ff56733d29f7aa8b78afe511586403194; expires=Sat, 09-May-20
+        03:33:14 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '584'
+      Age:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b8f5eb99-967e-48ec-acd8-d4b518065618-2019714
+    body:
+      encoding: UTF-8
+      string: '{"date":20200405,"state":"NY","positive":122031,"negative":180249,"pending":null,"hospitalizedCurrently":16479,"hospitalizedCumulative":28092,"inIcuCurrently":4376,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":12187,"hash":"58a99b83c7368e224acff5ea100e3692a0b8fa75","dateChecked":"2020-04-05T20:00:00Z","death":4159,"hospitalized":28092,"total":302280,"totalTestResults":302280,"posNeg":302280,"fips":"36","deathIncrease":594,"hospitalizedIncrease":1709,"negativeIncrease":10332,"positiveIncrease":8327,"totalTestResultsIncrease":18659}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/states/daily?date=20200331&state=NY
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=3600
+      Cf-Ray:
+      - 58112a5bbed8ccf6-EWR
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 09 Apr 2020 03:33:14 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - __cfduid=d1b858eda6fc0f75b1b6a931174e775921586403194; expires=Sat, 09-May-20
+        03:33:14 GMT; path=/; domain=.cape.io; HttpOnly; SameSite=Lax; Secure
+      Content-Length:
+      - '581'
+      Age:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - b8f5eb99-967e-48ec-acd8-d4b518065618-2019709
+    body:
+      encoding: UTF-8
+      string: '{"date":20200331,"state":"NY","positive":75795,"negative":129391,"pending":null,"hospitalizedCurrently":10929,"hospitalizedCumulative":15904,"inIcuCurrently":2710,"inIcuCumulative":2710,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":4975,"hash":"a3afdea93fae4daf8073978749d736d46e9134c6","dateChecked":"2020-03-31T20:00:00Z","death":1550,"hospitalized":15904,"total":205186,"totalTestResults":205186,"posNeg":205186,"fips":"36","deathIncrease":332,"hospitalizedIncrease":2183,"negativeIncrease":9420,"positiveIncrease":9298,"totalTestResultsIncrease":18718}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 07:00:00 GMT
+recorded_with: VCR 5.1.0

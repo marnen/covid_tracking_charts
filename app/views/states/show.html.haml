@@ -10,9 +10,7 @@
 :markdown
   #{_ 'This chart shows the *daily cumulative total* number of individuals who have tested positive for coronavirus.'}
 
-- @charts.each do |state, chart|
-  %p= _ state.name
-  = chart
+= @chart
 
 %details
   %summary= _ 'Raw data'

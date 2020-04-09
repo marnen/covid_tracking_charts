@@ -24,15 +24,18 @@ Then /^I should be on (.+)$/ do |page_name|
 end
 
 Then /^I should see a graph for (.+?) for the (\d+) day(?:s)? ending on (.+?)$/ do |states, days, end_date|
-  states = State.find states.strip.split(%{r\W+})
+  states = State.find states.strip.split(%r{\W+})
   end_date = Date.parse(end_date)
   start_date = end_date - (days.to_i.pred).days
   date_range = start_date..end_date
 
-  states.each do |state|
-    page.find :xpath, '//svg[descendant::*[@class="keyText"][contains(text(), state.name)]]' do |svg|
-      expect(svg).to have_xpath '//text[@class="dataPointPopup"][1]', text: /^#{start_date.strftime '%d %b %Y'},/
-      expect(svg).to have_xpath '//text[@class="dataPointPopup"][last()]', text:/^#{end_date.strftime '%d %b %Y'},/
+  page.find 'svg' do |svg|
+    states.each do |state|
+      expect(svg).to have_css '.keyText', text: state.name
+    end
+    expect(svg).to have_css '.dataPointLabel', count: states.count * days
+    [start_date, end_date].each do |date|
+      expect(svg).to have_css '.dataPointPopup', text: /^#{date.strftime '%d %b %Y'},/, count: states.count, visible: :all
     end
   end
 end

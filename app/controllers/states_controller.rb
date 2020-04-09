@@ -12,7 +12,7 @@ class StatesController < ApplicationController
     date_range = (@date - 29.days)..@date
 
     @requests = {}
-    charts = {}
+    chart_data = {}
 
     # TODO: this is awful and needs refactoring once we figure out how this should work for multiple states. Why can't there be a List monad in Ruby?
     @states.each do |state|
@@ -23,10 +23,10 @@ class StatesController < ApplicationController
       @requests[state] = urls.zip responses # TODO: maybe we can use StateDaily for this instead
 
       values = responses.map {|response| [Date.parse(response['date'].to_s), response['positive']] }
-      charts[state] = Chart.new state.name => values
+      chart_data[state.name] = values
     end
 
-    @charts = charts.transform_values {|chart| chart.to_graph.burn_svg_only.html_safe }
+    @chart = Chart.new(chart_data).to_graph.burn_svg_only.html_safe
   end
 
   def choose
