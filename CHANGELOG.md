@@ -1,5 +1,7 @@
 # Unreleased changes
 
+# v2.1.1 / 2020-04-09
+
 - Fix a bug in asset compilation on Heroku.
 
 # v2.1.0 / 2020-04-09
