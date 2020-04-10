@@ -1,0 +1,22 @@
+class StateSelectorCell < Cell::ViewModel
+  include ActionView::Helpers::FormHelper
+  include ActionView::Helpers::FormOptionsHelper
+
+  attr_reader :states, :url
+
+  def initialize(states, options)
+    super
+    @states = states
+    @url = options[:url]
+  end
+
+  def show
+    render
+  end
+
+  private
+
+  def states_for_menu
+    @states_for_menu ||= State.all
+  end
+end

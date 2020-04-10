@@ -1,0 +1,7 @@
+= form_with url: url, local: true, class: 'state-selector' do |form|
+  %p
+    = label_tag :states, _('Choose one or more states:')
+    - locale_state_options = states_for_menu.sort_by {|state| _(state.name)}.map {|state| [_(state.name), state.abbr]}
+    = select_tag :states, options_for_select(locale_state_options, @states&.map(&:abbr)), multiple: true
+  %p
+    = submit_tag _('Go')
