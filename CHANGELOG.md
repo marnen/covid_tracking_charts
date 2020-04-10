@@ -1,5 +1,7 @@
 # Unreleased changes
 
+- Fix a bug in asset compilation on Heroku.
+
 # v2.1.0 / 2020-04-09
 
 - Use choices.js to provide a more attractive UI for state selector. [#42]
