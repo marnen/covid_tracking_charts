@@ -255,6 +255,9 @@ GEM
       rspec-core (~> 3.9.0)
       rspec-expectations (~> 3.9.0)
       rspec-mocks (~> 3.9.0)
+    rspec-cells (0.3.5)
+      cells (>= 4.0.0, < 6.0.0)
+      rspec-rails (< 5.0)
     rspec-core (3.9.1)
       rspec-support (~> 3.9.1)
     rspec-expectations (3.9.1)
@@ -356,6 +359,7 @@ DEPENDENCIES
   rails (~> 6.0.2, >= 6.0.2.2)
   rdiscount
   redis
+  rspec-cells
   rspec-rails (~> 4.0.0)
   ruby_parser
   sass-rails (>= 6)
