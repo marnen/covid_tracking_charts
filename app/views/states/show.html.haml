@@ -2,7 +2,7 @@
   = stylesheet_link_tag 'chart'
 
 - content_for :page_title do
-  = render 'state_list', states: @states
+  = cell 'state_list', @states
 
 :markdown
   #{_ 'This chart shows the *daily cumulative total* number of individuals who have tested positive for coronavirus.'}
