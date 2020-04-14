@@ -17,22 +17,6 @@ RSpec.describe StateSelectorCell, type: :cell do
     end
   end
 
-  context '#states' do
-    let(:states) { State.all.sample rand(2..5) }
-
-    it 'returns the given states' do
-      expect(subject.states).to be == states
-    end
-  end
-
-  context '#url' do
-    let(:url) { File.join *Faker::Lorem.words(rand 2..5) }
-
-    it 'returns the given URL' do
-      expect(subject.url).to be == url
-    end
-  end
-
   context '#show' do
     controller Class.new(ApplicationController) # see https://github.com/trailblazer/rspec-cells#url-helpers
 
@@ -45,7 +29,7 @@ RSpec.describe StateSelectorCell, type: :cell do
       expect(subject).to have_selector "form[action='#{url}']"
     end
 
-    it 'renders a multi-select with all the states as options, sorted by nam,e' do
+    it 'renders a multi-select with all the states as options, sorted by name' do
       subject.find menu do |menu|
         selector = './/' + State.all.sort_by(&:name).map {|state| "option[@value='#{state.abbr}'][text()='#{state.name}']"}.join('/following-sibling::')
         expect(menu).to have_xpath selector

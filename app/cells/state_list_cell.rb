@@ -1,14 +1,14 @@
 class StateListCell < Cell::ViewModel
   include ERB::Util
 
-  def initialize(states, options = {})
-    @states = states
-  end
-
   private
 
+  def states
+    model
+  end
+
   def state_names_and_abbrs
-    @states.map.with_index(1) {|state, index| name_and_abbr state, index }
+    states.map.with_index(1) {|state, index| name_and_abbr state, index }
   end
 
   def name_and_abbr(state, index)
