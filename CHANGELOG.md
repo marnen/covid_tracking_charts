@@ -1,5 +1,7 @@
 # Unreleased changes
 
+- Introduce Cells gem to make views and controllers more manageable. [#47]
+
 # v2.2.0 / 2020-04-10
 
 - Set default time zone to Eastern, since that's what the covidtracking.com API uses for all states. [#38]

@@ -14,6 +14,8 @@ BTW, this is a labor of love developed for the purpose of public service. Curren
 
 This is a Rails 6 application, but since all the data comes from the COVID Tracking Project API, we're not using ActiveRecord at the moment (though we could always add it if it became necessary to implement some particular feature). Instead, we're pulling all the data with [Typhoeus](https://github.com/typhoeus/typhoeus), and caching it with Redis (currently for 6 hours), then feeding it to the [svg-graph](https://github.com/lumean/svg-graph2) gem to draw nice charts.
 
+Note that instead of partials and helpers, we're mostly using the [Cells](https://github.com/trailblazer/cells) gem to break up views and controllers. The short summary, for those unfamiliar with this gem, is that a cell is sort of like a partial with its own controller context.
+
 ### Development
 
 The easiest way to run a development instance of this application is probably to use Docker. The project already contains Docker configuration files, so `docker-compose up` should start both a Rails server for the Web application and a Redis server to run the cache. Modify the paths in docker-compose.yml as necessary for your local filesystem bindings.

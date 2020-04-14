@@ -13,7 +13,7 @@
       %h1
         = link_to '/' do
           = h(_ '%{span}COVID-19%{_span} Tracking Charts by U.S. State') % {span: '<span class="accent">'.html_safe, _span: '</span>'.html_safe}
-    %nav= render 'shared/state_selector', states: states # TODO: consider Cells or something here
+    %nav= cell(:state_selector, @states, url: choose_states_path)
 
     %main
       - if content_for :page_title

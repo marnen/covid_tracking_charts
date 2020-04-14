@@ -79,6 +79,17 @@ GEM
       rack-test (>= 0.6.3)
       regexp_parser (~> 1.5)
       xpath (~> 3.2)
+    cells (4.1.7)
+      declarative-builder (< 0.2.0)
+      declarative-option (< 0.2.0)
+      tilt (>= 1.4, < 3)
+      uber (< 0.2.0)
+    cells-haml (0.0.10)
+      cells (>= 4.0.1, <= 6.0.0)
+      haml (>= 4.1.0.beta.1)
+    cells-rails (0.1.0)
+      actionpack (>= 5.0)
+      cells (>= 4.1.6, < 5.0.0)
     city-state (0.1.0)
       rubyzip (>= 1.1)
     coderay (1.1.2)
@@ -108,6 +119,9 @@ GEM
       railties (>= 4.2, < 7)
     cucumber-tag_expressions (1.1.1)
     cucumber-wire (0.0.1)
+    declarative-builder (0.1.0)
+      declarative-option (< 0.2.0)
+    declarative-option (0.1.0)
     diff-lcs (1.3)
     erubi (1.9.0)
     erubis (2.7.0)
@@ -241,6 +255,9 @@ GEM
       rspec-core (~> 3.9.0)
       rspec-expectations (~> 3.9.0)
       rspec-mocks (~> 3.9.0)
+    rspec-cells (0.3.5)
+      cells (>= 4.0.0, < 6.0.0)
+      rspec-rails (< 5.0)
     rspec-core (3.9.1)
       rspec-support (~> 3.9.1)
     rspec-expectations (3.9.1)
@@ -298,6 +315,7 @@ GEM
       ethon (>= 0.9.0)
     tzinfo (1.2.7)
       thread_safe (~> 0.1)
+    uber (0.1.0)
     vcr (5.1.0)
     web-console (4.0.1)
       actionview (>= 6.0.0)
@@ -325,6 +343,8 @@ PLATFORMS
 DEPENDENCIES
   bootsnap (>= 1.4.2)
   byebug
+  cells-haml
+  cells-rails
   city-state
   cucumber-rails
   faker
@@ -339,6 +359,7 @@ DEPENDENCIES
   rails (~> 6.0.2, >= 6.0.2.2)
   rdiscount
   redis
+  rspec-cells
   rspec-rails (~> 4.0.0)
   ruby_parser
   sass-rails (>= 6)
