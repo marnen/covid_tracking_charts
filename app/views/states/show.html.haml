@@ -12,4 +12,4 @@
 %details
   %summary= _ 'Raw data'
   - @raw_data.each do |state, requests|
-    = render 'state_requests', state: state, requests: requests
+    = cell('state_requests', {state: state, requests: requests}).call

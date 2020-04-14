@@ -1,0 +1,7 @@
+%details
+  %summary= _ '%{state} (%{n_requests}):' % {state: state.name, n_requests: n_('%{n} request', '%{n} requests', requests.length) % {n: requests.length}}
+  %dl.raw-data
+    - requests.each do |(url, response)|
+      %dt= url
+      %dd
+        %code= response
