@@ -8,11 +8,6 @@ class StatesController < ApplicationController
 
     query = Query.new states: @states, date_range: date_range
     @raw_data = query.raw_data
-    chart_data = @raw_data.transform_values do |requests| # TODO: this should probably move into Query
-      requests.map {|(_, response)| [Date.parse(response['date'].to_s), response['positive']] }
-    end
-
-    @chart = Chart.new(chart_data).to_graph.burn_svg_only.html_safe
   end
 
   def choose

@@ -42,6 +42,6 @@ class Chart
   end
 
   def divisions
-    @divisions ||= [max_value.ceil(-Math.log10(max_value)) / 10, 10].max
+    @divisions ||= max_value.nil? ? 10 : [max_value.ceil(-Math.log10(max_value)) / 10, 10].max
   end
 end

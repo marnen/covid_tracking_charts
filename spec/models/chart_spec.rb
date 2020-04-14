@@ -53,6 +53,14 @@ RSpec.describe Chart, type: :model do
 
           before(:each) { data[data.keys.sample][rand length][1] = max_value if defined? max_value }
 
+          context 'no values' do
+            let(:data) { {} }
+
+            it 'uses steps of 10' do
+              expect(divisions).to be == 10
+            end
+          end
+
           context 'max 100 or less' do
             it 'uses steps of 10' do
               expect(divisions).to be == 10

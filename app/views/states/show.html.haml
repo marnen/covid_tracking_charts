@@ -7,7 +7,7 @@
 :markdown
   #{_ 'This chart shows the *daily cumulative total* number of individuals who have tested positive for coronavirus.'}
 
-= @chart
+= cell('chart', @raw_data).call
 
 %details
   %summary= _ 'Raw data'
