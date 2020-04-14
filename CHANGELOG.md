@@ -1,5 +1,7 @@
 # Unreleased changes
 
+# v2.3.0 / 2020-04-13
+
 - Introduce Cells gem to make views and controllers more manageable. [#47]
 
 # v2.2.0 / 2020-04-10
