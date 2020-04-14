@@ -1,5 +1,7 @@
 # Unreleased changes
 
+- Introduce Cells gem to make views and controllers more manageable. [#47]
+
 # v2.1.1 / 2020-04-09
 
 - Fix a bug in asset compilation on Heroku.
