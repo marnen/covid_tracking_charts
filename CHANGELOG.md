@@ -1,5 +1,7 @@
 # Unreleased changes
 
+- Set up Rollbar for error handling. [#51]
+
 # v2.4.0 / 2020-05-17
 
 - Update API client code for new URL scheme. [#49]

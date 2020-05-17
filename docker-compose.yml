@@ -7,6 +7,7 @@ services:
     environment:
       PORT: 3000
       REDIS_URL: "redis://cache:6379"
+      ROLLBAR_ACCESS_TOKEN: ${ROLLBAR_ACCESS_TOKEN}
     build: .
     command: bundle exec rails s
     volumes:

@@ -16,6 +16,7 @@
 
 /public/assets
 .byebug_history
+.envrc
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
