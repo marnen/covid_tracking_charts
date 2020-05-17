@@ -57,20 +57,8 @@ RSpec.describe StateDaily, type: :model do
       context 'single date' do
         it { is_expected.to be_a_kind_of Typhoeus::Request }
 
-        it 'points to the COVID Tracking state daily endpoint' do
-          expect(subject.url).to start_with 'https://covidtracking.com/api/states/daily?'
-        end
-
-        context 'query string' do
-          let(:parsed_query) { Hash[URI.decode_www_form URI(subject.url).query] }
-
-          it 'contains the state' do
-            expect(parsed_query['state']).to be == state.abbr
-          end
-
-          it 'contains the date, as a number' do
-            expect(parsed_query['date']).to be == date.to_s(:number)
-          end
+        it 'points to the COVID Tracking JSON endpoint for the given state and date' do
+          expect(subject.url).to be == "https://covidtracking.com/api/v1/states/#{state.abbr}/#{date.to_s :number}.json"
         end
 
         it 'is cached for 6 hours' do
@@ -149,6 +137,11 @@ RSpec.describe StateDaily, type: :model do
 
         it "rejects any responses that don't have a date" do
           stub_request(:get, urls.values.sample).to_return status:  200, body: {'content' => 'no date here'}.to_json
+          expect(subject.fetch!.length).to be == urls.length - 1
+        end
+
+        it 'rejects any responses that return an error status' do
+          stub_request(:get, urls.values.sample).to_return status:  404, body: "This is an error and it's not even JSON."
           expect(subject.fetch!.length).to be == urls.length - 1
         end
       end

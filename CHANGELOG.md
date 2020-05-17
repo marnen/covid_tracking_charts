@@ -1,5 +1,7 @@
 # Unreleased changes
 
+- Update API client code for new URL scheme. [#49]
+
 # v2.3.0 / 2020-04-13
 
 - Introduce Cells gem to make views and controllers more manageable. [#47]

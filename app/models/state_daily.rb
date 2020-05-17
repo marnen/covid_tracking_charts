@@ -15,7 +15,7 @@ class StateDaily
         individuals.each {|individual| hydra.queue individual.request }
       end
     else
-      Typhoeus::Request.new('https://covidtracking.com/api/states/daily', params: {state: @state.abbr, date: @date.to_s(:number)}, cache_ttl: 6.hours.to_i)
+      Typhoeus::Request.new "https://covidtracking.com/api/v1/states/#{@state.abbr}/#{@date.to_s :number}.json", cache_ttl: 6.hours.to_i
     end
   end
 
@@ -25,8 +25,10 @@ class StateDaily
       requests = hydra.queued_requests.dup
       hydra.run
       requests.map do |request|
-        response = JSON.parse request.response.body
-        response['date'].nil? ? nil : [request.url, response]
+        if request.response.success?
+          response = JSON.parse request.response.body
+          response['date'].nil? ? nil : [request.url, response]
+        end
       end.compact
     else
       [request.url, JSON.parse(request.run.body)]
