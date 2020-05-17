@@ -2,109 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://covidtracking.com/api/states/daily?date=20200309&state=NY
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Typhoeus - https://github.com/typhoeus/typhoeus
-      Expect:
-      - ''
-  response:
-    status:
-      code: 200
-      message: ''
-    headers:
-      Accept-Ranges:
-      - bytes
-      Access-Control-Allow-Origin:
-      - "*"
-      Cache-Control:
-      - public, max-age=0, must-revalidate
-      Content-Length:
-      - '322'
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 17 May 2020 20:44:37 GMT
-      Etag:
-      - '"9f93dab553fcce0cb8375b947919acf0-ssl"'
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - DENY
-      X-Xss-Protection:
-      - 1; mode=block
-      Age:
-      - '0'
-      Server:
-      - Netlify
-      X-Nf-Request-Id:
-      - c04029a2-8ae8-4fe0-978c-986592cdc09f-14290510
-    body:
-      encoding: UTF-8
-      string: '{"date":20200309,"state":"NY","positive":142,"negative":92,"hash":"cb36363f3eca57c7bfddd3d8ea4234ed33dda5f9","dateChecked":"2020-03-09T20:00:00Z","total":234,"totalTestResults":234,"posNeg":234,"fips":"36","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":0,"positiveIncrease":37,"totalTestResultsIncrease":37}'
-    http_version: null
-  recorded_at: Thu, 02 Apr 2020 04:00:00 GMT
-- request:
-    method: get
-    uri: https://covidtracking.com/api/states/daily?date=20200305&state=NY
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Typhoeus - https://github.com/typhoeus/typhoeus
-      Expect:
-      - ''
-  response:
-    status:
-      code: 200
-      message: ''
-    headers:
-      Accept-Ranges:
-      - bytes
-      Access-Control-Allow-Origin:
-      - "*"
-      Cache-Control:
-      - public, max-age=0, must-revalidate
-      Content-Length:
-      - '333'
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 17 May 2020 20:44:37 GMT
-      Etag:
-      - '"5f7170d145fc3e1886a35304d0173eb4-ssl"'
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - DENY
-      X-Xss-Protection:
-      - 1; mode=block
-      Age:
-      - '0'
-      Server:
-      - Netlify
-      X-Nf-Request-Id:
-      - c04029a2-8ae8-4fe0-978c-986592cdc09f-14290511
-    body:
-      encoding: UTF-8
-      string: '{"date":20200305,"state":"NY","positive":22,"negative":76,"pending":24,"hash":"f5fa9d458bf8fb40664458e2710437c5e5a89aaf","dateChecked":"2020-03-05T21:00:00Z","total":122,"totalTestResults":98,"posNeg":98,"fips":"36","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":28,"positiveIncrease":16,"totalTestResultsIncrease":44}'
-    http_version: null
-  recorded_at: Thu, 02 Apr 2020 04:00:00 GMT
-- request:
-    method: get
-    uri: https://covidtracking.com/api/states/daily?date=20200306&state=NY
+    uri: https://covidtracking.com/api/v1/states/NY/20200306.json
     body:
       encoding: US-ASCII
       string: ''
@@ -129,9 +27,9 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Sun, 17 May 2020 20:44:37 GMT
+      - Sun, 17 May 2020 21:36:27 GMT
       Etag:
-      - '"08f8d8d3540d471a6acf9ba83550561e-ssl"'
+      - '"c0ea2d519e22119b82b9619bd99a5774-ssl"'
       Referrer-Policy:
       - strict-origin-when-cross-origin
       Strict-Transport-Security:
@@ -147,7 +45,7 @@ http_interactions:
       Server:
       - Netlify
       X-Nf-Request-Id:
-      - c04029a2-8ae8-4fe0-978c-986592cdc09f-14290509
+      - '0299c823-9b14-44d9-9eca-31e8d496c6cd-137010'
     body:
       encoding: UTF-8
       string: '{"date":20200306,"state":"NY","positive":33,"negative":92,"pending":236,"hash":"a4269189c0f37537baee7e4fd80167aa7237fa7e","dateChecked":"2020-03-06T21:00:00Z","total":361,"totalTestResults":125,"posNeg":125,"fips":"36","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":16,"positiveIncrease":11,"totalTestResultsIncrease":27}'
@@ -155,160 +53,7 @@ http_interactions:
   recorded_at: Thu, 02 Apr 2020 04:00:00 GMT
 - request:
     method: get
-    uri: https://covidtracking.com/api/states/daily?date=20200310&state=NY
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Typhoeus - https://github.com/typhoeus/typhoeus
-      Expect:
-      - ''
-  response:
-    status:
-      code: 200
-      message: ''
-    headers:
-      Accept-Ranges:
-      - bytes
-      Access-Control-Allow-Origin:
-      - "*"
-      Cache-Control:
-      - public, max-age=0, must-revalidate
-      Content-Length:
-      - '322'
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 17 May 2020 20:44:37 GMT
-      Etag:
-      - '"b3dccbb47d60c3078ab7bc402bf6913d-ssl"'
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - DENY
-      X-Xss-Protection:
-      - 1; mode=block
-      Age:
-      - '0'
-      Server:
-      - Netlify
-      X-Nf-Request-Id:
-      - c04029a2-8ae8-4fe0-978c-986592cdc09f-14290514
-    body:
-      encoding: UTF-8
-      string: '{"date":20200310,"state":"NY","positive":173,"negative":92,"hash":"f5e6ba4c432f0d12e5c954511fc9ca0c6fcc4234","dateChecked":"2020-03-10T20:00:00Z","total":265,"totalTestResults":265,"posNeg":265,"fips":"36","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":0,"positiveIncrease":31,"totalTestResultsIncrease":31}'
-    http_version: null
-  recorded_at: Thu, 02 Apr 2020 04:00:00 GMT
-- request:
-    method: get
-    uri: https://covidtracking.com/api/states/daily?date=20200308&state=NY
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Typhoeus - https://github.com/typhoeus/typhoeus
-      Expect:
-      - ''
-  response:
-    status:
-      code: 200
-      message: ''
-    headers:
-      Accept-Ranges:
-      - bytes
-      Access-Control-Allow-Origin:
-      - "*"
-      Cache-Control:
-      - public, max-age=0, must-revalidate
-      Content-Length:
-      - '322'
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 17 May 2020 20:44:37 GMT
-      Etag:
-      - '"8360c21b7cb3311992f715345a4678c6-ssl"'
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - DENY
-      X-Xss-Protection:
-      - 1; mode=block
-      Age:
-      - '0'
-      Server:
-      - Netlify
-      X-Nf-Request-Id:
-      - c04029a2-8ae8-4fe0-978c-986592cdc09f-14290513
-    body:
-      encoding: UTF-8
-      string: '{"date":20200308,"state":"NY","positive":105,"negative":92,"hash":"d5e8dc460e38951e9c4ed83ea6116f3d1ef964e9","dateChecked":"2020-03-08T20:00:00Z","total":197,"totalTestResults":197,"posNeg":197,"fips":"36","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":0,"positiveIncrease":29,"totalTestResultsIncrease":29}'
-    http_version: null
-  recorded_at: Thu, 02 Apr 2020 04:00:00 GMT
-- request:
-    method: get
-    uri: https://covidtracking.com/api/states/daily?date=20200307&state=NY
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Typhoeus - https://github.com/typhoeus/typhoeus
-      Expect:
-      - ''
-  response:
-    status:
-      code: 200
-      message: ''
-    headers:
-      Accept-Ranges:
-      - bytes
-      Access-Control-Allow-Origin:
-      - "*"
-      Cache-Control:
-      - public, max-age=0, must-revalidate
-      Content-Length:
-      - '335'
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 17 May 2020 20:44:37 GMT
-      Etag:
-      - '"3b9e442cc4b58f5a2c92c950722b8217-ssl"'
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - DENY
-      X-Xss-Protection:
-      - 1; mode=block
-      Age:
-      - '2'
-      Server:
-      - Netlify
-      X-Nf-Request-Id:
-      - c04029a2-8ae8-4fe0-978c-986592cdc09f-14290512
-    body:
-      encoding: UTF-8
-      string: '{"date":20200307,"state":"NY","positive":76,"negative":92,"pending":236,"hash":"4cc604c6ed1a38fd0eac5f9526682d5eb68a6b96","dateChecked":"2020-03-07T21:00:00Z","total":404,"totalTestResults":168,"posNeg":168,"fips":"36","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":0,"positiveIncrease":43,"totalTestResultsIncrease":43}'
-    http_version: null
-  recorded_at: Thu, 02 Apr 2020 04:00:00 GMT
-- request:
-    method: get
-    uri: https://covidtracking.com/api/states/daily?date=20200313&state=NY
+    uri: https://covidtracking.com/api/v1/states/NY/20200313.json
     body:
       encoding: US-ASCII
       string: ''
@@ -333,9 +78,9 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Sun, 17 May 2020 20:44:38 GMT
+      - Sun, 17 May 2020 21:36:27 GMT
       Etag:
-      - '"a3c6dc712a4fab64ca3b928ae482ecd9-ssl"'
+      - '"091035a1c9a1c126d4289be8416daa08-ssl"'
       Referrer-Policy:
       - strict-origin-when-cross-origin
       Strict-Transport-Security:
@@ -347,11 +92,11 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       Age:
-      - '1'
+      - '0'
       Server:
       - Netlify
       X-Nf-Request-Id:
-      - c04029a2-8ae8-4fe0-978c-986592cdc09f-14290518
+      - '0299c823-9b14-44d9-9eca-31e8d496c6cd-137015'
     body:
       encoding: UTF-8
       string: '{"date":20200313,"state":"NY","positive":421,"negative":2779,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":null,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":null,"lastUpdateEt":"3/12/2020
@@ -360,942 +105,7 @@ http_interactions:
   recorded_at: Thu, 02 Apr 2020 04:00:00 GMT
 - request:
     method: get
-    uri: https://covidtracking.com/api/states/daily?date=20200317&state=NY
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Typhoeus - https://github.com/typhoeus/typhoeus
-      Expect:
-      - ''
-  response:
-    status:
-      code: 200
-      message: ''
-    headers:
-      Accept-Ranges:
-      - bytes
-      Access-Control-Allow-Origin:
-      - "*"
-      Cache-Control:
-      - public, max-age=0, must-revalidate
-      Content-Length:
-      - '614'
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 17 May 2020 20:44:38 GMT
-      Etag:
-      - '"afac54108f07fcd4b62dec8b18c38e14-ssl"'
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - DENY
-      X-Xss-Protection:
-      - 1; mode=block
-      Age:
-      - '1'
-      Server:
-      - Netlify
-      X-Nf-Request-Id:
-      - c04029a2-8ae8-4fe0-978c-986592cdc09f-14290526
-    body:
-      encoding: UTF-8
-      string: '{"date":20200317,"state":"NY","positive":1700,"negative":5506,"pending":null,"hospitalizedCurrently":325,"hospitalizedCumulative":null,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":null,"lastUpdateEt":"3/16/2020
-        15:00","hash":"bce556dd77f7c7e28a75313ab899acc8e4958cfe","dateChecked":"2020-03-17T20:00:00Z","death":7,"hospitalized":null,"total":7206,"totalTestResults":7206,"posNeg":7206,"fips":"36","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":963,"positiveIncrease":750,"totalTestResultsIncrease":1713}'
-    http_version: null
-  recorded_at: Thu, 02 Apr 2020 04:00:00 GMT
-- request:
-    method: get
-    uri: https://covidtracking.com/api/states/daily?date=20200331&state=NY
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Typhoeus - https://github.com/typhoeus/typhoeus
-      Expect:
-      - ''
-  response:
-    status:
-      code: 200
-      message: ''
-    headers:
-      Accept-Ranges:
-      - bytes
-      Access-Control-Allow-Origin:
-      - "*"
-      Cache-Control:
-      - public, max-age=0, must-revalidate
-      Content-Length:
-      - '637'
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 17 May 2020 20:44:38 GMT
-      Etag:
-      - '"cd5c8bba9f87510d7fa989a601f28234-ssl"'
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - DENY
-      X-Xss-Protection:
-      - 1; mode=block
-      Age:
-      - '1'
-      Server:
-      - Netlify
-      X-Nf-Request-Id:
-      - c04029a2-8ae8-4fe0-978c-986592cdc09f-14290550
-    body:
-      encoding: UTF-8
-      string: '{"date":20200331,"state":"NY","positive":75795,"negative":129391,"pending":null,"hospitalizedCurrently":10929,"hospitalizedCumulative":15904,"inIcuCurrently":2710,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":4975,"dataQualityGrade":"A","lastUpdateEt":"3/29/2020
-        09:16","hash":"f5f32b6d7890a1239c97ff4eedef1e4368eb11e5","dateChecked":"2020-03-31T20:00:00Z","death":1550,"hospitalized":15904,"total":205186,"totalTestResults":205186,"posNeg":205186,"fips":"36","deathIncrease":332,"hospitalizedIncrease":2183,"negativeIncrease":9420,"positiveIncrease":9298,"totalTestResultsIncrease":18718}'
-    http_version: null
-  recorded_at: Thu, 02 Apr 2020 04:00:00 GMT
-- request:
-    method: get
-    uri: https://covidtracking.com/api/states/daily?date=20200314&state=NY
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Typhoeus - https://github.com/typhoeus/typhoeus
-      Expect:
-      - ''
-  response:
-    status:
-      code: 200
-      message: ''
-    headers:
-      Accept-Ranges:
-      - bytes
-      Access-Control-Allow-Origin:
-      - "*"
-      Cache-Control:
-      - public, max-age=0, must-revalidate
-      Content-Length:
-      - '614'
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 17 May 2020 20:44:38 GMT
-      Etag:
-      - '"6d8b0e82934f0dd34c5a2cf2f03dc7b6-ssl"'
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - DENY
-      X-Xss-Protection:
-      - 1; mode=block
-      Age:
-      - '1'
-      Server:
-      - Netlify
-      X-Nf-Request-Id:
-      - c04029a2-8ae8-4fe0-978c-986592cdc09f-14290525
-    body:
-      encoding: UTF-8
-      string: '{"date":20200314,"state":"NY","positive":524,"negative":2779,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":null,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":null,"lastUpdateEt":"3/14/2020
-        12:30","hash":"68e903dce4ea864cab367ecd3df55eb76d6904e8","dateChecked":"2020-03-14T20:00:00Z","death":null,"hospitalized":null,"total":3303,"totalTestResults":3303,"posNeg":3303,"fips":"36","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":0,"positiveIncrease":103,"totalTestResultsIncrease":103}'
-    http_version: null
-  recorded_at: Thu, 02 Apr 2020 04:00:00 GMT
-- request:
-    method: get
-    uri: https://covidtracking.com/api/states/daily?date=20200320&state=NY
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Typhoeus - https://github.com/typhoeus/typhoeus
-      Expect:
-      - ''
-  response:
-    status:
-      code: 200
-      message: ''
-    headers:
-      Accept-Ranges:
-      - bytes
-      Access-Control-Allow-Origin:
-      - "*"
-      Cache-Control:
-      - public, max-age=0, must-revalidate
-      Content-Length:
-      - '624'
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 17 May 2020 20:44:38 GMT
-      Etag:
-      - '"476f41ffae160921dbad7e77df2454eb-ssl"'
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - DENY
-      X-Xss-Protection:
-      - 1; mode=block
-      Age:
-      - '1'
-      Server:
-      - Netlify
-      X-Nf-Request-Id:
-      - c04029a2-8ae8-4fe0-978c-986592cdc09f-14290534
-    body:
-      encoding: UTF-8
-      string: '{"date":20200320,"state":"NY","positive":7102,"negative":25325,"pending":null,"hospitalizedCurrently":1042,"hospitalizedCumulative":null,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":null,"lastUpdateEt":"3/20/2020
-        13:20","hash":"095d6b7dfaf049aed260c22124a93718d18a054d","dateChecked":"2020-03-20T20:00:00Z","death":35,"hospitalized":null,"total":32427,"totalTestResults":32427,"posNeg":32427,"fips":"36","deathIncrease":23,"hospitalizedIncrease":0,"negativeIncrease":7193,"positiveIncrease":2950,"totalTestResultsIncrease":10143}'
-    http_version: null
-  recorded_at: Thu, 02 Apr 2020 04:00:00 GMT
-- request:
-    method: get
-    uri: https://covidtracking.com/api/states/daily?date=20200316&state=NY
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Typhoeus - https://github.com/typhoeus/typhoeus
-      Expect:
-      - ''
-  response:
-    status:
-      code: 200
-      message: ''
-    headers:
-      Accept-Ranges:
-      - bytes
-      Access-Control-Allow-Origin:
-      - "*"
-      Cache-Control:
-      - public, max-age=0, must-revalidate
-      Content-Length:
-      - '611'
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 17 May 2020 20:44:38 GMT
-      Etag:
-      - '"271637a8d5fb8eb1c1a64f2f96f8f275-ssl"'
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - DENY
-      X-Xss-Protection:
-      - 1; mode=block
-      Age:
-      - '1'
-      Server:
-      - Netlify
-      X-Nf-Request-Id:
-      - c04029a2-8ae8-4fe0-978c-986592cdc09f-14290527
-    body:
-      encoding: UTF-8
-      string: '{"date":20200316,"state":"NY","positive":950,"negative":4543,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":null,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":null,"lastUpdateEt":"3/16/2020
-        16:22","hash":"ab1a87c7dce9b279751fd03e54e5353edc532d97","dateChecked":"2020-03-16T20:00:00Z","death":7,"hospitalized":null,"total":5493,"totalTestResults":5493,"posNeg":5493,"fips":"36","deathIncrease":4,"hospitalizedIncrease":0,"negativeIncrease":0,"positiveIncrease":221,"totalTestResultsIncrease":221}'
-    http_version: null
-  recorded_at: Thu, 02 Apr 2020 04:00:00 GMT
-- request:
-    method: get
-    uri: https://covidtracking.com/api/states/daily?date=20200319&state=NY
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Typhoeus - https://github.com/typhoeus/typhoeus
-      Expect:
-      - ''
-  response:
-    status:
-      code: 200
-      message: ''
-    headers:
-      Accept-Ranges:
-      - bytes
-      Access-Control-Allow-Origin:
-      - "*"
-      Cache-Control:
-      - public, max-age=0, must-revalidate
-      Content-Length:
-      - '621'
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 17 May 2020 20:44:38 GMT
-      Etag:
-      - '"b2d9c43176e216e02e7ecd57da64a6f7-ssl"'
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - DENY
-      X-Xss-Protection:
-      - 1; mode=block
-      Age:
-      - '1'
-      Server:
-      - Netlify
-      X-Nf-Request-Id:
-      - c04029a2-8ae8-4fe0-978c-986592cdc09f-14290531
-    body:
-      encoding: UTF-8
-      string: '{"date":20200319,"state":"NY","positive":4152,"negative":18132,"pending":null,"hospitalizedCurrently":617,"hospitalizedCumulative":null,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":null,"lastUpdateEt":"3/19/2020
-        13:20","hash":"29d7c99fe26188158e7aedf4a8ac6ee81751950a","dateChecked":"2020-03-19T20:00:00Z","death":12,"hospitalized":null,"total":22284,"totalTestResults":22284,"posNeg":22284,"fips":"36","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":5917,"positiveIncrease":1770,"totalTestResultsIncrease":7687}'
-    http_version: null
-  recorded_at: Thu, 02 Apr 2020 04:00:00 GMT
-- request:
-    method: get
-    uri: https://covidtracking.com/api/states/daily?date=20200326&state=NY
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Typhoeus - https://github.com/typhoeus/typhoeus
-      Expect:
-      - ''
-  response:
-    status:
-      code: 200
-      message: ''
-    headers:
-      Accept-Ranges:
-      - bytes
-      Access-Control-Allow-Origin:
-      - "*"
-      Cache-Control:
-      - public, max-age=0, must-revalidate
-      Content-Length:
-      - '633'
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 17 May 2020 20:44:38 GMT
-      Etag:
-      - '"6d364277eb21be6673dcc44cd1a17528-ssl"'
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - DENY
-      X-Xss-Protection:
-      - 1; mode=block
-      Age:
-      - '1'
-      Server:
-      - Netlify
-      X-Nf-Request-Id:
-      - c04029a2-8ae8-4fe0-978c-986592cdc09f-14290541
-    body:
-      encoding: UTF-8
-      string: '{"date":20200326,"state":"NY","positive":37258,"negative":84846,"pending":null,"hospitalizedCurrently":5327,"hospitalizedCumulative":6844,"inIcuCurrently":1290,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":"B","lastUpdateEt":"3/26/2020
-        16:59","hash":"19363ab62d6ce0eea5e7c372af2d1c5c9c301cb3","dateChecked":"2020-03-26T20:00:00Z","death":385,"hospitalized":6844,"total":122104,"totalTestResults":122104,"posNeg":122104,"fips":"36","deathIncrease":100,"hospitalizedIncrease":3039,"negativeIncrease":12178,"positiveIncrease":6447,"totalTestResultsIncrease":18625}'
-    http_version: null
-  recorded_at: Thu, 02 Apr 2020 04:00:00 GMT
-- request:
-    method: get
-    uri: https://covidtracking.com/api/states/daily?date=20200323&state=NY
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Typhoeus - https://github.com/typhoeus/typhoeus
-      Expect:
-      - ''
-  response:
-    status:
-      code: 200
-      message: ''
-    headers:
-      Accept-Ranges:
-      - bytes
-      Access-Control-Allow-Origin:
-      - "*"
-      Cache-Control:
-      - public, max-age=0, must-revalidate
-      Content-Length:
-      - '627'
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 17 May 2020 20:44:38 GMT
-      Etag:
-      - '"d7223c8ead98842792d0f034c4745442-ssl"'
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - DENY
-      X-Xss-Protection:
-      - 1; mode=block
-      Age:
-      - '1'
-      Server:
-      - Netlify
-      X-Nf-Request-Id:
-      - c04029a2-8ae8-4fe0-978c-986592cdc09f-14290536
-    body:
-      encoding: UTF-8
-      string: '{"date":20200323,"state":"NY","positive":20875,"negative":57414,"pending":null,"hospitalizedCurrently":2629,"hospitalizedCumulative":2635,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":"B","lastUpdateEt":"3/23/2020
-        11:36","hash":"13847b3570d018bcf9a9f5cb779f6d72d04267c2","dateChecked":"2020-03-23T20:00:00Z","death":114,"hospitalized":2635,"total":78289,"totalTestResults":78289,"posNeg":78289,"fips":"36","deathIncrease":0,"hospitalizedIncrease":661,"negativeIncrease":11181,"positiveIncrease":5707,"totalTestResultsIncrease":16888}'
-    http_version: null
-  recorded_at: Thu, 02 Apr 2020 04:00:00 GMT
-- request:
-    method: get
-    uri: https://covidtracking.com/api/states/daily?date=20200324&state=NY
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Typhoeus - https://github.com/typhoeus/typhoeus
-      Expect:
-      - ''
-  response:
-    status:
-      code: 200
-      message: ''
-    headers:
-      Accept-Ranges:
-      - bytes
-      Access-Control-Allow-Origin:
-      - "*"
-      Cache-Control:
-      - public, max-age=0, must-revalidate
-      Content-Length:
-      - '627'
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 17 May 2020 20:44:38 GMT
-      Etag:
-      - '"1eee4f2e2efaab3f3450d9d8a22b32bb-ssl"'
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - DENY
-      X-Xss-Protection:
-      - 1; mode=block
-      Age:
-      - '1'
-      Server:
-      - Netlify
-      X-Nf-Request-Id:
-      - c04029a2-8ae8-4fe0-978c-986592cdc09f-14290538
-    body:
-      encoding: UTF-8
-      string: '{"date":20200324,"state":"NY","positive":25665,"negative":65605,"pending":null,"hospitalizedCurrently":3343,"hospitalizedCumulative":3234,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":"B","lastUpdateEt":"3/24/2020
-        11:30","hash":"b08731f515bedc235dd7e90953425c36bf60c91c","dateChecked":"2020-03-24T20:00:00Z","death":210,"hospitalized":3234,"total":91270,"totalTestResults":91270,"posNeg":91270,"fips":"36","deathIncrease":96,"hospitalizedIncrease":599,"negativeIncrease":8191,"positiveIncrease":4790,"totalTestResultsIncrease":12981}'
-    http_version: null
-  recorded_at: Thu, 02 Apr 2020 04:00:00 GMT
-- request:
-    method: get
-    uri: https://covidtracking.com/api/states/daily?date=20200315&state=NY
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Typhoeus - https://github.com/typhoeus/typhoeus
-      Expect:
-      - ''
-  response:
-    status:
-      code: 200
-      message: ''
-    headers:
-      Accept-Ranges:
-      - bytes
-      Access-Control-Allow-Origin:
-      - "*"
-      Cache-Control:
-      - public, max-age=0, must-revalidate
-      Content-Length:
-      - '615'
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 17 May 2020 20:44:38 GMT
-      Etag:
-      - '"fbde84785b3e7c6ce7fa9fc68a381385-ssl"'
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - DENY
-      X-Xss-Protection:
-      - 1; mode=block
-      Age:
-      - '1'
-      Server:
-      - Netlify
-      X-Nf-Request-Id:
-      - c04029a2-8ae8-4fe0-978c-986592cdc09f-14290521
-    body:
-      encoding: UTF-8
-      string: '{"date":20200315,"state":"NY","positive":729,"negative":4543,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":null,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":null,"lastUpdateEt":"3/15/2020
-        00:00","hash":"4cdad43cc1b747b51c208a5662fdfdccec506145","dateChecked":"2020-03-15T20:00:00Z","death":3,"hospitalized":null,"total":5272,"totalTestResults":5272,"posNeg":5272,"fips":"36","deathIncrease":3,"hospitalizedIncrease":0,"negativeIncrease":1764,"positiveIncrease":205,"totalTestResultsIncrease":1969}'
-    http_version: null
-  recorded_at: Thu, 02 Apr 2020 04:00:00 GMT
-- request:
-    method: get
-    uri: https://covidtracking.com/api/states/daily?date=20200325&state=NY
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Typhoeus - https://github.com/typhoeus/typhoeus
-      Expect:
-      - ''
-  response:
-    status:
-      code: 200
-      message: ''
-    headers:
-      Accept-Ranges:
-      - bytes
-      Access-Control-Allow-Origin:
-      - "*"
-      Cache-Control:
-      - public, max-age=0, must-revalidate
-      Content-Length:
-      - '630'
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 17 May 2020 20:44:38 GMT
-      Etag:
-      - '"d8e70457c8feb3c2a222f5713fb348c2-ssl"'
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - DENY
-      X-Xss-Protection:
-      - 1; mode=block
-      Age:
-      - '1'
-      Server:
-      - Netlify
-      X-Nf-Request-Id:
-      - c04029a2-8ae8-4fe0-978c-986592cdc09f-14290540
-    body:
-      encoding: UTF-8
-      string: '{"date":20200325,"state":"NY","positive":30811,"negative":72668,"pending":null,"hospitalizedCurrently":4079,"hospitalizedCumulative":3805,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":"B","lastUpdateEt":"3/25/2020
-        11:45","hash":"8416f1590fec27b83e85b39865b220bc4e742f67","dateChecked":"2020-03-25T20:00:00Z","death":285,"hospitalized":3805,"total":103479,"totalTestResults":103479,"posNeg":103479,"fips":"36","deathIncrease":75,"hospitalizedIncrease":571,"negativeIncrease":7063,"positiveIncrease":5146,"totalTestResultsIncrease":12209}'
-    http_version: null
-  recorded_at: Thu, 02 Apr 2020 04:00:00 GMT
-- request:
-    method: get
-    uri: https://covidtracking.com/api/states/daily?date=20200311&state=NY
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Typhoeus - https://github.com/typhoeus/typhoeus
-      Expect:
-      - ''
-  response:
-    status:
-      code: 200
-      message: ''
-    headers:
-      Accept-Ranges:
-      - bytes
-      Access-Control-Allow-Origin:
-      - "*"
-      Cache-Control:
-      - public, max-age=0, must-revalidate
-      Content-Length:
-      - '322'
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 17 May 2020 20:44:38 GMT
-      Etag:
-      - '"ac616d86bdf5e6c27614f39e4ceb0bcf-ssl"'
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - DENY
-      X-Xss-Protection:
-      - 1; mode=block
-      Age:
-      - '1'
-      Server:
-      - Netlify
-      X-Nf-Request-Id:
-      - c04029a2-8ae8-4fe0-978c-986592cdc09f-14290519
-    body:
-      encoding: UTF-8
-      string: '{"date":20200311,"state":"NY","positive":216,"negative":92,"hash":"5cf3e282f2cdc4105ecc7b65c7cf23b8dfa7b10c","dateChecked":"2020-03-11T20:00:00Z","total":308,"totalTestResults":308,"posNeg":308,"fips":"36","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":0,"positiveIncrease":43,"totalTestResultsIncrease":43}'
-    http_version: null
-  recorded_at: Thu, 02 Apr 2020 04:00:00 GMT
-- request:
-    method: get
-    uri: https://covidtracking.com/api/states/daily?date=20200401&state=NY
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Typhoeus - https://github.com/typhoeus/typhoeus
-      Expect:
-      - ''
-  response:
-    status:
-      code: 200
-      message: ''
-    headers:
-      Accept-Ranges:
-      - bytes
-      Access-Control-Allow-Origin:
-      - "*"
-      Cache-Control:
-      - public, max-age=0, must-revalidate
-      Content-Length:
-      - '636'
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 17 May 2020 20:44:38 GMT
-      Etag:
-      - '"c2bc40539ba33c250487e62936b1f65e-ssl"'
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - DENY
-      X-Xss-Protection:
-      - 1; mode=block
-      Age:
-      - '1'
-      Server:
-      - Netlify
-      X-Nf-Request-Id:
-      - c04029a2-8ae8-4fe0-978c-986592cdc09f-14290547
-    body:
-      encoding: UTF-8
-      string: '{"date":20200401,"state":"NY","positive":83712,"negative":137168,"pending":null,"hospitalizedCurrently":12226,"hospitalizedCumulative":18368,"inIcuCurrently":3022,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":6142,"dataQualityGrade":"A","lastUpdateEt":"4/1/2020
-        12:00","hash":"1d614a1bcdaa1c82f46f20e84886028b578bdf1d","dateChecked":"2020-04-01T20:00:00Z","death":1941,"hospitalized":18368,"total":220880,"totalTestResults":220880,"posNeg":220880,"fips":"36","deathIncrease":391,"hospitalizedIncrease":2464,"negativeIncrease":7777,"positiveIncrease":7917,"totalTestResultsIncrease":15694}'
-    http_version: null
-  recorded_at: Thu, 02 Apr 2020 04:00:00 GMT
-- request:
-    method: get
-    uri: https://covidtracking.com/api/states/daily?date=20200327&state=NY
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Typhoeus - https://github.com/typhoeus/typhoeus
-      Expect:
-      - ''
-  response:
-    status:
-      code: 200
-      message: ''
-    headers:
-      Accept-Ranges:
-      - bytes
-      Access-Control-Allow-Origin:
-      - "*"
-      Cache-Control:
-      - public, max-age=0, must-revalidate
-      Content-Length:
-      - '634'
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 17 May 2020 20:44:38 GMT
-      Etag:
-      - '"e6b450306d5c8016b75a696c9c4ba207-ssl"'
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - DENY
-      X-Xss-Protection:
-      - 1; mode=block
-      Age:
-      - '1'
-      Server:
-      - Netlify
-      X-Nf-Request-Id:
-      - c04029a2-8ae8-4fe0-978c-986592cdc09f-14290542
-    body:
-      encoding: UTF-8
-      string: '{"date":20200327,"state":"NY","positive":44635,"negative":101118,"pending":null,"hospitalizedCurrently":6481,"hospitalizedCumulative":8526,"inIcuCurrently":1583,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":2045,"dataQualityGrade":"A","lastUpdateEt":"3/27/2020
-        11:15","hash":"04fc13195c2f6f99023c2a165488143fa7011847","dateChecked":"2020-03-27T20:00:00Z","death":519,"hospitalized":8526,"total":145753,"totalTestResults":145753,"posNeg":145753,"fips":"36","deathIncrease":134,"hospitalizedIncrease":1682,"negativeIncrease":16272,"positiveIncrease":7377,"totalTestResultsIncrease":23649}'
-    http_version: null
-  recorded_at: Thu, 02 Apr 2020 04:00:00 GMT
-- request:
-    method: get
-    uri: https://covidtracking.com/api/states/daily?date=20200402&state=NY
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Typhoeus - https://github.com/typhoeus/typhoeus
-      Expect:
-      - ''
-  response:
-    status:
-      code: 200
-      message: ''
-    headers:
-      Accept-Ranges:
-      - bytes
-      Access-Control-Allow-Origin:
-      - "*"
-      Cache-Control:
-      - public, max-age=0, must-revalidate
-      Content-Length:
-      - '636'
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 17 May 2020 20:44:38 GMT
-      Etag:
-      - '"667e70173781b88338b2f799fbc3ad67-ssl"'
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - DENY
-      X-Xss-Protection:
-      - 1; mode=block
-      Age:
-      - '1'
-      Server:
-      - Netlify
-      X-Nf-Request-Id:
-      - c04029a2-8ae8-4fe0-978c-986592cdc09f-14290549
-    body:
-      encoding: UTF-8
-      string: '{"date":20200402,"state":"NY","positive":92381,"negative":146584,"pending":null,"hospitalizedCurrently":13383,"hospitalizedCumulative":20817,"inIcuCurrently":3396,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":7434,"dataQualityGrade":"A","lastUpdateEt":"4/2/2020
-        11:45","hash":"775f76625647df1623092ee21c45edb479690b22","dateChecked":"2020-04-02T20:00:00Z","death":2373,"hospitalized":20817,"total":238965,"totalTestResults":238965,"posNeg":238965,"fips":"36","deathIncrease":432,"hospitalizedIncrease":2449,"negativeIncrease":9416,"positiveIncrease":8669,"totalTestResultsIncrease":18085}'
-    http_version: null
-  recorded_at: Thu, 02 Apr 2020 04:00:00 GMT
-- request:
-    method: get
-    uri: https://covidtracking.com/api/states/daily?date=20200321&state=NY
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Typhoeus - https://github.com/typhoeus/typhoeus
-      Expect:
-      - ''
-  response:
-    status:
-      code: 200
-      message: ''
-    headers:
-      Accept-Ranges:
-      - bytes
-      Access-Control-Allow-Origin:
-      - "*"
-      Cache-Control:
-      - public, max-age=0, must-revalidate
-      Content-Length:
-      - '627'
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 17 May 2020 20:44:38 GMT
-      Etag:
-      - '"501eb3ed88ebe01cf1efbea413d41880-ssl"'
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - DENY
-      X-Xss-Protection:
-      - 1; mode=block
-      Age:
-      - '1'
-      Server:
-      - Netlify
-      X-Nf-Request-Id:
-      - c04029a2-8ae8-4fe0-978c-986592cdc09f-14290535
-    body:
-      encoding: UTF-8
-      string: '{"date":20200321,"state":"NY","positive":10356,"negative":35081,"pending":null,"hospitalizedCurrently":1436,"hospitalizedCumulative":1603,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":null,"lastUpdateEt":"3/20/2020
-        21:22","hash":"6a0cf80f7c3e2f1ac498d63692836d8066eacf00","dateChecked":"2020-03-21T20:00:00Z","death":44,"hospitalized":1603,"total":45437,"totalTestResults":45437,"posNeg":45437,"fips":"36","deathIncrease":9,"hospitalizedIncrease":1603,"negativeIncrease":9756,"positiveIncrease":3254,"totalTestResultsIncrease":13010}'
-    http_version: null
-  recorded_at: Thu, 02 Apr 2020 04:00:00 GMT
-- request:
-    method: get
-    uri: https://covidtracking.com/api/states/daily?date=20200322&state=NY
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Typhoeus - https://github.com/typhoeus/typhoeus
-      Expect:
-      - ''
-  response:
-    status:
-      code: 200
-      message: ''
-    headers:
-      Accept-Ranges:
-      - bytes
-      Access-Control-Allow-Origin:
-      - "*"
-      Cache-Control:
-      - public, max-age=0, must-revalidate
-      Content-Length:
-      - '629'
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 17 May 2020 20:44:38 GMT
-      Etag:
-      - '"3fcd00d77a4ddb848e554ca4320fff9c-ssl"'
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - DENY
-      X-Xss-Protection:
-      - 1; mode=block
-      Age:
-      - '1'
-      Server:
-      - Netlify
-      X-Nf-Request-Id:
-      - c04029a2-8ae8-4fe0-978c-986592cdc09f-14290533
-    body:
-      encoding: UTF-8
-      string: '{"date":20200322,"state":"NY","positive":15168,"negative":46233,"pending":null,"hospitalizedCurrently":2043,"hospitalizedCumulative":1974,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":null,"lastUpdateEt":"3/22/2020
-        11:00","hash":"158fc2e8d902a0fd3ae2187878a8093152cc396d","dateChecked":"2020-03-22T20:00:00Z","death":114,"hospitalized":1974,"total":61401,"totalTestResults":61401,"posNeg":61401,"fips":"36","deathIncrease":70,"hospitalizedIncrease":371,"negativeIncrease":11152,"positiveIncrease":4812,"totalTestResultsIncrease":15964}'
-    http_version: null
-  recorded_at: Thu, 02 Apr 2020 04:00:00 GMT
-- request:
-    method: get
-    uri: https://covidtracking.com/api/states/daily?date=20200312&state=NY
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Typhoeus - https://github.com/typhoeus/typhoeus
-      Expect:
-      - ''
-  response:
-    status:
-      code: 200
-      message: ''
-    headers:
-      Accept-Ranges:
-      - bytes
-      Access-Control-Allow-Origin:
-      - "*"
-      Cache-Control:
-      - public, max-age=0, must-revalidate
-      Content-Length:
-      - '605'
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 17 May 2020 20:44:38 GMT
-      Etag:
-      - '"0826ba5ce545086a4f02d4d2cf63654d-ssl"'
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - DENY
-      X-Xss-Protection:
-      - 1; mode=block
-      Age:
-      - '1'
-      Server:
-      - Netlify
-      X-Nf-Request-Id:
-      - c04029a2-8ae8-4fe0-978c-986592cdc09f-14290517
-    body:
-      encoding: UTF-8
-      string: '{"date":20200312,"state":"NY","positive":216,"negative":92,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":null,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":null,"lastUpdateEt":"3/11/2020
-        16:00","hash":"43210af34819b2a2cd8d6d43d9bed655003da5a6","dateChecked":"2020-03-12T20:00:00Z","death":null,"hospitalized":null,"total":308,"totalTestResults":308,"posNeg":308,"fips":"36","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":0,"positiveIncrease":0,"totalTestResultsIncrease":0}'
-    http_version: null
-  recorded_at: Thu, 02 Apr 2020 04:00:00 GMT
-- request:
-    method: get
-    uri: https://covidtracking.com/api/states/daily?date=20200304&state=NY
+    uri: https://covidtracking.com/api/v1/states/NY/20200304.json
     body:
       encoding: US-ASCII
       string: ''
@@ -1320,9 +130,9 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Sun, 17 May 2020 20:44:38 GMT
+      - Sun, 17 May 2020 21:36:27 GMT
       Etag:
-      - '"8c31c337ea3d41bcc468eb32b62c0c82-ssl"'
+      - '"ca2f809e3d2b455e507c1e5975f1bd1d-ssl"'
       Referrer-Policy:
       - strict-origin-when-cross-origin
       Strict-Transport-Security:
@@ -1334,11 +144,11 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       Age:
-      - '1'
+      - '0'
       Server:
       - Netlify
       X-Nf-Request-Id:
-      - c04029a2-8ae8-4fe0-978c-986592cdc09f-14290552
+      - '0299c823-9b14-44d9-9eca-31e8d496c6cd-137008'
     body:
       encoding: UTF-8
       string: '{"date":20200304,"state":"NY","positive":6,"negative":48,"pending":24,"hash":"3662a819d9896d5c0e253b9738b4d6160e0f9f4d","dateChecked":"2020-03-04T21:00:00Z","total":78,"totalTestResults":54,"posNeg":54,"fips":"36","deathIncrease":null,"hospitalizedIncrease":null,"negativeIncrease":null,"positiveIncrease":null,"totalTestResultsIncrease":null}'
@@ -1346,7 +156,576 @@ http_interactions:
   recorded_at: Thu, 02 Apr 2020 04:00:00 GMT
 - request:
     method: get
-    uri: https://covidtracking.com/api/states/daily?date=20200330&state=NY
+    uri: https://covidtracking.com/api/v1/states/NY/20200307.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=0, must-revalidate
+      Content-Length:
+      - '335'
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 17 May 2020 21:36:27 GMT
+      Etag:
+      - '"1e5c5d9c5a20ac31b38a3514fbc78809-ssl"'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Xss-Protection:
+      - 1; mode=block
+      Age:
+      - '0'
+      Server:
+      - Netlify
+      X-Nf-Request-Id:
+      - '0299c823-9b14-44d9-9eca-31e8d496c6cd-137017'
+    body:
+      encoding: UTF-8
+      string: '{"date":20200307,"state":"NY","positive":76,"negative":92,"pending":236,"hash":"4cc604c6ed1a38fd0eac5f9526682d5eb68a6b96","dateChecked":"2020-03-07T21:00:00Z","total":404,"totalTestResults":168,"posNeg":168,"fips":"36","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":0,"positiveIncrease":43,"totalTestResultsIncrease":43}'
+    http_version: null
+  recorded_at: Thu, 02 Apr 2020 04:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/v1/states/NY/20200314.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=0, must-revalidate
+      Content-Length:
+      - '614'
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 17 May 2020 21:36:27 GMT
+      Etag:
+      - '"972aa535ee41efd4a69833c9b0bc13e1-ssl"'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Xss-Protection:
+      - 1; mode=block
+      Age:
+      - '0'
+      Server:
+      - Netlify
+      X-Nf-Request-Id:
+      - '0299c823-9b14-44d9-9eca-31e8d496c6cd-137013'
+    body:
+      encoding: UTF-8
+      string: '{"date":20200314,"state":"NY","positive":524,"negative":2779,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":null,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":null,"lastUpdateEt":"3/14/2020
+        12:30","hash":"68e903dce4ea864cab367ecd3df55eb76d6904e8","dateChecked":"2020-03-14T20:00:00Z","death":null,"hospitalized":null,"total":3303,"totalTestResults":3303,"posNeg":3303,"fips":"36","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":0,"positiveIncrease":103,"totalTestResultsIncrease":103}'
+    http_version: null
+  recorded_at: Thu, 02 Apr 2020 04:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/v1/states/NY/20200319.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=0, must-revalidate
+      Content-Length:
+      - '621'
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 17 May 2020 21:36:27 GMT
+      Etag:
+      - '"e775083f6835e6eee81fadc4eef67ef5-ssl"'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Xss-Protection:
+      - 1; mode=block
+      Age:
+      - '0'
+      Server:
+      - Netlify
+      X-Nf-Request-Id:
+      - '0299c823-9b14-44d9-9eca-31e8d496c6cd-137026'
+    body:
+      encoding: UTF-8
+      string: '{"date":20200319,"state":"NY","positive":4152,"negative":18132,"pending":null,"hospitalizedCurrently":617,"hospitalizedCumulative":null,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":null,"lastUpdateEt":"3/19/2020
+        13:20","hash":"29d7c99fe26188158e7aedf4a8ac6ee81751950a","dateChecked":"2020-03-19T20:00:00Z","death":12,"hospitalized":null,"total":22284,"totalTestResults":22284,"posNeg":22284,"fips":"36","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":5917,"positiveIncrease":1770,"totalTestResultsIncrease":7687}'
+    http_version: null
+  recorded_at: Thu, 02 Apr 2020 04:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/v1/states/NY/20200320.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=0, must-revalidate
+      Content-Length:
+      - '624'
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 17 May 2020 21:36:27 GMT
+      Etag:
+      - '"073d3039478a1a94b1a185522e135d88-ssl"'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Xss-Protection:
+      - 1; mode=block
+      Age:
+      - '0'
+      Server:
+      - Netlify
+      X-Nf-Request-Id:
+      - '0299c823-9b14-44d9-9eca-31e8d496c6cd-137030'
+    body:
+      encoding: UTF-8
+      string: '{"date":20200320,"state":"NY","positive":7102,"negative":25325,"pending":null,"hospitalizedCurrently":1042,"hospitalizedCumulative":null,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":null,"lastUpdateEt":"3/20/2020
+        13:20","hash":"095d6b7dfaf049aed260c22124a93718d18a054d","dateChecked":"2020-03-20T20:00:00Z","death":35,"hospitalized":null,"total":32427,"totalTestResults":32427,"posNeg":32427,"fips":"36","deathIncrease":23,"hospitalizedIncrease":0,"negativeIncrease":7193,"positiveIncrease":2950,"totalTestResultsIncrease":10143}'
+    http_version: null
+  recorded_at: Thu, 02 Apr 2020 04:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/v1/states/NY/20200309.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=0, must-revalidate
+      Content-Length:
+      - '322'
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 17 May 2020 21:36:27 GMT
+      Etag:
+      - '"dedbac4de6f31d6d9f0b7859cacecff7-ssl"'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Xss-Protection:
+      - 1; mode=block
+      Age:
+      - '0'
+      Server:
+      - Netlify
+      X-Nf-Request-Id:
+      - '0299c823-9b14-44d9-9eca-31e8d496c6cd-137016'
+    body:
+      encoding: UTF-8
+      string: '{"date":20200309,"state":"NY","positive":142,"negative":92,"hash":"cb36363f3eca57c7bfddd3d8ea4234ed33dda5f9","dateChecked":"2020-03-09T20:00:00Z","total":234,"totalTestResults":234,"posNeg":234,"fips":"36","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":0,"positiveIncrease":37,"totalTestResultsIncrease":37}'
+    http_version: null
+  recorded_at: Thu, 02 Apr 2020 04:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/v1/states/NY/20200310.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=0, must-revalidate
+      Content-Length:
+      - '322'
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 17 May 2020 21:36:27 GMT
+      Etag:
+      - '"fa1d6f14a5e11ad8aa3809874b064ca7-ssl"'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Xss-Protection:
+      - 1; mode=block
+      Age:
+      - '0'
+      Server:
+      - Netlify
+      X-Nf-Request-Id:
+      - '0299c823-9b14-44d9-9eca-31e8d496c6cd-137019'
+    body:
+      encoding: UTF-8
+      string: '{"date":20200310,"state":"NY","positive":173,"negative":92,"hash":"f5e6ba4c432f0d12e5c954511fc9ca0c6fcc4234","dateChecked":"2020-03-10T20:00:00Z","total":265,"totalTestResults":265,"posNeg":265,"fips":"36","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":0,"positiveIncrease":31,"totalTestResultsIncrease":31}'
+    http_version: null
+  recorded_at: Thu, 02 Apr 2020 04:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/v1/states/NY/20200323.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=0, must-revalidate
+      Content-Length:
+      - '627'
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 17 May 2020 21:36:27 GMT
+      Etag:
+      - '"139261843c2d0c51b0ba69dfbc624278-ssl"'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Xss-Protection:
+      - 1; mode=block
+      Age:
+      - '0'
+      Server:
+      - Netlify
+      X-Nf-Request-Id:
+      - '0299c823-9b14-44d9-9eca-31e8d496c6cd-137029'
+    body:
+      encoding: UTF-8
+      string: '{"date":20200323,"state":"NY","positive":20875,"negative":57414,"pending":null,"hospitalizedCurrently":2629,"hospitalizedCumulative":2635,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":"B","lastUpdateEt":"3/23/2020
+        11:36","hash":"13847b3570d018bcf9a9f5cb779f6d72d04267c2","dateChecked":"2020-03-23T20:00:00Z","death":114,"hospitalized":2635,"total":78289,"totalTestResults":78289,"posNeg":78289,"fips":"36","deathIncrease":0,"hospitalizedIncrease":661,"negativeIncrease":11181,"positiveIncrease":5707,"totalTestResultsIncrease":16888}'
+    http_version: null
+  recorded_at: Thu, 02 Apr 2020 04:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/v1/states/NY/20200327.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=0, must-revalidate
+      Content-Length:
+      - '634'
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 17 May 2020 21:36:27 GMT
+      Etag:
+      - '"4001fd5fe1084949f2edc21b1b970f09-ssl"'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Xss-Protection:
+      - 1; mode=block
+      Age:
+      - '0'
+      Server:
+      - Netlify
+      X-Nf-Request-Id:
+      - '0299c823-9b14-44d9-9eca-31e8d496c6cd-137041'
+    body:
+      encoding: UTF-8
+      string: '{"date":20200327,"state":"NY","positive":44635,"negative":101118,"pending":null,"hospitalizedCurrently":6481,"hospitalizedCumulative":8526,"inIcuCurrently":1583,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":2045,"dataQualityGrade":"A","lastUpdateEt":"3/27/2020
+        11:15","hash":"04fc13195c2f6f99023c2a165488143fa7011847","dateChecked":"2020-03-27T20:00:00Z","death":519,"hospitalized":8526,"total":145753,"totalTestResults":145753,"posNeg":145753,"fips":"36","deathIncrease":134,"hospitalizedIncrease":1682,"negativeIncrease":16272,"positiveIncrease":7377,"totalTestResultsIncrease":23649}'
+    http_version: null
+  recorded_at: Thu, 02 Apr 2020 04:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/v1/states/NY/20200331.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=0, must-revalidate
+      Content-Length:
+      - '637'
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 17 May 2020 21:36:27 GMT
+      Etag:
+      - '"29234d31155160a87aba72e7542dddae-ssl"'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Xss-Protection:
+      - 1; mode=block
+      Age:
+      - '0'
+      Server:
+      - Netlify
+      X-Nf-Request-Id:
+      - '0299c823-9b14-44d9-9eca-31e8d496c6cd-137045'
+    body:
+      encoding: UTF-8
+      string: '{"date":20200331,"state":"NY","positive":75795,"negative":129391,"pending":null,"hospitalizedCurrently":10929,"hospitalizedCumulative":15904,"inIcuCurrently":2710,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":4975,"dataQualityGrade":"A","lastUpdateEt":"3/29/2020
+        09:16","hash":"f5f32b6d7890a1239c97ff4eedef1e4368eb11e5","dateChecked":"2020-03-31T20:00:00Z","death":1550,"hospitalized":15904,"total":205186,"totalTestResults":205186,"posNeg":205186,"fips":"36","deathIncrease":332,"hospitalizedIncrease":2183,"negativeIncrease":9420,"positiveIncrease":9298,"totalTestResultsIncrease":18718}'
+    http_version: null
+  recorded_at: Thu, 02 Apr 2020 04:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/v1/states/NY/20200315.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=0, must-revalidate
+      Content-Length:
+      - '615'
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 17 May 2020 21:36:27 GMT
+      Etag:
+      - '"db48e23c917f3b3cc07d8dcd8ab44acb-ssl"'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Xss-Protection:
+      - 1; mode=block
+      Age:
+      - '0'
+      Server:
+      - Netlify
+      X-Nf-Request-Id:
+      - '0299c823-9b14-44d9-9eca-31e8d496c6cd-137020'
+    body:
+      encoding: UTF-8
+      string: '{"date":20200315,"state":"NY","positive":729,"negative":4543,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":null,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":null,"lastUpdateEt":"3/15/2020
+        00:00","hash":"4cdad43cc1b747b51c208a5662fdfdccec506145","dateChecked":"2020-03-15T20:00:00Z","death":3,"hospitalized":null,"total":5272,"totalTestResults":5272,"posNeg":5272,"fips":"36","deathIncrease":3,"hospitalizedIncrease":0,"negativeIncrease":1764,"positiveIncrease":205,"totalTestResultsIncrease":1969}'
+    http_version: null
+  recorded_at: Thu, 02 Apr 2020 04:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/v1/states/NY/20200316.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=0, must-revalidate
+      Content-Length:
+      - '611'
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 17 May 2020 21:36:27 GMT
+      Etag:
+      - '"c328e1952c7c9f8a023e8a9e13faecb6-ssl"'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Xss-Protection:
+      - 1; mode=block
+      Age:
+      - '0'
+      Server:
+      - Netlify
+      X-Nf-Request-Id:
+      - '0299c823-9b14-44d9-9eca-31e8d496c6cd-137022'
+    body:
+      encoding: UTF-8
+      string: '{"date":20200316,"state":"NY","positive":950,"negative":4543,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":null,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":null,"lastUpdateEt":"3/16/2020
+        16:22","hash":"ab1a87c7dce9b279751fd03e54e5353edc532d97","dateChecked":"2020-03-16T20:00:00Z","death":7,"hospitalized":null,"total":5493,"totalTestResults":5493,"posNeg":5493,"fips":"36","deathIncrease":4,"hospitalizedIncrease":0,"negativeIncrease":0,"positiveIncrease":221,"totalTestResultsIncrease":221}'
+    http_version: null
+  recorded_at: Thu, 02 Apr 2020 04:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/v1/states/NY/20200401.json
     body:
       encoding: US-ASCII
       string: ''
@@ -1371,9 +750,9 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Sun, 17 May 2020 20:44:38 GMT
+      - Sun, 17 May 2020 21:36:27 GMT
       Etag:
-      - '"50b598dcb568ecdf2b59a152b7db6ae5-ssl"'
+      - '"6087419db5c20493b32889405af8cfa0-ssl"'
       Referrer-Policy:
       - strict-origin-when-cross-origin
       Strict-Transport-Security:
@@ -1385,11 +764,684 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       Age:
-      - '1'
+      - '0'
       Server:
       - Netlify
       X-Nf-Request-Id:
-      - c04029a2-8ae8-4fe0-978c-986592cdc09f-14290546
+      - '0299c823-9b14-44d9-9eca-31e8d496c6cd-137048'
+    body:
+      encoding: UTF-8
+      string: '{"date":20200401,"state":"NY","positive":83712,"negative":137168,"pending":null,"hospitalizedCurrently":12226,"hospitalizedCumulative":18368,"inIcuCurrently":3022,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":6142,"dataQualityGrade":"A","lastUpdateEt":"4/1/2020
+        12:00","hash":"1d614a1bcdaa1c82f46f20e84886028b578bdf1d","dateChecked":"2020-04-01T20:00:00Z","death":1941,"hospitalized":18368,"total":220880,"totalTestResults":220880,"posNeg":220880,"fips":"36","deathIncrease":391,"hospitalizedIncrease":2464,"negativeIncrease":7777,"positiveIncrease":7917,"totalTestResultsIncrease":15694}'
+    http_version: null
+  recorded_at: Thu, 02 Apr 2020 04:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/v1/states/NY/20200402.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=0, must-revalidate
+      Content-Length:
+      - '636'
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 17 May 2020 21:36:27 GMT
+      Etag:
+      - '"0c28bf78d511ea5e4b361f5fae0fa79e-ssl"'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Xss-Protection:
+      - 1; mode=block
+      Age:
+      - '0'
+      Server:
+      - Netlify
+      X-Nf-Request-Id:
+      - '0299c823-9b14-44d9-9eca-31e8d496c6cd-137058'
+    body:
+      encoding: UTF-8
+      string: '{"date":20200402,"state":"NY","positive":92381,"negative":146584,"pending":null,"hospitalizedCurrently":13383,"hospitalizedCumulative":20817,"inIcuCurrently":3396,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":7434,"dataQualityGrade":"A","lastUpdateEt":"4/2/2020
+        11:45","hash":"775f76625647df1623092ee21c45edb479690b22","dateChecked":"2020-04-02T20:00:00Z","death":2373,"hospitalized":20817,"total":238965,"totalTestResults":238965,"posNeg":238965,"fips":"36","deathIncrease":432,"hospitalizedIncrease":2449,"negativeIncrease":9416,"positiveIncrease":8669,"totalTestResultsIncrease":18085}'
+    http_version: null
+  recorded_at: Thu, 02 Apr 2020 04:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/v1/states/NY/20200311.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=0, must-revalidate
+      Content-Length:
+      - '322'
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 17 May 2020 21:36:27 GMT
+      Etag:
+      - '"21f607cbaae3713d295c8da69168bcef-ssl"'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Xss-Protection:
+      - 1; mode=block
+      Age:
+      - '0'
+      Server:
+      - Netlify
+      X-Nf-Request-Id:
+      - '0299c823-9b14-44d9-9eca-31e8d496c6cd-137014'
+    body:
+      encoding: UTF-8
+      string: '{"date":20200311,"state":"NY","positive":216,"negative":92,"hash":"5cf3e282f2cdc4105ecc7b65c7cf23b8dfa7b10c","dateChecked":"2020-03-11T20:00:00Z","total":308,"totalTestResults":308,"posNeg":308,"fips":"36","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":0,"positiveIncrease":43,"totalTestResultsIncrease":43}'
+    http_version: null
+  recorded_at: Thu, 02 Apr 2020 04:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/v1/states/NY/20200312.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=0, must-revalidate
+      Content-Length:
+      - '605'
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 17 May 2020 21:36:27 GMT
+      Etag:
+      - '"c9a2fff513b33ae033cec5a99953c342-ssl"'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Xss-Protection:
+      - 1; mode=block
+      Age:
+      - '0'
+      Server:
+      - Netlify
+      X-Nf-Request-Id:
+      - '0299c823-9b14-44d9-9eca-31e8d496c6cd-137018'
+    body:
+      encoding: UTF-8
+      string: '{"date":20200312,"state":"NY","positive":216,"negative":92,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":null,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":null,"lastUpdateEt":"3/11/2020
+        16:00","hash":"43210af34819b2a2cd8d6d43d9bed655003da5a6","dateChecked":"2020-03-12T20:00:00Z","death":null,"hospitalized":null,"total":308,"totalTestResults":308,"posNeg":308,"fips":"36","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":0,"positiveIncrease":0,"totalTestResultsIncrease":0}'
+    http_version: null
+  recorded_at: Thu, 02 Apr 2020 04:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/v1/states/NY/20200325.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=0, must-revalidate
+      Content-Length:
+      - '630'
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 17 May 2020 21:36:27 GMT
+      Etag:
+      - '"e57ead7d8a08ea01b3858d4dbc259f16-ssl"'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Xss-Protection:
+      - 1; mode=block
+      Age:
+      - '0'
+      Server:
+      - Netlify
+      X-Nf-Request-Id:
+      - '0299c823-9b14-44d9-9eca-31e8d496c6cd-137034'
+    body:
+      encoding: UTF-8
+      string: '{"date":20200325,"state":"NY","positive":30811,"negative":72668,"pending":null,"hospitalizedCurrently":4079,"hospitalizedCumulative":3805,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":"B","lastUpdateEt":"3/25/2020
+        11:45","hash":"8416f1590fec27b83e85b39865b220bc4e742f67","dateChecked":"2020-03-25T20:00:00Z","death":285,"hospitalized":3805,"total":103479,"totalTestResults":103479,"posNeg":103479,"fips":"36","deathIncrease":75,"hospitalizedIncrease":571,"negativeIncrease":7063,"positiveIncrease":5146,"totalTestResultsIncrease":12209}'
+    http_version: null
+  recorded_at: Thu, 02 Apr 2020 04:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/v1/states/NY/20200328.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=0, must-revalidate
+      Content-Length:
+      - '635'
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 17 May 2020 21:36:27 GMT
+      Etag:
+      - '"09df6cf91e159400eccd0318f0117457-ssl"'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Xss-Protection:
+      - 1; mode=block
+      Age:
+      - '0'
+      Server:
+      - Netlify
+      X-Nf-Request-Id:
+      - '0299c823-9b14-44d9-9eca-31e8d496c6cd-137043'
+    body:
+      encoding: UTF-8
+      string: '{"date":20200328,"state":"NY","positive":52318,"negative":103616,"pending":null,"hospitalizedCurrently":7328,"hospitalizedCumulative":10054,"inIcuCurrently":1755,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":2726,"dataQualityGrade":"A","lastUpdateEt":"3/28/2020
+        13:15","hash":"bff2cfbfc7d59b136600e875ae44039201658e70","dateChecked":"2020-03-28T20:00:00Z","death":728,"hospitalized":10054,"total":155934,"totalTestResults":155934,"posNeg":155934,"fips":"36","deathIncrease":209,"hospitalizedIncrease":1528,"negativeIncrease":2498,"positiveIncrease":7683,"totalTestResultsIncrease":10181}'
+    http_version: null
+  recorded_at: Thu, 02 Apr 2020 04:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/v1/states/NY/20200329.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=0, must-revalidate
+      Content-Length:
+      - '635'
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 17 May 2020 21:36:27 GMT
+      Etag:
+      - '"281fd1e7d1776a2aa906daf834fca276-ssl"'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Xss-Protection:
+      - 1; mode=block
+      Age:
+      - '0'
+      Server:
+      - Netlify
+      X-Nf-Request-Id:
+      - '0299c823-9b14-44d9-9eca-31e8d496c6cd-137042'
+    body:
+      encoding: UTF-8
+      string: '{"date":20200329,"state":"NY","positive":59513,"negative":112847,"pending":null,"hospitalizedCurrently":8503,"hospitalizedCumulative":12075,"inIcuCurrently":2037,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":3572,"dataQualityGrade":"A","lastUpdateEt":"3/29/2020
+        09:16","hash":"14ad04a515955b3a813189e392106a29b0a7cf21","dateChecked":"2020-03-29T20:00:00Z","death":965,"hospitalized":12075,"total":172360,"totalTestResults":172360,"posNeg":172360,"fips":"36","deathIncrease":237,"hospitalizedIncrease":2021,"negativeIncrease":9231,"positiveIncrease":7195,"totalTestResultsIncrease":16426}'
+    http_version: null
+  recorded_at: Thu, 02 Apr 2020 04:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/v1/states/NY/20200305.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=0, must-revalidate
+      Content-Length:
+      - '333'
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 17 May 2020 21:36:27 GMT
+      Etag:
+      - '"021e2c0791a60d38d50d281f5c2f3895-ssl"'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Xss-Protection:
+      - 1; mode=block
+      Age:
+      - '0'
+      Server:
+      - Netlify
+      X-Nf-Request-Id:
+      - '0299c823-9b14-44d9-9eca-31e8d496c6cd-137007'
+    body:
+      encoding: UTF-8
+      string: '{"date":20200305,"state":"NY","positive":22,"negative":76,"pending":24,"hash":"f5fa9d458bf8fb40664458e2710437c5e5a89aaf","dateChecked":"2020-03-05T21:00:00Z","total":122,"totalTestResults":98,"posNeg":98,"fips":"36","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":28,"positiveIncrease":16,"totalTestResultsIncrease":44}'
+    http_version: null
+  recorded_at: Thu, 02 Apr 2020 04:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/v1/states/NY/20200308.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=0, must-revalidate
+      Content-Length:
+      - '322'
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 17 May 2020 21:36:27 GMT
+      Etag:
+      - '"60e0d4ca878ce8a2f9c85ebf9064758f-ssl"'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Xss-Protection:
+      - 1; mode=block
+      Age:
+      - '0'
+      Server:
+      - Netlify
+      X-Nf-Request-Id:
+      - '0299c823-9b14-44d9-9eca-31e8d496c6cd-137012'
+    body:
+      encoding: UTF-8
+      string: '{"date":20200308,"state":"NY","positive":105,"negative":92,"hash":"d5e8dc460e38951e9c4ed83ea6116f3d1ef964e9","dateChecked":"2020-03-08T20:00:00Z","total":197,"totalTestResults":197,"posNeg":197,"fips":"36","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":0,"positiveIncrease":29,"totalTestResultsIncrease":29}'
+    http_version: null
+  recorded_at: Thu, 02 Apr 2020 04:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/v1/states/NY/20200317.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=0, must-revalidate
+      Content-Length:
+      - '614'
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 17 May 2020 21:36:27 GMT
+      Etag:
+      - '"f214ec6b09ac9b6e310c106e22060da7-ssl"'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Xss-Protection:
+      - 1; mode=block
+      Age:
+      - '0'
+      Server:
+      - Netlify
+      X-Nf-Request-Id:
+      - '0299c823-9b14-44d9-9eca-31e8d496c6cd-137028'
+    body:
+      encoding: UTF-8
+      string: '{"date":20200317,"state":"NY","positive":1700,"negative":5506,"pending":null,"hospitalizedCurrently":325,"hospitalizedCumulative":null,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":null,"lastUpdateEt":"3/16/2020
+        15:00","hash":"bce556dd77f7c7e28a75313ab899acc8e4958cfe","dateChecked":"2020-03-17T20:00:00Z","death":7,"hospitalized":null,"total":7206,"totalTestResults":7206,"posNeg":7206,"fips":"36","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":963,"positiveIncrease":750,"totalTestResultsIncrease":1713}'
+    http_version: null
+  recorded_at: Thu, 02 Apr 2020 04:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/v1/states/NY/20200322.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=0, must-revalidate
+      Content-Length:
+      - '629'
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 17 May 2020 21:36:27 GMT
+      Etag:
+      - '"b65b33fed5a143ebb8b229d8fa56e36c-ssl"'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Xss-Protection:
+      - 1; mode=block
+      Age:
+      - '0'
+      Server:
+      - Netlify
+      X-Nf-Request-Id:
+      - '0299c823-9b14-44d9-9eca-31e8d496c6cd-137039'
+    body:
+      encoding: UTF-8
+      string: '{"date":20200322,"state":"NY","positive":15168,"negative":46233,"pending":null,"hospitalizedCurrently":2043,"hospitalizedCumulative":1974,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":null,"lastUpdateEt":"3/22/2020
+        11:00","hash":"158fc2e8d902a0fd3ae2187878a8093152cc396d","dateChecked":"2020-03-22T20:00:00Z","death":114,"hospitalized":1974,"total":61401,"totalTestResults":61401,"posNeg":61401,"fips":"36","deathIncrease":70,"hospitalizedIncrease":371,"negativeIncrease":11152,"positiveIncrease":4812,"totalTestResultsIncrease":15964}'
+    http_version: null
+  recorded_at: Thu, 02 Apr 2020 04:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/v1/states/NY/20200324.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=0, must-revalidate
+      Content-Length:
+      - '627'
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 17 May 2020 21:36:27 GMT
+      Etag:
+      - '"1815d62f86d4748355d94f9144aab733-ssl"'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Xss-Protection:
+      - 1; mode=block
+      Age:
+      - '0'
+      Server:
+      - Netlify
+      X-Nf-Request-Id:
+      - '0299c823-9b14-44d9-9eca-31e8d496c6cd-137036'
+    body:
+      encoding: UTF-8
+      string: '{"date":20200324,"state":"NY","positive":25665,"negative":65605,"pending":null,"hospitalizedCurrently":3343,"hospitalizedCumulative":3234,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":"B","lastUpdateEt":"3/24/2020
+        11:30","hash":"b08731f515bedc235dd7e90953425c36bf60c91c","dateChecked":"2020-03-24T20:00:00Z","death":210,"hospitalized":3234,"total":91270,"totalTestResults":91270,"posNeg":91270,"fips":"36","deathIncrease":96,"hospitalizedIncrease":599,"negativeIncrease":8191,"positiveIncrease":4790,"totalTestResultsIncrease":12981}'
+    http_version: null
+  recorded_at: Thu, 02 Apr 2020 04:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/v1/states/NY/20200326.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=0, must-revalidate
+      Content-Length:
+      - '633'
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 17 May 2020 21:36:27 GMT
+      Etag:
+      - '"07df02dcd60d335b38d14bed70ad3e7a-ssl"'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Xss-Protection:
+      - 1; mode=block
+      Age:
+      - '0'
+      Server:
+      - Netlify
+      X-Nf-Request-Id:
+      - '0299c823-9b14-44d9-9eca-31e8d496c6cd-137032'
+    body:
+      encoding: UTF-8
+      string: '{"date":20200326,"state":"NY","positive":37258,"negative":84846,"pending":null,"hospitalizedCurrently":5327,"hospitalizedCumulative":6844,"inIcuCurrently":1290,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":"B","lastUpdateEt":"3/26/2020
+        16:59","hash":"19363ab62d6ce0eea5e7c372af2d1c5c9c301cb3","dateChecked":"2020-03-26T20:00:00Z","death":385,"hospitalized":6844,"total":122104,"totalTestResults":122104,"posNeg":122104,"fips":"36","deathIncrease":100,"hospitalizedIncrease":3039,"negativeIncrease":12178,"positiveIncrease":6447,"totalTestResultsIncrease":18625}'
+    http_version: null
+  recorded_at: Thu, 02 Apr 2020 04:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/v1/states/NY/20200330.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=0, must-revalidate
+      Content-Length:
+      - '636'
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 17 May 2020 21:36:27 GMT
+      Etag:
+      - '"4337569f926b64c7bd8390c4ee09489b-ssl"'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Xss-Protection:
+      - 1; mode=block
+      Age:
+      - '0'
+      Server:
+      - Netlify
+      X-Nf-Request-Id:
+      - '0299c823-9b14-44d9-9eca-31e8d496c6cd-137044'
     body:
       encoding: UTF-8
       string: '{"date":20200330,"state":"NY","positive":66497,"negative":119971,"pending":null,"hospitalizedCurrently":9517,"hospitalizedCumulative":13721,"inIcuCurrently":2352,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":4204,"dataQualityGrade":"A","lastUpdateEt":"3/29/2020
@@ -1398,7 +1450,59 @@ http_interactions:
   recorded_at: Thu, 02 Apr 2020 04:00:00 GMT
 - request:
     method: get
-    uri: https://covidtracking.com/api/states/daily?date=20200318&state=NY
+    uri: https://covidtracking.com/api/v1/states/NY/20200321.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=0, must-revalidate
+      Content-Length:
+      - '627'
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 17 May 2020 21:36:27 GMT
+      Etag:
+      - '"8bb2cff3c435906c3c633f89552d8fa8-ssl"'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Xss-Protection:
+      - 1; mode=block
+      Age:
+      - '0'
+      Server:
+      - Netlify
+      X-Nf-Request-Id:
+      - '0299c823-9b14-44d9-9eca-31e8d496c6cd-137027'
+    body:
+      encoding: UTF-8
+      string: '{"date":20200321,"state":"NY","positive":10356,"negative":35081,"pending":null,"hospitalizedCurrently":1436,"hospitalizedCumulative":1603,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":null,"lastUpdateEt":"3/20/2020
+        21:22","hash":"6a0cf80f7c3e2f1ac498d63692836d8066eacf00","dateChecked":"2020-03-21T20:00:00Z","death":44,"hospitalized":1603,"total":45437,"totalTestResults":45437,"posNeg":45437,"fips":"36","deathIncrease":9,"hospitalizedIncrease":1603,"negativeIncrease":9756,"positiveIncrease":3254,"totalTestResultsIncrease":13010}'
+    http_version: null
+  recorded_at: Thu, 02 Apr 2020 04:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/v1/states/NY/20200318.json
     body:
       encoding: US-ASCII
       string: ''
@@ -1423,9 +1527,9 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Sun, 17 May 2020 20:44:38 GMT
+      - Sun, 17 May 2020 21:36:27 GMT
       Etag:
-      - '"6c8bfbfedb39c8f194db0ba03a2d61d5-ssl"'
+      - '"abf9a9e35013acf98cc4bc3edf26c8cc-ssl"'
       Referrer-Policy:
       - strict-origin-when-cross-origin
       Strict-Transport-Security:
@@ -1437,119 +1541,15 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       Age:
-      - '1'
+      - '0'
       Server:
       - Netlify
       X-Nf-Request-Id:
-      - c04029a2-8ae8-4fe0-978c-986592cdc09f-14290524
+      - '0299c823-9b14-44d9-9eca-31e8d496c6cd-137025'
     body:
       encoding: UTF-8
       string: '{"date":20200318,"state":"NY","positive":2382,"negative":12215,"pending":null,"hospitalizedCurrently":416,"hospitalizedCumulative":null,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":null,"lastUpdateEt":"3/18/2020
         15:05","hash":"2387f137d1dfbfcce5392a336b9d7133e1886e73","dateChecked":"2020-03-18T20:00:00Z","death":12,"hospitalized":null,"total":14597,"totalTestResults":14597,"posNeg":14597,"fips":"36","deathIncrease":5,"hospitalizedIncrease":0,"negativeIncrease":6709,"positiveIncrease":682,"totalTestResultsIncrease":7391}'
-    http_version: null
-  recorded_at: Thu, 02 Apr 2020 04:00:00 GMT
-- request:
-    method: get
-    uri: https://covidtracking.com/api/states/daily?date=20200329&state=NY
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Typhoeus - https://github.com/typhoeus/typhoeus
-      Expect:
-      - ''
-  response:
-    status:
-      code: 200
-      message: ''
-    headers:
-      Accept-Ranges:
-      - bytes
-      Access-Control-Allow-Origin:
-      - "*"
-      Cache-Control:
-      - public, max-age=0, must-revalidate
-      Content-Length:
-      - '635'
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 17 May 2020 20:44:38 GMT
-      Etag:
-      - '"1fa49dbffbf2b9d34abbb678a8b59d74-ssl"'
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - DENY
-      X-Xss-Protection:
-      - 1; mode=block
-      Age:
-      - '1'
-      Server:
-      - Netlify
-      X-Nf-Request-Id:
-      - c04029a2-8ae8-4fe0-978c-986592cdc09f-14290543
-    body:
-      encoding: UTF-8
-      string: '{"date":20200329,"state":"NY","positive":59513,"negative":112847,"pending":null,"hospitalizedCurrently":8503,"hospitalizedCumulative":12075,"inIcuCurrently":2037,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":3572,"dataQualityGrade":"A","lastUpdateEt":"3/29/2020
-        09:16","hash":"14ad04a515955b3a813189e392106a29b0a7cf21","dateChecked":"2020-03-29T20:00:00Z","death":965,"hospitalized":12075,"total":172360,"totalTestResults":172360,"posNeg":172360,"fips":"36","deathIncrease":237,"hospitalizedIncrease":2021,"negativeIncrease":9231,"positiveIncrease":7195,"totalTestResultsIncrease":16426}'
-    http_version: null
-  recorded_at: Thu, 02 Apr 2020 04:00:00 GMT
-- request:
-    method: get
-    uri: https://covidtracking.com/api/states/daily?date=20200328&state=NY
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Typhoeus - https://github.com/typhoeus/typhoeus
-      Expect:
-      - ''
-  response:
-    status:
-      code: 200
-      message: ''
-    headers:
-      Accept-Ranges:
-      - bytes
-      Access-Control-Allow-Origin:
-      - "*"
-      Cache-Control:
-      - public, max-age=0, must-revalidate
-      Content-Length:
-      - '635'
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 17 May 2020 20:44:38 GMT
-      Etag:
-      - '"74feb0635f8f6b869ecb7ddcb70816bf-ssl"'
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - DENY
-      X-Xss-Protection:
-      - 1; mode=block
-      Age:
-      - '1'
-      Server:
-      - Netlify
-      X-Nf-Request-Id:
-      - c04029a2-8ae8-4fe0-978c-986592cdc09f-14290544
-    body:
-      encoding: UTF-8
-      string: '{"date":20200328,"state":"NY","positive":52318,"negative":103616,"pending":null,"hospitalizedCurrently":7328,"hospitalizedCumulative":10054,"inIcuCurrently":1755,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":2726,"dataQualityGrade":"A","lastUpdateEt":"3/28/2020
-        13:15","hash":"bff2cfbfc7d59b136600e875ae44039201658e70","dateChecked":"2020-03-28T20:00:00Z","death":728,"hospitalized":10054,"total":155934,"totalTestResults":155934,"posNeg":155934,"fips":"36","deathIncrease":209,"hospitalizedIncrease":1528,"negativeIncrease":2498,"positiveIncrease":7683,"totalTestResultsIncrease":10181}'
     http_version: null
   recorded_at: Thu, 02 Apr 2020 04:00:00 GMT
 recorded_with: VCR 5.1.0
