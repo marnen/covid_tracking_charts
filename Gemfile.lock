@@ -251,6 +251,7 @@ GEM
     rdiscount (2.2.0.1)
     redis (4.1.3)
     regexp_parser (1.7.0)
+    rollbar (2.25.0)
     rspec (3.9.0)
       rspec-core (~> 3.9.0)
       rspec-expectations (~> 3.9.0)
@@ -359,6 +360,7 @@ DEPENDENCIES
   rails (~> 6.0.2, >= 6.0.2.2)
   rdiscount
   redis
+  rollbar
   rspec-cells
   rspec-rails (~> 4.0.0)
   ruby_parser
