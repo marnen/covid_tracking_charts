@@ -1,5 +1,7 @@
 # Unreleased changes
 
+# v2.4.0 / 2020-05-17
+
 - Update API client code for new URL scheme. [#49]
 
 # v2.3.0 / 2020-04-13
