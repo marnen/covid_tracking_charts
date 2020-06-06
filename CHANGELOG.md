@@ -1,5 +1,7 @@
 # Unreleased changes
 
+# v2.5.0 / 2020-06-06
+
 - Make state code lowercase in API calls now that COVID Tracking API requires that. [#55]
 
 # v2.4.1 / 2020-05-17
