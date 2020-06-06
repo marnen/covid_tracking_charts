@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://covidtracking.com/api/v1/states/MA/20200326.json
+    uri: https://covidtracking.com/api/v1/states/ma/20200314.json
     body:
       encoding: US-ASCII
       string: ''
@@ -20,41 +20,59 @@ http_interactions:
       - bytes
       Access-Control-Allow-Origin:
       - "*"
-      Cache-Control:
-      - public, max-age=0, must-revalidate
-      Content-Length:
-      - '620'
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 17 May 2020 21:32:26 GMT
-      Etag:
-      - '"121bb915c3f2c91f7cd56417505c77ef-ssl"'
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - DENY
-      X-Xss-Protection:
-      - 1; mode=block
       Age:
-      - '227'
+      - '0'
+      Cache-Control:
+      - max-age=600
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 06 Jun 2020 15:11:27 GMT
+      Etag:
+      - W/"5edba58d-304"
+      Expires:
+      - Sat, 06 Jun 2020 15:21:27 GMT
+      Last-Modified:
+      - Sat, 06 Jun 2020 14:17:49 GMT
       Server:
       - Netlify
+      Strict-Transport-Security:
+      - max-age=31556952
+      Via:
+      - 1.1 varnish
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Fastly-Request-Id:
+      - 39384add5c6dfbb411a054f2691ba255b2e08068
+      X-Github-Request-Id:
+      - D064:54FE:5C3429:740E72:5EDBB21F
+      X-Origin-Cache:
+      - HIT
+      X-Proxy-Cache:
+      - MISS
+      X-Served-By:
+      - cache-ewr18122-EWR
+      X-Timer:
+      - S1591456288.857668,VS0,VE11
+      Content-Length:
+      - '772'
+      Vary:
+      - Accept-Encoding
       X-Nf-Request-Id:
-      - c04029a2-8ae8-4fe0-978c-986592cdc09f-16239220
+      - 7b5091e5-db0f-4634-a407-2a78a3d52c67-8819557
     body:
       encoding: UTF-8
-      string: '{"date":20200326,"state":"MA","positive":2318,"negative":21327,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":219,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":"B","lastUpdateEt":"3/26/2020
-        12:30","hash":"08d76813a076b49074eb6af95db1c792035ab0b6","dateChecked":"2020-03-26T20:00:00Z","death":42,"hospitalized":219,"total":23645,"totalTestResults":23645,"posNeg":23645,"fips":"25","deathIncrease":9,"hospitalizedIncrease":116,"negativeIncrease":3248,"positiveIncrease":579,"totalTestResultsIncrease":3827}'
+      string: '{"date":20200314,"state":"MA","positive":38,"negative":null,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":null,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":"","lastUpdateEt":"3/14/2020
+        16:00","dateModified":"2020-03-14T16:00:00Z","checkTimeEt":"03/14 12:00","death":null,"hospitalized":null,"dateChecked":"2020-03-14T16:00:00Z","fips":"25","positiveIncrease":15,"negativeIncrease":0,"total":38,"totalTestResults":38,"totalTestResultsIncrease":15,"posNeg":38,"deathIncrease":0,"hospitalizedIncrease":0,"hash":"98a47bcdbd37699fd012a3da49198b227b11c73f","commercialScore":0,"negativeRegularScore":0,"negativeScore":0,"positiveScore":0,"score":0,"grade":""}
+
+        '
     http_version: null
   recorded_at: Sun, 12 Apr 2020 04:00:00 GMT
 - request:
     method: get
-    uri: https://covidtracking.com/api/v1/states/MA/20200327.json
+    uri: https://covidtracking.com/api/v1/states/ma/20200315.json
     body:
       encoding: US-ASCII
       string: ''
@@ -72,41 +90,59 @@ http_interactions:
       - bytes
       Access-Control-Allow-Origin:
       - "*"
-      Cache-Control:
-      - public, max-age=0, must-revalidate
-      Content-Length:
-      - '619'
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 17 May 2020 21:32:26 GMT
-      Etag:
-      - '"5916dbbda3ecde8eb2afe69fdc51a117-ssl"'
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - DENY
-      X-Xss-Protection:
-      - 1; mode=block
       Age:
-      - '227'
+      - '0'
+      Cache-Control:
+      - max-age=600
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 06 Jun 2020 15:11:27 GMT
+      Etag:
+      - W/"5edba58d-309"
+      Expires:
+      - Sat, 06 Jun 2020 15:21:27 GMT
+      Last-Modified:
+      - Sat, 06 Jun 2020 14:17:49 GMT
       Server:
       - Netlify
+      Strict-Transport-Security:
+      - max-age=31556952
+      Via:
+      - 1.1 varnish
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Fastly-Request-Id:
+      - 79f9d6a1bae46355e2b3e8467ee8d4d18223a2db
+      X-Github-Request-Id:
+      - 3200:3543:5E870A:76A970:5EDBB21B
+      X-Origin-Cache:
+      - HIT
+      X-Proxy-Cache:
+      - MISS
+      X-Served-By:
+      - cache-ewr18127-EWR
+      X-Timer:
+      - S1591456288.858219,VS0,VE10
+      Content-Length:
+      - '777'
+      Vary:
+      - Accept-Encoding
       X-Nf-Request-Id:
-      - c04029a2-8ae8-4fe0-978c-986592cdc09f-16239221
+      - 7b5091e5-db0f-4634-a407-2a78a3d52c67-8819554
     body:
       encoding: UTF-8
-      string: '{"date":20200327,"state":"MA","positive":3151,"negative":26244,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":219,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":"B","lastUpdateEt":"3/27/2020
-        12:30","hash":"c42d64799a8cb6bd234becbe6cf9b33d9fafd5a0","dateChecked":"2020-03-27T20:00:00Z","death":57,"hospitalized":219,"total":29395,"totalTestResults":29395,"posNeg":29395,"fips":"25","deathIncrease":15,"hospitalizedIncrease":0,"negativeIncrease":4917,"positiveIncrease":833,"totalTestResultsIncrease":5750}'
+      string: '{"date":20200315,"state":"MA","positive":64,"negative":584,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":null,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":"","lastUpdateEt":"3/14/2020
+        16:00","dateModified":"2020-03-14T16:00:00Z","checkTimeEt":"03/14 12:00","death":null,"hospitalized":null,"dateChecked":"2020-03-14T16:00:00Z","fips":"25","positiveIncrease":26,"negativeIncrease":584,"total":648,"totalTestResults":648,"totalTestResultsIncrease":610,"posNeg":648,"deathIncrease":0,"hospitalizedIncrease":0,"hash":"4f1bfa20b7da4d93e81f00095995ed5a716b5e1e","commercialScore":0,"negativeRegularScore":0,"negativeScore":0,"positiveScore":0,"score":0,"grade":""}
+
+        '
     http_version: null
   recorded_at: Sun, 12 Apr 2020 04:00:00 GMT
 - request:
     method: get
-    uri: https://covidtracking.com/api/v1/states/MA/20200328.json
+    uri: https://covidtracking.com/api/v1/states/ma/20200316.json
     body:
       encoding: US-ASCII
       string: ''
@@ -124,41 +160,59 @@ http_interactions:
       - bytes
       Access-Control-Allow-Origin:
       - "*"
-      Cache-Control:
-      - public, max-age=0, must-revalidate
-      Content-Length:
-      - '622'
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 17 May 2020 21:32:26 GMT
-      Etag:
-      - '"46e113ccebb689da3453655b1e830e89-ssl"'
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - DENY
-      X-Xss-Protection:
-      - 1; mode=block
       Age:
-      - '227'
+      - '0'
+      Cache-Control:
+      - max-age=600
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 06 Jun 2020 15:11:27 GMT
+      Etag:
+      - W/"5edba58d-30d"
+      Expires:
+      - Sat, 06 Jun 2020 15:21:27 GMT
+      Last-Modified:
+      - Sat, 06 Jun 2020 14:17:49 GMT
       Server:
       - Netlify
+      Strict-Transport-Security:
+      - max-age=31556952
+      Via:
+      - 1.1 varnish
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Fastly-Request-Id:
+      - fd311aab52517181a12ec93161806656b7fd816c
+      X-Github-Request-Id:
+      - 50AE:7C3D:15E4E9:1BF872:5EDBB21F
+      X-Origin-Cache:
+      - HIT
+      X-Proxy-Cache:
+      - MISS
+      X-Served-By:
+      - cache-ewr18126-EWR
+      X-Timer:
+      - S1591456288.858838,VS0,VE11
+      Content-Length:
+      - '781'
+      Vary:
+      - Accept-Encoding
       X-Nf-Request-Id:
-      - c04029a2-8ae8-4fe0-978c-986592cdc09f-16239223
+      - 7b5091e5-db0f-4634-a407-2a78a3d52c67-8819556
     body:
       encoding: UTF-8
-      string: '{"date":20200328,"state":"MA","positive":4158,"negative":30915,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":350,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":"B","lastUpdateEt":"3/27/2020
-        12:30","hash":"c5661444338774ff0dd1106cdd745a9ef7d8f88f","dateChecked":"2020-03-28T20:00:00Z","death":72,"hospitalized":350,"total":35073,"totalTestResults":35073,"posNeg":35073,"fips":"25","deathIncrease":15,"hospitalizedIncrease":131,"negativeIncrease":4671,"positiveIncrease":1007,"totalTestResultsIncrease":5678}'
+      string: '{"date":20200316,"state":"MA","positive":97,"negative":1199,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":null,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":"","lastUpdateEt":"3/16/2020
+        15:48","dateModified":"2020-03-16T15:48:00Z","checkTimeEt":"03/16 11:48","death":null,"hospitalized":null,"dateChecked":"2020-03-16T15:48:00Z","fips":"25","positiveIncrease":33,"negativeIncrease":615,"total":1296,"totalTestResults":1296,"totalTestResultsIncrease":648,"posNeg":1296,"deathIncrease":0,"hospitalizedIncrease":0,"hash":"70c3bb8c7e34fb194cb7e0ecd93f411933ceacd6","commercialScore":0,"negativeRegularScore":0,"negativeScore":0,"positiveScore":0,"score":0,"grade":""}
+
+        '
     http_version: null
   recorded_at: Sun, 12 Apr 2020 04:00:00 GMT
 - request:
     method: get
-    uri: https://covidtracking.com/api/v1/states/MA/20200329.json
+    uri: https://covidtracking.com/api/v1/states/ma/20200317.json
     body:
       encoding: US-ASCII
       string: ''
@@ -176,41 +230,59 @@ http_interactions:
       - bytes
       Access-Control-Allow-Origin:
       - "*"
-      Cache-Control:
-      - public, max-age=0, must-revalidate
-      Content-Length:
-      - '620'
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 17 May 2020 21:32:26 GMT
-      Etag:
-      - '"05cb41797a57c2ba9058e26137fb8d14-ssl"'
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - DENY
-      X-Xss-Protection:
-      - 1; mode=block
       Age:
-      - '227'
+      - '0'
+      Cache-Control:
+      - max-age=600
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 06 Jun 2020 15:11:27 GMT
+      Etag:
+      - W/"5edba58d-30e"
+      Expires:
+      - Sat, 06 Jun 2020 15:21:27 GMT
+      Last-Modified:
+      - Sat, 06 Jun 2020 14:17:49 GMT
       Server:
       - Netlify
+      Strict-Transport-Security:
+      - max-age=31556952
+      Via:
+      - 1.1 varnish
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Fastly-Request-Id:
+      - 87c7cdbcb17c61c38c44c25ee6ea04b4d36ffecc
+      X-Github-Request-Id:
+      - EB8E:54FE:5C3429:740E73:5EDBB21F
+      X-Origin-Cache:
+      - HIT
+      X-Proxy-Cache:
+      - MISS
+      X-Served-By:
+      - cache-ewr18140-EWR
+      X-Timer:
+      - S1591456288.858469,VS0,VE11
+      Content-Length:
+      - '782'
+      Vary:
+      - Accept-Encoding
       X-Nf-Request-Id:
-      - c04029a2-8ae8-4fe0-978c-986592cdc09f-16239225
+      - 7b5091e5-db0f-4634-a407-2a78a3d52c67-8819563
     body:
       encoding: UTF-8
-      string: '{"date":20200329,"state":"MA","positive":4856,"negative":34234,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":399,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":"B","lastUpdateEt":"3/28/2020
-        12:30","hash":"53e238ddcbea39356aec1b6db641b79d81fdaea1","dateChecked":"2020-03-29T20:00:00Z","death":99,"hospitalized":399,"total":39090,"totalTestResults":39090,"posNeg":39090,"fips":"25","deathIncrease":27,"hospitalizedIncrease":49,"negativeIncrease":3319,"positiveIncrease":698,"totalTestResultsIncrease":4017}'
+      string: '{"date":20200317,"state":"MA","positive":118,"negative":1633,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":null,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":"","lastUpdateEt":"3/16/2020
+        16:00","dateModified":"2020-03-16T16:00:00Z","checkTimeEt":"03/16 12:00","death":null,"hospitalized":null,"dateChecked":"2020-03-16T16:00:00Z","fips":"25","positiveIncrease":21,"negativeIncrease":434,"total":1751,"totalTestResults":1751,"totalTestResultsIncrease":455,"posNeg":1751,"deathIncrease":0,"hospitalizedIncrease":0,"hash":"95c69bbc6f3ad2bf7ee16278442e54f262517b10","commercialScore":0,"negativeRegularScore":0,"negativeScore":0,"positiveScore":0,"score":0,"grade":""}
+
+        '
     http_version: null
   recorded_at: Sun, 12 Apr 2020 04:00:00 GMT
 - request:
     method: get
-    uri: https://covidtracking.com/api/v1/states/MA/20200401.json
+    uri: https://covidtracking.com/api/v1/states/ma/20200318.json
     body:
       encoding: US-ASCII
       string: ''
@@ -228,41 +300,59 @@ http_interactions:
       - bytes
       Access-Control-Allow-Origin:
       - "*"
-      Cache-Control:
-      - public, max-age=0, must-revalidate
-      Content-Length:
-      - '623'
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 17 May 2020 21:32:26 GMT
-      Etag:
-      - '"48032c1f23a46ed0b0d5e14bef7a670d-ssl"'
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - DENY
-      X-Xss-Protection:
-      - 1; mode=block
       Age:
-      - '227'
+      - '0'
+      Cache-Control:
+      - max-age=600
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 06 Jun 2020 15:11:27 GMT
+      Etag:
+      - W/"5edba58d-30b"
+      Expires:
+      - Sat, 06 Jun 2020 15:21:27 GMT
+      Last-Modified:
+      - Sat, 06 Jun 2020 14:17:49 GMT
       Server:
       - Netlify
+      Strict-Transport-Security:
+      - max-age=31556952
+      Via:
+      - 1.1 varnish
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Fastly-Request-Id:
+      - 65f6feb605060171b7132d9bb756aecf190181c1
+      X-Github-Request-Id:
+      - 0D42:5AE5:5B7E42:730D80:5EDBB21F
+      X-Origin-Cache:
+      - HIT
+      X-Proxy-Cache:
+      - MISS
+      X-Served-By:
+      - cache-ewr18134-EWR
+      X-Timer:
+      - S1591456288.858203,VS0,VE10
+      Content-Length:
+      - '779'
+      Vary:
+      - Accept-Encoding
       X-Nf-Request-Id:
-      - c04029a2-8ae8-4fe0-978c-986592cdc09f-16239227
+      - 7b5091e5-db0f-4634-a407-2a78a3d52c67-8819561
     body:
       encoding: UTF-8
-      string: '{"date":20200401,"state":"MA","positive":7639,"negative":44125,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":682,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":"B","lastUpdateEt":"3/31/2020
-        12:30","hash":"384d6254ade5e885ae52455cef3d91bacc5f3cc4","dateChecked":"2020-04-01T20:00:00Z","death":187,"hospitalized":682,"total":51764,"totalTestResults":51764,"posNeg":51764,"fips":"25","deathIncrease":34,"hospitalizedIncrease":120,"negativeIncrease":3685,"positiveIncrease":1118,"totalTestResultsIncrease":4803}'
+      string: '{"date":20200318,"state":"MA","positive":156,"negative":2115,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":null,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":"","lastUpdateEt":"3/18/2020
+        16:00","dateModified":"2020-03-18T16:00:00Z","checkTimeEt":"03/18 12:00","death":2,"hospitalized":null,"dateChecked":"2020-03-18T16:00:00Z","fips":"25","positiveIncrease":38,"negativeIncrease":482,"total":2271,"totalTestResults":2271,"totalTestResultsIncrease":520,"posNeg":2271,"deathIncrease":2,"hospitalizedIncrease":0,"hash":"8f25d0f8ce25089ea9d8d057ab2d719f25099377","commercialScore":0,"negativeRegularScore":0,"negativeScore":0,"positiveScore":0,"score":0,"grade":""}
+
+        '
     http_version: null
   recorded_at: Sun, 12 Apr 2020 04:00:00 GMT
 - request:
     method: get
-    uri: https://covidtracking.com/api/v1/states/MA/20200330.json
+    uri: https://covidtracking.com/api/v1/states/ma/20200319.json
     body:
       encoding: US-ASCII
       string: ''
@@ -280,41 +370,59 @@ http_interactions:
       - bytes
       Access-Control-Allow-Origin:
       - "*"
-      Cache-Control:
-      - public, max-age=0, must-revalidate
-      Content-Length:
-      - '621'
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 17 May 2020 21:32:26 GMT
-      Etag:
-      - '"92efd6417e42351393bc90b66eca718e-ssl"'
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - DENY
-      X-Xss-Protection:
-      - 1; mode=block
       Age:
-      - '227'
+      - '0'
+      Cache-Control:
+      - max-age=600
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 06 Jun 2020 15:11:27 GMT
+      Etag:
+      - W/"5edba58d-30b"
+      Expires:
+      - Sat, 06 Jun 2020 15:21:27 GMT
+      Last-Modified:
+      - Sat, 06 Jun 2020 14:17:49 GMT
       Server:
       - Netlify
+      Strict-Transport-Security:
+      - max-age=31556952
+      Via:
+      - 1.1 varnish
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Fastly-Request-Id:
+      - acb5462028ae2e0bb77c59d99b36e787da07dbb7
+      X-Github-Request-Id:
+      - A766:136F:5AA388:72570E:5EDBB21D
+      X-Origin-Cache:
+      - HIT
+      X-Proxy-Cache:
+      - MISS
+      X-Served-By:
+      - cache-ewr18127-EWR
+      X-Timer:
+      - S1591456288.866246,VS0,VE12
+      Content-Length:
+      - '779'
+      Vary:
+      - Accept-Encoding
       X-Nf-Request-Id:
-      - c04029a2-8ae8-4fe0-978c-986592cdc09f-16239224
+      - 7b5091e5-db0f-4634-a407-2a78a3d52c67-8819559
     body:
       encoding: UTF-8
-      string: '{"date":20200330,"state":"MA","positive":5653,"negative":37166,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":453,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":"B","lastUpdateEt":"3/30/2020
-        16:15","hash":"1675e1a01a3ffc64db3a6a4c2e9de93e56a05537","dateChecked":"2020-03-30T20:00:00Z","death":124,"hospitalized":453,"total":42819,"totalTestResults":42819,"posNeg":42819,"fips":"25","deathIncrease":25,"hospitalizedIncrease":54,"negativeIncrease":2932,"positiveIncrease":797,"totalTestResultsIncrease":3729}'
+      string: '{"date":20200319,"state":"MA","positive":229,"negative":2918,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":null,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":"","lastUpdateEt":"3/19/2020
+        11:30","dateModified":"2020-03-19T11:30:00Z","checkTimeEt":"03/19 07:30","death":3,"hospitalized":null,"dateChecked":"2020-03-19T11:30:00Z","fips":"25","positiveIncrease":73,"negativeIncrease":803,"total":3147,"totalTestResults":3147,"totalTestResultsIncrease":876,"posNeg":3147,"deathIncrease":1,"hospitalizedIncrease":0,"hash":"59ba4100e37b69411a176670ffce122529ed7fb5","commercialScore":0,"negativeRegularScore":0,"negativeScore":0,"positiveScore":0,"score":0,"grade":""}
+
+        '
     http_version: null
   recorded_at: Sun, 12 Apr 2020 04:00:00 GMT
 - request:
     method: get
-    uri: https://covidtracking.com/api/v1/states/MA/20200331.json
+    uri: https://covidtracking.com/api/v1/states/ma/20200320.json
     body:
       encoding: US-ASCII
       string: ''
@@ -332,41 +440,59 @@ http_interactions:
       - bytes
       Access-Control-Allow-Origin:
       - "*"
-      Cache-Control:
-      - public, max-age=0, must-revalidate
-      Content-Length:
-      - '622'
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 17 May 2020 21:32:26 GMT
-      Etag:
-      - '"f49a352823b8173b124428f4d6ee110b-ssl"'
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - DENY
-      X-Xss-Protection:
-      - 1; mode=block
       Age:
-      - '227'
+      - '0'
+      Cache-Control:
+      - max-age=600
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 06 Jun 2020 15:11:27 GMT
+      Etag:
+      - W/"5edba58d-30b"
+      Expires:
+      - Sat, 06 Jun 2020 15:21:27 GMT
+      Last-Modified:
+      - Sat, 06 Jun 2020 14:17:49 GMT
       Server:
       - Netlify
+      Strict-Transport-Security:
+      - max-age=31556952
+      Via:
+      - 1.1 varnish
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Fastly-Request-Id:
+      - 50f5cdbc521ee0c2c857919ac378e1bb7f4c186f
+      X-Github-Request-Id:
+      - 20FE:44B3:8AB15:B9244:5EDBB21F
+      X-Origin-Cache:
+      - HIT
+      X-Proxy-Cache:
+      - MISS
+      X-Served-By:
+      - cache-ewr18150-EWR
+      X-Timer:
+      - S1591456288.858990,VS0,VE11
+      Content-Length:
+      - '779'
+      Vary:
+      - Accept-Encoding
       X-Nf-Request-Id:
-      - c04029a2-8ae8-4fe0-978c-986592cdc09f-16239226
+      - 7b5091e5-db0f-4634-a407-2a78a3d52c67-8819566
     body:
       encoding: UTF-8
-      string: '{"date":20200331,"state":"MA","positive":6521,"negative":40440,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":562,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":"B","lastUpdateEt":"3/31/2020
-        12:30","hash":"7ca3714b678bc6d0480f26e49a2db37a5b4d931d","dateChecked":"2020-03-31T20:00:00Z","death":153,"hospitalized":562,"total":46961,"totalTestResults":46961,"posNeg":46961,"fips":"25","deathIncrease":29,"hospitalizedIncrease":109,"negativeIncrease":3274,"positiveIncrease":868,"totalTestResultsIncrease":4142}'
+      string: '{"date":20200320,"state":"MA","positive":314,"negative":3795,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":null,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":"","lastUpdateEt":"3/20/2020
+        16:00","dateModified":"2020-03-20T16:00:00Z","checkTimeEt":"03/20 12:00","death":5,"hospitalized":null,"dateChecked":"2020-03-20T16:00:00Z","fips":"25","positiveIncrease":85,"negativeIncrease":877,"total":4109,"totalTestResults":4109,"totalTestResultsIncrease":962,"posNeg":4109,"deathIncrease":2,"hospitalizedIncrease":0,"hash":"112d15fd3c36ffcc7468b080919f50ce94937611","commercialScore":0,"negativeRegularScore":0,"negativeScore":0,"positiveScore":0,"score":0,"grade":""}
+
+        '
     http_version: null
   recorded_at: Sun, 12 Apr 2020 04:00:00 GMT
 - request:
     method: get
-    uri: https://covidtracking.com/api/v1/states/MA/20200404.json
+    uri: https://covidtracking.com/api/v1/states/ma/20200321.json
     body:
       encoding: US-ASCII
       string: ''
@@ -384,41 +510,59 @@ http_interactions:
       - bytes
       Access-Control-Allow-Origin:
       - "*"
-      Cache-Control:
-      - public, max-age=0, must-revalidate
-      Content-Length:
-      - '625'
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 17 May 2020 21:32:26 GMT
-      Etag:
-      - '"9aab1f5d8226be362a8994f05a1e1c83-ssl"'
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - DENY
-      X-Xss-Protection:
-      - 1; mode=block
       Age:
-      - '227'
+      - '0'
+      Cache-Control:
+      - max-age=600
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 06 Jun 2020 15:11:27 GMT
+      Etag:
+      - W/"5edba58d-30b"
+      Expires:
+      - Sat, 06 Jun 2020 15:21:27 GMT
+      Last-Modified:
+      - Sat, 06 Jun 2020 14:17:49 GMT
       Server:
       - Netlify
+      Strict-Transport-Security:
+      - max-age=31556952
+      Via:
+      - 1.1 varnish
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Fastly-Request-Id:
+      - e60ee2762a29aac7bb1ab2700022ca1800b9627f
+      X-Github-Request-Id:
+      - 3DAA:5A80:93AAF:C449E:5EDBB21F
+      X-Origin-Cache:
+      - HIT
+      X-Proxy-Cache:
+      - MISS
+      X-Served-By:
+      - cache-ewr18141-EWR
+      X-Timer:
+      - S1591456288.867882,VS0,VE10
+      Content-Length:
+      - '779'
+      Vary:
+      - Accept-Encoding
       X-Nf-Request-Id:
-      - c04029a2-8ae8-4fe0-978c-986592cdc09f-16239232
+      - 7b5091e5-db0f-4634-a407-2a78a3d52c67-8819564
     body:
       encoding: UTF-8
-      string: '{"date":20200404,"state":"MA","positive":11637,"negative":57191,"pending":null,"hospitalizedCurrently":1370,"hospitalizedCumulative":1370,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":"B","lastUpdateEt":"4/4/2020
-        12:30","hash":"242bb0edba7f49fb5fd75db15132da0e194f2caf","dateChecked":"2020-04-04T20:00:00Z","death":304,"hospitalized":1370,"total":68828,"totalTestResults":68828,"posNeg":68828,"fips":"25","deathIncrease":39,"hospitalizedIncrease":404,"negativeIncrease":4506,"positiveIncrease":1334,"totalTestResultsIncrease":5840}'
+      string: '{"date":20200321,"state":"MA","positive":426,"negative":4799,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":61,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":"","lastUpdateEt":"3/21/2020
+        16:00","dateModified":"2020-03-21T16:00:00Z","checkTimeEt":"03/21 12:00","death":7,"hospitalized":61,"dateChecked":"2020-03-21T16:00:00Z","fips":"25","positiveIncrease":112,"negativeIncrease":1004,"total":5225,"totalTestResults":5225,"totalTestResultsIncrease":1116,"posNeg":5225,"deathIncrease":2,"hospitalizedIncrease":61,"hash":"192b0abbbaf950fb772d863b6970388e5a29c2f9","commercialScore":0,"negativeRegularScore":0,"negativeScore":0,"positiveScore":0,"score":0,"grade":""}
+
+        '
     http_version: null
   recorded_at: Sun, 12 Apr 2020 04:00:00 GMT
 - request:
     method: get
-    uri: https://covidtracking.com/api/v1/states/MA/20200405.json
+    uri: https://covidtracking.com/api/v1/states/ma/20200322.json
     body:
       encoding: US-ASCII
       string: ''
@@ -436,41 +580,59 @@ http_interactions:
       - bytes
       Access-Control-Allow-Origin:
       - "*"
-      Cache-Control:
-      - public, max-age=0, must-revalidate
-      Content-Length:
-      - '624'
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 17 May 2020 21:32:26 GMT
-      Etag:
-      - '"e36a5f2b09a1e638d122b831893b776d-ssl"'
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - DENY
-      X-Xss-Protection:
-      - 1; mode=block
       Age:
-      - '227'
+      - '0'
+      Cache-Control:
+      - max-age=600
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 06 Jun 2020 15:11:27 GMT
+      Etag:
+      - W/"5edba58d-30a"
+      Expires:
+      - Sat, 06 Jun 2020 15:21:27 GMT
+      Last-Modified:
+      - Sat, 06 Jun 2020 14:17:49 GMT
       Server:
       - Netlify
+      Strict-Transport-Security:
+      - max-age=31556952
+      Via:
+      - 1.1 varnish
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Fastly-Request-Id:
+      - c5e664a7516574ded298b78eb69b0a2c7e544ae2
+      X-Github-Request-Id:
+      - 1FC0:26DC:2C54D6:382B2E:5EDBB21D
+      X-Origin-Cache:
+      - HIT
+      X-Proxy-Cache:
+      - MISS
+      X-Served-By:
+      - cache-ewr18127-EWR
+      X-Timer:
+      - S1591456288.859744,VS0,VE12
+      Content-Length:
+      - '778'
+      Vary:
+      - Accept-Encoding
       X-Nf-Request-Id:
-      - c04029a2-8ae8-4fe0-978c-986592cdc09f-16239231
+      - 7b5091e5-db0f-4634-a407-2a78a3d52c67-8819565
     body:
       encoding: UTF-8
-      string: '{"date":20200405,"state":"MA","positive":12402,"negative":59565,"pending":null,"hospitalizedCurrently":1632,"hospitalizedCumulative":1632,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":"B","lastUpdateEt":"4/5/2020
-        12:30","hash":"8afb901ea410e0a097fcb0740103c8632065372a","dateChecked":"2020-04-05T20:00:00Z","death":370,"hospitalized":1632,"total":71967,"totalTestResults":71967,"posNeg":71967,"fips":"25","deathIncrease":66,"hospitalizedIncrease":262,"negativeIncrease":2374,"positiveIncrease":765,"totalTestResultsIncrease":3139}'
+      string: '{"date":20200322,"state":"MA","positive":547,"negative":5476,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":71,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":"","lastUpdateEt":"3/22/2020
+        16:00","dateModified":"2020-03-22T16:00:00Z","checkTimeEt":"03/22 12:00","death":11,"hospitalized":71,"dateChecked":"2020-03-22T16:00:00Z","fips":"25","positiveIncrease":121,"negativeIncrease":677,"total":6023,"totalTestResults":6023,"totalTestResultsIncrease":798,"posNeg":6023,"deathIncrease":4,"hospitalizedIncrease":10,"hash":"7ddbae18e0dfbbdb1286d713c49a4c05bbaf545c","commercialScore":0,"negativeRegularScore":0,"negativeScore":0,"positiveScore":0,"score":0,"grade":""}
+
+        '
     http_version: null
   recorded_at: Sun, 12 Apr 2020 04:00:00 GMT
 - request:
     method: get
-    uri: https://covidtracking.com/api/v1/states/MA/20200406.json
+    uri: https://covidtracking.com/api/v1/states/ma/20200323.json
     body:
       encoding: US-ASCII
       string: ''
@@ -488,665 +650,59 @@ http_interactions:
       - bytes
       Access-Control-Allow-Origin:
       - "*"
-      Cache-Control:
-      - public, max-age=0, must-revalidate
-      Content-Length:
-      - '624'
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 17 May 2020 21:32:26 GMT
-      Etag:
-      - '"c7dd7cbcb764bb6e4c085ba5024122de-ssl"'
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - DENY
-      X-Xss-Protection:
-      - 1; mode=block
       Age:
-      - '227'
+      - '0'
+      Cache-Control:
+      - max-age=600
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 06 Jun 2020 15:11:27 GMT
+      Etag:
+      - W/"5edba58d-30c"
+      Expires:
+      - Sat, 06 Jun 2020 15:21:27 GMT
+      Last-Modified:
+      - Sat, 06 Jun 2020 14:17:49 GMT
       Server:
       - Netlify
-      X-Nf-Request-Id:
-      - c04029a2-8ae8-4fe0-978c-986592cdc09f-16239235
-    body:
-      encoding: UTF-8
-      string: '{"date":20200406,"state":"MA","positive":13739,"negative":62720,"pending":null,"hospitalizedCurrently":1667,"hospitalizedCumulative":1667,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":"B","lastUpdateEt":"4/6/2020
-        12:30","hash":"92fe6407240a8971ee08b7dcfa70b33ea3476044","dateChecked":"2020-04-06T20:00:00Z","death":448,"hospitalized":1667,"total":76459,"totalTestResults":76459,"posNeg":76459,"fips":"25","deathIncrease":78,"hospitalizedIncrease":35,"negativeIncrease":3155,"positiveIncrease":1337,"totalTestResultsIncrease":4492}'
-    http_version: null
-  recorded_at: Sun, 12 Apr 2020 04:00:00 GMT
-- request:
-    method: get
-    uri: https://covidtracking.com/api/v1/states/MA/20200407.json
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Typhoeus - https://github.com/typhoeus/typhoeus
-      Expect:
-      - ''
-  response:
-    status:
-      code: 200
-      message: ''
-    headers:
-      Accept-Ranges:
-      - bytes
-      Access-Control-Allow-Origin:
-      - "*"
-      Cache-Control:
-      - public, max-age=0, must-revalidate
-      Content-Length:
-      - '625'
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 17 May 2020 21:32:26 GMT
-      Etag:
-      - '"c76e57548ce5ecb66aa8baeb8e34a4b7-ssl"'
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
       Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - DENY
-      X-Xss-Protection:
-      - 1; mode=block
-      Age:
-      - '228'
-      Server:
-      - Netlify
-      X-Nf-Request-Id:
-      - c04029a2-8ae8-4fe0-978c-986592cdc09f-16239236
-    body:
-      encoding: UTF-8
-      string: '{"date":20200407,"state":"MA","positive":15104,"negative":66270,"pending":null,"hospitalizedCurrently":1831,"hospitalizedCumulative":1831,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":"B","lastUpdateEt":"4/7/2020
-        12:30","hash":"feaae2686b8d2ee1a310f095aa5d9f84252a957f","dateChecked":"2020-04-07T20:00:00Z","death":515,"hospitalized":1831,"total":81374,"totalTestResults":81374,"posNeg":81374,"fips":"25","deathIncrease":67,"hospitalizedIncrease":164,"negativeIncrease":3550,"positiveIncrease":1365,"totalTestResultsIncrease":4915}'
-    http_version: null
-  recorded_at: Sun, 12 Apr 2020 04:00:00 GMT
-- request:
-    method: get
-    uri: https://covidtracking.com/api/v1/states/MA/20200408.json
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Typhoeus - https://github.com/typhoeus/typhoeus
-      Expect:
-      - ''
-  response:
-    status:
-      code: 200
-      message: ''
-    headers:
-      Accept-Ranges:
-      - bytes
-      Access-Control-Allow-Origin:
-      - "*"
-      Cache-Control:
-      - public, max-age=0, must-revalidate
+      - max-age=31556952
+      Via:
+      - 1.1 varnish
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Fastly-Request-Id:
+      - 5d34709a9d4874f9471b1b3957c92e301cd18c42
+      X-Github-Request-Id:
+      - ABD2:79BD:2CD3BB:38BFCD:5EDBB21A
+      X-Origin-Cache:
+      - HIT
+      X-Proxy-Cache:
+      - MISS
+      X-Served-By:
+      - cache-ewr18136-EWR
+      X-Timer:
+      - S1591456288.859727,VS0,VE12
       Content-Length:
-      - '626'
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 17 May 2020 21:32:26 GMT
-      Etag:
-      - '"d231539fedfe0c0913dddcef1b1824fa-ssl"'
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - DENY
-      X-Xss-Protection:
-      - 1; mode=block
-      Age:
-      - '228'
-      Server:
-      - Netlify
+      - '780'
+      Vary:
+      - Accept-Encoding
       X-Nf-Request-Id:
-      - c04029a2-8ae8-4fe0-978c-986592cdc09f-16239238
-    body:
-      encoding: UTF-8
-      string: '{"date":20200408,"state":"MA","positive":16692,"negative":70849,"pending":null,"hospitalizedCurrently":2119,"hospitalizedCumulative":2119,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":"B","lastUpdateEt":"4/8/2020
-        12:30","hash":"69ef7f3af46d28616da685ec7a54f9d6d1c3ef47","dateChecked":"2020-04-08T20:00:00Z","death":615,"hospitalized":2119,"total":87541,"totalTestResults":87541,"posNeg":87541,"fips":"25","deathIncrease":100,"hospitalizedIncrease":288,"negativeIncrease":4579,"positiveIncrease":1588,"totalTestResultsIncrease":6167}'
-    http_version: null
-  recorded_at: Sun, 12 Apr 2020 04:00:00 GMT
-- request:
-    method: get
-    uri: https://covidtracking.com/api/v1/states/MA/20200410.json
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Typhoeus - https://github.com/typhoeus/typhoeus
-      Expect:
-      - ''
-  response:
-    status:
-      code: 200
-      message: ''
-    headers:
-      Accept-Ranges:
-      - bytes
-      Access-Control-Allow-Origin:
-      - "*"
-      Cache-Control:
-      - public, max-age=0, must-revalidate
-      Content-Length:
-      - '630'
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 17 May 2020 21:32:26 GMT
-      Etag:
-      - '"74d656011cb3ce711c6fcc4c67a6af82-ssl"'
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - DENY
-      X-Xss-Protection:
-      - 1; mode=block
-      Age:
-      - '228'
-      Server:
-      - Netlify
-      X-Nf-Request-Id:
-      - c04029a2-8ae8-4fe0-978c-986592cdc09f-16239239
-    body:
-      encoding: UTF-8
-      string: '{"date":20200410,"state":"MA","positive":20878,"negative":81564,"pending":null,"hospitalizedCurrently":2435,"hospitalizedCumulative":2435,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":"B","lastUpdateEt":"4/10/2020
-        12:30","hash":"bd8ab000ee6ee7a5a020a8bb386b1eb7246d8c35","dateChecked":"2020-04-10T20:00:00Z","death":832,"hospitalized":2435,"total":102442,"totalTestResults":102442,"posNeg":102442,"fips":"25","deathIncrease":107,"hospitalizedIncrease":133,"negativeIncrease":5418,"positiveIncrease":2035,"totalTestResultsIncrease":7453}'
-    http_version: null
-  recorded_at: Sun, 12 Apr 2020 04:00:00 GMT
-- request:
-    method: get
-    uri: https://covidtracking.com/api/v1/states/MA/20200411.json
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Typhoeus - https://github.com/typhoeus/typhoeus
-      Expect:
-      - ''
-  response:
-    status:
-      code: 200
-      message: ''
-    headers:
-      Accept-Ranges:
-      - bytes
-      Access-Control-Allow-Origin:
-      - "*"
-      Cache-Control:
-      - public, max-age=0, must-revalidate
-      Content-Length:
-      - '629'
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 17 May 2020 21:32:26 GMT
-      Etag:
-      - '"d8f83b7af281cafc445d63123bd99a93-ssl"'
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - DENY
-      X-Xss-Protection:
-      - 1; mode=block
-      Age:
-      - '228'
-      Server:
-      - Netlify
-      X-Nf-Request-Id:
-      - c04029a2-8ae8-4fe0-978c-986592cdc09f-16239242
-    body:
-      encoding: UTF-8
-      string: '{"date":20200411,"state":"MA","positive":22766,"negative":86115,"pending":null,"hospitalizedCurrently":2507,"hospitalizedCumulative":2507,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":"B","lastUpdateEt":"4/11/2020
-        12:30","hash":"390a710a9a9334a794b56f6625560b11668064d7","dateChecked":"2020-04-11T20:00:00Z","death":946,"hospitalized":2507,"total":108881,"totalTestResults":108881,"posNeg":108881,"fips":"25","deathIncrease":114,"hospitalizedIncrease":72,"negativeIncrease":4551,"positiveIncrease":1888,"totalTestResultsIncrease":6439}'
-    http_version: null
-  recorded_at: Sun, 12 Apr 2020 04:00:00 GMT
-- request:
-    method: get
-    uri: https://covidtracking.com/api/v1/states/MA/20200412.json
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Typhoeus - https://github.com/typhoeus/typhoeus
-      Expect:
-      - ''
-  response:
-    status:
-      code: 200
-      message: ''
-    headers:
-      Accept-Ranges:
-      - bytes
-      Access-Control-Allow-Origin:
-      - "*"
-      Cache-Control:
-      - public, max-age=0, must-revalidate
-      Content-Length:
-      - '629'
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 17 May 2020 21:32:26 GMT
-      Etag:
-      - '"464192412d85f1cc09fde502ba21296f-ssl"'
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - DENY
-      X-Xss-Protection:
-      - 1; mode=block
-      Age:
-      - '228'
-      Server:
-      - Netlify
-      X-Nf-Request-Id:
-      - c04029a2-8ae8-4fe0-978c-986592cdc09f-16239243
-    body:
-      encoding: UTF-8
-      string: '{"date":20200412,"state":"MA","positive":25381,"negative":91463,"pending":null,"hospitalizedCurrently":2514,"hospitalizedCumulative":2514,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":"B","lastUpdateEt":"4/12/2020
-        16:00","hash":"9d151b754a3c8fff7e950e6dfb015a67f8879821","dateChecked":"2020-04-12T20:00:00Z","death":1056,"hospitalized":2514,"total":116844,"totalTestResults":116844,"posNeg":116844,"fips":"25","deathIncrease":110,"hospitalizedIncrease":7,"negativeIncrease":5348,"positiveIncrease":2615,"totalTestResultsIncrease":7963}'
-    http_version: null
-  recorded_at: Sun, 12 Apr 2020 04:00:00 GMT
-- request:
-    method: get
-    uri: https://covidtracking.com/api/v1/states/MA/20200314.json
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Typhoeus - https://github.com/typhoeus/typhoeus
-      Expect:
-      - ''
-  response:
-    status:
-      code: 200
-      message: ''
-    headers:
-      Accept-Ranges:
-      - bytes
-      Access-Control-Allow-Origin:
-      - "*"
-      Cache-Control:
-      - public, max-age=0, must-revalidate
-      Content-Length:
-      - '605'
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 17 May 2020 21:32:26 GMT
-      Etag:
-      - '"916c243e4fa9a0a8f97d2eeadb9a7c11-ssl"'
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - DENY
-      X-Xss-Protection:
-      - 1; mode=block
-      Age:
-      - '227'
-      Server:
-      - Netlify
-      X-Nf-Request-Id:
-      - c04029a2-8ae8-4fe0-978c-986592cdc09f-16239240
-    body:
-      encoding: UTF-8
-      string: '{"date":20200314,"state":"MA","positive":38,"negative":null,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":null,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":null,"lastUpdateEt":"3/14/2020
-        16:00","hash":"28ef086def2b7f2cc37eee236cf297586e900cf7","dateChecked":"2020-03-14T20:00:00Z","death":null,"hospitalized":null,"total":38,"totalTestResults":38,"posNeg":38,"fips":"25","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":0,"positiveIncrease":15,"totalTestResultsIncrease":15}'
-    http_version: null
-  recorded_at: Sun, 12 Apr 2020 04:00:00 GMT
-- request:
-    method: get
-    uri: https://covidtracking.com/api/v1/states/MA/20200315.json
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Typhoeus - https://github.com/typhoeus/typhoeus
-      Expect:
-      - ''
-  response:
-    status:
-      code: 200
-      message: ''
-    headers:
-      Accept-Ranges:
-      - bytes
-      Access-Control-Allow-Origin:
-      - "*"
-      Cache-Control:
-      - public, max-age=0, must-revalidate
-      Content-Length:
-      - '610'
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 17 May 2020 21:32:26 GMT
-      Etag:
-      - '"5475223d5af53bfc6baa0e8cf6018cfa-ssl"'
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - DENY
-      X-Xss-Protection:
-      - 1; mode=block
-      Age:
-      - '227'
-      Server:
-      - Netlify
-      X-Nf-Request-Id:
-      - c04029a2-8ae8-4fe0-978c-986592cdc09f-16239241
-    body:
-      encoding: UTF-8
-      string: '{"date":20200315,"state":"MA","positive":64,"negative":584,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":null,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":null,"lastUpdateEt":"3/14/2020
-        16:00","hash":"9c32341783c45e6a3ae740a728e6acfaf830c678","dateChecked":"2020-03-15T20:00:00Z","death":null,"hospitalized":null,"total":648,"totalTestResults":648,"posNeg":648,"fips":"25","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":584,"positiveIncrease":26,"totalTestResultsIncrease":610}'
-    http_version: null
-  recorded_at: Sun, 12 Apr 2020 04:00:00 GMT
-- request:
-    method: get
-    uri: https://covidtracking.com/api/v1/states/MA/20200317.json
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Typhoeus - https://github.com/typhoeus/typhoeus
-      Expect:
-      - ''
-  response:
-    status:
-      code: 200
-      message: ''
-    headers:
-      Accept-Ranges:
-      - bytes
-      Access-Control-Allow-Origin:
-      - "*"
-      Cache-Control:
-      - public, max-age=0, must-revalidate
-      Content-Length:
-      - '615'
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 17 May 2020 21:32:26 GMT
-      Etag:
-      - '"31298b166b30a7bf28e1cef41e0ab6e3-ssl"'
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - DENY
-      X-Xss-Protection:
-      - 1; mode=block
-      Age:
-      - '227'
-      Server:
-      - Netlify
-      X-Nf-Request-Id:
-      - c04029a2-8ae8-4fe0-978c-986592cdc09f-16239246
-    body:
-      encoding: UTF-8
-      string: '{"date":20200317,"state":"MA","positive":118,"negative":1633,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":null,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":null,"lastUpdateEt":"3/16/2020
-        16:00","hash":"036062f6ee2569040579055ccffc66e3d068d75e","dateChecked":"2020-03-17T20:00:00Z","death":null,"hospitalized":null,"total":1751,"totalTestResults":1751,"posNeg":1751,"fips":"25","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":434,"positiveIncrease":21,"totalTestResultsIncrease":455}'
-    http_version: null
-  recorded_at: Sun, 12 Apr 2020 04:00:00 GMT
-- request:
-    method: get
-    uri: https://covidtracking.com/api/v1/states/MA/20200318.json
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Typhoeus - https://github.com/typhoeus/typhoeus
-      Expect:
-      - ''
-  response:
-    status:
-      code: 200
-      message: ''
-    headers:
-      Accept-Ranges:
-      - bytes
-      Access-Control-Allow-Origin:
-      - "*"
-      Cache-Control:
-      - public, max-age=0, must-revalidate
-      Content-Length:
-      - '612'
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 17 May 2020 21:32:26 GMT
-      Etag:
-      - '"5076d2c3b149852b98e36161413d01b6-ssl"'
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - DENY
-      X-Xss-Protection:
-      - 1; mode=block
-      Age:
-      - '227'
-      Server:
-      - Netlify
-      X-Nf-Request-Id:
-      - c04029a2-8ae8-4fe0-978c-986592cdc09f-16239250
-    body:
-      encoding: UTF-8
-      string: '{"date":20200318,"state":"MA","positive":156,"negative":2115,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":null,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":null,"lastUpdateEt":"3/18/2020
-        16:00","hash":"b2221d52fc1f377763c3af6491e89fb6c0e5e5cf","dateChecked":"2020-03-18T20:00:00Z","death":2,"hospitalized":null,"total":2271,"totalTestResults":2271,"posNeg":2271,"fips":"25","deathIncrease":2,"hospitalizedIncrease":0,"negativeIncrease":482,"positiveIncrease":38,"totalTestResultsIncrease":520}'
-    http_version: null
-  recorded_at: Sun, 12 Apr 2020 04:00:00 GMT
-- request:
-    method: get
-    uri: https://covidtracking.com/api/v1/states/MA/20200319.json
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Typhoeus - https://github.com/typhoeus/typhoeus
-      Expect:
-      - ''
-  response:
-    status:
-      code: 200
-      message: ''
-    headers:
-      Accept-Ranges:
-      - bytes
-      Access-Control-Allow-Origin:
-      - "*"
-      Cache-Control:
-      - public, max-age=0, must-revalidate
-      Content-Length:
-      - '612'
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 17 May 2020 21:32:30 GMT
-      Etag:
-      - '"969d9e5254324d91d1c9adffcc42b913-ssl"'
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - DENY
-      X-Xss-Protection:
-      - 1; mode=block
-      Age:
-      - '223'
-      Server:
-      - Netlify
-      X-Nf-Request-Id:
-      - c04029a2-8ae8-4fe0-978c-986592cdc09f-16239247
-    body:
-      encoding: UTF-8
-      string: '{"date":20200319,"state":"MA","positive":229,"negative":2918,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":null,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":null,"lastUpdateEt":"3/19/2020
-        11:30","hash":"3188ba2f263b4d972999d889114b0ed26ebff83e","dateChecked":"2020-03-19T20:00:00Z","death":3,"hospitalized":null,"total":3147,"totalTestResults":3147,"posNeg":3147,"fips":"25","deathIncrease":1,"hospitalizedIncrease":0,"negativeIncrease":803,"positiveIncrease":73,"totalTestResultsIncrease":876}'
-    http_version: null
-  recorded_at: Sun, 12 Apr 2020 04:00:00 GMT
-- request:
-    method: get
-    uri: https://covidtracking.com/api/v1/states/MA/20200320.json
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Typhoeus - https://github.com/typhoeus/typhoeus
-      Expect:
-      - ''
-  response:
-    status:
-      code: 200
-      message: ''
-    headers:
-      Accept-Ranges:
-      - bytes
-      Access-Control-Allow-Origin:
-      - "*"
-      Cache-Control:
-      - public, max-age=0, must-revalidate
-      Content-Length:
-      - '612'
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 17 May 2020 21:32:26 GMT
-      Etag:
-      - '"49b01ff31fea08039cd80498527f8730-ssl"'
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - DENY
-      X-Xss-Protection:
-      - 1; mode=block
-      Age:
-      - '227'
-      Server:
-      - Netlify
-      X-Nf-Request-Id:
-      - c04029a2-8ae8-4fe0-978c-986592cdc09f-16239248
-    body:
-      encoding: UTF-8
-      string: '{"date":20200320,"state":"MA","positive":314,"negative":3795,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":null,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":null,"lastUpdateEt":"3/20/2020
-        16:00","hash":"fbb2ca94fd12b061247a3bcc3fea88c0208b0377","dateChecked":"2020-03-20T20:00:00Z","death":5,"hospitalized":null,"total":4109,"totalTestResults":4109,"posNeg":4109,"fips":"25","deathIncrease":2,"hospitalizedIncrease":0,"negativeIncrease":877,"positiveIncrease":85,"totalTestResultsIncrease":962}'
-    http_version: null
-  recorded_at: Sun, 12 Apr 2020 04:00:00 GMT
-- request:
-    method: get
-    uri: https://covidtracking.com/api/v1/states/MA/20200323.json
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Typhoeus - https://github.com/typhoeus/typhoeus
-      Expect:
-      - ''
-  response:
-    status:
-      code: 200
-      message: ''
-    headers:
-      Accept-Ranges:
-      - bytes
-      Access-Control-Allow-Origin:
-      - "*"
-      Cache-Control:
-      - public, max-age=0, must-revalidate
-      Content-Length:
-      - '611'
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 17 May 2020 21:32:26 GMT
-      Etag:
-      - '"718951316b5e6929cc2ff97fa8366a96-ssl"'
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - DENY
-      X-Xss-Protection:
-      - 1; mode=block
-      Age:
-      - '227'
-      Server:
-      - Netlify
-      X-Nf-Request-Id:
-      - c04029a2-8ae8-4fe0-978c-986592cdc09f-16239255
+      - 7b5091e5-db0f-4634-a407-2a78a3d52c67-8819560
     body:
       encoding: UTF-8
       string: '{"date":20200323,"state":"MA","positive":678,"negative":8263,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":79,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":"B","lastUpdateEt":"3/23/2020
-        12:30","hash":"7e25fc50045298a3678688fe9a1d57f0fb893475","dateChecked":"2020-03-23T20:00:00Z","death":17,"hospitalized":79,"total":8941,"totalTestResults":8941,"posNeg":8941,"fips":"25","deathIncrease":6,"hospitalizedIncrease":8,"negativeIncrease":2787,"positiveIncrease":131,"totalTestResultsIncrease":2918}'
+        12:30","dateModified":"2020-03-23T12:30:00Z","checkTimeEt":"03/23 08:30","death":17,"hospitalized":79,"dateChecked":"2020-03-23T12:30:00Z","fips":"25","positiveIncrease":131,"negativeIncrease":2787,"total":8941,"totalTestResults":8941,"totalTestResultsIncrease":2918,"posNeg":8941,"deathIncrease":6,"hospitalizedIncrease":8,"hash":"4a69b05bc889edf436359856185f6dac84e797b7","commercialScore":0,"negativeRegularScore":0,"negativeScore":0,"positiveScore":0,"score":0,"grade":""}
+
+        '
     http_version: null
   recorded_at: Sun, 12 Apr 2020 04:00:00 GMT
 - request:
     method: get
-    uri: https://covidtracking.com/api/v1/states/MA/20200324.json
+    uri: https://covidtracking.com/api/v1/states/ma/20200324.json
     body:
       encoding: US-ASCII
       string: ''
@@ -1164,41 +720,59 @@ http_interactions:
       - bytes
       Access-Control-Allow-Origin:
       - "*"
-      Cache-Control:
-      - public, max-age=0, must-revalidate
-      Content-Length:
-      - '617'
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 17 May 2020 21:32:26 GMT
-      Etag:
-      - '"8464ce37336c5cb25063153a794ea650-ssl"'
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - DENY
-      X-Xss-Protection:
-      - 1; mode=block
       Age:
-      - '227'
+      - '0'
+      Cache-Control:
+      - max-age=600
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 06 Jun 2020 15:11:27 GMT
+      Etag:
+      - W/"5edba58d-312"
+      Expires:
+      - Sat, 06 Jun 2020 15:21:27 GMT
+      Last-Modified:
+      - Sat, 06 Jun 2020 14:17:49 GMT
       Server:
       - Netlify
+      Strict-Transport-Security:
+      - max-age=31556952
+      Via:
+      - 1.1 varnish
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Fastly-Request-Id:
+      - be3bc53bc66d30ef5ffad86ffd8bc0cfd3e89dd6
+      X-Github-Request-Id:
+      - F6B6:4A3A:5E07F6:762FB0:5EDBB21F
+      X-Origin-Cache:
+      - HIT
+      X-Proxy-Cache:
+      - MISS
+      X-Served-By:
+      - cache-ewr18141-EWR
+      X-Timer:
+      - S1591456288.863541,VS0,VE27
+      Content-Length:
+      - '786'
+      Vary:
+      - Accept-Encoding
       X-Nf-Request-Id:
-      - c04029a2-8ae8-4fe0-978c-986592cdc09f-16239253
+      - 7b5091e5-db0f-4634-a407-2a78a3d52c67-8819569
     body:
       encoding: UTF-8
       string: '{"date":20200324,"state":"MA","positive":1060,"negative":12714,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":94,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":"B","lastUpdateEt":"3/24/2020
-        12:30","hash":"f64fa88ca121311a73c44c6f81825d2eedd143d1","dateChecked":"2020-03-24T20:00:00Z","death":26,"hospitalized":94,"total":13774,"totalTestResults":13774,"posNeg":13774,"fips":"25","deathIncrease":9,"hospitalizedIncrease":15,"negativeIncrease":4451,"positiveIncrease":382,"totalTestResultsIncrease":4833}'
+        12:30","dateModified":"2020-03-24T12:30:00Z","checkTimeEt":"03/24 08:30","death":26,"hospitalized":94,"dateChecked":"2020-03-24T12:30:00Z","fips":"25","positiveIncrease":382,"negativeIncrease":4451,"total":13774,"totalTestResults":13774,"totalTestResultsIncrease":4833,"posNeg":13774,"deathIncrease":9,"hospitalizedIncrease":15,"hash":"83b8dc6fb6b5d305ea6c91c8a70bf9bbdbe43fa8","commercialScore":0,"negativeRegularScore":0,"negativeScore":0,"positiveScore":0,"score":0,"grade":""}
+
+        '
     http_version: null
   recorded_at: Sun, 12 Apr 2020 04:00:00 GMT
 - request:
     method: get
-    uri: https://covidtracking.com/api/v1/states/MA/20200325.json
+    uri: https://covidtracking.com/api/v1/states/ma/20200325.json
     body:
       encoding: US-ASCII
       string: ''
@@ -1216,41 +790,59 @@ http_interactions:
       - bytes
       Access-Control-Allow-Origin:
       - "*"
-      Cache-Control:
-      - public, max-age=0, must-revalidate
-      Content-Length:
-      - '618'
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 17 May 2020 21:32:26 GMT
-      Etag:
-      - '"18ded27056d522aee22989624d23b1f5-ssl"'
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - DENY
-      X-Xss-Protection:
-      - 1; mode=block
       Age:
-      - '227'
+      - '0'
+      Cache-Control:
+      - max-age=600
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 06 Jun 2020 15:11:27 GMT
+      Etag:
+      - W/"5edba58d-313"
+      Expires:
+      - Sat, 06 Jun 2020 15:21:27 GMT
+      Last-Modified:
+      - Sat, 06 Jun 2020 14:17:49 GMT
       Server:
       - Netlify
+      Strict-Transport-Security:
+      - max-age=31556952
+      Via:
+      - 1.1 varnish
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Fastly-Request-Id:
+      - 021d564f5e289a9d5ba8e94afc085896dc323beb
+      X-Github-Request-Id:
+      - 3202:4213:5EB287:76E72E:5EDBB215
+      X-Origin-Cache:
+      - HIT
+      X-Proxy-Cache:
+      - MISS
+      X-Served-By:
+      - cache-ewr18145-EWR
+      X-Timer:
+      - S1591456288.860857,VS0,VE12
+      Content-Length:
+      - '787'
+      Vary:
+      - Accept-Encoding
       X-Nf-Request-Id:
-      - c04029a2-8ae8-4fe0-978c-986592cdc09f-16239257
+      - 7b5091e5-db0f-4634-a407-2a78a3d52c67-8819571
     body:
       encoding: UTF-8
       string: '{"date":20200325,"state":"MA","positive":1739,"negative":18079,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":103,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":"B","lastUpdateEt":"3/25/2020
-        16:00","hash":"8fc0b57aa2284fc9f533074786edff9096721eb1","dateChecked":"2020-03-25T20:00:00Z","death":33,"hospitalized":103,"total":19818,"totalTestResults":19818,"posNeg":19818,"fips":"25","deathIncrease":7,"hospitalizedIncrease":9,"negativeIncrease":5365,"positiveIncrease":679,"totalTestResultsIncrease":6044}'
+        16:00","dateModified":"2020-03-25T16:00:00Z","checkTimeEt":"03/25 12:00","death":33,"hospitalized":103,"dateChecked":"2020-03-25T16:00:00Z","fips":"25","positiveIncrease":679,"negativeIncrease":5365,"total":19818,"totalTestResults":19818,"totalTestResultsIncrease":6044,"posNeg":19818,"deathIncrease":7,"hospitalizedIncrease":9,"hash":"c5e4975432264852520fe1aecd0373355ce58f77","commercialScore":0,"negativeRegularScore":0,"negativeScore":0,"positiveScore":0,"score":0,"grade":""}
+
+        '
     http_version: null
   recorded_at: Sun, 12 Apr 2020 04:00:00 GMT
 - request:
     method: get
-    uri: https://covidtracking.com/api/v1/states/MA/20200402.json
+    uri: https://covidtracking.com/api/v1/states/ma/20200326.json
     body:
       encoding: US-ASCII
       string: ''
@@ -1268,41 +860,549 @@ http_interactions:
       - bytes
       Access-Control-Allow-Origin:
       - "*"
-      Cache-Control:
-      - public, max-age=0, must-revalidate
-      Content-Length:
-      - '622'
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 17 May 2020 21:32:26 GMT
-      Etag:
-      - '"c6a0ac0d3dcccd86ab57d6a2178aa0b1-ssl"'
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - DENY
-      X-Xss-Protection:
-      - 1; mode=block
       Age:
-      - '227'
+      - '0'
+      Cache-Control:
+      - max-age=600
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 06 Jun 2020 15:11:27 GMT
+      Etag:
+      - W/"5edba58d-315"
+      Expires:
+      - Sat, 06 Jun 2020 15:21:27 GMT
+      Last-Modified:
+      - Sat, 06 Jun 2020 14:17:49 GMT
       Server:
       - Netlify
+      Strict-Transport-Security:
+      - max-age=31556952
+      Via:
+      - 1.1 varnish
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Fastly-Request-Id:
+      - 554005649ab54d0da458c148aa9101acc289eca8
+      X-Github-Request-Id:
+      - 860A:767F:148594:1A5EC6:5EDBB21F
+      X-Origin-Cache:
+      - HIT
+      X-Proxy-Cache:
+      - MISS
+      X-Served-By:
+      - cache-ewr18140-EWR
+      X-Timer:
+      - S1591456288.865209,VS0,VE9
+      Content-Length:
+      - '789'
+      Vary:
+      - Accept-Encoding
       X-Nf-Request-Id:
-      - c04029a2-8ae8-4fe0-978c-986592cdc09f-16239230
+      - 7b5091e5-db0f-4634-a407-2a78a3d52c67-8819573
+    body:
+      encoding: UTF-8
+      string: '{"date":20200326,"state":"MA","positive":2318,"negative":21327,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":219,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":"B","lastUpdateEt":"3/26/2020
+        12:30","dateModified":"2020-03-26T12:30:00Z","checkTimeEt":"03/26 08:30","death":42,"hospitalized":219,"dateChecked":"2020-03-26T12:30:00Z","fips":"25","positiveIncrease":579,"negativeIncrease":3248,"total":23645,"totalTestResults":23645,"totalTestResultsIncrease":3827,"posNeg":23645,"deathIncrease":9,"hospitalizedIncrease":116,"hash":"8ccb8479162ed7eba4c3bf36a0d56431174a0b18","commercialScore":0,"negativeRegularScore":0,"negativeScore":0,"positiveScore":0,"score":0,"grade":""}
+
+        '
+    http_version: null
+  recorded_at: Sun, 12 Apr 2020 04:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/v1/states/ma/20200327.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Cache-Control:
+      - max-age=600
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 06 Jun 2020 15:11:27 GMT
+      Etag:
+      - W/"5edba58d-314"
+      Expires:
+      - Sat, 06 Jun 2020 15:21:27 GMT
+      Last-Modified:
+      - Sat, 06 Jun 2020 14:17:49 GMT
+      Server:
+      - Netlify
+      Strict-Transport-Security:
+      - max-age=31556952
+      Via:
+      - 1.1 varnish
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Fastly-Request-Id:
+      - eb5a55f1aa7dd511d36e0cfd800799e6ef07d583
+      X-Github-Request-Id:
+      - 4AAC:3B1A:1507F4:1B0147:5EDBB21E
+      X-Origin-Cache:
+      - HIT
+      X-Proxy-Cache:
+      - MISS
+      X-Served-By:
+      - cache-ewr18134-EWR
+      X-Timer:
+      - S1591456288.833581,VS0,VE11
+      Content-Length:
+      - '788'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - 7b5091e5-db0f-4634-a407-2a78a3d52c67-8819527
+    body:
+      encoding: UTF-8
+      string: '{"date":20200327,"state":"MA","positive":3151,"negative":26244,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":219,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":"B","lastUpdateEt":"3/27/2020
+        12:30","dateModified":"2020-03-27T12:30:00Z","checkTimeEt":"03/27 08:30","death":57,"hospitalized":219,"dateChecked":"2020-03-27T12:30:00Z","fips":"25","positiveIncrease":833,"negativeIncrease":4917,"total":29395,"totalTestResults":29395,"totalTestResultsIncrease":5750,"posNeg":29395,"deathIncrease":15,"hospitalizedIncrease":0,"hash":"a905c3a253d5869bf9dc93c6572c45dbbe507a2b","commercialScore":0,"negativeRegularScore":0,"negativeScore":0,"positiveScore":0,"score":0,"grade":""}
+
+        '
+    http_version: null
+  recorded_at: Sun, 12 Apr 2020 04:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/v1/states/ma/20200328.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Cache-Control:
+      - max-age=600
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 06 Jun 2020 15:11:27 GMT
+      Etag:
+      - W/"5edba58d-317"
+      Expires:
+      - Sat, 06 Jun 2020 15:21:27 GMT
+      Last-Modified:
+      - Sat, 06 Jun 2020 14:17:49 GMT
+      Server:
+      - Netlify
+      Strict-Transport-Security:
+      - max-age=31556952
+      Via:
+      - 1.1 varnish
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Fastly-Request-Id:
+      - a55c047d916fd637039487656b3991b70fcb6252
+      X-Github-Request-Id:
+      - EB56:634D:2DA03A:39BFA1:5EDBB21F
+      X-Origin-Cache:
+      - HIT
+      X-Proxy-Cache:
+      - MISS
+      X-Served-By:
+      - cache-ewr18127-EWR
+      X-Timer:
+      - S1591456288.820356,VS0,VE19
+      Content-Length:
+      - '791'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - 7b5091e5-db0f-4634-a407-2a78a3d52c67-8819528
+    body:
+      encoding: UTF-8
+      string: '{"date":20200328,"state":"MA","positive":4158,"negative":30915,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":350,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":"B","lastUpdateEt":"3/27/2020
+        12:30","dateModified":"2020-03-27T12:30:00Z","checkTimeEt":"03/27 08:30","death":72,"hospitalized":350,"dateChecked":"2020-03-27T12:30:00Z","fips":"25","positiveIncrease":1007,"negativeIncrease":4671,"total":35073,"totalTestResults":35073,"totalTestResultsIncrease":5678,"posNeg":35073,"deathIncrease":15,"hospitalizedIncrease":131,"hash":"34d1d0229e88051f06ad6c321b9f5846653cbb76","commercialScore":0,"negativeRegularScore":0,"negativeScore":0,"positiveScore":0,"score":0,"grade":""}
+
+        '
+    http_version: null
+  recorded_at: Sun, 12 Apr 2020 04:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/v1/states/ma/20200329.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Cache-Control:
+      - max-age=600
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 06 Jun 2020 15:11:27 GMT
+      Etag:
+      - W/"5edba58d-315"
+      Expires:
+      - Sat, 06 Jun 2020 15:21:27 GMT
+      Last-Modified:
+      - Sat, 06 Jun 2020 14:17:49 GMT
+      Server:
+      - Netlify
+      Strict-Transport-Security:
+      - max-age=31556952
+      Via:
+      - 1.1 varnish
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Fastly-Request-Id:
+      - 5a72fff4af63a1fdc19663837b025efaff458379
+      X-Github-Request-Id:
+      - 0D42:5AE5:5B7E41:730D7C:5EDBB21F
+      X-Origin-Cache:
+      - HIT
+      X-Proxy-Cache:
+      - MISS
+      X-Served-By:
+      - cache-ewr18128-EWR
+      X-Timer:
+      - S1591456288.833359,VS0,VE12
+      Content-Length:
+      - '789'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - 7b5091e5-db0f-4634-a407-2a78a3d52c67-8819530
+    body:
+      encoding: UTF-8
+      string: '{"date":20200329,"state":"MA","positive":4856,"negative":34234,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":399,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":"B","lastUpdateEt":"3/28/2020
+        12:30","dateModified":"2020-03-28T12:30:00Z","checkTimeEt":"03/28 08:30","death":99,"hospitalized":399,"dateChecked":"2020-03-28T12:30:00Z","fips":"25","positiveIncrease":698,"negativeIncrease":3319,"total":39090,"totalTestResults":39090,"totalTestResultsIncrease":4017,"posNeg":39090,"deathIncrease":27,"hospitalizedIncrease":49,"hash":"0c4228b2d4dd1903073451c92d43e4b2bc979361","commercialScore":0,"negativeRegularScore":0,"negativeScore":0,"positiveScore":0,"score":0,"grade":""}
+
+        '
+    http_version: null
+  recorded_at: Sun, 12 Apr 2020 04:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/v1/states/ma/20200330.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Cache-Control:
+      - max-age=600
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 06 Jun 2020 15:11:27 GMT
+      Etag:
+      - W/"5edba58d-316"
+      Expires:
+      - Sat, 06 Jun 2020 15:21:27 GMT
+      Last-Modified:
+      - Sat, 06 Jun 2020 14:17:49 GMT
+      Server:
+      - Netlify
+      Strict-Transport-Security:
+      - max-age=31556952
+      Via:
+      - 1.1 varnish
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Fastly-Request-Id:
+      - 4ecc7c3f8240848da73503d68ad3bcb56e21d351
+      X-Github-Request-Id:
+      - E39C:6A7C:2BE81F:378EDA:5EDBB21D
+      X-Origin-Cache:
+      - HIT
+      X-Proxy-Cache:
+      - MISS
+      X-Served-By:
+      - cache-ewr18120-EWR
+      X-Timer:
+      - S1591456288.833974,VS0,VE12
+      Content-Length:
+      - '790'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - 7b5091e5-db0f-4634-a407-2a78a3d52c67-8819531
+    body:
+      encoding: UTF-8
+      string: '{"date":20200330,"state":"MA","positive":5653,"negative":37166,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":453,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":"B","lastUpdateEt":"3/30/2020
+        16:15","dateModified":"2020-03-30T16:15:00Z","checkTimeEt":"03/30 12:15","death":124,"hospitalized":453,"dateChecked":"2020-03-30T16:15:00Z","fips":"25","positiveIncrease":797,"negativeIncrease":2932,"total":42819,"totalTestResults":42819,"totalTestResultsIncrease":3729,"posNeg":42819,"deathIncrease":25,"hospitalizedIncrease":54,"hash":"82153f31c19d9633efe3090bf8423cd9af7a117e","commercialScore":0,"negativeRegularScore":0,"negativeScore":0,"positiveScore":0,"score":0,"grade":""}
+
+        '
+    http_version: null
+  recorded_at: Sun, 12 Apr 2020 04:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/v1/states/ma/20200331.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Cache-Control:
+      - max-age=600
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 06 Jun 2020 15:11:27 GMT
+      Etag:
+      - W/"5edba58d-317"
+      Expires:
+      - Sat, 06 Jun 2020 15:21:27 GMT
+      Last-Modified:
+      - Sat, 06 Jun 2020 14:17:49 GMT
+      Server:
+      - Netlify
+      Strict-Transport-Security:
+      - max-age=31556952
+      Via:
+      - 1.1 varnish
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Fastly-Request-Id:
+      - 3d4662f8d3c83dc697d0c704bb8e2e3e615737c9
+      X-Github-Request-Id:
+      - 9064:37A4:141F93:19DFFB:5EDBB21F
+      X-Origin-Cache:
+      - HIT
+      X-Proxy-Cache:
+      - MISS
+      X-Served-By:
+      - cache-ewr18136-EWR
+      X-Timer:
+      - S1591456288.834598,VS0,VE10
+      Content-Length:
+      - '791'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - 7b5091e5-db0f-4634-a407-2a78a3d52c67-8819532
+    body:
+      encoding: UTF-8
+      string: '{"date":20200331,"state":"MA","positive":6521,"negative":40440,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":562,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":"B","lastUpdateEt":"3/31/2020
+        12:30","dateModified":"2020-03-31T12:30:00Z","checkTimeEt":"03/31 08:30","death":153,"hospitalized":562,"dateChecked":"2020-03-31T12:30:00Z","fips":"25","positiveIncrease":868,"negativeIncrease":3274,"total":46961,"totalTestResults":46961,"totalTestResultsIncrease":4142,"posNeg":46961,"deathIncrease":29,"hospitalizedIncrease":109,"hash":"edcd9bf6f26657a04bc06f9f01cebd6d34bab4ec","commercialScore":0,"negativeRegularScore":0,"negativeScore":0,"positiveScore":0,"score":0,"grade":""}
+
+        '
+    http_version: null
+  recorded_at: Sun, 12 Apr 2020 04:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/v1/states/ma/20200401.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Cache-Control:
+      - max-age=600
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 06 Jun 2020 15:11:27 GMT
+      Etag:
+      - W/"5edba58d-318"
+      Expires:
+      - Sat, 06 Jun 2020 15:21:27 GMT
+      Last-Modified:
+      - Sat, 06 Jun 2020 14:17:49 GMT
+      Server:
+      - Netlify
+      Strict-Transport-Security:
+      - max-age=31556952
+      Via:
+      - 1.1 varnish
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Fastly-Request-Id:
+      - 35f71cea09f20e9e3c82f8da95ed1f7436686a87
+      X-Github-Request-Id:
+      - A5F0:37A6:59FAAB:71646A:5EDBB21F
+      X-Origin-Cache:
+      - HIT
+      X-Proxy-Cache:
+      - MISS
+      X-Served-By:
+      - cache-ewr18131-EWR
+      X-Timer:
+      - S1591456288.836734,VS0,VE12
+      Content-Length:
+      - '792'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - 7b5091e5-db0f-4634-a407-2a78a3d52c67-8819533
+    body:
+      encoding: UTF-8
+      string: '{"date":20200401,"state":"MA","positive":7639,"negative":44125,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":682,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":"B","lastUpdateEt":"3/31/2020
+        12:30","dateModified":"2020-03-31T12:30:00Z","checkTimeEt":"03/31 08:30","death":187,"hospitalized":682,"dateChecked":"2020-03-31T12:30:00Z","fips":"25","positiveIncrease":1118,"negativeIncrease":3685,"total":51764,"totalTestResults":51764,"totalTestResultsIncrease":4803,"posNeg":51764,"deathIncrease":34,"hospitalizedIncrease":120,"hash":"1109e63c2bda17defcc787508e49cead142cc688","commercialScore":0,"negativeRegularScore":0,"negativeScore":0,"positiveScore":0,"score":0,"grade":""}
+
+        '
+    http_version: null
+  recorded_at: Sun, 12 Apr 2020 04:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/v1/states/ma/20200402.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Cache-Control:
+      - max-age=600
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 06 Jun 2020 15:11:27 GMT
+      Etag:
+      - W/"5edba58d-317"
+      Expires:
+      - Sat, 06 Jun 2020 15:21:27 GMT
+      Last-Modified:
+      - Sat, 06 Jun 2020 14:17:49 GMT
+      Server:
+      - Netlify
+      Strict-Transport-Security:
+      - max-age=31556952
+      Via:
+      - 1.1 varnish
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Fastly-Request-Id:
+      - eac6a9484f1a499d6e710e58ad77f9139a4f04c7
+      X-Github-Request-Id:
+      - 31FC:7681:5B446D:72D20F:5EDBB21D
+      X-Origin-Cache:
+      - HIT
+      X-Proxy-Cache:
+      - MISS
+      X-Served-By:
+      - cache-ewr18128-EWR
+      X-Timer:
+      - S1591456288.857680,VS0,VE41
+      Content-Length:
+      - '791'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - 7b5091e5-db0f-4634-a407-2a78a3d52c67-8819538
     body:
       encoding: UTF-8
       string: '{"date":20200402,"state":"MA","positive":8867,"negative":47767,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":813,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":"B","lastUpdateEt":"4/2/2020
-        16:00","hash":"52a48fa52d46911b39824b7e5ecc002cdfcd83b5","dateChecked":"2020-04-02T20:00:00Z","death":229,"hospitalized":813,"total":56634,"totalTestResults":56634,"posNeg":56634,"fips":"25","deathIncrease":42,"hospitalizedIncrease":131,"negativeIncrease":3642,"positiveIncrease":1228,"totalTestResultsIncrease":4870}'
+        16:00","dateModified":"2020-04-02T16:00:00Z","checkTimeEt":"04/02 12:00","death":229,"hospitalized":813,"dateChecked":"2020-04-02T16:00:00Z","fips":"25","positiveIncrease":1228,"negativeIncrease":3642,"total":56634,"totalTestResults":56634,"totalTestResultsIncrease":4870,"posNeg":56634,"deathIncrease":42,"hospitalizedIncrease":131,"hash":"a1ec96b2c5d5cb08f4514891bab2aabb6cf7b396","commercialScore":0,"negativeRegularScore":0,"negativeScore":0,"positiveScore":0,"score":0,"grade":""}
+
+        '
     http_version: null
   recorded_at: Sun, 12 Apr 2020 04:00:00 GMT
 - request:
     method: get
-    uri: https://covidtracking.com/api/v1/states/MA/20200409.json
+    uri: https://covidtracking.com/api/v1/states/ma/20200403.json
     body:
       encoding: US-ASCII
       string: ''
@@ -1320,244 +1420,684 @@ http_interactions:
       - bytes
       Access-Control-Allow-Origin:
       - "*"
-      Cache-Control:
-      - public, max-age=0, must-revalidate
-      Content-Length:
-      - '626'
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 17 May 2020 21:32:26 GMT
-      Etag:
-      - '"5f534d718fbb9fa6afaecf2416162f91-ssl"'
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - DENY
-      X-Xss-Protection:
-      - 1; mode=block
       Age:
-      - '228'
+      - '0'
+      Cache-Control:
+      - max-age=600
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 06 Jun 2020 15:11:27 GMT
+      Etag:
+      - W/"5edba58d-318"
+      Expires:
+      - Sat, 06 Jun 2020 15:21:27 GMT
+      Last-Modified:
+      - Sat, 06 Jun 2020 14:17:49 GMT
       Server:
       - Netlify
-      X-Nf-Request-Id:
-      - c04029a2-8ae8-4fe0-978c-986592cdc09f-16239237
-    body:
-      encoding: UTF-8
-      string: '{"date":20200409,"state":"MA","positive":18843,"negative":76146,"pending":null,"hospitalizedCurrently":2302,"hospitalizedCumulative":2302,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":"B","lastUpdateEt":"4/9/2020
-        12:30","hash":"c3707e97b1200655e13e6ee7f49c643351082ddf","dateChecked":"2020-04-09T20:00:00Z","death":725,"hospitalized":2302,"total":94989,"totalTestResults":94989,"posNeg":94989,"fips":"25","deathIncrease":110,"hospitalizedIncrease":183,"negativeIncrease":5297,"positiveIncrease":2151,"totalTestResultsIncrease":7448}'
-    http_version: null
-  recorded_at: Sun, 12 Apr 2020 04:00:00 GMT
-- request:
-    method: get
-    uri: https://covidtracking.com/api/v1/states/MA/20200316.json
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Typhoeus - https://github.com/typhoeus/typhoeus
-      Expect:
-      - ''
-  response:
-    status:
-      code: 200
-      message: ''
-    headers:
-      Accept-Ranges:
-      - bytes
-      Access-Control-Allow-Origin:
-      - "*"
-      Cache-Control:
-      - public, max-age=0, must-revalidate
-      Content-Length:
-      - '614'
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 17 May 2020 21:32:26 GMT
-      Etag:
-      - '"fa45153e0e387af9a161e36075bbfe15-ssl"'
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
       Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - DENY
-      X-Xss-Protection:
-      - 1; mode=block
-      Age:
-      - '227'
-      Server:
-      - Netlify
-      X-Nf-Request-Id:
-      - c04029a2-8ae8-4fe0-978c-986592cdc09f-16239245
-    body:
-      encoding: UTF-8
-      string: '{"date":20200316,"state":"MA","positive":97,"negative":1199,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":null,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":null,"lastUpdateEt":"3/16/2020
-        15:48","hash":"e59c715ab646368c3c7225bf0413256b1d4c7da6","dateChecked":"2020-03-16T20:00:00Z","death":null,"hospitalized":null,"total":1296,"totalTestResults":1296,"posNeg":1296,"fips":"25","deathIncrease":0,"hospitalizedIncrease":0,"negativeIncrease":615,"positiveIncrease":33,"totalTestResultsIncrease":648}'
-    http_version: null
-  recorded_at: Sun, 12 Apr 2020 04:00:00 GMT
-- request:
-    method: get
-    uri: https://covidtracking.com/api/v1/states/MA/20200321.json
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Typhoeus - https://github.com/typhoeus/typhoeus
-      Expect:
-      - ''
-  response:
-    status:
-      code: 200
-      message: ''
-    headers:
-      Accept-Ranges:
-      - bytes
-      Access-Control-Allow-Origin:
-      - "*"
-      Cache-Control:
-      - public, max-age=0, must-revalidate
+      - max-age=31556952
+      Via:
+      - 1.1 varnish
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Fastly-Request-Id:
+      - d8b424c38d149f3fc1cd452aa9f840f19823bb2f
+      X-Github-Request-Id:
+      - AD4E:695C:2BA8F8:3758E7:5EDBB21F
+      X-Origin-Cache:
+      - HIT
+      X-Proxy-Cache:
+      - MISS
+      X-Served-By:
+      - cache-ewr18127-EWR
+      X-Timer:
+      - S1591456288.855245,VS0,VE9
       Content-Length:
-      - '612'
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 17 May 2020 21:32:26 GMT
-      Etag:
-      - '"3a5646ba788fe62fe2d62c1b223cc5f3-ssl"'
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - DENY
-      X-Xss-Protection:
-      - 1; mode=block
-      Age:
-      - '227'
-      Server:
-      - Netlify
+      - '792'
+      Vary:
+      - Accept-Encoding
       X-Nf-Request-Id:
-      - c04029a2-8ae8-4fe0-978c-986592cdc09f-16239252
-    body:
-      encoding: UTF-8
-      string: '{"date":20200321,"state":"MA","positive":426,"negative":4799,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":61,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":null,"lastUpdateEt":"3/21/2020
-        16:00","hash":"e600ca928fc6a15ed775e849e1b7bf9619c844cd","dateChecked":"2020-03-21T20:00:00Z","death":7,"hospitalized":61,"total":5225,"totalTestResults":5225,"posNeg":5225,"fips":"25","deathIncrease":2,"hospitalizedIncrease":61,"negativeIncrease":1004,"positiveIncrease":112,"totalTestResultsIncrease":1116}'
-    http_version: null
-  recorded_at: Sun, 12 Apr 2020 04:00:00 GMT
-- request:
-    method: get
-    uri: https://covidtracking.com/api/v1/states/MA/20200322.json
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Typhoeus - https://github.com/typhoeus/typhoeus
-      Expect:
-      - ''
-  response:
-    status:
-      code: 200
-      message: ''
-    headers:
-      Accept-Ranges:
-      - bytes
-      Access-Control-Allow-Origin:
-      - "*"
-      Cache-Control:
-      - public, max-age=0, must-revalidate
-      Content-Length:
-      - '611'
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 17 May 2020 21:32:26 GMT
-      Etag:
-      - '"0799a935c7ce4be5abb61c68ac4e7c62-ssl"'
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - DENY
-      X-Xss-Protection:
-      - 1; mode=block
-      Age:
-      - '227'
-      Server:
-      - Netlify
-      X-Nf-Request-Id:
-      - c04029a2-8ae8-4fe0-978c-986592cdc09f-16239256
-    body:
-      encoding: UTF-8
-      string: '{"date":20200322,"state":"MA","positive":547,"negative":5476,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":71,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":null,"lastUpdateEt":"3/22/2020
-        16:00","hash":"f35e651e27a808654757bdf97133ad0b3d2db999","dateChecked":"2020-03-22T20:00:00Z","death":11,"hospitalized":71,"total":6023,"totalTestResults":6023,"posNeg":6023,"fips":"25","deathIncrease":4,"hospitalizedIncrease":10,"negativeIncrease":677,"positiveIncrease":121,"totalTestResultsIncrease":798}'
-    http_version: null
-  recorded_at: Sun, 12 Apr 2020 04:00:00 GMT
-- request:
-    method: get
-    uri: https://covidtracking.com/api/v1/states/MA/20200403.json
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Typhoeus - https://github.com/typhoeus/typhoeus
-      Expect:
-      - ''
-  response:
-    status:
-      code: 200
-      message: ''
-    headers:
-      Accept-Ranges:
-      - bytes
-      Access-Control-Allow-Origin:
-      - "*"
-      Cache-Control:
-      - public, max-age=0, must-revalidate
-      Content-Length:
-      - '623'
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 17 May 2020 21:32:26 GMT
-      Etag:
-      - '"098fb5e5e6b1f317e6f3a9996ba47139-ssl"'
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - DENY
-      X-Xss-Protection:
-      - 1; mode=block
-      Age:
-      - '228'
-      Server:
-      - Netlify
-      X-Nf-Request-Id:
-      - c04029a2-8ae8-4fe0-978c-986592cdc09f-16239912
+      - 7b5091e5-db0f-4634-a407-2a78a3d52c67-8819539
     body:
       encoding: UTF-8
       string: '{"date":20200403,"state":"MA","positive":10303,"negative":52685,"pending":null,"hospitalizedCurrently":null,"hospitalizedCumulative":966,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":"B","lastUpdateEt":"4/3/2020
-        12:30","hash":"00f02e532d9b4e61f24a257d33891b5c3275589b","dateChecked":"2020-04-03T20:00:00Z","death":265,"hospitalized":966,"total":62988,"totalTestResults":62988,"posNeg":62988,"fips":"25","deathIncrease":36,"hospitalizedIncrease":153,"negativeIncrease":4918,"positiveIncrease":1436,"totalTestResultsIncrease":6354}'
+        12:30","dateModified":"2020-04-03T12:30:00Z","checkTimeEt":"04/03 08:30","death":265,"hospitalized":966,"dateChecked":"2020-04-03T12:30:00Z","fips":"25","positiveIncrease":1436,"negativeIncrease":4918,"total":62988,"totalTestResults":62988,"totalTestResultsIncrease":6354,"posNeg":62988,"deathIncrease":36,"hospitalizedIncrease":153,"hash":"ba5e6a2fae3856914cf13ce166a1d7a6fe6d645d","commercialScore":0,"negativeRegularScore":0,"negativeScore":0,"positiveScore":0,"score":0,"grade":""}
+
+        '
+    http_version: null
+  recorded_at: Sun, 12 Apr 2020 04:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/v1/states/ma/20200404.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Cache-Control:
+      - max-age=600
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 06 Jun 2020 15:11:27 GMT
+      Etag:
+      - W/"5edba58d-31a"
+      Expires:
+      - Sat, 06 Jun 2020 15:21:27 GMT
+      Last-Modified:
+      - Sat, 06 Jun 2020 14:17:49 GMT
+      Server:
+      - Netlify
+      Strict-Transport-Security:
+      - max-age=31556952
+      Via:
+      - 1.1 varnish
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Fastly-Request-Id:
+      - f03b59d03046e17a8806f2dfe3d022bf29b09a60
+      X-Github-Request-Id:
+      - 860A:767F:148593:1A5EB9:5EDBB21D
+      X-Origin-Cache:
+      - HIT
+      X-Proxy-Cache:
+      - MISS
+      X-Served-By:
+      - cache-ewr18136-EWR
+      X-Timer:
+      - S1591456288.849589,VS0,VE9
+      Content-Length:
+      - '794'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - 7b5091e5-db0f-4634-a407-2a78a3d52c67-8819540
+    body:
+      encoding: UTF-8
+      string: '{"date":20200404,"state":"MA","positive":11637,"negative":57191,"pending":null,"hospitalizedCurrently":1370,"hospitalizedCumulative":1370,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":"B","lastUpdateEt":"4/4/2020
+        12:30","dateModified":"2020-04-04T12:30:00Z","checkTimeEt":"04/04 08:30","death":304,"hospitalized":1370,"dateChecked":"2020-04-04T12:30:00Z","fips":"25","positiveIncrease":1334,"negativeIncrease":4506,"total":68828,"totalTestResults":68828,"totalTestResultsIncrease":5840,"posNeg":68828,"deathIncrease":39,"hospitalizedIncrease":404,"hash":"1981c644f2dd6b8b5f9f25c06fb513af181e105f","commercialScore":0,"negativeRegularScore":0,"negativeScore":0,"positiveScore":0,"score":0,"grade":""}
+
+        '
+    http_version: null
+  recorded_at: Sun, 12 Apr 2020 04:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/v1/states/ma/20200405.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Cache-Control:
+      - max-age=600
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 06 Jun 2020 15:11:27 GMT
+      Etag:
+      - W/"5edba58d-319"
+      Expires:
+      - Sat, 06 Jun 2020 15:21:27 GMT
+      Last-Modified:
+      - Sat, 06 Jun 2020 14:17:49 GMT
+      Server:
+      - Netlify
+      Strict-Transport-Security:
+      - max-age=31556952
+      Via:
+      - 1.1 varnish
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Fastly-Request-Id:
+      - b9425f1fe51df55b6dbbc0100519486b76811cdf
+      X-Github-Request-Id:
+      - 98DA:0B0A:2ACF01:366F28:5EDBB21E
+      X-Origin-Cache:
+      - HIT
+      X-Proxy-Cache:
+      - MISS
+      X-Served-By:
+      - cache-ewr18143-EWR
+      X-Timer:
+      - S1591456288.853029,VS0,VE45
+      Content-Length:
+      - '793'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - 7b5091e5-db0f-4634-a407-2a78a3d52c67-8819541
+    body:
+      encoding: UTF-8
+      string: '{"date":20200405,"state":"MA","positive":12402,"negative":59565,"pending":null,"hospitalizedCurrently":1632,"hospitalizedCumulative":1632,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":"B","lastUpdateEt":"4/5/2020
+        12:30","dateModified":"2020-04-05T12:30:00Z","checkTimeEt":"04/05 08:30","death":370,"hospitalized":1632,"dateChecked":"2020-04-05T12:30:00Z","fips":"25","positiveIncrease":765,"negativeIncrease":2374,"total":71967,"totalTestResults":71967,"totalTestResultsIncrease":3139,"posNeg":71967,"deathIncrease":66,"hospitalizedIncrease":262,"hash":"4e3e623887bcac0a43d2aaca2e74a55d5e8d5167","commercialScore":0,"negativeRegularScore":0,"negativeScore":0,"positiveScore":0,"score":0,"grade":""}
+
+        '
+    http_version: null
+  recorded_at: Sun, 12 Apr 2020 04:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/v1/states/ma/20200406.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Cache-Control:
+      - max-age=600
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 06 Jun 2020 15:11:27 GMT
+      Etag:
+      - W/"5edba58d-319"
+      Expires:
+      - Sat, 06 Jun 2020 15:21:27 GMT
+      Last-Modified:
+      - Sat, 06 Jun 2020 14:17:49 GMT
+      Server:
+      - Netlify
+      Strict-Transport-Security:
+      - max-age=31556952
+      Via:
+      - 1.1 varnish
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Fastly-Request-Id:
+      - dab9168585a131d65cf93b4ef380dcf2ac6304c6
+      X-Github-Request-Id:
+      - A5F0:37A6:59FAAD:71646D:5EDBB21F
+      X-Origin-Cache:
+      - HIT
+      X-Proxy-Cache:
+      - MISS
+      X-Served-By:
+      - cache-ewr18130-EWR
+      X-Timer:
+      - S1591456288.857529,VS0,VE14
+      Content-Length:
+      - '793'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - 7b5091e5-db0f-4634-a407-2a78a3d52c67-8819542
+    body:
+      encoding: UTF-8
+      string: '{"date":20200406,"state":"MA","positive":13739,"negative":62720,"pending":null,"hospitalizedCurrently":1667,"hospitalizedCumulative":1667,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":"B","lastUpdateEt":"4/6/2020
+        12:30","dateModified":"2020-04-06T12:30:00Z","checkTimeEt":"04/06 08:30","death":448,"hospitalized":1667,"dateChecked":"2020-04-06T12:30:00Z","fips":"25","positiveIncrease":1337,"negativeIncrease":3155,"total":76459,"totalTestResults":76459,"totalTestResultsIncrease":4492,"posNeg":76459,"deathIncrease":78,"hospitalizedIncrease":35,"hash":"52416f10c3b06fecd6ef35aa0e2c0619dc70f301","commercialScore":0,"negativeRegularScore":0,"negativeScore":0,"positiveScore":0,"score":0,"grade":""}
+
+        '
+    http_version: null
+  recorded_at: Sun, 12 Apr 2020 04:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/v1/states/ma/20200407.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Cache-Control:
+      - max-age=600
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 06 Jun 2020 15:11:27 GMT
+      Etag:
+      - W/"5edba58d-31a"
+      Expires:
+      - Sat, 06 Jun 2020 15:21:27 GMT
+      Last-Modified:
+      - Sat, 06 Jun 2020 14:17:49 GMT
+      Server:
+      - Netlify
+      Strict-Transport-Security:
+      - max-age=31556952
+      Via:
+      - 1.1 varnish
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Fastly-Request-Id:
+      - '068e48da8eac64d340a212da27e97c72d828f65f'
+      X-Github-Request-Id:
+      - 98D4:411E:14D4E6:1AC0BD:5EDBB21A
+      X-Origin-Cache:
+      - HIT
+      X-Proxy-Cache:
+      - MISS
+      X-Served-By:
+      - cache-ewr18138-EWR
+      X-Timer:
+      - S1591456288.856902,VS0,VE12
+      Content-Length:
+      - '794'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - 7b5091e5-db0f-4634-a407-2a78a3d52c67-8819547
+    body:
+      encoding: UTF-8
+      string: '{"date":20200407,"state":"MA","positive":15104,"negative":66270,"pending":null,"hospitalizedCurrently":1831,"hospitalizedCumulative":1831,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":"B","lastUpdateEt":"4/7/2020
+        12:30","dateModified":"2020-04-07T12:30:00Z","checkTimeEt":"04/07 08:30","death":515,"hospitalized":1831,"dateChecked":"2020-04-07T12:30:00Z","fips":"25","positiveIncrease":1365,"negativeIncrease":3550,"total":81374,"totalTestResults":81374,"totalTestResultsIncrease":4915,"posNeg":81374,"deathIncrease":67,"hospitalizedIncrease":164,"hash":"ae739c7b6c9c82349f0b5297aa722e6f318b5e8e","commercialScore":0,"negativeRegularScore":0,"negativeScore":0,"positiveScore":0,"score":0,"grade":""}
+
+        '
+    http_version: null
+  recorded_at: Sun, 12 Apr 2020 04:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/v1/states/ma/20200408.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Cache-Control:
+      - max-age=600
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 06 Jun 2020 15:11:27 GMT
+      Etag:
+      - W/"5edba58d-31b"
+      Expires:
+      - Sat, 06 Jun 2020 15:21:27 GMT
+      Last-Modified:
+      - Sat, 06 Jun 2020 14:17:49 GMT
+      Server:
+      - Netlify
+      Strict-Transport-Security:
+      - max-age=31556952
+      Via:
+      - 1.1 varnish
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Fastly-Request-Id:
+      - 62ad8771a8b52bbdfba5e389e5140d0656515b47
+      X-Github-Request-Id:
+      - 6AFC:1B0C:1371DD:191E7F:5EDBB21E
+      X-Origin-Cache:
+      - HIT
+      X-Proxy-Cache:
+      - MISS
+      X-Served-By:
+      - cache-ewr18135-EWR
+      X-Timer:
+      - S1591456288.858014,VS0,VE11
+      Content-Length:
+      - '795'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - 7b5091e5-db0f-4634-a407-2a78a3d52c67-8819545
+    body:
+      encoding: UTF-8
+      string: '{"date":20200408,"state":"MA","positive":16692,"negative":70849,"pending":null,"hospitalizedCurrently":2119,"hospitalizedCumulative":2119,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":"B","lastUpdateEt":"4/8/2020
+        12:30","dateModified":"2020-04-08T12:30:00Z","checkTimeEt":"04/08 08:30","death":615,"hospitalized":2119,"dateChecked":"2020-04-08T12:30:00Z","fips":"25","positiveIncrease":1588,"negativeIncrease":4579,"total":87541,"totalTestResults":87541,"totalTestResultsIncrease":6167,"posNeg":87541,"deathIncrease":100,"hospitalizedIncrease":288,"hash":"47f3c4f25c70d06ba3cdf6dfd51b5ce0e7534e86","commercialScore":0,"negativeRegularScore":0,"negativeScore":0,"positiveScore":0,"score":0,"grade":""}
+
+        '
+    http_version: null
+  recorded_at: Sun, 12 Apr 2020 04:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/v1/states/ma/20200409.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Cache-Control:
+      - max-age=600
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 06 Jun 2020 15:11:27 GMT
+      Etag:
+      - W/"5edba58d-31b"
+      Expires:
+      - Sat, 06 Jun 2020 15:21:27 GMT
+      Last-Modified:
+      - Sat, 06 Jun 2020 14:17:49 GMT
+      Server:
+      - Netlify
+      Strict-Transport-Security:
+      - max-age=31556952
+      Via:
+      - 1.1 varnish
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Fastly-Request-Id:
+      - 6f55d65d61366a741c0932b3310ca7e97e541e8c
+      X-Github-Request-Id:
+      - AA7E:26DC:2C54D6:382B43:5EDBB21F
+      X-Origin-Cache:
+      - HIT
+      X-Proxy-Cache:
+      - MISS
+      X-Served-By:
+      - cache-ewr18131-EWR
+      X-Timer:
+      - S1591456288.858259,VS0,VE12
+      Content-Length:
+      - '795'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - 7b5091e5-db0f-4634-a407-2a78a3d52c67-8819544
+    body:
+      encoding: UTF-8
+      string: '{"date":20200409,"state":"MA","positive":18843,"negative":76146,"pending":null,"hospitalizedCurrently":2302,"hospitalizedCumulative":2302,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":"B","lastUpdateEt":"4/9/2020
+        12:30","dateModified":"2020-04-09T12:30:00Z","checkTimeEt":"04/09 08:30","death":725,"hospitalized":2302,"dateChecked":"2020-04-09T12:30:00Z","fips":"25","positiveIncrease":2151,"negativeIncrease":5297,"total":94989,"totalTestResults":94989,"totalTestResultsIncrease":7448,"posNeg":94989,"deathIncrease":110,"hospitalizedIncrease":183,"hash":"279fc4b069b2d5f5c9a3021a826433ca1e33fa1c","commercialScore":0,"negativeRegularScore":0,"negativeScore":0,"positiveScore":0,"score":0,"grade":""}
+
+        '
+    http_version: null
+  recorded_at: Sun, 12 Apr 2020 04:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/v1/states/ma/20200410.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Cache-Control:
+      - max-age=600
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 06 Jun 2020 15:11:27 GMT
+      Etag:
+      - W/"5edba58d-31f"
+      Expires:
+      - Sat, 06 Jun 2020 15:21:27 GMT
+      Last-Modified:
+      - Sat, 06 Jun 2020 14:17:49 GMT
+      Server:
+      - Netlify
+      Strict-Transport-Security:
+      - max-age=31556952
+      Via:
+      - 1.1 varnish
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Fastly-Request-Id:
+      - f8988ab1ec1fadf5b32c8953b75b8b501744a326
+      X-Github-Request-Id:
+      - 3DAA:5A80:93AAE:C449D:5EDBB21F
+      X-Origin-Cache:
+      - HIT
+      X-Proxy-Cache:
+      - MISS
+      X-Served-By:
+      - cache-ewr18140-EWR
+      X-Timer:
+      - S1591456288.853603,VS0,VE10
+      Content-Length:
+      - '799'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - 7b5091e5-db0f-4634-a407-2a78a3d52c67-8819550
+    body:
+      encoding: UTF-8
+      string: '{"date":20200410,"state":"MA","positive":20878,"negative":81564,"pending":null,"hospitalizedCurrently":2435,"hospitalizedCumulative":2435,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":"B","lastUpdateEt":"4/10/2020
+        12:30","dateModified":"2020-04-10T12:30:00Z","checkTimeEt":"04/10 08:30","death":832,"hospitalized":2435,"dateChecked":"2020-04-10T12:30:00Z","fips":"25","positiveIncrease":2035,"negativeIncrease":5418,"total":102442,"totalTestResults":102442,"totalTestResultsIncrease":7453,"posNeg":102442,"deathIncrease":107,"hospitalizedIncrease":133,"hash":"2aa573a8c1aa5b5f7823dc7921753dcbc34e4115","commercialScore":0,"negativeRegularScore":0,"negativeScore":0,"positiveScore":0,"score":0,"grade":""}
+
+        '
+    http_version: null
+  recorded_at: Sun, 12 Apr 2020 04:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/v1/states/ma/20200412.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Cache-Control:
+      - max-age=600
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 06 Jun 2020 15:11:52 GMT
+      Etag:
+      - W/"5edba58d-31e"
+      Expires:
+      - Sat, 06 Jun 2020 15:21:52 GMT
+      Last-Modified:
+      - Sat, 06 Jun 2020 14:17:49 GMT
+      Server:
+      - Netlify
+      Strict-Transport-Security:
+      - max-age=31556952
+      Via:
+      - 1.1 varnish
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Fastly-Request-Id:
+      - 211ca6695699c5eea794e8f519e211925999defa
+      X-Github-Request-Id:
+      - 9A40:1E2D:231AD:2E0B6:5EDBB238
+      X-Origin-Cache:
+      - HIT
+      X-Proxy-Cache:
+      - MISS
+      X-Served-By:
+      - cache-ewr18151-EWR
+      X-Timer:
+      - S1591456313.634091,VS0,VE11
+      Content-Length:
+      - '798'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - e27370ee-c9c0-41c1-bdfd-d5c74f5ae1db-11843208
+    body:
+      encoding: UTF-8
+      string: '{"date":20200412,"state":"MA","positive":25381,"negative":91463,"pending":null,"hospitalizedCurrently":2514,"hospitalizedCumulative":2514,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":"B","lastUpdateEt":"4/12/2020
+        16:00","dateModified":"2020-04-12T16:00:00Z","checkTimeEt":"04/12 12:00","death":1056,"hospitalized":2514,"dateChecked":"2020-04-12T16:00:00Z","fips":"25","positiveIncrease":2615,"negativeIncrease":5348,"total":116844,"totalTestResults":116844,"totalTestResultsIncrease":7963,"posNeg":116844,"deathIncrease":110,"hospitalizedIncrease":7,"hash":"66677629ad9b7ff01d8983916af3e5c3a8ea0f3e","commercialScore":0,"negativeRegularScore":0,"negativeScore":0,"positiveScore":0,"score":0,"grade":""}
+
+        '
+    http_version: null
+  recorded_at: Sun, 12 Apr 2020 04:00:00 GMT
+- request:
+    method: get
+    uri: https://covidtracking.com/api/v1/states/ma/20200411.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Cache-Control:
+      - max-age=600
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 06 Jun 2020 15:11:52 GMT
+      Etag:
+      - W/"5edba58d-31e"
+      Expires:
+      - Sat, 06 Jun 2020 15:21:52 GMT
+      Last-Modified:
+      - Sat, 06 Jun 2020 14:17:49 GMT
+      Server:
+      - Netlify
+      Strict-Transport-Security:
+      - max-age=31556952
+      Via:
+      - 1.1 varnish
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Fastly-Request-Id:
+      - e4bcf76e0fcd10bce77883ee2880b8a26a32c324
+      X-Github-Request-Id:
+      - 43FE:1E84:B4A55:E6F9E:5EDBB238
+      X-Origin-Cache:
+      - HIT
+      X-Proxy-Cache:
+      - MISS
+      X-Served-By:
+      - cache-ewr18129-EWR
+      X-Timer:
+      - S1591456313.634622,VS0,VE11
+      Content-Length:
+      - '798'
+      Vary:
+      - Accept-Encoding
+      X-Nf-Request-Id:
+      - e27370ee-c9c0-41c1-bdfd-d5c74f5ae1db-11843204
+    body:
+      encoding: UTF-8
+      string: '{"date":20200411,"state":"MA","positive":22766,"negative":86115,"pending":null,"hospitalizedCurrently":2507,"hospitalizedCumulative":2507,"inIcuCurrently":null,"inIcuCumulative":null,"onVentilatorCurrently":null,"onVentilatorCumulative":null,"recovered":null,"dataQualityGrade":"B","lastUpdateEt":"4/11/2020
+        12:30","dateModified":"2020-04-11T12:30:00Z","checkTimeEt":"04/11 08:30","death":946,"hospitalized":2507,"dateChecked":"2020-04-11T12:30:00Z","fips":"25","positiveIncrease":1888,"negativeIncrease":4551,"total":108881,"totalTestResults":108881,"totalTestResultsIncrease":6439,"posNeg":108881,"deathIncrease":114,"hospitalizedIncrease":72,"hash":"73e23109d7c55f86a5eafa2cd134d65b9dcd1f6a","commercialScore":0,"negativeRegularScore":0,"negativeScore":0,"positiveScore":0,"score":0,"grade":""}
+
+        '
     http_version: null
   recorded_at: Sun, 12 Apr 2020 04:00:00 GMT
 recorded_with: VCR 5.1.0

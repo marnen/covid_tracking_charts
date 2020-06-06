@@ -1,5 +1,7 @@
 # Unreleased changes
 
+- Make state code lowercase in API calls now that COVID Tracking API requires that. [#55]
+
 # v2.4.1 / 2020-05-17
 
 - Set up Rollbar for error handling. [#51]
