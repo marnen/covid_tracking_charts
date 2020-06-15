@@ -1,5 +1,7 @@
 # Unreleased changes
 
+# v2.5.1 / 2020-06-15
+
 - Update Puma to 4.3.5 for security. [#53]
 - Update Rails to 6.0.3.1 for security. [#61]
 - Update websocket-extensions gem and NPM module to avoid a security issue. [#54, #57]
