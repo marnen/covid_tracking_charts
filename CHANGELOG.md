@@ -1,5 +1,7 @@
 # Unreleased changes
 
+- Mock date so cassettes don't expire. [#58]
+
 # v2.5.0 / 2020-06-06
 
 - Make state code lowercase in API calls now that COVID Tracking API requires that. [#55]
