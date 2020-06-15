@@ -5,7 +5,8 @@ Feature: State selector menu
   So I can quickly jump from one region's dataset to another
 
 Background:
-  Given I am on the page for CA
+  Given I am using cassettes from 6 June 2020
+  And I am on the page for CA
   When I deselect "California" from the state menu
 
 Scenario Outline: Select single state
