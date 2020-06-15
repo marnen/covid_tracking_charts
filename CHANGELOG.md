@@ -1,5 +1,6 @@
 # Unreleased changes
 
+- Update Ruby websocket-extensions gem to avoid a security issue. [#54]
 - Mock date so cassettes don't expire. [#58]
 
 # v2.5.0 / 2020-06-06
