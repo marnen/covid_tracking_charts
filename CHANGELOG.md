@@ -1,5 +1,6 @@
 # Unreleased changes
 
+- Update Rails to 6.0.3.1 for security. [#61]
 - Update websocket-extensions gem and NPM module to avoid a security issue. [#54, #57]
 - Mock date so cassettes don't expire. [#58]
 
