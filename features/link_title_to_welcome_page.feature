@@ -1,6 +1,9 @@
+@vcr
 Feature: Link header to welcome page
 
-@vcr
+Background:
+  Given I am using cassettes from 6 June 2020
+
 Scenario:
   Given I am on the page for MA
   When I click on the header
