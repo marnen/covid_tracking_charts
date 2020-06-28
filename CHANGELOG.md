@@ -1,5 +1,7 @@
 # Unreleased changes
 
+- Update Rails to 6.0.3.2 for security. [#64]
+
 # v2.5.2 / 2020-06-28
 
 - Update Rack to 2.2.3 for security. [#63]
