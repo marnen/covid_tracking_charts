@@ -1,5 +1,7 @@
 # Unreleased changes
 
+# v2.5.2 / 2020-06-28
+
 - Update Rack to 2.2.3 for security. [#63]
 
 # v2.5.1 / 2020-06-15
