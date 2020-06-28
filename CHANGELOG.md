@@ -1,5 +1,7 @@
 # Unreleased changes
 
+- Update Rack to 2.2.3 for security. [#63]
+
 # v2.5.1 / 2020-06-15
 
 - Update Puma to 4.3.5 for security. [#53]
