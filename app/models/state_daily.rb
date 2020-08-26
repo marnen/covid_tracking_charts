@@ -15,7 +15,7 @@ class StateDaily
         individuals.each {|individual| hydra.queue individual.request }
       end
     else
-      Typhoeus::Request.new "https://covidtracking.com/api/v1/states/#{@state.abbr.downcase}/#{@date.to_s :number}.json", cache_ttl: 6.hours.to_i
+      Typhoeus::Request.new "https://api.covidtracking.com/v1/states/#{@state.abbr.downcase}/#{@date.to_s :number}.json", cache_ttl: 6.hours.to_i
     end
   end
 
