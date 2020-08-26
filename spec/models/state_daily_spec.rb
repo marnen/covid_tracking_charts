@@ -58,7 +58,7 @@ RSpec.describe StateDaily, type: :model do
         it { is_expected.to be_a_kind_of Typhoeus::Request }
 
         it 'points to the COVID Tracking JSON endpoint for the given state and date' do
-          expect(subject.url).to be == "https://covidtracking.com/api/v1/states/#{state.abbr.downcase}/#{date.to_s :number}.json"
+          expect(subject.url).to be == "https://api.covidtracking.com/v1/states/#{state.abbr.downcase}/#{date.to_s :number}.json"
         end
 
         it 'is cached for 6 hours' do
