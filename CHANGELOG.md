@@ -1,5 +1,7 @@
 # Unreleased changes
 
+- Change all API requests to use new api.covidtracking.com hostname. [#55]
+
 # v2.5.3 / 2020-06-28
 
 - Update Rails to 6.0.3.2 for security. [#64]
