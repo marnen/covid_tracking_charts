@@ -1,5 +1,6 @@
 # Unreleased changes
 
+- Update Lodash to 4.17.20 for security. [#66, #71]
 - Update Elliptic to 6.5.3 for security. [#67]
 
 # v2.6.0 / 2020-08-26
