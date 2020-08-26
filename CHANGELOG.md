@@ -1,5 +1,7 @@
 # Unreleased changes
 
+# v2.6.0 / 2020-08-26
+
 - Change all API requests to use new api.covidtracking.com hostname. [#55]
 
 # v2.5.3 / 2020-06-28
