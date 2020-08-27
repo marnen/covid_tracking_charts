@@ -4,7 +4,7 @@
   "dependencies": {
     "@rails/actioncable": "^6.0.0",
     "@rails/ujs": "^6.0.0",
-    "@rails/webpacker": "5.0.1",
+    "@rails/webpacker": "5.1.1",
     "choices.js": "^9.0.1",
     "coffee-loader": "^0.9.0",
     "coffeescript": "1.12.7",
