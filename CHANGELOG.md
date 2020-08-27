@@ -1,5 +1,7 @@
 # Unreleased changes
 
+# v2.6.1 / 2020-08-27
+
 - Update Webpacker so as to get rid of insecure dependency on serialize-javascript below 3.1.0. [#72]
 - Update Lodash to 4.17.20 for security. [#66, #71]
 - Update Elliptic to 6.5.3 for security. [#67]
